@@ -7,6 +7,7 @@ module digital_design_lab1_problem1(
 		
 	always @(*)
 		begin
+		
 			y0 = 0;
 			y1 = 0;
 			y2 = 0;
@@ -37,7 +38,6 @@ module digital_design_lab1_problem1(
 			
 			segD = {~y6, ~y5, ~y4, ~y3, ~y2, ~y1, ~y0};
 			
-			#10;
 		end
 
 endmodule
