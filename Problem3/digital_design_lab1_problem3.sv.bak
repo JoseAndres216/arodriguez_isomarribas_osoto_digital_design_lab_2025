@@ -40,7 +40,7 @@ module digital_design_lab1_problem3
 					end
 				else if (a < b)
 					begin
-						
+					
 						r = b-a;
 						if((aO !==  0) && (bO !== 0)) isNegativeR = isNegativeRO;
 						else isNegativeR = 1;
