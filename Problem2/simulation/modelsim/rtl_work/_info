@@ -25,14 +25,14 @@ VDdoXdKW4Z6JIMojeZ4k;P3
 !s100 LED;KHmXW8Z4k_2_G7eZ73
 Z8 OV;C;2020.1;71
 31
-Z9 !s110 1741655971
+Z9 !s110 1741658764
 !i10b 1
-Z10 !s108 1741655971.000000
+Z10 !s108 1741658764.000000
 Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador1bit.vhd|
-!s107 C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador1bit.vhd|
+Z12 !s107 C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador1bit.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
 Abehavioral
 R2
 R3
@@ -50,10 +50,10 @@ R9
 !i10b 1
 R10
 R11
-Z14 !s107 C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador1bit.vhd|
-!i113 1
 R12
+!i113 1
 R13
+R14
 Esumador4bits
 Z15 w1741655881
 R2
@@ -76,8 +76,8 @@ R10
 Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador4bits.vhd|
 Z19 !s107 C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador4bits.vhd|
 !i113 1
-R12
 R13
+R14
 Abehavioral
 R2
 R3
@@ -97,5 +97,46 @@ R10
 R18
 R19
 !i113 1
-R12
 R13
+R14
+Esumador4bits_testbench
+Z20 w1741658669
+R4
+R5
+!i122 2
+R0
+Z21 8C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador4bits_testbench.vhd
+Z22 FC:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador4bits_testbench.vhd
+l0
+L4 1
+V:mRkdhE@ldSW3_>B<SohR2
+!s100 aIJGY:j2acLo>nQKMf0?Q3
+R8
+31
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador4bits_testbench.vhd|
+!s107 C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador4bits_testbench.vhd|
+!i113 1
+R13
+R14
+Atest
+R4
+R5
+DEx4 work 22 sumador4bits_testbench 0 22 :mRkdhE@ldSW3_>B<SohR2
+!i122 2
+l23
+L7 51
+Vj0^onMhijB<:WcP;=KZ=?0
+!s100 ]h^iH1Q>5eXR0lj9:PcMO3
+R8
+31
+R9
+!i10b 1
+R10
+R23
+Z24 !s107 C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem2/Sumador4bits_testbench.vhd|
+!i113 1
+R13
+R14
