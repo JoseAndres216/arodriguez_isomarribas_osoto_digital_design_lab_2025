@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3/simulation/modelsim
+vdigital_design_lab1_problem3
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1741667217
+!i10b 1
+!s100 ^AeYl;7n1G0AN>aF2mCDR2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IC51OKCmE6T:^dzCRH^^P;0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1741665370
+8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3/digital_design_lab1_problem3.sv
+FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3/digital_design_lab1_problem3.sv
+!i122 0
+L0 1 194
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1741667217.000000
+!s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3/digital_design_lab1_problem3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3/digital_design_lab1_problem3.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3
+Z9 tCvgOpt 0
+vdigital_design_lab1_problem3_tb
+R1
+R2
+!i10b 1
+!s100 5d67DbWEJE[edUkS;Ll^23
+R3
+IEX[c378`9b[:[z4R?o2T30
+R4
+S1
+R0
+w1741667191
+8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3/digital_design_lab1_problem3_tb.sv
+FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3/digital_design_lab1_problem3_tb.sv
+!i122 1
+L0 1 135
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3/digital_design_lab1_problem3_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem3/digital_design_lab1_problem3_tb.sv|
+!i113 1
+R7
+R8
+R9

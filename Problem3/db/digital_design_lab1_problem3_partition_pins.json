@@ -1,0 +1,289 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "isNegativeR",
+					"strict" : false
+				},
+				{
+					"name" : "r[0]",
+					"strict" : false
+				},
+				{
+					"name" : "r[1]",
+					"strict" : false
+				},
+				{
+					"name" : "r[2]",
+					"strict" : false
+				},
+				{
+					"name" : "r[3]",
+					"strict" : false
+				},
+				{
+					"name" : "r[4]",
+					"strict" : false
+				},
+				{
+					"name" : "r[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segDA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segDA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segDA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segDA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segDA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segDA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segDA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segUA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segUA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segUA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segUA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segUA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segUA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segUA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segDB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segDB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segDB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segDB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segDB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segDB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segDB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segUB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segUB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segUB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segUB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segUB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segUB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segUB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segUR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segUR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segUR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segUR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segUR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segUR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segUR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "eVar[5]",
+					"strict" : false
+				},
+				{
+					"name" : "changingA",
+					"strict" : false
+				},
+				{
+					"name" : "eVar[1]",
+					"strict" : false
+				},
+				{
+					"name" : "eVar[0]",
+					"strict" : false
+				},
+				{
+					"name" : "eVar[4]",
+					"strict" : false
+				},
+				{
+					"name" : "eVar[3]",
+					"strict" : false
+				},
+				{
+					"name" : "eVar[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
