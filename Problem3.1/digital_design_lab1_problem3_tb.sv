@@ -106,29 +106,13 @@ module digital_design_lab1_problem3_tb();
 		
 		if(value2 === 2'b01 && isNegative2 === 1'b0) $display("2 bits: Test 00 +1 = 01 succeeded.");
 		else  $display("2 bits: Test 00 +1 = 01 failed.");
-			
-		/*
-		#20
-		
-		decrease_btn4 = 0;
-		#20
-		decrease_btn4 = 1;
 		
 		#20
-		
-		if(value4 === 4'b0001 && isNegative2 === 1'b1) $display("4 bits: Test -1 succeeded.");
-		else  $display("4 bits: Test -1 failed.");
-		
+		increase_btn2 = 0;
+		decrease_btn2 = 0;	
+		reset4 = 1;
 		#20
-		
-		decrease_btn4 = 0;
-		#20
-		decrease_btn4 = 1;
-		
-		#20
-		
-		if(value4 === 4'b0011 && isNegative2 === 1'b1) $display("4 bits: Test -2 succeeded.");
-		else  $display("4 bits: Test -2 failed.");
+		reset4 = 0;
 		
 		#20
 		
@@ -138,10 +122,94 @@ module digital_design_lab1_problem3_tb();
 		
 		#20
 		
-		if(value4 === 4'b0011 && isNegative2 === 1'b1) $display("4 bits: Test -3 succeeded.");
-		else  $display("4 bits: Test -3 failed.");
+		if(value4 === 4'b0000 && isNegative4 === 1'b0) $display("4 bits: Test 0001 -1 = 0000 succeeded.");
+		else  $display("4 bits: Test 0001 -1 = 0000 failed.");
 		
-		*/
+		#20
+		
+		decrease_btn4 = 0;
+		#20
+		decrease_btn4 = 1;
+		
+		#20
+		
+		if(value4 === 4'b0001 && isNegative4 === 1'b1) $display("4 bits: Test 0000 -1 = -0001 succeeded.");
+		else  $display("4 bits: Test 0000 -1 = -0001 failed.");
+		
+		#20
+		decrease_btn4 = 0;
+		#20
+		increase_btn4 = 0;
+		#20
+		increase_btn4 = 1;
+		#20
+		
+		if(value4 === 4'b0000 && isNegative4 === 1'b0) $display("4 bits: Test -0001 +1 = 0000 succeeded.");
+		else  $display("4 bits: Test -0001 +1 = 0000 failed.");
+		
+		#20
+		increase_btn4 = 0;
+		#20
+		increase_btn4 = 1;
+		#20
+		
+		if(value4 === 4'b0001 && isNegative4 === 1'b0) $display("4 bits: Test 0000 +1 = 0001 succeeded.");
+		else  $display("4 bits: Test 0001 +1 = 0001 failed.");
+		
+		#20
+		increase_btn4 = 0;
+		decrease_btn6 = 0;
+	
+		reset6 = 1;
+		#20
+		reset6 = 0;
+		
+		#20
+		
+		decrease_btn6 = 0;
+		#20
+		decrease_btn6 = 1;
+		
+		#20
+		
+		if(value6 === 6'b000000 && isNegative6 === 1'b0) $display("6 bits: Test 000001 -1 = 000000 succeeded.");
+		else  $display("2 bits: Test 000001 -1 = 000000 failed.");
+		
+		#20
+		
+		decrease_btn6 = 0;
+		#20
+		decrease_btn6 = 1;
+		
+		#20
+		
+		if(value6 === 6'b000001 && isNegative6 === 1'b1) $display("6 bits: Test 000000 -1 = -000001 succeeded.");
+		else  $display("6 bits: Test 000000 -1 = -000001 failed.");
+		
+		#20
+		decrease_btn6 = 0;
+		#20
+		increase_btn6 = 0;
+		#20
+		increase_btn6 = 1;
+		
+		#20
+		
+		if(value6 === 6'b000000 && isNegative6 === 1'b0) $display("6 bits: Test -000001 +1 = 000000 succeeded.");
+		else  $display("6 bits: Test -000001 +1 = 000000 failed.");
+		
+		#20
+		
+		increase_btn6 = 0;
+		#20
+		increase_btn6 = 1;
+		
+		#20
+		
+		if(value6 === 6'b000001 && isNegative6 === 1'b0) $display("6 bits: Test 000000 +1 = 000001 succeeded.");
+		else  $display("6 bits: Test 000001 +1 = 000001 failed.");
+		
+		
 		
 	
 	end
