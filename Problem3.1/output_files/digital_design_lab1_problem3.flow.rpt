@@ -1,5 +1,5 @@
 Flow report for digital_design_lab1_problem3
-Tue Mar 11 23:04:18 2025
+Wed Mar 12 00:05:28 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Tue Mar 11 23:04:18 2025       ;
+; Flow Status                 ; Successful - Wed Mar 12 00:05:28 2025       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; digital_design_lab1_problem3                ;
 ; Top-level Entity Name       ; digital_design_lab1_problem3                ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+------------------------------+
 ; Option            ; Setting                      ;
 +-------------------+------------------------------+
-; Start date & time ; 03/11/2025 23:04:11          ;
+; Start date & time ; 03/12/2025 00:05:21          ;
 ; Main task         ; Compilation                  ;
 ; Revision Name     ; digital_design_lab1_problem3 ;
 +-------------------+------------------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 247207023016729.174175585112912        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 247207023016729.174175952105648        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; digital_design_lab1_problem3_tb   ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
