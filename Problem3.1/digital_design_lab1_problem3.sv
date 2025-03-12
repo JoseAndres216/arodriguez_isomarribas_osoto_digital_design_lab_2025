@@ -1,23 +1,23 @@
 module digital_design_lab1_problem3
 	#(parameter n = 6)
-	(input logic reset, decrease_btn, output logic [6:0] segUnits, segTens, segSign);
+	(input logic reset, decrease_btn, output logic [6:0] segUnits, segTens, segSign, output logic [n-1:0] value, output logic isNegative);
 	
-	logic [n-1:0] value;
 	logic [3:0] valueUnits;  // 
 	logic [3:0] valueTens;  // tens
-	logic isNegative;  // value sign (positive or negative)
 	
 	initial begin 
-		isNegative = 0;
-		value = 0;
+		isNegative <= 0;
+		value <= 0;
+		segSign = 7'b1111111;
+
 	end
 	
 	always @(posedge decrease_btn or posedge reset) 
 		begin
 			if (reset) 
 				begin 
-					value = 0;   // Inicializar en cero
-					isNegative = 0;
+					value <= 0;   // Inicializar en cero
+					isNegative <= 0;
 					segSign = 7'b1111111;
 				end 
 			else if (decrease_btn) 
@@ -27,16 +27,16 @@ module digital_design_lab1_problem3
 							isNegative = 1;
 							segSign = 7'b0111111; // -
 						end
-					value = value - 1;  // Decrementar en 1
+					value <= value + 1;  // Decrementar en 1
 				end
 			
 			// conversion to only units and tens from value
-			 valueUnits = value / 10;  
-			 valueTens = value % 10;
+			 valueUnits = value % 10;  
+			 valueTens = value / 10;
 			 
 			 // Mapeo del primer dígito de 'aO' (decenas)
 			 case(valueTens)
-					4'b0000: segTens = 7'b1000000; // 0
+					4'b0000: segTens = 7'b1111111; // 0
 					4'b0001: segTens = 7'b1111001; // 1
 					4'b0010: segTens = 7'b0100100; // 2
 					4'b0011: segTens = 7'b0110000; // 3
