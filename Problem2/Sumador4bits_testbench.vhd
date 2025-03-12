@@ -24,6 +24,7 @@ architecture test of Sumador4bits_testbench is
 begin
 
     -- Instanciar el sumador
+	 --UUT: Unidad bajo prueba
     UUT: Sumador4bits port map (
         A, B, Cin, S, Cout
     );

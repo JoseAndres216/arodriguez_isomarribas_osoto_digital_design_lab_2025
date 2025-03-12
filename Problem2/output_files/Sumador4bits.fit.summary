@@ -1,13 +1,13 @@
-Fitter Status : Successful - Mon Mar 10 19:18:32 2025
+Fitter Status : Successful - Wed Mar 12 01:41:33 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Sumador4bits
-Top-level Entity Name : Sumador4bits
+Top-level Entity Name : implementacion_sumador
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 4 / 41,910 ( < 1 % )
+Logic utilization (in ALMs) : 11 / 41,910 ( < 1 % )
 Total registers : 0
-Total pins : 14 / 499 ( 3 % )
+Total pins : 16 / 499 ( 3 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
 Total RAM Blocks : 0 / 553 ( 0 % )

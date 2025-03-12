@@ -1,4 +1,23 @@
-|Sumador4bits
+|implementacion_sumador
+Switches[0] => Sumador4bits:Sumador.A[0]
+Switches[1] => Sumador4bits:Sumador.A[1]
+Switches[2] => Sumador4bits:Sumador.A[2]
+Switches[3] => Sumador4bits:Sumador.A[3]
+Switches[4] => Sumador4bits:Sumador.B[0]
+Switches[5] => Sumador4bits:Sumador.B[1]
+Switches[6] => Sumador4bits:Sumador.B[2]
+Switches[7] => Sumador4bits:Sumador.B[3]
+Switches[8] => Sumador4bits:Sumador.Cin
+Segments[0] <= disp7seg:Decodificador.seg[0]
+Segments[1] <= disp7seg:Decodificador.seg[1]
+Segments[2] <= disp7seg:Decodificador.seg[2]
+Segments[3] <= disp7seg:Decodificador.seg[3]
+Segments[4] <= disp7seg:Decodificador.seg[4]
+Segments[5] <= disp7seg:Decodificador.seg[5]
+Segments[6] <= disp7seg:Decodificador.seg[6]
+
+
+|implementacion_sumador|Sumador4bits:Sumador
 A[0] => Sumador1bit:adder1.A
 A[1] => Sumador1bit:adder2.A
 A[2] => Sumador1bit:adderr3.A
@@ -8,14 +27,14 @@ B[1] => Sumador1bit:adder2.B
 B[2] => Sumador1bit:adderr3.B
 B[3] => Sumador1bit:adder4.B
 Cin => Sumador1bit:adder1.Cin
-S[0] << Sumador1bit:adder1.S
-S[1] << Sumador1bit:adder2.S
-S[2] << Sumador1bit:adderr3.S
-S[3] << Sumador1bit:adder4.S
-Cout << Sumador1bit:adder4.Cout
+S[0] <= Sumador1bit:adder1.S
+S[1] <= Sumador1bit:adder2.S
+S[2] <= Sumador1bit:adderr3.S
+S[3] <= Sumador1bit:adder4.S
+Cout <= Sumador1bit:adder4.Cout
 
 
-|Sumador4bits|Sumador1bit:adder1
+|implementacion_sumador|Sumador4bits:Sumador|Sumador1bit:adder1
 A => S.IN0
 A => Cout.IN0
 B => S.IN1
@@ -26,7 +45,7 @@ S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Sumador4bits|Sumador1bit:adder2
+|implementacion_sumador|Sumador4bits:Sumador|Sumador1bit:adder2
 A => S.IN0
 A => Cout.IN0
 B => S.IN1
@@ -37,7 +56,7 @@ S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Sumador4bits|Sumador1bit:adderr3
+|implementacion_sumador|Sumador4bits:Sumador|Sumador1bit:adderr3
 A => S.IN0
 A => Cout.IN0
 B => S.IN1
@@ -48,7 +67,7 @@ S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Sumador4bits|Sumador1bit:adder4
+|implementacion_sumador|Sumador4bits:Sumador|Sumador1bit:adder4
 A => S.IN0
 A => Cout.IN0
 B => S.IN1
@@ -57,5 +76,50 @@ Cin => S.IN1
 Cin => Cout.IN1
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|implementacion_sumador|disp7seg:Decodificador
+BinNumber[0] => Mux0.IN19
+BinNumber[0] => Mux1.IN19
+BinNumber[0] => Mux2.IN19
+BinNumber[0] => Mux3.IN19
+BinNumber[0] => Mux4.IN19
+BinNumber[0] => Mux5.IN19
+BinNumber[0] => Mux6.IN19
+BinNumber[1] => Mux0.IN18
+BinNumber[1] => Mux1.IN18
+BinNumber[1] => Mux2.IN18
+BinNumber[1] => Mux3.IN18
+BinNumber[1] => Mux4.IN18
+BinNumber[1] => Mux5.IN18
+BinNumber[1] => Mux6.IN18
+BinNumber[2] => Mux0.IN17
+BinNumber[2] => Mux1.IN17
+BinNumber[2] => Mux2.IN17
+BinNumber[2] => Mux3.IN17
+BinNumber[2] => Mux4.IN17
+BinNumber[2] => Mux5.IN17
+BinNumber[2] => Mux6.IN17
+BinNumber[3] => Mux0.IN16
+BinNumber[3] => Mux1.IN16
+BinNumber[3] => Mux2.IN16
+BinNumber[3] => Mux3.IN16
+BinNumber[3] => Mux4.IN16
+BinNumber[3] => Mux5.IN16
+BinNumber[3] => Mux6.IN16
+Cout => Seg.OUTPUTSELECT
+Cout => Seg.OUTPUTSELECT
+Cout => Seg.OUTPUTSELECT
+Cout => Seg.OUTPUTSELECT
+Cout => Seg.OUTPUTSELECT
+Cout => Seg.OUTPUTSELECT
+Cout => Seg.OUTPUTSELECT
+Seg[0] <= Seg.DB_MAX_OUTPUT_PORT_TYPE
+Seg[1] <= Seg.DB_MAX_OUTPUT_PORT_TYPE
+Seg[2] <= Seg.DB_MAX_OUTPUT_PORT_TYPE
+Seg[3] <= Seg.DB_MAX_OUTPUT_PORT_TYPE
+Seg[4] <= Seg.DB_MAX_OUTPUT_PORT_TYPE
+Seg[5] <= Seg.DB_MAX_OUTPUT_PORT_TYPE
+Seg[6] <= Seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
