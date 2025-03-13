@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1/simulation/modelsim
+vdigital_design_lab1_problem1
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1741627860
+!i10b 1
+!s100 EGe8I=njAjUd?Q;:g7L2F0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IHlG@h2:WH77Ihl>l0zhzF1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1741627811
+8C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1/digital_design_lab1_problem1.sv
+FC:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1/digital_design_lab1_problem1.sv
+!i122 0
+L0 1 43
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1741627859.000000
+!s107 C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1/digital_design_lab1_problem1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1|C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1/digital_design_lab1_problem1.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1
+Z8 tCvgOpt 0
+vdigital_design_lab1_problem1_tb
+R1
+R2
+!i10b 1
+!s100 <:3FWfUBl]@lSNScIAJo<0
+R3
+I51[?h?GOzC5_d7bPjbmA21
+R4
+S1
+R0
+w1741627427
+8C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1/digital_design_lab1_problem1_tb.sv
+FC:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1/digital_design_lab1_problem1_tb.sv
+!i122 1
+L0 1 125
+R5
+r1
+!s85 0
+31
+!s108 1741627860.000000
+!s107 C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1/digital_design_lab1_problem1_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1|C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Problem1/digital_design_lab1_problem1_tb.sv|
+!i113 1
+R6
+R7
+R8
