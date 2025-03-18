@@ -1,0 +1,41 @@
+// Testbench para el módulo SumadorNbits
+module adder_tb;
+
+    // Parámetro: Número de bits
+    parameter int N = 4; // Cambiar este valor según se necesite (ejemplo: 4 bits)
+
+    // Señales para conectar al DUT (Design Under Test)
+    logic [N-1:0] A, B;  // Entradas de N bits
+    logic Cin;           // Carry-in
+    logic [N-1:0] S;     // Salida de suma
+    logic Cout;          // Carry-out final
+
+    // Instancia del módulo bajo prueba
+    adder #(.N(N)) DUT (
+        .A(A),
+        .B(B),
+        .Cin(Cin),
+        .S(S),
+        .Cout(Cout)
+    );
+
+    // Procedimiento de prueba
+    initial begin
+        // Monitor para ver los resultados en la consola
+        $monitor("Tiempo=%0t | A=%b | B=%b | Cin=%b | S=%b | Cout=%b", 
+                 $time, A, B, Cin, S, Cout);
+
+        // Inicializar valores
+        A = 0; B = 0; Cin = 0;
+
+        // Pruebas de diferentes combinaciones
+        #10 A = 4'b0001; B = 4'b0010; Cin = 1'b0; // Caso: 1 + 2 + 0
+        #10 A = 4'b0101; B = 4'b0011; Cin = 1'b1; // Caso: 5 + 3 + 1
+        #10 A = 4'b1111; B = 4'b0001; Cin = 1'b0; // Caso: 15 + 1 + 0
+        #10 A = 4'b1111; B = 4'b1111; Cin = 1'b1; // Caso: 15 + 15 + 1
+
+        // Finalizar la simulación
+        #10 $finish;
+    end
+
+endmodule

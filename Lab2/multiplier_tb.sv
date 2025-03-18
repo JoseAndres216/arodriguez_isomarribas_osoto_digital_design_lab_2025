@@ -1,0 +1,34 @@
+module multiplier_tb;
+
+    parameter int N = 4;  // Tamaño de las entradas (por defecto, 4 bits)
+
+    // Señales para conectar al DUT (Device Under Test)
+    logic [N-1:0] A, B;
+    logic [2*N-1:0] Product;
+
+    // Instancia del módulo bajo prueba
+    multiplier #(.N(N)) DUT (
+        .A(A),
+        .B(B),
+        .Product(Product)
+    );
+
+    // Procedimiento inicial para realizar las pruebas
+    initial begin
+        // Mostrar los resultados en la consola
+        $monitor("Tiempo = %0t | A = %d | B = %d | Producto = %d",
+                 $time, A, B, Product);
+
+        // Casos de prueba
+        A = 4'b0011; B = 4'b0010; #10; // 3 * 2 = 6
+        A = 4'b1111; B = 4'b0001; #10; // 15 * 1 = 15
+        A = 4'b0101; B = 4'b0011; #10; // 5 * 3 = 15
+        A = 4'b1001; B = 4'b0110; #10; // 9 * 6 = 54
+        A = 4'b0000; B = 4'b1111; #10; // 0 * 15 = 0
+        A = 4'b1111; B = 4'b1111; #10; // 15 * 15 = 225
+
+        // Finalizar la simulación
+        $finish;
+    end
+
+endmodule
