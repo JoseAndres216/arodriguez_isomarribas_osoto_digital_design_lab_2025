@@ -12,29 +12,29 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:49:16 on Mar 17,2025
+# Start time: 17:21:07 on Mar 18,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 23:49:17 on Mar 17,2025, Elapsed time: 0:00:01
+# End time: 17:21:07 on Mar 18,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:49:17 on Mar 17,2025
+# Start time: 17:21:07 on Mar 18,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv 
 # -- Compiling module adder_tb
 # 
 # Top level modules:
 # 	adder_tb
-# End time: 23:49:17 on Mar 17,2025, Elapsed time: 0:00:00
+# End time: 17:21:07 on Mar 18,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  adder_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" adder_tb 
-# Start time: 23:49:17 on Mar 17,2025
+# Start time: 17:21:07 on Mar 18,2025
 # Loading sv_std.std
 # Loading work.adder_tb
 # Loading work.adder
@@ -45,18 +45,24 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Tiempo=0 | A=0000 | B=0000 | Cin=0 | S=0000 | Cout=0
-# Tiempo=10 | A=0001 | B=0010 | Cin=0 | S=0011 | Cout=0
 # Test 01 succeeded.
-# Tiempo=30 | A=0101 | B=0011 | Cin=1 | S=1001 | Cout=0
 # Test 02 succeeded.
-# Tiempo=50 | A=1111 | B=0001 | Cin=0 | S=0000 | Cout=1
 # Test 03 succeeded.
-# Tiempo=70 | A=1111 | B=1111 | Cin=1 | S=1111 | Cout=1
 # Test 04 succeeded.
-# ** Note: $finish    : C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv(50)
-#    Time: 80 ps  Iteration: 0  Instance: /adder_tb
+# Test 05 succeeded.
+# Test 06 succeeded.
+# Test 07 succeeded.
+# Test 08 succeeded.
+# Test 09 succeeded.
+# Test 10 succeeded.
+# Test 11 succeeded.
+# Test 12 succeeded.
+# Test 10 succeeded.
+# Test 11 succeeded.
+# Test 11 succeeded.
+# ** Note: $finish    : C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv(108)
+#    Time: 300 ps  Iteration: 0  Instance: /adder_tb
 # 1
-# Break in Module adder_tb at C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv line 50
-# End time: 23:49:56 on Mar 17,2025, Elapsed time: 0:00:39
+# Break in Module adder_tb at C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv line 108
+# End time: 17:21:18 on Mar 18,2025, Elapsed time: 0:00:11
 # Errors: 0, Warnings: 0
