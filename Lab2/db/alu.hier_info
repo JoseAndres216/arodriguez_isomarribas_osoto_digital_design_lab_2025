@@ -1,0 +1,26 @@
+|adder
+a[0] => carry_aux.IN0
+a[0] => carry_aux.IN0
+a[1] => carry_aux.IN0
+a[1] => carry_aux.IN0
+a[2] => carry_aux.IN0
+a[2] => carry_aux.IN0
+a[3] => s.IN0
+a[3] => carry_aux.IN0
+b[0] => carry_aux.IN1
+b[0] => carry_aux.IN1
+b[1] => carry_aux.IN1
+b[1] => carry_aux.IN1
+b[2] => carry_aux.IN1
+b[2] => carry_aux.IN1
+b[3] => s.IN1
+b[3] => carry_aux.IN1
+cin => s.IN1
+cin => carry_aux.IN1
+s[0] << s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] << s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] << s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] << s.DB_MAX_OUTPUT_PORT_TYPE
+cout << carry_aux.DB_MAX_OUTPUT_PORT_TYPE
+
+
