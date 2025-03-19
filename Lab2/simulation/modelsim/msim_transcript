@@ -10,34 +10,34 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:21:07 on Mar 18,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv 
-# -- Compiling module adder
+# Start time: 20:44:11 on Mar 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv 
+# -- Compiling module multiplier
 # 
 # Top level modules:
-# 	adder
-# End time: 17:21:07 on Mar 18,2025, Elapsed time: 0:00:00
+# 	multiplier
+# End time: 20:44:11 on Mar 18,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:21:07 on Mar 18,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv 
-# -- Compiling module adder_tb
+# Start time: 20:44:11 on Mar 18,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv 
+# -- Compiling module multiplier_tb
 # 
 # Top level modules:
-# 	adder_tb
-# End time: 17:21:07 on Mar 18,2025, Elapsed time: 0:00:00
+# 	multiplier_tb
+# End time: 20:44:12 on Mar 18,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  adder_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" adder_tb 
-# Start time: 17:21:07 on Mar 18,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  multiplier_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" multiplier_tb 
+# Start time: 20:44:12 on Mar 18,2025
 # Loading sv_std.std
-# Loading work.adder_tb
-# Loading work.adder
+# Loading work.multiplier_tb
+# Loading work.multiplier
 # 
 # add wave *
 # view structure
@@ -45,24 +45,12 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Test 01 succeeded.
-# Test 02 succeeded.
-# Test 03 succeeded.
-# Test 04 succeeded.
-# Test 05 succeeded.
-# Test 06 succeeded.
-# Test 07 succeeded.
-# Test 08 succeeded.
-# Test 09 succeeded.
-# Test 10 succeeded.
-# Test 11 succeeded.
-# Test 12 succeeded.
-# Test 10 succeeded.
-# Test 11 succeeded.
-# Test 11 succeeded.
-# ** Note: $finish    : C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv(108)
-#    Time: 300 ps  Iteration: 0  Instance: /adder_tb
-# 1
-# Break in Module adder_tb at C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder_tb.sv line 108
-# End time: 17:21:18 on Mar 18,2025, Elapsed time: 0:00:11
+# Test: a=00, b=00 -> r=0000
+# Test: a=01, b=10 -> r=0010
+# Test: a=10, b=10 -> r=0100
+# Test: a=11, b=11 -> r=1001
+# ** Note: $stop    : C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv(30)
+#    Time: 40 ps  Iteration: 0  Instance: /multiplier_tb
+# Break in Module multiplier_tb at C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv line 30
+# End time: 20:44:43 on Mar 18,2025, Elapsed time: 0:00:31
 # Errors: 0, Warnings: 0
