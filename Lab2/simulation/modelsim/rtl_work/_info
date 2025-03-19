@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/simulation/modelsim
 vmultiplier
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1742352251
+!s110 1742355046
 !i10b 1
 !s100 3Ub>6VIeQNmiCQU;:I<c>3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,36 +28,36 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1742352251.000000
+!s108 1742355046.000000
 !s107 C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2
-Z8 tCvgOpt 0
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2
+Z7 tCvgOpt 0
 vmultiplier_tb
 R1
-!s110 1742352252
+!s110 1742355047
 !i10b 1
-!s100 ^<=hRAl?WGA3Hc`OklT3:1
+!s100 A[FYCE^dT`0X<iUiRaoVz2
 R2
-IVF<`Ud]Gbb:6zJ^ChEDUb3
+IiB=lA2<RZIXD5ShKR1K1W0
 R3
 S1
 R0
-w1742348612
+w1742354993
 8C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv
 FC:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv
 !i122 1
-L0 3 30
+L0 3 139
 R4
 r1
 !s85 0
 31
-R5
+!s108 1742355047.000000
 !s107 C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv|
 !i113 1
+R5
 R6
 R7
-R8
