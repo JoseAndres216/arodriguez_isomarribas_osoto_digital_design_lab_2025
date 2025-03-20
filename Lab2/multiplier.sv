@@ -5,13 +5,37 @@ module multiplier #(parameter N = 4)(input logic [N-1:0] a, b, output logic [2*N
 	logic [2*N-1:0] additions [N-1:0];
 	logic [2*N-1:0] addition;
 	
-	logic [2*N-1:0] shifttedAddition;	
+	logic [2*N-1:0] shifttedAddition;
+	
+	logic [2*N-1:0] partialAdditions [N:0];
+	logic [2*N-1:0] partialCouts [N:0];
+	
+	genvar g;
+	
+	generate
+        for (g = 0; g < N; g++) begin : adders
+            adder #(2*N) adderX (additions[g], partialAdditions[g], partialCouts[g], partialAdditions[g+1], partialCouts[g+1]);
+        end
+    endgenerate
+	
 		
 	always_comb
 		begin
+			
+			// // // // // // // // // //		Initialization of matrixes and vars 	\\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+		
 			// Initialize "adittions" on 0 in every position.
 			for (int i = 0; i < N; i++) 
             additions[i] = 0;
+				
+			// Initialize "partialAdditions" and "partialCouts" on 0 in every position.
+			partialAdditions[0] = 0;
+			partialCouts[0] = 0;
+			
+			// Initialize r in 0.
+			r = 0;
+			
+			// // // // // // // // // //		 Multiplication process (and gates) 	\\ \\ \\ \\ \\ \\ \\ \\ \\ \\
 				
 				// Multiplies every position of b (one by one starting in b[0]) with every position of a, saving
 			// every multiplication in "addition" (starting on addition[0]).At the end of every b iteration,
@@ -46,14 +70,13 @@ module multiplier #(parameter N = 4)(input logic [N-1:0] a, b, output logic [2*N
 					
 			end
 			
-			// Initialize r in 0.
-			r = 0;
+			// // // // // // // // // //		 	Addition of multiplications 			\\ \\ \\ \\ \\ \\ \\ \\ \\ \\
 			
 			// r gets the value of the addition of every item in "additions".
 			
 			// Method 1: Using tarditional addition (+).
 			
-			
+			/*
 			
 			for(int i = 0; i < N; i++) begin
 				
@@ -61,15 +84,15 @@ module multiplier #(parameter N = 4)(input logic [N-1:0] a, b, output logic [2*N
 				
 			end
 			
-			
+			*/
 			
 			// Method 2: Using full adder consecutive additions.
 			
-			/*
+			// /*
 			
+			r = partialAdditions[N];
 			
-			
-			*/
+			// */
 
 		end
 
