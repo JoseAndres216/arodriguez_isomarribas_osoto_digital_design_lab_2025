@@ -10,165 +10,36 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv}
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:54:43 on Mar 19,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv 
-# -- Compiling module adder
+# Start time: 13:48:18 on Mar 20,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv 
+# -- Compiling module full_subtractor
+# -- Compiling module sustractor
 # 
 # Top level modules:
-# 	adder
-# End time: 18:54:44 on Mar 19,2025, Elapsed time: 0:00:01
+# 	sustractor
+# End time: 13:48:18 on Mar 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv}
+# 
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:54:44 on Mar 19,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv 
-# -- Compiling module multiplier
+# Start time: 13:48:18 on Mar 20,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv 
+# -- Compiling module sustractor_tb
 # 
 # Top level modules:
-# 	multiplier
-# End time: 18:54:44 on Mar 19,2025, Elapsed time: 0:00:00
+# 	sustractor_tb
+# End time: 13:48:19 on Mar 20,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:54:44 on Mar 19,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv 
-# -- Compiling module multiplier_tb
-# 
-# Top level modules:
-# 	multiplier_tb
-# End time: 18:54:45 on Mar 19,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  multiplier_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" multiplier_tb 
-# Start time: 18:54:45 on Mar 19,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  sustractor_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" sustractor_tb 
+# Start time: 13:48:19 on Mar 20,2025
 # Loading sv_std.std
-# Loading work.multiplier_tb
-# Loading work.multiplier
-# Loading work.adder
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier2Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier2Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier2Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier2Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier4Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier4Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier4Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier4Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier4Bits/adders[2]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier4Bits/adders[2]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier4Bits/adders[3]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier4Bits/adders[3]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[2]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[2]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[3]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[3]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[4]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[4]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[5]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (12) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier6Bits/adders[5]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[2]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[2]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[3]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[3]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[4]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[4]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[5]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[5]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[6]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[6]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[7]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier8Bits/adders[7]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[0]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[1]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[2]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[2]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[3]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[3]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[4]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[4]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[5]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[5]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[6]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[6]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[7]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[7]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[8]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[8]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cin'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[9]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (20) for port 'cout'. The port definition is at: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /multiplier_tb/multiplier10Bits/adders[9]/adderX File: C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 17
+# Loading work.sustractor_tb
+# Loading work.sustractor
+# Loading work.full_subtractor
 # 
 # add wave *
 # view structure
@@ -176,23 +47,13 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Test 01 succeeded.
-# Test 02 succeeded.
-# Test 03 succeeded.
-# Test 04 succeeded.
-# Test 05 succeeded.
-# Test 06 succeeded.
-# Test 07 succeeded.
-# Test 08 succeeded.
-# Test 09 succeeded.
-# Test 10 succeeded.
-# Test 11 succeeded.
-# Test 12 succeeded.
-# Test 13 succeeded.
-# Test 14 succeeded.
-# Test 15 succeeded.
-# ** Note: $stop    : C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv(139)
-#    Time: 150 ps  Iteration: 0  Instance: /multiplier_tb
-# Break in Module multiplier_tb at C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv line 139
-# End time: 18:55:07 on Mar 19,2025, Elapsed time: 0:00:22
-# Errors: 0, Warnings: 60
+# a = xxxx, b = xxxx, diff = xxxx, borrow_out = x, zero_flag = x, negative_flag = x
+# a = 1100, b = 0110, diff = 0110, borrow_out = 0, zero_flag = 0, negative_flag = 0
+# a = 0101, b = 0101, diff = 0000, borrow_out = 0, zero_flag = 1, negative_flag = 0
+# a = 1000, b = 1100, diff = 1100, borrow_out = 1, zero_flag = 0, negative_flag = 1
+# a = 0111, b = 1000, diff = 1111, borrow_out = 1, zero_flag = 0, negative_flag = 1
+run 40{
+# Invalid time value: 40{
+run 40
+# End time: 13:48:41 on Mar 20,2025, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 0
