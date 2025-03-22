@@ -1,5 +1,5 @@
 Assembler report for alu
-Thu Mar 20 13:48:07 2025
+Sat Mar 22 01:13:21 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/alu.sof
+  5. Assembler Device Options: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/alu.sof
   6. Assembler Messages
 
 
@@ -38,9 +38,9 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Mar 20 13:48:07 2025 ;
+; Assembler Status      ; Successful - Sat Mar 22 01:13:21 2025 ;
 ; Revision Name         ; alu                                   ;
-; Top-level Entity Name ; sustractor                            ;
+; Top-level Entity Name ; alu                                   ;
 ; Family                ; Cyclone V                             ;
 ; Device                ; 5CSXFC6D6F31C6                        ;
 +-----------------------+---------------------------------------+
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                               ;
-+---------------------------------------------------------------------------------------------------------+
-; File Name                                                                                               ;
-+---------------------------------------------------------------------------------------------------------+
-; C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/alu.sof ;
-+---------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                 ;
++-----------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                 ;
++-----------------------------------------------------------------------------------------------------------+
+; C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/alu.sof ;
++-----------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/alu.sof ;
-+----------------+------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                          ;
-+----------------+------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00AF8308                                                                                                       ;
-; Checksum       ; 0x00AF8308                                                                                                       ;
-+----------------+------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/alu.sof ;
++----------------+--------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                            ;
++----------------+--------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00B00668                                                                                                         ;
+; Checksum       ; 0x00B00668                                                                                                         ;
++----------------+--------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 20 13:48:03 2025
+    Info: Processing started: Sat Mar 22 01:13:16 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4846 megabytes
-    Info: Processing ended: Thu Mar 20 13:48:07 2025
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4844 megabytes
+    Info: Processing ended: Sat Mar 22 01:13:21 2025
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 
 

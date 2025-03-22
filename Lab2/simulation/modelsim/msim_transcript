@@ -10,50 +10,141 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv}
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:48:18 on Mar 20,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv 
+# Start time: 01:14:28 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:14:28 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv 
 # -- Compiling module full_subtractor
 # -- Compiling module sustractor
 # 
 # Top level modules:
 # 	sustractor
-# End time: 13:48:18 on Mar 20,2025, Elapsed time: 0:00:00
+# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:48:18 on Mar 20,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv 
-# -- Compiling module sustractor_tb
+# Start time: 01:14:28 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv 
+# -- Compiling module mux_alu
 # 
 # Top level modules:
-# 	sustractor_tb
-# End time: 13:48:19 on Mar 20,2025, Elapsed time: 0:00:01
+# 	mux_alu
+# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:14:28 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv 
+# -- Compiling module and_operation
+# 
+# Top level modules:
+# 	and_operation
+# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:14:28 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv 
+# -- Compiling module xor_operation
+# 
+# Top level modules:
+# 	xor_operation
+# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:14:28 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv 
+# -- Compiling module or_operation
+# 
+# Top level modules:
+# 	or_operation
+# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:14:28 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv 
+# -- Compiling module modulo_operation
+# 
+# Top level modules:
+# 	modulo_operation
+# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  sustractor_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" sustractor_tb 
-# Start time: 13:48:19 on Mar 20,2025
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:14:28 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  alu_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 01:14:28 on Mar 22,2025
 # Loading sv_std.std
-# Loading work.sustractor_tb
+# Loading work.alu_tb
+# Loading work.alu
 # Loading work.sustractor
+# Loading work.or_operation
+# Loading work.xor_operation
+# Loading work.and_operation
+# Loading work.modulo_operation
+# Loading work.mux_alu
 # Loading work.full_subtractor
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv Line: 9
+# ** Warning: (vsim-3722) C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'flags_salida'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'sum'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'mul'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_left'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_right'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'sum'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 87
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'mul'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 87
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_left'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 87
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_right'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 87
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: bloodxe  Hostname: ISAAC  ProcessID: 21788
+#           Attempting to use alternate WLF file "./wlftsnvb2g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsnvb2g
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# a = xxxx, b = xxxx, diff = xxxx, borrow_out = x, zero_flag = x, negative_flag = x
-# a = 1100, b = 0110, diff = 0110, borrow_out = 0, zero_flag = 0, negative_flag = 0
-# a = 0101, b = 0101, diff = 0000, borrow_out = 0, zero_flag = 1, negative_flag = 0
-# a = 1000, b = 1100, diff = 1100, borrow_out = 1, zero_flag = 0, negative_flag = 1
-# a = 0111, b = 1000, diff = 1111, borrow_out = 1, zero_flag = 0, negative_flag = 1
-run 40{
-# Invalid time value: 40{
-run 40
-# End time: 13:48:41 on Mar 20,2025, Elapsed time: 0:00:22
-# Errors: 0, Warnings: 0
+# Iniciando las pruebas de la ALU...
+# a = 0011, b = 0001, sel = 0000, resultado = zzzz
+# a = 1111, b = 0001, sel = 0001, resultado = 1110
+# a = 1111, b = 0010, sel = 0010, resultado = zzzz
+# a = 1111, b = 1100, sel = 0011, resultado = 0011
+# a = 1010, b = 1111, sel = 0100, resultado = 1010
+# a = 1010, b = 1111, sel = 0101, resultado = 1111
+# a = 0011, b = 1111, sel = 0110, resultado = 1100
+# a = 1001, b = 0000, sel = 0111, resultado = zzzz
+# End time: 01:14:35 on Mar 22,2025, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 12

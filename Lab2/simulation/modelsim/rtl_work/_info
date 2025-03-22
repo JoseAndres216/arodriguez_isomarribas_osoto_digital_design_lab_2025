@@ -8,82 +8,238 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/simulation/modelsim
-vfull_subtractor
+Z0 dC:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/simulation/modelsim
+valu
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1742500098
+Z2 !s110 1742627668
 !i10b 1
-!s100 HHC?K_ad00k2Okd<:z]:N0
+!s100 801dLYlKIZ5FIKNOXND851
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I8JII0`B[>4:ALOKkFZXlV3
+I2Vm<Hd06GaT4nlah=ZLZ[2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1742499554
-Z6 8C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv
-Z7 FC:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv
+w1742626931
+8C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv
+FC:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv
 !i122 0
-L0 2 12
-Z8 OV;L;2020.1;71
+L0 1 114
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1742500098.000000
-Z10 !s107 C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv|
-Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv|
+Z6 !s108 1742627668.000000
+!s107 C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv|
 !i113 1
-Z12 o-sv -work work
-Z13 !s92 -sv -work work +incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2
-Z14 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2
+Z9 tCvgOpt 0
+valu_tb
+R1
+R2
+!i10b 1
+!s100 8l2>d_Si5j]F>H`o;KY3H1
+R3
+I6AU?PioZYN32QgNFFk:h=0
+R4
+S1
+R0
+w1742627352
+8C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv
+FC:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv
+!i122 7
+L0 1 59
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv|
+!i113 1
+R7
+R8
+R9
+vand_operation
+R1
+R2
+!i10b 1
+!s100 YkT@8UUgl7Me]<Bnoa35O0
+R3
+ISXA?>HeJI1Z`Xm:MM]mf;3
+R4
+S1
+R0
+w1742627517
+8C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv
+FC:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv
+!i122 3
+Z10 L0 1 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv|
+!i113 1
+R7
+R8
+R9
+vfull_subtractor
+R1
+R2
+!i10b 1
+!s100 VXCELV>[2lAkaFR`Anhlm0
+R3
+IcT87[8lcO_XUPHCSA`VAW2
+R4
+S1
+R0
+Z11 w1742627415
+Z12 8C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv
+Z13 FC:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv
+!i122 1
+L0 1 10
+R5
+r1
+!s85 0
+31
+R6
+Z14 !s107 C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv|
+!i113 1
+R7
+R8
+R9
+vmodulo_operation
+R1
+R2
+!i10b 1
+!s100 [QFn8T:aFlB4P3Pl@N9cS0
+R3
+IdFHS]k=RQR1NLGnAI;^Pd0
+R4
+S1
+R0
+w1742627510
+8C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv
+FC:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv
+!i122 6
+L0 1 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv|
+!i113 1
+R7
+R8
+R9
+vmux_alu
+R1
+R2
+!i10b 1
+!s100 zPKcTXMRBROB_hH78D79_0
+R3
+Ig;HSWgdimBJ=;18@_dk_U2
+R4
+S1
+R0
+w1742627563
+8C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv
+FC:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv
+!i122 2
+L0 1 23
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv|
+!i113 1
+R7
+R8
+R9
+vor_operation
+R1
+R2
+!i10b 1
+!s100 WHTO1L^]ZaL0e=JnmECY03
+R3
+InB`b[z^i1TUaQz7_d=Z0c2
+R4
+S1
+R0
+w1742626279
+8C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv
+FC:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv
+!i122 5
+L0 1 22
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv|
+!i113 1
+R7
+R8
+R9
 vsustractor
 R1
 R2
 !i10b 1
-!s100 6GFF4Em`4cUgF:96g6D_33
+!s100 1ieTfBf2>b^OnnYMTKN[Z3
 R3
-IXDg4MD7j@4MDz?QXWDj8A1
+I[GQdgITU75GWNhk0Zf_PC0
 R4
 S1
 R0
-R5
-R6
-R7
-!i122 0
-L0 16 43
-R8
-r1
-!s85 0
-31
-R9
-R10
 R11
-!i113 1
 R12
 R13
-R14
-vsustractor_tb
-R1
-!s110 1742500099
-!i10b 1
-!s100 PV84e8JmCH:ilhWb3P<Ec2
-R3
-I7ojnL:=zWL=ZB242H2zG82
-R4
-S1
-R0
-w1742499813
-8C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv
-FC:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv
 !i122 1
-L0 1 46
-R8
+L0 12 43
+R5
 r1
 !s85 0
 31
-R9
-!s107 C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv|
-!i113 1
-R12
-R13
+R6
 R14
+R15
+!i113 1
+R7
+R8
+R9
+vxor_operation
+R1
+R2
+!i10b 1
+!s100 BMK1QL8T_A22QRM;IO4;C0
+R3
+I5lBF`3[>65;3dbJ`ABLjT0
+R4
+S1
+R0
+w1742626280
+8C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv
+FC:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv
+!i122 4
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv|
+!i113 1
+R7
+R8
+R9

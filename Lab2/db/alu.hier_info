@@ -1,4 +1,27 @@
-|sustractor
+|alu
+a[0] => a[0].IN5
+a[1] => a[1].IN5
+a[2] => a[2].IN5
+a[3] => a[3].IN5
+b[0] => b[0].IN5
+b[1] => b[1].IN5
+b[2] => b[2].IN5
+b[3] => b[3].IN5
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN2
+sel[2] => sel[2].IN2
+sel[3] => sel[3].IN2
+flags_salida[0] => flags_salida[0].IN1
+flags_salida[1] => flags_salida[1].IN1
+flags_salida[2] => flags_salida[2].IN1
+flags_salida[3] => flags_salida[3].IN1
+result[0] << mux_alu:mux_resultados.out
+result[1] << mux_alu:mux_resultados.out
+result[2] << mux_alu:mux_resultados.out
+result[3] << mux_alu:mux_resultados.out
+
+
+|alu|sustractor:restador
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -7,64 +30,263 @@ b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
-res[0] << full_subtractor:subtractor_loop[0].fs.res
-res[1] << full_subtractor:subtractor_loop[1].fs.res
-res[2] << full_subtractor:subtractor_loop[2].fs.res
-res[3] << full_subtractor:subtractor_loop[3].fs.res
-borrow_out << full_subtractor:subtractor_loop[3].fs.bout
-zero_flag << Equal0.DB_MAX_OUTPUT_PORT_TYPE
-negative_flag << full_subtractor:subtractor_loop[3].fs.res
+diff[0] <= full_subtractor:subtractor_loop[0].fs.diff
+diff[1] <= full_subtractor:subtractor_loop[1].fs.diff
+diff[2] <= full_subtractor:subtractor_loop[2].fs.diff
+diff[3] <= full_subtractor:subtractor_loop[3].fs.diff
+flags[0] <= <GND>
+flags[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[2] <= <GND>
+flags[3] <= <GND>
 
 
-|sustractor|full_subtractor:subtractor_loop[0].fs
-a => res.IN0
+|alu|sustractor:restador|full_subtractor:subtractor_loop[0].fs
+a => diff.IN0
 a => bout.IN1
-b => res.IN1
+b => diff.IN1
 b => bout.IN0
 b => bout.IN0
-bin => res.IN1
+bin => diff.IN1
 bin => bout.IN1
 bin => bout.IN1
-res <= res.DB_MAX_OUTPUT_PORT_TYPE
+diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
 bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sustractor|full_subtractor:subtractor_loop[1].fs
-a => res.IN0
+|alu|sustractor:restador|full_subtractor:subtractor_loop[1].fs
+a => diff.IN0
 a => bout.IN1
-b => res.IN1
+b => diff.IN1
 b => bout.IN0
 b => bout.IN0
-bin => res.IN1
+bin => diff.IN1
 bin => bout.IN1
 bin => bout.IN1
-res <= res.DB_MAX_OUTPUT_PORT_TYPE
+diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
 bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sustractor|full_subtractor:subtractor_loop[2].fs
-a => res.IN0
+|alu|sustractor:restador|full_subtractor:subtractor_loop[2].fs
+a => diff.IN0
 a => bout.IN1
-b => res.IN1
+b => diff.IN1
 b => bout.IN0
 b => bout.IN0
-bin => res.IN1
+bin => diff.IN1
 bin => bout.IN1
 bin => bout.IN1
-res <= res.DB_MAX_OUTPUT_PORT_TYPE
+diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
 bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sustractor|full_subtractor:subtractor_loop[3].fs
-a => res.IN0
+|alu|sustractor:restador|full_subtractor:subtractor_loop[3].fs
+a => diff.IN0
 a => bout.IN1
-b => res.IN1
+b => diff.IN1
 b => bout.IN0
 b => bout.IN0
-bin => res.IN1
+bin => diff.IN1
 bin => bout.IN1
 bin => bout.IN1
-res <= res.DB_MAX_OUTPUT_PORT_TYPE
+diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
 bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|or_operation:operacion_or
+a[0] => result.IN0
+a[1] => result.IN0
+a[2] => result.IN0
+a[3] => result.IN0
+b[0] => result.IN1
+b[1] => result.IN1
+b[2] => result.IN1
+b[3] => result.IN1
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|alu|xor_operation:operacion_xor
+a[0] => result.IN0
+a[1] => result.IN0
+a[2] => result.IN0
+a[3] => result.IN0
+b[0] => result.IN1
+b[1] => result.IN1
+b[2] => result.IN1
+b[3] => result.IN1
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|alu|and_operation:operacion_and
+a[0] => result.IN0
+a[1] => result.IN0
+a[2] => result.IN0
+a[3] => result.IN0
+b[0] => result.IN1
+b[1] => result.IN1
+b[2] => result.IN1
+b[3] => result.IN1
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|alu|modulo_operation:operacion_modulo
+a[0] => Mod0.IN3
+a[1] => Mod0.IN2
+a[2] => Mod0.IN1
+a[3] => Mod0.IN0
+b[0] => Mod0.IN7
+b[0] => Equal0.IN31
+b[1] => Mod0.IN6
+b[1] => Equal0.IN30
+b[2] => Mod0.IN5
+b[2] => Equal0.IN29
+b[3] => Mod0.IN4
+b[3] => Equal0.IN28
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+flags[0] <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+flags[1] <= <GND>
+flags[2] <= <GND>
+flags[3] <= <GND>
+
+
+|alu|mux_alu:mux_resultados
+sum[0] => Mux3.IN7
+sum[1] => Mux2.IN7
+sum[2] => Mux1.IN7
+sum[3] => Mux0.IN7
+sub[0] => Mux3.IN8
+sub[1] => Mux2.IN8
+sub[2] => Mux1.IN8
+sub[3] => Mux0.IN8
+mul[0] => Mux3.IN9
+mul[1] => Mux2.IN9
+mul[2] => Mux1.IN9
+mul[3] => Mux0.IN9
+mod_res[0] => Mux3.IN10
+mod_res[1] => Mux2.IN10
+mod_res[2] => Mux1.IN10
+mod_res[3] => Mux0.IN10
+and_res[0] => Mux3.IN11
+and_res[1] => Mux2.IN11
+and_res[2] => Mux1.IN11
+and_res[3] => Mux0.IN11
+or_res[0] => Mux3.IN12
+or_res[1] => Mux2.IN12
+or_res[2] => Mux1.IN12
+or_res[3] => Mux0.IN12
+xor_res[0] => Mux3.IN13
+xor_res[1] => Mux2.IN13
+xor_res[2] => Mux1.IN13
+xor_res[3] => Mux0.IN13
+shift_left[0] => Mux3.IN14
+shift_left[1] => Mux2.IN14
+shift_left[2] => Mux1.IN14
+shift_left[3] => Mux0.IN14
+shift_right[0] => Mux3.IN15
+shift_right[1] => Mux2.IN15
+shift_right[2] => Mux1.IN15
+shift_right[3] => Mux0.IN15
+sel[0] => Mux0.IN19
+sel[0] => Mux1.IN19
+sel[0] => Mux2.IN19
+sel[0] => Mux3.IN19
+sel[1] => Mux0.IN18
+sel[1] => Mux1.IN18
+sel[1] => Mux2.IN18
+sel[1] => Mux3.IN18
+sel[2] => Mux0.IN17
+sel[2] => Mux1.IN17
+sel[2] => Mux2.IN17
+sel[2] => Mux3.IN17
+sel[3] => Mux0.IN16
+sel[3] => Mux1.IN16
+sel[3] => Mux2.IN16
+sel[3] => Mux3.IN16
+out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux_alu:mux_flags
+sum[0] => Mux3.IN7
+sum[1] => Mux2.IN7
+sum[2] => Mux1.IN7
+sum[3] => Mux0.IN7
+sub[0] => Mux3.IN8
+sub[1] => Mux2.IN8
+sub[2] => Mux1.IN8
+sub[3] => Mux0.IN8
+mul[0] => Mux3.IN9
+mul[1] => Mux2.IN9
+mul[2] => Mux1.IN9
+mul[3] => Mux0.IN9
+mod_res[0] => Mux3.IN10
+mod_res[1] => Mux2.IN10
+mod_res[2] => Mux1.IN10
+mod_res[3] => Mux0.IN10
+and_res[0] => Mux3.IN11
+and_res[1] => Mux2.IN11
+and_res[2] => Mux1.IN11
+and_res[3] => Mux0.IN11
+or_res[0] => Mux3.IN12
+or_res[1] => Mux2.IN12
+or_res[2] => Mux1.IN12
+or_res[3] => Mux0.IN12
+xor_res[0] => Mux3.IN13
+xor_res[1] => Mux2.IN13
+xor_res[2] => Mux1.IN13
+xor_res[3] => Mux0.IN13
+shift_left[0] => Mux3.IN14
+shift_left[1] => Mux2.IN14
+shift_left[2] => Mux1.IN14
+shift_left[3] => Mux0.IN14
+shift_right[0] => Mux3.IN15
+shift_right[1] => Mux2.IN15
+shift_right[2] => Mux1.IN15
+shift_right[3] => Mux0.IN15
+sel[0] => Mux0.IN19
+sel[0] => Mux1.IN19
+sel[0] => Mux2.IN19
+sel[0] => Mux3.IN19
+sel[1] => Mux0.IN18
+sel[1] => Mux1.IN18
+sel[1] => Mux2.IN18
+sel[1] => Mux3.IN18
+sel[2] => Mux0.IN17
+sel[2] => Mux1.IN17
+sel[2] => Mux2.IN17
+sel[2] => Mux3.IN17
+sel[3] => Mux0.IN16
+sel[3] => Mux1.IN16
+sel[3] => Mux2.IN16
+sel[3] => Mux3.IN16
+out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

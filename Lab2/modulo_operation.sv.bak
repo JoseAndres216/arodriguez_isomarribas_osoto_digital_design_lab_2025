@@ -1,0 +1,23 @@
+module modulo_operation 
+	#(parameter N = 8) 
+	(
+		input logic [N-1:0] a,
+		input logic [N-1:0] b,
+		
+		output logic [N-1:0] result,
+		output logic [3:0] flags
+	);
+
+    always @(*) begin
+        if (b != 0) 
+            result = a % b; // Operación módulo
+        else 
+            result = 0; // Evitar división por cero
+    end
+
+    assign flags[0] = (result == 0);   // Flag Z: Se activa si el resultado es 0
+    assign flags[1] = result[N-1]; // Flag N: Se activa si el MSB es 1
+    assign flags[2] = 0;              // Flag C: No aplica en módulo
+    assign flags[3] = 0;           // Flag V: No aplica en módulo
+
+endmodule

@@ -1,58 +1,54 @@
-//Full substractor
-module full_subtractor ( 
-    input logic a,        // Entrada A
-    input logic b,        // Entrada B
-	 
-    input logic bin,      // Borrow de entrada
-	 
-    output logic res,     // Resultado
-    output logic bout     // Borrow de salida
+module full_subtractor ( // FUNCIONANDO
+    input logic a,        // Minuendo de un solo bit
+    input logic b,        // Sustraendo de un solo bit
+    input logic bin,      // Bit de préstamo (borrow)
+    output logic diff,    // Diferencia de un solo bit
+    output logic bout     // Bit de préstamo (borrow) de salida
 );
-    assign res = a ^ b ^ bin;     // Diferencia
-    assign bout = (~a & (b | bin)) | (b & bin);  //Borrow
+    assign diff = a ^ b ^ bin;     // Diferencia
+    assign bout = (~a & (b | bin)) | (b & bin);  // Bit de préstamo
 endmodule
 
-//Substractor de N bits
-module sustractor #( // 
-    parameter N = 4  // Tamaño
+module sustractor #( // FUNCIONANDO
+    parameter N = 4  
 )(
-    input logic [N-1:0] a,        // Entrada A
-    input logic [N-1:0] b,        // Entrada B
-	 
-    output logic [N-1:0] res,     // Resultado
-	 
-	 //FLAGS -- Falta desbordamiento
-	 
-    output logic borrow_out,      // Borrow de salida o Flag de ACARREO
-	 
-    output logic zero_flag,       // Flag de cero
-    output logic negative_flag    // Flag negativo
+    input logic [N-1:0] a,       
+    input logic [N-1:0] b,       
+    output logic [N-1:0] diff,   
+	 output logic [3:0] flags
 );
 
     logic [N:0] borrow;  
+
+ 
     assign borrow[0] = 1'b0;
 
-    // Instanciación de substractor según el N
+  
     genvar i;
     generate
         for (i = 0; i < N; i++) begin : subtractor_loop
             full_subtractor fs (
                 .a(a[i]),           
-                .b(b[i]),           
+                .b(b[i]),         
                 .bin(borrow[i]),    
-                .res(res[i]),     
-                .bout(borrow[i+1])
+                .diff(diff[i]),    
+                .bout(borrow[i+1])  
             );
         end
     endgenerate
+	 
 
-    // Borrow/Acarreo
-    assign borrow_out = borrow[N];
+    assign flags[0] = 0;
 
-    // Flag de cero: 
-    assign zero_flag = (res == 0);
+    assign flags[1] = (diff == 0);
 
-    // Flag negativo: Si el bit más significativo de la diferencia es 1
-    assign negative_flag = res[N-1];
+    assign flags[2] = 0;
+
+    assign flags[3] = 0;
+	 
+
+
+
+	 
 
 endmodule
