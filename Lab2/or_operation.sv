@@ -13,10 +13,10 @@ module or_operation
 		result = a | b;
 
 		// Flags
-		flags[0] = (result == 0);        
-		flags[1] = 0;       
-		flags[2] = 0;               
-		flags[3] = 0;                   
+	 flags[0] = 0; // there is no negative in OR
+    flags[1] = ~|result; // zero
+    flags[2] = 0; // there is no carry in OR
+    flags[3] = 0; // there is no overflow in OR
 	end
 
 endmodule

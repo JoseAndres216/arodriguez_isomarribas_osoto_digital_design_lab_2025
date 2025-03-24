@@ -3,20 +3,52 @@ module alu
 (
 	input logic [N-1:0] a,        
 	input logic [N-1:0] b,
-	input logic [3:0] sel, flags_salida, //SELECTOR DE OPERACUIB
-	output logic [N-1:0] result
+	input logic selbutton,
+	output logic [N-1:0] result,
+	output logic [3:0] flags_salida, //SELECTOR DE OPERACUIB
+	output logic [6:0] seg_a_U, seg_a_T, seg_b_U, seg_b_T, seg_r_U, seg_r_T, select
 	);
 	
+	initial begin 
+		seg_a_T = 7'b1111000;
+		seg_a_U = 7'b1111000;
+		seg_b_T = 7'b1111000;
+		seg_b_U = 7'b1111000;
+		seg_r_T = 7'b1111000;
+		seg_r_U = 7'b1111000;
+		select = 4'd0;
+	end
 	//
-	wire [N-1:0] resultado_restador, resultado_or, resultado_xor, resultado_and, resultado_modulo;
-	wire [3:0] flags_restador, flags_or, flags_xor, flags_and, flags_modulo;
-
+	wire [N-1:0] resultado_sumador ,resultado_restador, resultado_divisor, resultado_or, resultado_xor, resultado_and, resultado_modulo, resultado_shift_left, resultado_shift_right;
+	wire [15:0] resultado_multiplicador;
+	wire [3:0] flags_sumador , flags_restador, flags_multiplicador, flags_divisor, flags_or, flags_xor, flags_and, flags_modulo, flags_shift_left, flags_shift_right;	
 	//INSTANCIAS DE LAS OPERACIONES
 	
-   sustractor #(.N(N)) 
+   adder #(.N(N)) 
+		sumador (
+		
+		a, b, 0, resultado_sumador, flags_sumador
+		
+		);
+	
+	sustractor #(.N(N)) 
 		restador(
 		
 		a,b,resultado_restador,flags_restador
+		
+		);
+		
+	multiplier #(.N(N)) 
+		multiplicador (
+		
+		a, b, resultado_multiplicador
+		
+		);
+		
+	div_operation #(.N(N)) 
+		operacion_div(
+		
+		a,b,resultado_divisor,flags_divisor
 		
 		);
 		
@@ -46,20 +78,45 @@ module alu
 		
 		a,b,resultado_modulo,flags_modulo
 		
-		);		
+		);
+		
+	shift_l #(.N(N)) 
+		shift_left(
+		
+		a, b, resultado_shift_left, flags_shift_left
+		
+		);
+		
+	shift_r #(.N(N)) 
+		shift_right(
+
+		a, b, resultado_shift_right, flags_shift_right
+
+	);
+
+	always_ff @(posedge selbutton) begin
+		 if (selbutton) begin
+			  if (select == 4'd9) begin
+					select <= 4'd0; // Reinicia el contador al llegar a 9
+			  end else begin
+					select <= select + 4'd1; // Incrementa el contador
+			  end
+		 end
+	end
 	
 	//INSTANCIAs MUX
     mux_alu #(
         .N(N)  
     ) mux_resultados (
 	 
-			//FALTA AGREGAR
-        .sum(z),
+        .sum(resultado_sumador),
 		  
         .sub(resultado_restador),
 		  
-		  //FALTA AGREGAR
-        .mul(z),
+		  // PENDING 
+        .mul(resultado_multiplicador[3:0]),
+		  
+		  .div_res(resultado_divisor),
 		
         .mod_res(resultado_modulo),
 		  
@@ -70,11 +127,11 @@ module alu
         .xor_res(resultado_xor),
 		  
 		  //FALTA AGREGAR
-        .shift_left(z),
+        .shift_left(resultado_shift_left),
 		  //FALTA AGREGAR
-        .shift_right(z),
+        .shift_right(resultado_shift_right),
 		  
-        .sel(sel),
+        .sel(select),
 		  
         .out(result) // Salida de la operación seleccionada
     );
@@ -86,11 +143,13 @@ module alu
 		  
     ) mux_flags (
 		  //FALTA AGREGAR
-        .sum(z),
+        .sum(flags_sumador),
 		  
         .sub(flags_restador),
 		  //FALTA AGREGAR
         .mul(z),
+		  
+		  .div_res(flags_divisor),
 		  
         .mod_res(flags_modulo),
 		  
@@ -101,14 +160,39 @@ module alu
         .xor_res(flags_xor),
 		  
 		  //FALTA AGREGAR
-        .shift_left(out_restador),
+        .shift_left(flags_shift_left),
 		  
-        .shift_right(out_restador),
+        .shift_right(flags_shift_right),
 		  
-        .sel(sel),
+        .sel(select),
 
         .out(flags_salida) // Salida flags de la operación seleccionada
 		  
     );
+	 
+	 display_7seg #(
+        .N(N) 
+    ) display_a (
+        .value(a),
+        .segU(seg_a_U),
+        .segT(seg_a_T),  
+    );
+	 
+	 display_7seg #(
+        .N(N) 
+    ) display_b(
+        .value(b),
+        .segU(seg_b_U),
+        .segT(seg_b_T),  
+    );
+	 
+	display_7seg #(
+			  .N(N) 
+		 ) display_r(
+			  .value(result),
+			  .segU(seg_r_U),
+			  .segT(seg_r_T),  
+		 );
+	 
 	
 endmodule 

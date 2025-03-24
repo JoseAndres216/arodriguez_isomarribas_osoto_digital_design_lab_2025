@@ -10,92 +10,92 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv}
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:28 on Mar 22,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv 
+# Start time: 23:33:26 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# End time: 23:33:26 on Mar 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv}
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:28 on Mar 22,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv 
+# Start time: 23:33:26 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv 
 # -- Compiling module full_subtractor
 # -- Compiling module sustractor
 # 
 # Top level modules:
 # 	sustractor
-# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# End time: 23:33:26 on Mar 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv}
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:28 on Mar 22,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv 
+# Start time: 23:33:26 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv 
 # -- Compiling module mux_alu
 # 
 # Top level modules:
 # 	mux_alu
-# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# End time: 23:33:26 on Mar 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv}
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:28 on Mar 22,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv 
+# Start time: 23:33:26 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv 
 # -- Compiling module and_operation
 # 
 # Top level modules:
 # 	and_operation
-# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# End time: 23:33:27 on Mar 22,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv}
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:28 on Mar 22,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv 
+# Start time: 23:33:27 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv 
 # -- Compiling module xor_operation
 # 
 # Top level modules:
 # 	xor_operation
-# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# End time: 23:33:27 on Mar 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv}
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:28 on Mar 22,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv 
+# Start time: 23:33:27 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv 
 # -- Compiling module or_operation
 # 
 # Top level modules:
 # 	or_operation
-# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# End time: 23:33:27 on Mar 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv}
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:28 on Mar 22,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv 
+# Start time: 23:33:27 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv 
 # -- Compiling module modulo_operation
 # 
 # Top level modules:
 # 	modulo_operation
-# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# End time: 23:33:27 on Mar 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:14:28 on Mar 22,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv 
+# Start time: 23:33:27 on Mar 22,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv 
 # -- Compiling module alu_tb
 # 
 # Top level modules:
 # 	alu_tb
-# End time: 01:14:28 on Mar 22,2025, Elapsed time: 0:00:00
+# End time: 23:33:27 on Mar 22,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  alu_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" alu_tb 
-# Start time: 01:14:28 on Mar 22,2025
+# Start time: 23:33:27 on Mar 22,2025
 # Loading sv_std.std
 # Loading work.alu_tb
 # Loading work.alu
@@ -106,32 +106,39 @@
 # Loading work.modulo_operation
 # Loading work.mux_alu
 # Loading work.full_subtractor
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv Line: 9
-# ** Warning: (vsim-3722) C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'flags_salida'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'sum'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 54
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'mul'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 54
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_left'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 54
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_right'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 54
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'sum'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 87
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'mul'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 87
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_left'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 87
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_right'. The port definition is at: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/bloodxe/Documents/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 87
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 12, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv Line: 9
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'flags_salida'.
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'selbutton'.
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'seg_a_U'.
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'seg_a_D'.
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'seg_b_U'.
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'seg_b_D'.
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'seg_r_U'.
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(9): [TFMPC] - Missing connection for port 'seg_r_D'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'sum'. The port definition is at: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 56
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'mul'. The port definition is at: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 56
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_left'. The port definition is at: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 56
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_right'. The port definition is at: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_resultados File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 56
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'sum'. The port definition is at: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 89
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'mul'. The port definition is at: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 89
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_left'. The port definition is at: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 89
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'shift_right'. The port definition is at: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/mux_flags File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 89
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: bloodxe  Hostname: ISAAC  ProcessID: 21788
-#           Attempting to use alternate WLF file "./wlftsnvb2g".
+#           Attempting to use alternate WLF file "./wlft2i898v".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsnvb2g
+#           Using alternate file: ./wlft2i898v
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -146,5 +153,5 @@
 # a = 1010, b = 1111, sel = 0101, resultado = 1111
 # a = 0011, b = 1111, sel = 0110, resultado = 1100
 # a = 1001, b = 0000, sel = 0111, resultado = zzzz
-# End time: 01:14:35 on Mar 22,2025, Elapsed time: 0:00:07
-# Errors: 0, Warnings: 12
+# End time: 23:33:43 on Mar 22,2025, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 19
