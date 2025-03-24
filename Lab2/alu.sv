@@ -5,8 +5,8 @@ module alu
 	input logic [N-1:0] b,
 	input logic selbutton,
 	output logic [N-1:0] result,
-	output logic [3:0] flags_salida, //SELECTOR DE OPERACUIB
-	output logic [6:0] seg_a_U, seg_a_T, seg_b_U, seg_b_T, seg_r_U, seg_r_T, select
+	output logic [3:0] flags_salida, select, //SELECTOR DE OPERACUIB
+	output logic [6:0] seg_a_U, seg_a_T, seg_b_U, seg_b_T, seg_r_U, seg_r_T
 	);
 	
 	initial begin 

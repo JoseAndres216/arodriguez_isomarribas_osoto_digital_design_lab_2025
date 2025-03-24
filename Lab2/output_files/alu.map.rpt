@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alu
-Sun Mar 23 22:53:12 2025
+Sun Mar 23 23:07:52 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,18 +41,17 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  33. Parameter Settings for Inferred Entity Instance: display_7seg:display_b|lpm_divide:Mod0
  34. Parameter Settings for Inferred Entity Instance: display_7seg:display_r|lpm_divide:Mod0
  35. Port Connectivity Checks: "mux_alu:mux_flags"
- 36. Port Connectivity Checks: "mux_alu:mux_resultados"
- 37. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[3].adderX"
- 38. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[2].adderX"
- 39. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[1].adderX"
- 40. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[0].adderX"
- 41. Port Connectivity Checks: "multiplier:multiplicador"
- 42. Port Connectivity Checks: "sustractor:restador|full_subtractor:subtractor_loop[3].fs"
- 43. Port Connectivity Checks: "sustractor:restador|full_subtractor:subtractor_loop[0].fs"
- 44. Port Connectivity Checks: "adder:sumador"
- 45. Post-Synthesis Netlist Statistics for Top Partition
- 46. Elapsed Time Per Partition
- 47. Analysis & Synthesis Messages
+ 36. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[3].adderX"
+ 37. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[2].adderX"
+ 38. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[1].adderX"
+ 39. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[0].adderX"
+ 40. Port Connectivity Checks: "multiplier:multiplicador"
+ 41. Port Connectivity Checks: "sustractor:restador|full_subtractor:subtractor_loop[3].fs"
+ 42. Port Connectivity Checks: "sustractor:restador|full_subtractor:subtractor_loop[0].fs"
+ 43. Port Connectivity Checks: "adder:sumador"
+ 44. Post-Synthesis Netlist Statistics for Top Partition
+ 45. Elapsed Time Per Partition
+ 46. Analysis & Synthesis Messages
 
 
 
@@ -79,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar 23 22:53:12 2025       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 23 23:07:52 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; alu                                         ;
 ; Top-level Entity Name           ; alu                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 7                                           ;
-; Total pins                      ; 66                                          ;
+; Total registers                 ; 4                                           ;
+; Total pins                      ; 63                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -237,25 +236,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 101        ;
+; Estimate of Logic utilization (ALMs needed) ; 98         ;
 ;                                             ;            ;
-; Combinational ALUT usage for logic          ; 180        ;
+; Combinational ALUT usage for logic          ; 174        ;
 ;     -- 7 input functions                    ; 2          ;
 ;     -- 6 input functions                    ; 19         ;
-;     -- 5 input functions                    ; 35         ;
-;     -- 4 input functions                    ; 43         ;
-;     -- <=3 input functions                  ; 81         ;
+;     -- 5 input functions                    ; 33         ;
+;     -- 4 input functions                    ; 44         ;
+;     -- <=3 input functions                  ; 76         ;
 ;                                             ;            ;
-; Dedicated logic registers                   ; 7          ;
+; Dedicated logic registers                   ; 4          ;
 ;                                             ;            ;
-; I/O pins                                    ; 66         ;
+; I/O pins                                    ; 63         ;
 ;                                             ;            ;
 ; Total DSP Blocks                            ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; b[0]~input ;
 ; Maximum fan-out                             ; 30         ;
-; Total fan-out                               ; 793        ;
-; Average fan-out                             ; 2.49       ;
+; Total fan-out                               ; 766        ;
+; Average fan-out                             ; 2.52       ;
 +---------------------------------------------+------------+
 
 
@@ -264,7 +263,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Entity Name         ; Library Name ;
 +-----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |alu                                          ; 180 (10)            ; 7 (7)                     ; 0                 ; 0          ; 66   ; 0            ; |alu                                                                                                                                   ; alu                 ; work         ;
+; |alu                                          ; 174 (4)             ; 4 (4)                     ; 0                 ; 0          ; 63   ; 0            ; |alu                                                                                                                                   ; alu                 ; work         ;
 ;    |adder:sumador|                            ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|adder:sumador                                                                                                                     ; adder               ; work         ;
 ;    |and_operation:operacion_and|              ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|and_operation:operacion_and                                                                                                       ; and_operation       ; work         ;
 ;    |display_7seg:display_a|                   ; 17 (8)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|display_7seg:display_a                                                                                                            ; display_7seg        ; work         ;
@@ -313,7 +312,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 7     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -328,7 +327,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |alu|shift_r:shift_right|ShiftRight0 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |alu|shift_l:shift_left|ShiftLeft0   ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |alu|shift_l:shift_left|ShiftLeft1   ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |alu|shift_r:shift_right|ShiftLeft0  ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |alu|shift_l:shift_left|ShiftLeft0   ;
@@ -653,23 +652,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_alu:mux_flags"                                                                                                                                                              ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; mul  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "mul[3..1]" will be connected to GND.                                      ;
-; sel  ; Input ; Warning  ; Input port expression (7 bits) is wider than the input port (4 bits) it drives.  The 3 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_alu:mux_resultados"                                                                                                                                                         ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sel  ; Input ; Warning  ; Input port expression (7 bits) is wider than the input port (4 bits) it drives.  The 3 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_alu:mux_flags"                                                                                                                         ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; mul  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "mul[3..1]" will be connected to GND. ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -768,34 +757,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 7                           ;
-;     plain             ; 7                           ;
-; arriav_lcell_comb     ; 185                         ;
-;     arith             ; 25                          ;
+; arriav_ff             ; 4                           ;
+;     plain             ; 4                           ;
+; arriav_lcell_comb     ; 179                         ;
+;     arith             ; 18                          ;
 ;         0 data inputs ; 6                           ;
-;         1 data inputs ; 8                           ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 2                           ;
 ;         4 data inputs ; 3                           ;
 ;         5 data inputs ; 6                           ;
 ;     extend            ; 2                           ;
 ;         7 data inputs ; 2                           ;
-;     normal            ; 130                         ;
+;     normal            ; 131                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 3                           ;
+;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 11                          ;
-;         3 data inputs ; 32                          ;
-;         4 data inputs ; 34                          ;
-;         5 data inputs ; 29                          ;
+;         3 data inputs ; 33                          ;
+;         4 data inputs ; 35                          ;
+;         5 data inputs ; 27                          ;
 ;         6 data inputs ; 19                          ;
 ;     shared            ; 28                          ;
 ;         0 data inputs ; 8                           ;
 ;         1 data inputs ; 8                           ;
 ;         2 data inputs ; 6                           ;
 ;         4 data inputs ; 6                           ;
-; boundary_port         ; 66                          ;
+; boundary_port         ; 63                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 14.90                       ;
-; Average LUT depth     ; 9.05                        ;
+; Average LUT depth     ; 9.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -814,7 +803,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Mar 23 22:53:03 2025
+    Info: Processing started: Sun Mar 23 23:07:43 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -921,7 +910,7 @@ Info (12133): Instantiated megafunction "display_7seg:display_a|lpm_divide:Mod0"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "flags_salida[0]" is stuck at GND File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 8
     Warning (13410): Pin "seg_a_T[1]" is stuck at GND File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 9
@@ -930,19 +919,19 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "seg_b_T[1]" is stuck at GND File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 9
     Warning (13410): Pin "seg_b_T[2]" is stuck at GND File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 9
     Warning (13410): Pin "seg_b_T[6]" is stuck at VCC File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 9
-    Warning (13410): Pin "seg_r_T[1]" is stuck at GND File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 9
-    Warning (13410): Pin "seg_r_T[2]" is stuck at GND File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 9
-    Warning (13410): Pin "seg_r_T[6]" is stuck at VCC File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 9
+    Warning (13410): Pin "seg_r_T[1]" is stuck at GND File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 10
+    Warning (13410): Pin "seg_r_T[2]" is stuck at GND File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 10
+    Warning (13410): Pin "seg_r_T[6]" is stuck at VCC File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 246 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 237 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 57 output pins
-    Info (21061): Implemented 180 logic cells
+    Info (21059): Implemented 54 output pins
+    Info (21061): Implemented 174 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Sun Mar 23 22:53:12 2025
+    Info: Peak virtual memory: 4821 megabytes
+    Info: Processing ended: Sun Mar 23 23:07:52 2025
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:17
 
