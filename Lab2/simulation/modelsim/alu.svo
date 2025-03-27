@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "03/23/2025 23:08:43"
+// DATE "03/27/2025 13:41:29"
 
 // 
 // Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -42,18 +42,18 @@ module alu (
 	seg_b_T,
 	seg_r_U,
 	seg_r_T);
-input 	[3:0] a;
-input 	[3:0] b;
-input 	selbutton;
-output 	[3:0] result;
-output 	[3:0] flags_salida;
-output 	[3:0] select;
-output 	[6:0] seg_a_U;
-output 	[6:0] seg_a_T;
-output 	[6:0] seg_b_U;
-output 	[6:0] seg_b_T;
-output 	[6:0] seg_r_U;
-output 	[6:0] seg_r_T;
+input 	logic [3:0] a ;
+input 	logic [3:0] b ;
+input 	logic selbutton ;
+output 	logic [3:0] result ;
+output 	logic [3:0] flags_salida ;
+output 	logic [3:0] select ;
+output 	logic [6:0] seg_a_U ;
+output 	logic [6:0] seg_a_T ;
+output 	logic [6:0] seg_b_U ;
+output 	logic [6:0] seg_b_T ;
+output 	logic [6:0] seg_r_U ;
+output 	logic [6:0] seg_r_T ;
 
 // Design Ports Information
 // result[0]	=>  Location: PIN_AA28,	 I/O Standard: 2.5 V,	 Current Strength: Default

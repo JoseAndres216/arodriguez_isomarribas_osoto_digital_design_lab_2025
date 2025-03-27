@@ -21,12 +21,13 @@ module alu
 	//
 	wire [N-1:0] resultado_sumador ,resultado_restador,resultado_multiplicador, resultado_divisor, resultado_or, resultado_xor, resultado_and, resultado_modulo, resultado_shift_left, resultado_shift_right;
 	wire [3:0] flags_sumador , flags_restador, flags_multiplicador, flags_divisor, flags_or, flags_xor, flags_and, flags_modulo, flags_shift_left, flags_shift_right;	
+	wire cout;
 	//INSTANCIAS DE LAS OPERACIONES
 	
    adder #(.N(N)) 
 		sumador (
 		
-		a, b, 0, resultado_sumador, flags_sumador
+		a, b, 0, resultado_sumador, cout, flags_sumador
 		
 		);
 	
@@ -40,7 +41,7 @@ module alu
 	multiplier #(.N(N)) 
 		multiplicador (
 		
-		a, b, resultado_multiplicador
+		a, b, resultado_multiplicador, flags_multiplicador
 		
 		);
 		
