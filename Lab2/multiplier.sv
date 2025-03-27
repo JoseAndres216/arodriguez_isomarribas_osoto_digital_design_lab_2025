@@ -1,6 +1,6 @@
 // Multiplier main file
 
-module multiplier #(parameter N = 4)(input logic [N-1:0] a, b, output logic [2*N-1:0] r);
+module multiplier #(parameter N = 4)(input logic [N-1:0] a, b, output logic [N-1:0] r, output logic [3:0] flags);
 	
 	logic [2*N-1:0] additions [N-1:0];
 	logic [2*N-1:0] addition;
@@ -8,13 +8,17 @@ module multiplier #(parameter N = 4)(input logic [N-1:0] a, b, output logic [2*N
 	logic [2*N-1:0] shifttedAddition;
 	
 	logic [2*N-1:0] partialAdditions [N:0];
-	logic [2*N-1:0] partialCouts [N:0];
+	logic [2*N-1:0] partialCouts;
+	
+	logic [2*N-1:0] fullResult;
+	
+	logic [3:0] adderFlags [N-1:0];
 	
 	genvar g;
 	
 	generate
         for (g = 0; g < N; g++) begin : adders
-            adder #(2*N) adderX (additions[g], partialAdditions[g], partialCouts[g], partialAdditions[g+1], partialCouts[g+1]);
+            adder #(2*N) adderX (additions[g], partialAdditions[g], partialCouts[g], partialAdditions[g+1], partialCouts[g+1], );
         end
     endgenerate
 	
@@ -32,8 +36,12 @@ module multiplier #(parameter N = 4)(input logic [N-1:0] a, b, output logic [2*N
 			partialAdditions[0] = 0;
 			partialCouts[0] = 0;
 			
-			// Initialize r in 0.
+			// Initialize r and fullResult in 0.
 			r = 0;
+			fullResult = 0;
+			
+			// Initialize flags on 0.
+			flags = 0;
 			
 			// // // // // // // // // //		 Multiplication process (and gates) 	\\ \\ \\ \\ \\ \\ \\ \\ \\ \\
 				
@@ -63,8 +71,6 @@ module multiplier #(parameter N = 4)(input logic [N-1:0] a, b, output logic [2*N
 					addition = shifttedAddition;
 					
 				end
-				
-				
 					
 				additions[i] = shifttedAddition;
 					
@@ -90,9 +96,20 @@ module multiplier #(parameter N = 4)(input logic [N-1:0] a, b, output logic [2*N
 			
 			// /*
 			
-			r = partialAdditions[N];
+			fullResult = partialAdditions[N];
 			
 			// */
+			
+			// // // // // // // // // //			Partial result	and flags	 			\\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+			
+				//	Results
+			r = fullResult;
+			
+				// Flags (Negative, zero, carry and overflow)
+			flags[0] = 0;
+			flags[1] = ~(|r);
+			flags[2] = 0;
+			flags[3] = |fullResult[2*N-1:N];
 
 		end
 

@@ -19,8 +19,7 @@ module alu
 		select = 4'd0;
 	end
 	//
-	wire [N-1:0] resultado_sumador ,resultado_restador, resultado_divisor, resultado_or, resultado_xor, resultado_and, resultado_modulo, resultado_shift_left, resultado_shift_right;
-	wire [15:0] resultado_multiplicador;
+	wire [N-1:0] resultado_sumador ,resultado_restador,resultado_multiplicador, resultado_divisor, resultado_or, resultado_xor, resultado_and, resultado_modulo, resultado_shift_left, resultado_shift_right;
 	wire [3:0] flags_sumador , flags_restador, flags_multiplicador, flags_divisor, flags_or, flags_xor, flags_and, flags_modulo, flags_shift_left, flags_shift_right;	
 	//INSTANCIAS DE LAS OPERACIONES
 	
@@ -113,8 +112,7 @@ module alu
 		  
         .sub(resultado_restador),
 		  
-		  // PENDING 
-        .mul(resultado_multiplicador[3:0]),
+        .mul(resultado_multiplicador),
 		  
 		  .div_res(resultado_divisor),
 		
@@ -146,8 +144,8 @@ module alu
         .sum(flags_sumador),
 		  
         .sub(flags_restador),
-		  //FALTA AGREGAR
-        .mul(z),
+		  
+        .mul(flags_multiplicador),
 		  
 		  .div_res(flags_divisor),
 		  

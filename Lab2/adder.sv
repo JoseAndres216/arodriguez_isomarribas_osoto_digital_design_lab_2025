@@ -5,6 +5,7 @@ module adder #(
 	input  logic [N-1:0] a, b,
 	input  logic cin,
 	output logic [N-1:0] s,    // sum
+	output logic cout,
 	output logic [3:0] flags          
 );
 
@@ -22,6 +23,8 @@ module adder #(
 			assign carry_aux[i+1] = (a[i] & b[i]) | (carry_aux[i] & (a[i] ^ b[i])); // next carry
 		end
 	endgenerate
+	
+	assign cout = carry_aux[N];
 	
 	// carry_aux[N] = final carry
 	
