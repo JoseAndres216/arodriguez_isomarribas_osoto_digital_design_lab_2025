@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1743148192
+Z2 !s110 1743176982
 !i10b 1
 !s100 n[FkH`CoK`iO25]iA^<[j1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1743148192.000000
+Z7 !s108 1743176982.000000
 !s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv|
 !i113 1
@@ -63,15 +63,15 @@ R9
 R10
 valu_tb
 R1
-!s110 1743148193
+Z11 !s110 1743176983
 !i10b 1
-!s100 G9bNcejgaQzKnz2HY0oE01
+!s100 h^Ke737Q9Q;PCB?gXm6DI0
 R3
-IlZebk1P=i9fLoZKY2^zlM1
+IPLE6B0LBATBDe7gThZA:83
 R4
 S1
 R0
-w1743148174
+w1743176968
 8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv
 FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv
 !i122 13
@@ -80,7 +80,7 @@ R6
 r1
 !s85 0
 31
-R7
+!s108 1743176983.000000
 !s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv|
 !i113 1
@@ -101,7 +101,7 @@ w1742788532
 8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv
 FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv
 !i122 8
-Z11 L0 1 18
+Z12 L0 1 18
 R6
 r1
 !s85 0
@@ -114,7 +114,7 @@ R8
 R9
 R10
 vdisplay_7seg
-Z12 !s110 1743148191
+Z13 !s110 1743176981
 !i10b 1
 !s100 l;051[E88S3P]BiNY`h=f0
 R3
@@ -130,16 +130,16 @@ R6
 r1
 !s85 0
 31
-Z13 !s108 1743148191.000000
+Z14 !s108 1743176981.000000
 !s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/display_7seg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/display_7seg.v|
 !i113 1
-Z14 o-vlog01compat -work work
-Z15 !s92 -vlog01compat -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2
+Z15 o-vlog01compat -work work
+Z16 !s92 -vlog01compat -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2
 R10
 vdiv_operation
 R1
-R2
+R11
 !i10b 1
 !s100 mmd7zD@z[58O:oHLj3zQ<3
 R3
@@ -173,9 +173,9 @@ I`b>2obfJ4jK[3EX<9ICXQ1
 R4
 S1
 R0
-Z16 w1743133159
-Z17 8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv
-Z18 FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv
+Z17 w1743133159
+Z18 8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv
+Z19 FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv
 !i122 5
 L0 1 13
 R6
@@ -183,8 +183,8 @@ r1
 !s85 0
 31
 R7
-Z19 !s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv|
-Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv|
+Z20 !s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv|
 !i113 1
 R8
 R9
@@ -294,7 +294,7 @@ R8
 R9
 R10
 vshift_l
-R12
+R13
 !i10b 1
 !s100 PW<J`9;Of9`U_CVK1FzOo1
 R3
@@ -305,20 +305,20 @@ w1742791785
 8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/shift_l.v
 FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/shift_l.v
 !i122 1
-R11
+R12
 R6
 r1
 !s85 0
 31
-R13
+R14
 !s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/shift_l.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/shift_l.v|
 !i113 1
-R14
 R15
+R16
 R10
 vshift_r
-R12
+R2
 !i10b 1
 !s100 mEDAN3A0a>Df[Z[[TL[Wi3
 R3
@@ -334,11 +334,11 @@ R6
 r1
 !s85 0
 31
-R13
+R14
 !s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/shift_r.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/shift_r.v|
 !i113 1
-R14
+R15
 !s92 -vlog01compat -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files
 R10
 vsustractor
@@ -351,9 +351,9 @@ Id<kF3<a]gzhWnkAAJ8NW41
 R4
 S1
 R0
-R16
 R17
 R18
+R19
 !i122 5
 L0 15 37
 R6
@@ -361,8 +361,8 @@ r1
 !s85 0
 31
 R7
-R19
 R20
+R21
 !i113 1
 R8
 R9
@@ -381,7 +381,7 @@ w1742788607
 8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv
 FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv
 !i122 9
-R11
+R12
 R6
 r1
 !s85 0

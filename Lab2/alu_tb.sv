@@ -141,11 +141,11 @@ module alu_tb;
 		  else  $display("Test 16 failed. %b ^ %b = %b, N=%b,Z=%b,C=%b,V=%b",a,b,result,flags_salida[0],flags_salida[1],flags_salida[2],flags_salida[3]);
 		  
 		  // << shift left operation:
-		  #10 a = 4'b1000; b = 4'b0001; 
+		  #10 a = 4'b1100; b = 4'b0001; 
         #10 selbutton = 1; // Operación siguiente
         #10 selbutton = 0;
 		  
-		  if(result === 4'b0000 && select === 4'd8 && flags_salida[0] == 0 && flags_salida[1] == 1 && flags_salida[2] == 1 && flags_salida[3] == 0) 
+		  if(result === 4'b1000 && select === 4'd8 && flags_salida[0] == 0 && flags_salida[1] == 0 && flags_salida[2] == 1 && flags_salida[3] == 0) 
 		  $display("Test 17 succeeded. %b << %b = %b, N=%b,Z=%b,C=%b,V=%b",a,b,result,flags_salida[0],flags_salida[1],flags_salida[2],flags_salida[3]);
 		  else  $display("Test 17 failed. %b << %b = %b, N=%b,Z=%b,C=%b,V=%b",a,b,result,flags_salida[0],flags_salida[1],flags_salida[2],flags_salida[3]);
 		  
