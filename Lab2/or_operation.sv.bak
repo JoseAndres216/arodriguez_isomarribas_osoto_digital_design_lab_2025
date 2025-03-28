@@ -1,0 +1,22 @@
+module or_operation
+	#(parameter N=4)
+	(
+		input logic [N-1:0] a,
+		input logic [N-1:0] b,
+		
+		output logic [N-1:0] result,
+		output logic [3:0] flags
+	);
+
+	always_comb begin
+		// Operación OR
+		result = a | b;
+
+		// Flags
+		flags[0] = (result == 0);         // Zero flag: 1 si el resultado es 0
+		flags[1] = result[N-1];           // Sign flag: 1 si el bit más significativo es 1 (para números con signo)
+		flags[2] = 0;                     // Carry flag: No aplicable en una operación OR
+		flags[3] = 0;                     // Overflow flag: No aplicable en una operación OR
+	end
+
+endmodule

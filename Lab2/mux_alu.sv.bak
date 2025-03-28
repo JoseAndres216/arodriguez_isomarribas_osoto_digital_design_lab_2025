@@ -1,0 +1,31 @@
+module mux_alu
+ #(
+    parameter N = 8 // Número de bits de las operaciones
+)(
+    input [N-1:0] sum,
+    input [N-1:0] sub,
+    input [N-1:0] mul,
+    input [N-1:0] mod_res,
+    input [N-1:0] and_res,
+    input [N-1:0] or_res,
+    input [N-1:0] xor_res,
+    input [N-1:0] shift_left,
+    input [N-1:0] shift_right,
+    input [3:0] sel, // 4 bits para seleccionar entre 9 operaciones
+    output logic [N-1:0] out // Cambio de 'reg' a 'logic'
+);
+    always @(*) begin
+        case (sel)
+            4'd0: out = sum;
+            4'd1: out = sub;
+            4'd2: out = mul;
+            4'd3: out = mod_res;
+            4'd4: out = and_res;
+            4'd5: out = or_res;
+            4'd6: out = xor_res;
+            4'd7: out = shift_left;
+            4'd8: out = shift_right;
+            default: out = {N{1'b0}}; // Valor por defecto
+        endcase
+    end
+endmodule
