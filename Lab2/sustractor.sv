@@ -6,7 +6,10 @@ module full_subtractor ( // FUNCIONANDO
     output logic bout     // Bit de préstamo (borrow) de salida
 );
     assign diff = a ^ b ^ bin;     // Diferencia
-    assign bout = (~a & (b | bin)) | (b & bin);  // Bit de préstamo
+  assign bout = (b & bin) | (~a & bin) | (~a & b); //prestamo
+ 
+
+  
 endmodule
 
 module sustractor #( // FUNCIONANDO
@@ -40,7 +43,7 @@ module sustractor #( // FUNCIONANDO
            
     assign flags[1] = (temp_diff == 0);          // Cero
     assign flags[2] = borrow[N];                 // Carry o borrow
-    assign flags[3] = (a[N-1] ^ b[N-1]) && (a[N-1] ^ temp_diff[N-1]);  // Desbordamiento
+    assign flags[3] = 0;  // Desbordamiento no hay
 
    
     assign diff = flags[0] ? (~temp_diff + 1) : temp_diff;

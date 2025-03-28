@@ -5,7 +5,7 @@ module alu
 	input logic [N-1:0] b,
 	input logic selbutton,
 	output logic [N-1:0] result,
-	output logic [3:0] flags_salida, select, //SELECTOR DE OPERACUIB
+	output logic [3:0] flags_salida, select, //SELECTOR DE OPERACION
 	output logic [6:0] seg_a_U, seg_a_T, seg_b_U, seg_b_T, seg_r_U, seg_r_T
 	);
 	
@@ -125,9 +125,8 @@ module alu
 		  
         .xor_res(resultado_xor),
 		  
-		  //FALTA AGREGAR
         .shift_left(resultado_shift_left),
-		  //FALTA AGREGAR
+		  
         .shift_right(resultado_shift_right),
 		  
         .sel(select),
@@ -141,8 +140,8 @@ module alu
         .N(N) 
 		  
     ) mux_flags (
-		  //FALTA AGREGAR
-        .sum(flags_sumador),
+
+		  .sum(flags_sumador),
 		  
         .sub(flags_restador),
 		  
@@ -158,7 +157,6 @@ module alu
 		  
         .xor_res(flags_xor),
 		  
-		  //FALTA AGREGAR
         .shift_left(flags_shift_left),
 		  
         .shift_right(flags_shift_right),
@@ -174,7 +172,7 @@ module alu
     ) display_a (
         .value(a),
         .segU(seg_a_U),
-        .segT(seg_a_T),  
+        .segT(seg_a_T)  
     );
 	 
 	 display_7seg #(
@@ -182,7 +180,7 @@ module alu
     ) display_b(
         .value(b),
         .segU(seg_b_U),
-        .segT(seg_b_T),  
+        .segT(seg_b_T)  
     );
 	 
 	display_7seg #(
@@ -190,7 +188,7 @@ module alu
 		 ) display_r(
 			  .value(result),
 			  .segU(seg_r_U),
-			  .segT(seg_r_T),  
+			  .segT(seg_r_T)  
 		 );
 	 
 	

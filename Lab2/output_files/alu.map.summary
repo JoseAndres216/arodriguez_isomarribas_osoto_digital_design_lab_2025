@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu Mar 27 19:56:53 2025
+Analysis & Elaboration Status : Successful - Thu Mar 27 20:53:31 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : alu
-Top-level Entity Name : sustractor
+Top-level Entity Name : alu
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
