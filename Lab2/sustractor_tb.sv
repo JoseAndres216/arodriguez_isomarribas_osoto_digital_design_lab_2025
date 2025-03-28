@@ -1,46 +1,46 @@
 module sustractor_tb;
 
+    parameter N = 4; // Tamaño del sustractor
 
-    parameter N = 4;  // Tamaño 
+    logic [N-1:0] a, b;  // Entradas
+    logic [N-1:0] diff;  // Resultado de la resta
+    logic [3:0] flags;   // Flags (CF, ZF, SF, OF)
 
-    // Señales de entrada
-    reg [N-1:0] a, b;
-
-    // Señales de salida
-    wire [N-1:0] res;
-    wire borrow_out, zero_flag, negative_flag;
-
-    // Instanciación
-    sustractor #(
-        .N(N)
-    ) uut (
+    // Instancia del módulo sustractor
+    sustractor #(N) uut (
         .a(a),
         .b(b),
-        .res(res),
-        .borrow_out(borrow_out),
-        .zero_flag(zero_flag),
-        .negative_flag(negative_flag)
+        .diff(diff),
+        .flags(flags)
     );
 
-    // Estímulos
+    // Proceso de prueba
     initial begin
-        // Monitoreo de señales
-        $monitor("a = %b, b = %b, diff = %b, borrow_out = %b, zero_flag = %b, negative_flag = %b", 
-                 a, b, res, borrow_out, zero_flag, negative_flag);
+        $display("Tiempo |   a    |   b    |  diff  | CF ZF SF OF ");
+        $monitor("%4t   | %b | %b | %b |  %b  %b  %b  %b",
+                 $time, a, b, diff, flags[0], flags[1], flags[2], flags[3]);
 
-        // Caso 1: 12 - 6
-        #10 a = 4'b1100; b = 4'b0110;
+        // Caso 1: 5 - 3 = 2
+        a = 4'b0101; b = 4'b0011;
+        #10;
+        
+        // Caso 2: 8 - 8 = 0 (Debe activar ZF)
+        a = 4'b1000; b = 4'b1000;
+        #10;
 
-        // Caso 2: 5 - 5
-        #10 a = 4'b0101; b = 4'b0101;
+        // Caso 3: 3 - 5 (Debe dar un resultado negativo)
+        a = 4'b0011; b = 4'b0101;
+        #10;
 
-        // Caso 3: 8 - 12 (resultado negativo)
-        #10 a = 4'b1000; b = 4'b1100;
+        // Caso 4: 7 - 9 (Desbordamiento de signo)
+        a = 4'b0111; b = 4'b1001;
+        #10;
 
-        // Caso 4: 7 - 8 (resultado negativo con borrow)
-        #10 a = 4'b0111; b = 4'b1000;
+        // Caso 5: 0 - 1 (Préstamo activo)
+        a = 4'b0000; b = 4'b0001;
+        #10;
 
-   
+        // Fin de la simulación
+     
     end
-
 endmodule

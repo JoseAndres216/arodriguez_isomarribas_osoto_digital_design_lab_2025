@@ -10,9 +10,9 @@ module and_operation
 
     assign result = a & b;       
 	 
-    assign flags[0] = (result == 0);  
-    assign flags[1] = 0;
-    assign flags[2] = 0;             
-    assign flags[3] = 0;         
+    assign flags[0] = 0; // there is no negative in AND
+    assign flags[1] = ~|result; // zero
+    assign flags[2] = 0; // there is no carry in AND
+    assign flags[3] = 0; // there is no overflow in AND
 
 endmodule
