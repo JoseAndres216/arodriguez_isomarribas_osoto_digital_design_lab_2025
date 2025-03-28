@@ -10,74 +10,53 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv}
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:26:03 on Mar 27,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv 
-# -- Compiling module adder
+# Start time: 19:57:01 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv 
+# -- Compiling module full_subtractor
+# -- Compiling module sustractor
 # 
 # Top level modules:
-# 	adder
-# End time: 11:26:03 on Mar 27,2025, Elapsed time: 0:00:00
+# 	sustractor
+# End time: 19:57:01 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv}
+# 
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:26:03 on Mar 27,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv 
-# -- Compiling module multiplier
+# Start time: 19:57:01 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor_tb.sv 
+# -- Compiling module sustractor_tb
 # 
 # Top level modules:
-# 	multiplier
-# End time: 11:26:04 on Mar 27,2025, Elapsed time: 0:00:01
+# 	sustractor_tb
+# End time: 19:57:01 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:26:04 on Mar 27,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv 
-# -- Compiling module multiplier_tb
-# 
-# Top level modules:
-# 	multiplier_tb
-# End time: 11:26:04 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  multiplier_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" multiplier_tb 
-# Start time: 11:26:04 on Mar 27,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  sustractor_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" sustractor_tb 
+# Start time: 19:57:01 on Mar 27,2025
 # Loading sv_std.std
-# Loading work.multiplier_tb
-# Loading work.multiplier
-# Loading work.adder
+# Loading work.sustractor_tb
+# Loading work.sustractor
+# Loading work.full_subtractor
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: bloodxe  Hostname: ISAAC  ProcessID: 21788
-#           Attempting to use alternate WLF file "./wlfts7ifb7".
+#           Attempting to use alternate WLF file "./wlftj5ke4k".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfts7ifb7
+#           Using alternate file: ./wlftj5ke4k
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Test 01 succeeded.
-# Test 02 succeeded.
-# Test 03 succeeded.
-# Test 04 succeeded.
-# Test 05 succeeded.
-# Test 06 succeeded.
-# Test 07 succeeded.
-# Test 08 succeeded.
-# Test 09 succeeded.
-# Test 10 succeeded.
-# Test 11 succeeded.
-# Test 12 succeeded.
-# Test 13 succeeded.
-# Test 14 succeeded.
-# Test 15 succeeded.
-# ** Note: $stop    : C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv(140)
-#    Time: 150 ps  Iteration: 0  Instance: /multiplier_tb
-# Break in Module multiplier_tb at C:/Users/josea/OneDrive/Escritorio/Andres/TEC/2025_SemestreI/TallerDisenoDigital/Laboratorio1/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier_tb.sv line 140
-# End time: 11:26:50 on Mar 27,2025, Elapsed time: 0:00:46
+# Tiempo |   a    |   b    |  diff  | CF ZF SF OF 
+#    0   | 0101 | 0011 | 0010 |  0  0  0  0
+#   10   | 1000 | 1000 | 0000 |  0  1  0  0
+#   20   | 0011 | 0101 | 0010 |  1  0  1  0
+#   30   | 0111 | 1001 | 0010 |  1  0  1  1
+#   40   | 0000 | 0001 | 0001 |  1  0  1  0
+# End time: 20:01:14 on Mar 27,2025, Elapsed time: 0:04:13
 # Errors: 0, Warnings: 2

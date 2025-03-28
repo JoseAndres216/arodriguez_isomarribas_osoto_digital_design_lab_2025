@@ -15,15 +15,14 @@ module sustractor #( // FUNCIONANDO
     input logic [N-1:0] a,       
     input logic [N-1:0] b,       
     output logic [N-1:0] diff,   
-	 output logic [3:0] flags
+    output logic [3:0] flags
 );
 
     logic [N:0] borrow;  
-
+    logic [N-1:0] temp_diff;
  
     assign borrow[0] = 1'b0;
 
-  
     genvar i;
     generate
         for (i = 0; i < N; i++) begin : subtractor_loop
@@ -31,24 +30,19 @@ module sustractor #( // FUNCIONANDO
                 .a(a[i]),           
                 .b(b[i]),         
                 .bin(borrow[i]),    
-                .diff(diff[i]),    
+                .diff(temp_diff[i]),    
                 .bout(borrow[i+1])  
             );
         end
     endgenerate
-	 
 
-    assign flags[0] = 0;
+    assign flags[0] = borrow[N];  // Si hubo un préstamo, el resultado es negativo
+           
+    assign flags[1] = (temp_diff == 0);          // Cero
+    assign flags[2] = borrow[N];                 // Carry o borrow
+    assign flags[3] = (a[N-1] ^ b[N-1]) && (a[N-1] ^ temp_diff[N-1]);  // Desbordamiento
 
-    assign flags[1] = (diff == 0);
-
-    assign flags[2] = 0;
-
-    assign flags[3] = 0;
-	 
-
-
-
-	 
+   
+    assign diff = flags[0] ? (~temp_diff + 1) : temp_diff;
 
 endmodule
