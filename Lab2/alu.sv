@@ -10,12 +10,12 @@ module alu
 	);
 	
 	initial begin 
-		seg_a_T = 7'b1111000;
-		seg_a_U = 7'b1111000;
-		seg_b_T = 7'b1111000;
-		seg_b_U = 7'b1111000;
-		seg_r_T = 7'b1111000;
-		seg_r_U = 7'b1111000;
+		seg_a_T = 7'b0000000;
+		seg_a_U = 7'b0000000;
+		seg_b_T = 7'b0000000;
+		seg_b_U = 7'b0000000;
+		seg_r_T = 7'b0000000;
+		seg_r_U = 7'b0000000;
 		select = 4'd0;
 	end
 	//
@@ -94,15 +94,13 @@ module alu
 
 	);
 
-	always_ff @(posedge selbutton) begin
-		 if (selbutton) begin
-			  if (select == 4'd9) begin
-					select <= 4'd0; // Reinicia el contador al llegar a 9
-			  end else begin
-					select <= select + 4'd1; // Incrementa el contador
-			  end
-		 end
-	end
+	always @(posedge selbutton) begin
+        if (select == 4'd9) begin
+            select <= 4'd0;  // Si llega a 9, reinicia el selector a 0
+        end else begin
+            select <= select + 4'd1;  // Incrementa el selector
+        end
+    end
 	
 	//INSTANCIAs MUX
     mux_alu #(

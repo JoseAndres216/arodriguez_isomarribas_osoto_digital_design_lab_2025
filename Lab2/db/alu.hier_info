@@ -113,15 +113,16 @@ diff[3] <= diff.DB_MAX_OUTPUT_PORT_TYPE
 flags[0] <= full_subtractor:subtractor_loop[3].fs.bout
 flags[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 flags[2] <= full_subtractor:subtractor_loop[3].fs.bout
-flags[3] <= flags.DB_MAX_OUTPUT_PORT_TYPE
+flags[3] <= <GND>
 
 
 |alu|sustractor:restador|full_subtractor:subtractor_loop[0].fs
 a => diff.IN0
-a => bout.IN1
+a => bout.IN0
+a => bout.IN0
 b => diff.IN1
 b => bout.IN0
-b => bout.IN0
+b => bout.IN1
 bin => diff.IN1
 bin => bout.IN1
 bin => bout.IN1
@@ -131,10 +132,11 @@ bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 |alu|sustractor:restador|full_subtractor:subtractor_loop[1].fs
 a => diff.IN0
-a => bout.IN1
+a => bout.IN0
+a => bout.IN0
 b => diff.IN1
 b => bout.IN0
-b => bout.IN0
+b => bout.IN1
 bin => diff.IN1
 bin => bout.IN1
 bin => bout.IN1
@@ -144,10 +146,11 @@ bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 |alu|sustractor:restador|full_subtractor:subtractor_loop[2].fs
 a => diff.IN0
-a => bout.IN1
+a => bout.IN0
+a => bout.IN0
 b => diff.IN1
 b => bout.IN0
-b => bout.IN0
+b => bout.IN1
 bin => diff.IN1
 bin => bout.IN1
 bin => bout.IN1
@@ -157,10 +160,11 @@ bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
 
 |alu|sustractor:restador|full_subtractor:subtractor_loop[3].fs
 a => diff.IN0
-a => bout.IN1
+a => bout.IN0
+a => bout.IN0
 b => diff.IN1
 b => bout.IN0
-b => bout.IN0
+b => bout.IN1
 bin => diff.IN1
 bin => bout.IN1
 bin => bout.IN1

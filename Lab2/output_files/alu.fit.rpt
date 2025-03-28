@@ -1,5 +1,5 @@
 Fitter report for alu
-Thu Mar 27 20:48:21 2025
+Thu Mar 27 23:09:31 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Mar 27 20:48:21 2025       ;
+; Fitter Status                   ; Successful - Thu Mar 27 23:09:31 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; alu                                         ;
 ; Top-level Entity Name           ; alu                                         ;
@@ -183,8 +183,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 324 ) ; 0.00 % ( 0 / 324 )         ; 0.00 % ( 0 / 324 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 324 ) ; 0.00 % ( 0 / 324 )         ; 0.00 % ( 0 / 324 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 325 ) ; 0.00 % ( 0 / 325 )         ; 0.00 % ( 0 / 325 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 325 ) ; 0.00 % ( 0 / 325 )         ; 0.00 % ( 0 / 325 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -207,7 +207,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 324 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 325 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -225,12 +225,12 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 109 / 41,910       ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 109                ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 112 / 41,910       ; < 1 % ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 109 / 41,910       ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 2                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 110                ;       ;
+;         [b] ALMs used for LUT logic                         ; 107                ;       ;
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 41,910         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 41,910         ; 0 %   ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41,910         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -239,16 +239,16 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 14 / 4,191         ; < 1 % ;
-;     -- Logic LABs                                           ; 14                 ;       ;
+; Total LABs:  partially or completely used                   ; 15 / 4,191         ; < 1 % ;
+;     -- Logic LABs                                           ; 15                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 193                ;       ;
-;     -- 7 input functions                                    ; 5                  ;       ;
-;     -- 6 input functions                                    ; 22                 ;       ;
-;     -- 5 input functions                                    ; 34                 ;       ;
-;     -- 4 input functions                                    ; 54                 ;       ;
-;     -- <=3 input functions                                  ; 78                 ;       ;
+; Combinational ALUT usage for logic                          ; 194                ;       ;
+;     -- 7 input functions                                    ; 4                  ;       ;
+;     -- 6 input functions                                    ; 21                 ;       ;
+;     -- 5 input functions                                    ; 36                 ;       ;
+;     -- 4 input functions                                    ; 51                 ;       ;
+;     -- <=3 input functions                                  ; 82                 ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 8                  ;       ;
@@ -319,11 +319,11 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 1.3% / 1.2% / 1.7% ;       ;
-; Maximum fan-out                                             ; 37                 ;       ;
-; Highest non-global fan-out                                  ; 37                 ;       ;
-; Total fan-out                                               ; 864                ;       ;
-; Average fan-out                                             ; 2.63               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 1.3% / 1.1% / 1.9% ;       ;
+; Maximum fan-out                                             ; 35                 ;       ;
+; Highest non-global fan-out                                  ; 35                 ;       ;
+; Total fan-out                                               ; 861                ;       ;
+; Average fan-out                                             ; 2.62               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -334,12 +334,12 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 109 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 109                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 112 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 109 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 2                     ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 110                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 107                   ; 0                              ;
 ;         [c] ALMs used for registers                         ; 0                     ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 41910 ( < 1 % )   ; 0 / 41910 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 41910 ( 0 % )     ; 0 / 41910 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41910 ( 0 % )     ; 0 / 41910 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
@@ -348,16 +348,16 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 14 / 4191 ( < 1 % )   ; 0 / 4191 ( 0 % )               ;
-;     -- Logic LABs                                           ; 14                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 15 / 4191 ( < 1 % )   ; 0 / 4191 ( 0 % )               ;
+;     -- Logic LABs                                           ; 15                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
-; Combinational ALUT usage for logic                          ; 193                   ; 0                              ;
-;     -- 7 input functions                                    ; 5                     ; 0                              ;
-;     -- 6 input functions                                    ; 22                    ; 0                              ;
-;     -- 5 input functions                                    ; 34                    ; 0                              ;
-;     -- 4 input functions                                    ; 54                    ; 0                              ;
-;     -- <=3 input functions                                  ; 78                    ; 0                              ;
+; Combinational ALUT usage for logic                          ; 194                   ; 0                              ;
+;     -- 7 input functions                                    ; 4                     ; 0                              ;
+;     -- 6 input functions                                    ; 21                    ; 0                              ;
+;     -- 5 input functions                                    ; 36                    ; 0                              ;
+;     -- 4 input functions                                    ; 51                    ; 0                              ;
+;     -- <=3 input functions                                  ; 82                    ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                     ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
@@ -386,7 +386,7 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 884                   ; 0                              ;
+;     -- Total Connections                                    ; 881                   ; 0                              ;
 ;     -- Registered Connections                               ; 91                    ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
@@ -419,14 +419,14 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; a[0]      ; W25   ; 5B       ; 89           ; 20           ; 43           ; 34                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; a[1]      ; V25   ; 5B       ; 89           ; 20           ; 60           ; 32                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; a[2]      ; AC28  ; 5B       ; 89           ; 20           ; 77           ; 28                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; a[3]      ; AD30  ; 5B       ; 89           ; 25           ; 37           ; 30                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; b[0]      ; AB30  ; 5B       ; 89           ; 21           ; 3            ; 37                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; b[1]      ; Y27   ; 5B       ; 89           ; 25           ; 20           ; 36                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; b[2]      ; AB28  ; 5B       ; 89           ; 21           ; 37           ; 22                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; b[3]      ; AC30  ; 5B       ; 89           ; 25           ; 54           ; 30                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; a[0]      ; W25   ; 5B       ; 89           ; 20           ; 43           ; 28                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; a[1]      ; V25   ; 5B       ; 89           ; 20           ; 60           ; 30                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; a[2]      ; AC28  ; 5B       ; 89           ; 20           ; 77           ; 32                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; a[3]      ; AD30  ; 5B       ; 89           ; 25           ; 37           ; 29                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; b[0]      ; AB30  ; 5B       ; 89           ; 21           ; 3            ; 32                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; b[1]      ; Y27   ; 5B       ; 89           ; 25           ; 20           ; 35                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; b[2]      ; AB28  ; 5B       ; 89           ; 21           ; 37           ; 26                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; b[3]      ; AC30  ; 5B       ; 89           ; 25           ; 54           ; 29                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; selbutton ; AJ4   ; 3B       ; 22           ; 0            ; 34           ; 8                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
@@ -440,10 +440,10 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 ; flags_salida[1] ; AC23  ; 4A       ; 86           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; flags_salida[2] ; AB23  ; 5A       ; 89           ; 9            ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; flags_salida[3] ; AA24  ; 5A       ; 89           ; 11           ; 43           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; result[0]       ; AC27  ; 5A       ; 89           ; 16           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[0]       ; AD26  ; 5A       ; 89           ; 16           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 ; result[1]       ; AG30  ; 5A       ; 89           ; 16           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 ; result[2]       ; AH30  ; 5A       ; 89           ; 16           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; result[3]       ; AD26  ; 5A       ; 89           ; 16           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; result[3]       ; AC27  ; 5A       ; 89           ; 16           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 ; seg_a_T[0]      ; AF21  ; 4A       ; 70           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; seg_a_T[1]      ; AG21  ; 4A       ; 54           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; seg_a_T[2]      ; AF20  ; 4A       ; 70           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
@@ -635,7 +635,7 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 ; AC24     ;            ; 5A             ; VREFB5AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AC25     ; 215        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AC26     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AC27     ; 242        ; 5A             ; result[0]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AC27     ; 242        ; 5A             ; result[3]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AC28     ; 245        ; 5B             ; a[2]                            ; input  ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; AC29     ; 247        ; 5B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AC30     ; 259        ; 5B             ; b[3]                            ; input  ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
@@ -664,7 +664,7 @@ The pin-out file can be found in C:/Users/caman/Documents/Github/arodriguez_isom
 ; AD23     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AD24     ; 211        ; 4A             ; flags_salida[0]                 ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AD25     ; 213        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AD26     ; 240        ; 5A             ; result[3]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AD26     ; 240        ; 5A             ; result[0]                       ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AD27     ; 222        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AD28     ;            ; 5A             ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AD29     ; 255        ; 5B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -1485,8 +1485,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; b[1]            ; Incomplete set of assignments ;
 ; b[3]            ; Incomplete set of assignments ;
 ; b[2]            ; Incomplete set of assignments ;
-; a[3]            ; Incomplete set of assignments ;
 ; a[1]            ; Incomplete set of assignments ;
+; a[3]            ; Incomplete set of assignments ;
 ; a[2]            ; Incomplete set of assignments ;
 ; selbutton       ; Incomplete set of assignments ;
 ; result[0]       ; Missing location assignment   ;
@@ -1501,9 +1501,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                    ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Entity Name         ; Library Name ;
 +-----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |alu                                          ; 109.0 (3.0)          ; 111.5 (3.5)                      ; 2.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 193 (6)             ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 63   ; 0            ; |alu                                                                                                                                   ; alu                 ; work         ;
-;    |adder:sumador|                            ; 3.5 (3.5)            ; 3.8 (3.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|adder:sumador                                                                                                                     ; adder               ; work         ;
-;    |and_operation:operacion_and|              ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|and_operation:operacion_and                                                                                                       ; and_operation       ; work         ;
+; |alu                                          ; 108.5 (3.0)          ; 109.0 (3.2)                      ; 0.5 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 194 (6)             ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 63   ; 0            ; |alu                                                                                                                                   ; alu                 ; work         ;
+;    |adder:sumador|                            ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|adder:sumador                                                                                                                     ; adder               ; work         ;
+;    |and_operation:operacion_and|              ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|and_operation:operacion_and                                                                                                       ; and_operation       ; work         ;
 ;    |display_7seg:display_a|                   ; 8.5 (4.0)            ; 8.5 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 17 (8)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|display_7seg:display_a                                                                                                            ; display_7seg        ; work         ;
 ;       |lpm_divide:Mod0|                       ; 4.5 (0.0)            ; 4.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|display_7seg:display_a|lpm_divide:Mod0                                                                                            ; lpm_divide          ; work         ;
 ;          |lpm_divide_42m:auto_generated|      ; 4.5 (0.0)            ; 4.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|display_7seg:display_a|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                              ; lpm_divide_42m      ; work         ;
@@ -1519,29 +1519,29 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |lpm_divide_42m:auto_generated|      ; 5.0 (0.0)            ; 5.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|display_7seg:display_r|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                              ; lpm_divide_42m      ; work         ;
 ;             |sign_div_unsign_7kh:divider|     ; 5.0 (0.0)            ; 5.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|display_7seg:display_r|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                                  ; sign_div_unsign_7kh ; work         ;
 ;                |alt_u_div_kse:divider|        ; 5.0 (5.0)            ; 5.0 (5.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|display_7seg:display_r|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider            ; alt_u_div_kse       ; work         ;
-;    |div_operation:operacion_div|              ; 12.3 (1.3)           ; 12.3 (1.3)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 25 (3)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div                                                                                                       ; div_operation       ; work         ;
-;       |lpm_divide:Div0|                       ; 11.0 (0.0)           ; 11.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 22 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div|lpm_divide:Div0                                                                                       ; lpm_divide          ; work         ;
-;          |lpm_divide_1am:auto_generated|      ; 11.0 (0.0)           ; 11.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 22 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                         ; lpm_divide_1am      ; work         ;
-;             |sign_div_unsign_7kh:divider|     ; 11.0 (0.0)           ; 11.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 22 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                             ; sign_div_unsign_7kh ; work         ;
-;                |alt_u_div_kse:divider|        ; 11.0 (11.0)          ; 11.0 (11.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 22 (22)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider       ; alt_u_div_kse       ; work         ;
-;    |modulo_operation:operacion_modulo|        ; 14.5 (1.0)           ; 14.5 (1.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 27 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|modulo_operation:operacion_modulo                                                                                                 ; modulo_operation    ; work         ;
+;    |div_operation:operacion_div|              ; 12.0 (1.5)           ; 12.3 (1.8)                       ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 25 (3)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div                                                                                                       ; div_operation       ; work         ;
+;       |lpm_divide:Div0|                       ; 10.5 (0.0)           ; 10.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 22 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div|lpm_divide:Div0                                                                                       ; lpm_divide          ; work         ;
+;          |lpm_divide_1am:auto_generated|      ; 10.5 (0.0)           ; 10.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 22 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                         ; lpm_divide_1am      ; work         ;
+;             |sign_div_unsign_7kh:divider|     ; 10.5 (0.0)           ; 10.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 22 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                             ; sign_div_unsign_7kh ; work         ;
+;                |alt_u_div_kse:divider|        ; 10.5 (10.5)          ; 10.5 (10.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 22 (22)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider       ; alt_u_div_kse       ; work         ;
+;    |modulo_operation:operacion_modulo|        ; 14.0 (0.5)           ; 14.0 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 27 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|modulo_operation:operacion_modulo                                                                                                 ; modulo_operation    ; work         ;
 ;       |lpm_divide:Mod0|                       ; 13.5 (0.0)           ; 13.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|modulo_operation:operacion_modulo|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_42m:auto_generated|      ; 13.5 (0.0)           ; 13.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m      ; work         ;
 ;             |sign_div_unsign_7kh:divider|     ; 13.5 (0.0)           ; 13.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
 ;                |alt_u_div_kse:divider|        ; 13.5 (13.5)          ; 13.5 (13.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (26)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
-;    |multiplier:multiplicador|                 ; 8.5 (0.5)            ; 9.0 (0.5)                        ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 16 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|multiplier:multiplicador                                                                                                          ; multiplier          ; work         ;
-;       |adder:adders[1].adderX|                ; 3.5 (3.5)            ; 4.5 (4.5)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|multiplier:multiplicador|adder:adders[1].adderX                                                                                   ; adder               ; work         ;
+;    |multiplier:multiplicador|                 ; 7.5 (0.5)            ; 7.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 16 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|multiplier:multiplicador                                                                                                          ; multiplier          ; work         ;
+;       |adder:adders[1].adderX|                ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|multiplier:multiplicador|adder:adders[1].adderX                                                                                   ; adder               ; work         ;
 ;       |adder:adders[2].adderX|                ; 3.0 (3.0)            ; 3.0 (3.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|multiplier:multiplicador|adder:adders[2].adderX                                                                                   ; adder               ; work         ;
-;       |adder:adders[3].adderX|                ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|multiplier:multiplicador|adder:adders[3].adderX                                                                                   ; adder               ; work         ;
-;    |mux_alu:mux_flags|                        ; 11.0 (11.0)          ; 11.5 (11.5)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 16 (16)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|mux_alu:mux_flags                                                                                                                 ; mux_alu             ; work         ;
-;    |mux_alu:mux_resultados|                   ; 15.0 (15.0)          ; 15.0 (15.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|mux_alu:mux_resultados                                                                                                            ; mux_alu             ; work         ;
-;    |or_operation:operacion_or|                ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|or_operation:operacion_or                                                                                                         ; or_operation        ; work         ;
+;       |adder:adders[3].adderX|                ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|multiplier:multiplicador|adder:adders[3].adderX                                                                                   ; adder               ; work         ;
+;    |mux_alu:mux_flags|                        ; 11.5 (11.5)          ; 12.0 (12.0)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 16 (16)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|mux_alu:mux_flags                                                                                                                 ; mux_alu             ; work         ;
+;    |mux_alu:mux_resultados|                   ; 15.5 (15.5)          ; 15.5 (15.5)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|mux_alu:mux_resultados                                                                                                            ; mux_alu             ; work         ;
+;    |or_operation:operacion_or|                ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|or_operation:operacion_or                                                                                                         ; or_operation        ; work         ;
 ;    |shift_l:shift_left|                       ; 3.0 (3.0)            ; 3.0 (3.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|shift_l:shift_left                                                                                                                ; shift_l             ; work         ;
-;    |shift_r:shift_right|                      ; 4.0 (4.0)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|shift_r:shift_right                                                                                                               ; shift_r             ; work         ;
-;    |sustractor:restador|                      ; 6.0 (4.5)            ; 6.0 (4.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|sustractor:restador                                                                                                               ; sustractor          ; work         ;
-;       |full_subtractor:subtractor_loop[2].fs| ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|sustractor:restador|full_subtractor:subtractor_loop[2].fs                                                                         ; full_subtractor     ; work         ;
+;    |shift_r:shift_right|                      ; 4.5 (4.5)            ; 4.5 (4.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|shift_r:shift_right                                                                                                               ; shift_r             ; work         ;
+;    |sustractor:restador|                      ; 6.0 (5.0)            ; 6.0 (5.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|sustractor:restador                                                                                                               ; sustractor          ; work         ;
+;       |full_subtractor:subtractor_loop[1].fs| ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|sustractor:restador|full_subtractor:subtractor_loop[1].fs                                                                         ; full_subtractor     ; work         ;
 ;       |full_subtractor:subtractor_loop[3].fs| ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|sustractor:restador|full_subtractor:subtractor_loop[3].fs                                                                         ; full_subtractor     ; work         ;
-;    |xor_operation:operacion_xor|              ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|xor_operation:operacion_xor                                                                                                       ; xor_operation       ; work         ;
+;    |xor_operation:operacion_xor|              ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |alu|xor_operation:operacion_xor                                                                                                       ; xor_operation       ; work         ;
 +-----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1610,8 +1610,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; b[1]            ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; b[3]            ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; b[2]            ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; a[3]            ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; a[1]            ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; a[3]            ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; a[2]            ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; selbutton       ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +-----------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
@@ -1632,30 +1632,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_2_result_int[0]~13       ; 1                 ; 0       ;
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~5                     ; 1                 ; 0       ;
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~18                          ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~6                                                                                                                                     ; 1                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~4                                                                                                                              ; 1                 ; 0       ;
 ;      - shift_r:shift_right|Equal0~0                                                                                                                                 ; 1                 ; 0       ;
 ;      - mux_alu:mux_resultados|Mux3~0                                                                                                                                ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~1                                                                                                                            ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~0                                                                                                                            ; 1                 ; 0       ;
 ;      - shift_r:shift_right|ShiftRight0~2                                                                                                                            ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~3                                                                                                                            ; 1                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~2                                                                                                                              ; 1                 ; 0       ;
-;      - adder:sumador|s[1]                                                                                                                                           ; 1                 ; 0       ;
-;      - sustractor:restador|full_subtractor:subtractor_loop[2].fs|bout~0                                                                                             ; 1                 ; 0       ;
+;      - and_operation:operacion_and|result[0]                                                                                                                        ; 1                 ; 0       ;
+;      - sustractor:restador|full_subtractor:subtractor_loop[1].fs|bout~0                                                                                             ; 1                 ; 0       ;
 ;      - sustractor:restador|Add0~0                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux~0                                                                                                  ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~4                                                                                                                            ; 1                 ; 0       ;
-;      - adder:sumador|s[2]                                                                                                                                           ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~5                                                                                                                            ; 1                 ; 0       ;
 ;      - sustractor:restador|Add0~1                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|s[2]                                                                                                         ; 1                 ; 0       ;
-;      - adder:sumador|carry_aux[3]                                                                                                                                   ; 1                 ; 0       ;
-;      - sustractor:restador|Add0~2                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[3]                                                                                                 ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|s[3]                                                                                                         ; 1                 ; 0       ;
 ;      - adder:sumador|WideNor0                                                                                                                                       ; 1                 ; 0       ;
 ;      - sustractor:restador|Equal0~0                                                                                                                                 ; 1                 ; 0       ;
-;      - multiplier:multiplicador|WideOr0                                                                                                                             ; 1                 ; 0       ;
-;      - and_operation:operacion_and|WideNor0~0                                                                                                                       ; 1                 ; 0       ;
-;      - xor_operation:operacion_xor|WideNor0~0                                                                                                                       ; 1                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~0                                                                                                                                     ; 1                 ; 0       ;
 ;      - mux_alu:mux_flags|Mux1~1                                                                                                                                     ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[4]                                                                                                 ; 1                 ; 0       ;
 ;      - display_7seg:display_b|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[12]~0                        ; 1                 ; 0       ;
@@ -1666,29 +1661,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~18                          ; 1                 ; 0       ;
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[12]~0             ; 1                 ; 0       ;
 ;      - mux_alu:mux_resultados|Mux3~0                                                                                                                                ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~0                                                                                                                            ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~1                                                                                                                            ; 1                 ; 0       ;
 ;      - mux_alu:mux_resultados|Mux3~1                                                                                                                                ; 1                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~2                                                                                                                              ; 1                 ; 0       ;
-;      - adder:sumador|s[1]                                                                                                                                           ; 1                 ; 0       ;
-;      - sustractor:restador|full_subtractor:subtractor_loop[2].fs|bout~0                                                                                             ; 1                 ; 0       ;
+;      - and_operation:operacion_and|result[0]                                                                                                                        ; 1                 ; 0       ;
+;      - sustractor:restador|full_subtractor:subtractor_loop[1].fs|bout~0                                                                                             ; 1                 ; 0       ;
 ;      - sustractor:restador|Add0~0                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux~0                                                                                                  ; 1                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~3                                                                                                                              ; 1                 ; 0       ;
-;      - adder:sumador|s[2]                                                                                                                                           ; 1                 ; 0       ;
 ;      - sustractor:restador|Add0~1                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|s[2]                                                                                                         ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux~0                                                                                                  ; 1                 ; 0       ;
-;      - adder:sumador|carry_aux[3]                                                                                                                                   ; 1                 ; 0       ;
-;      - sustractor:restador|Add0~2                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[3]                                                                                                 ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|s[3]                                                                                                         ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[3].adderX|carry_aux~0                                                                                                  ; 1                 ; 0       ;
 ;      - adder:sumador|WideNor0                                                                                                                                       ; 1                 ; 0       ;
 ;      - sustractor:restador|Equal0~0                                                                                                                                 ; 1                 ; 0       ;
-;      - multiplier:multiplicador|WideOr0                                                                                                                             ; 1                 ; 0       ;
-;      - and_operation:operacion_and|WideNor0~0                                                                                                                       ; 1                 ; 0       ;
 ;      - or_operation:operacion_or|WideNor0                                                                                                                           ; 1                 ; 0       ;
-;      - xor_operation:operacion_xor|WideNor0~0                                                                                                                       ; 1                 ; 0       ;
 ;      - mux_alu:mux_flags|Mux2~2                                                                                                                                     ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[3].adderX|carry_aux~1                                                                                                  ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux[4]                                                                                                 ; 1                 ; 0       ;
@@ -1703,33 +1692,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_2_result_int[1]~9        ; 0                 ; 0       ;
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~9                     ; 0                 ; 0       ;
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~14                          ; 0                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~6                                                                                                                                     ; 0                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~4                                                                                                                              ; 0                 ; 0       ;
 ;      - shift_r:shift_right|Equal0~0                                                                                                                                 ; 0                 ; 0       ;
 ;      - shift_r:shift_right|ShiftRight0~0                                                                                                                            ; 0                 ; 0       ;
 ;      - shift_r:shift_right|ShiftRight0~1                                                                                                                            ; 0                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~2                                                                                                                            ; 0                 ; 0       ;
 ;      - mux_alu:mux_resultados|Mux2~0                                                                                                                                ; 0                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~1                                                                                                                              ; 0                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~2                                                                                                                            ; 0                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~3                                                                                                                            ; 0                 ; 0       ;
 ;      - adder:sumador|s[1]                                                                                                                                           ; 0                 ; 0       ;
-;      - sustractor:restador|full_subtractor:subtractor_loop[2].fs|bout~0                                                                                             ; 0                 ; 0       ;
+;      - sustractor:restador|full_subtractor:subtractor_loop[1].fs|bout~0                                                                                             ; 0                 ; 0       ;
 ;      - sustractor:restador|Add0~0                                                                                                                                   ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux~0                                                                                                  ; 0                 ; 0       ;
 ;      - adder:sumador|s[2]                                                                                                                                           ; 0                 ; 0       ;
 ;      - sustractor:restador|Add0~1                                                                                                                                   ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|s[2]                                                                                                         ; 0                 ; 0       ;
 ;      - adder:sumador|carry_aux[3]                                                                                                                                   ; 0                 ; 0       ;
-;      - sustractor:restador|Add0~2                                                                                                                                   ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[3]                                                                                                 ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|s[3]                                                                                                         ; 0                 ; 0       ;
 ;      - sustractor:restador|Equal0~0                                                                                                                                 ; 0                 ; 0       ;
 ;      - and_operation:operacion_and|WideNor0~0                                                                                                                       ; 0                 ; 0       ;
-;      - xor_operation:operacion_xor|WideNor0~0                                                                                                                       ; 0                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~0                                                                                                                                     ; 0                 ; 0       ;
 ;      - mux_alu:mux_flags|Mux1~1                                                                                                                                     ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[4]                                                                                                 ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|s[4]                                                                                                         ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux~1                                                                                                  ; 0                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~3                                                                                                                                     ; 0                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~4                                                                                                                                     ; 0                 ; 0       ;
 ;      - display_7seg:display_b|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[13]~1                        ; 0                 ; 0       ;
 ;      - display_7seg:display_b|Decoder1~0                                                                                                                            ; 0                 ; 0       ;
 ; b[3]                                                                                                                                                                ;                   ;         ;
@@ -1740,7 +1728,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~14                          ; 1                 ; 0       ;
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~10                          ; 1                 ; 0       ;
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~6                           ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~6                                                                                                                                     ; 1                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~0                                                                                                                              ; 1                 ; 0       ;
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|selnose[10]                ; 1                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~1                                                                                                                              ; 1                 ; 0       ;
@@ -1754,13 +1741,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|selnose[10]                      ; 1                 ; 0       ;
 ;      - and_operation:operacion_and|WideNor0                                                                                                                         ; 1                 ; 0       ;
 ;      - xor_operation:operacion_xor|WideNor0                                                                                                                         ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~0                                                                                                                                     ; 1                 ; 0       ;
 ;      - mux_alu:mux_flags|Mux0~0                                                                                                                                     ; 1                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~1                                                                                                                                     ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[3].adderX|carry_aux~1                                                                                                  ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[3].adderX|carry_aux~2                                                                                                  ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~3                                                                                                                                     ; 1                 ; 0       ;
 ;      - mux_alu:mux_flags|Mux1~4                                                                                                                                     ; 1                 ; 0       ;
 ;      - mux_alu:mux_flags|Mux1~5                                                                                                                                     ; 1                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~6                                                                                                                                     ; 1                 ; 0       ;
 ;      - display_7seg:display_b|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[15]~3                        ; 1                 ; 0       ;
 ;      - display_7seg:display_b|Decoder1~0                                                                                                                            ; 1                 ; 0       ;
 ; b[2]                                                                                                                                                                ;                   ;         ;
@@ -1771,52 +1758,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~10                          ; 1                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~0                                                                                                                              ; 1                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~1                                                                                                                              ; 1                 ; 0       ;
-;      - sustractor:restador|full_subtractor:subtractor_loop[2].fs|bout~0                                                                                             ; 1                 ; 0       ;
+;      - sustractor:restador|full_subtractor:subtractor_loop[3].fs|bout~0                                                                                             ; 1                 ; 0       ;
 ;      - mux_alu:mux_resultados|Mux1~0                                                                                                                                ; 1                 ; 0       ;
-;      - adder:sumador|carry_aux~0                                                                                                                                    ; 1                 ; 0       ;
+;      - adder:sumador|s[2]                                                                                                                                           ; 1                 ; 0       ;
+;      - sustractor:restador|Add0~2                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux~0                                                                                                  ; 1                 ; 0       ;
 ;      - adder:sumador|carry_aux[3]                                                                                                                                   ; 1                 ; 0       ;
+;      - sustractor:restador|Add0~3                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|s[3]                                                                                                         ; 1                 ; 0       ;
+;      - sustractor:restador|Equal0~1                                                                                                                                 ; 1                 ; 0       ;
 ;      - and_operation:operacion_and|WideNor0                                                                                                                         ; 1                 ; 0       ;
+;      - xor_operation:operacion_xor|WideNor0                                                                                                                         ; 1                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~1                                                                                                                                     ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux[4]                                                                                                 ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|s[4]                                                                                                         ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux[5]                                                                                                 ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux~1                                                                                                  ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~3                                                                                                                                     ; 1                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~4                                                                                                                                     ; 1                 ; 0       ;
 ;      - display_7seg:display_b|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[14]~2                        ; 1                 ; 0       ;
 ;      - display_7seg:display_b|Decoder1~0                                                                                                                            ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~6                                                                                                                                     ; 1                 ; 0       ;
-; a[3]                                                                                                                                                                ;                   ;         ;
-;      - display_7seg:display_a|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_3_result_int[3]~17            ; 1                 ; 0       ;
-;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_0_result_int[0]~1  ; 1                 ; 0       ;
-;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_0_result_int[0]~5        ; 1                 ; 0       ;
-;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_1_result_int[1]~9  ; 1                 ; 0       ;
-;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_1_result_int[1]~5        ; 1                 ; 0       ;
-;      - shift_l:shift_left|ShiftLeft0~4                                                                                                                              ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~1                                                                                                                            ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~3                                                                                                                            ; 1                 ; 0       ;
-;      - sustractor:restador|full_subtractor:subtractor_loop[3].fs|bout~0                                                                                             ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~4                                                                                                                            ; 1                 ; 0       ;
-;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[0]~5              ; 1                 ; 0       ;
-;      - mux_alu:mux_resultados|Mux0~0                                                                                                                                ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~5                                                                                                                            ; 1                 ; 0       ;
-;      - adder:sumador|s[3]                                                                                                                                           ; 1                 ; 0       ;
-;      - sustractor:restador|Add0~3                                                                                                                                   ; 1                 ; 0       ;
-;      - multiplier:multiplicador|adder:adders[1].adderX|s[3]                                                                                                         ; 1                 ; 0       ;
-;      - sustractor:restador|Equal0~1                                                                                                                                 ; 1                 ; 0       ;
-;      - and_operation:operacion_and|WideNor0                                                                                                                         ; 1                 ; 0       ;
-;      - or_operation:operacion_or|WideNor0                                                                                                                           ; 1                 ; 0       ;
-;      - xor_operation:operacion_xor|WideNor0                                                                                                                         ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~0                                                                                                                                     ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~1                                                                                                                                     ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux0~0                                                                                                                                     ; 1                 ; 0       ;
-;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[4]                                                                                                 ; 1                 ; 0       ;
-;      - multiplier:multiplicador|adder:adders[1].adderX|s[4]                                                                                                         ; 1                 ; 0       ;
-;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux~1                                                                                                  ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~3                                                                                                                                     ; 1                 ; 0       ;
-;      - display_7seg:display_a|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[15]~3                        ; 1                 ; 0       ;
-;      - display_7seg:display_a|Decoder1~0                                                                                                                            ; 1                 ; 0       ;
-;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[0]~1                    ; 1                 ; 0       ;
 ; a[1]                                                                                                                                                                ;                   ;         ;
 ;      - display_7seg:display_a|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_3_result_int[1]~9             ; 0                 ; 0       ;
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_2_result_int[0]~5  ; 0                 ; 0       ;
@@ -1824,13 +1784,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~9                     ; 0                 ; 0       ;
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|op_4~14                          ; 0                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~4                                                                                                                              ; 0                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~1                                                                                                                            ; 0                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~0                                                                                                                            ; 0                 ; 0       ;
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[13]~1             ; 0                 ; 0       ;
 ;      - mux_alu:mux_resultados|Mux2~0                                                                                                                                ; 0                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~3                                                                                                                            ; 0                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~4                                                                                                                            ; 0                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~2                                                                                                                              ; 0                 ; 0       ;
 ;      - adder:sumador|s[1]                                                                                                                                           ; 0                 ; 0       ;
-;      - sustractor:restador|full_subtractor:subtractor_loop[2].fs|bout~0                                                                                             ; 0                 ; 0       ;
+;      - sustractor:restador|full_subtractor:subtractor_loop[1].fs|bout~0                                                                                             ; 0                 ; 0       ;
 ;      - sustractor:restador|Add0~0                                                                                                                                   ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux~0                                                                                                  ; 0                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~3                                                                                                                              ; 0                 ; 0       ;
@@ -1838,43 +1798,75 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - sustractor:restador|Add0~1                                                                                                                                   ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|s[2]                                                                                                         ; 0                 ; 0       ;
 ;      - adder:sumador|carry_aux[3]                                                                                                                                   ; 0                 ; 0       ;
-;      - sustractor:restador|Add0~2                                                                                                                                   ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[3]                                                                                                 ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|s[3]                                                                                                         ; 0                 ; 0       ;
 ;      - sustractor:restador|Equal0~0                                                                                                                                 ; 0                 ; 0       ;
 ;      - and_operation:operacion_and|WideNor0~0                                                                                                                       ; 0                 ; 0       ;
 ;      - or_operation:operacion_or|WideNor0                                                                                                                           ; 0                 ; 0       ;
-;      - xor_operation:operacion_xor|WideNor0~0                                                                                                                       ; 0                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~1                                                                                                                                     ; 0                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~0                                                                                                                                     ; 0                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux[4]                                                                                                 ; 0                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~5                                                                                                                                     ; 0                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~6                                                                                                                                     ; 0                 ; 0       ;
 ;      - display_7seg:display_a|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[13]~1                        ; 0                 ; 0       ;
 ;      - display_7seg:display_a|Decoder1~0                                                                                                                            ; 0                 ; 0       ;
+; a[3]                                                                                                                                                                ;                   ;         ;
+;      - display_7seg:display_a|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_3_result_int[3]~17            ; 1                 ; 0       ;
+;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_0_result_int[0]~1  ; 1                 ; 0       ;
+;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_0_result_int[0]~5        ; 1                 ; 0       ;
+;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_1_result_int[1]~9  ; 1                 ; 0       ;
+;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_1_result_int[1]~5        ; 1                 ; 0       ;
+;      - shift_l:shift_left|ShiftLeft0~4                                                                                                                              ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~2                                                                                                                            ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~4                                                                                                                            ; 1                 ; 0       ;
+;      - sustractor:restador|full_subtractor:subtractor_loop[3].fs|bout~0                                                                                             ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~5                                                                                                                            ; 1                 ; 0       ;
+;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[0]~5              ; 1                 ; 0       ;
+;      - mux_alu:mux_resultados|Mux0~0                                                                                                                                ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~6                                                                                                                            ; 1                 ; 0       ;
+;      - adder:sumador|s[3]                                                                                                                                           ; 1                 ; 0       ;
+;      - sustractor:restador|Add0~3                                                                                                                                   ; 1                 ; 0       ;
+;      - multiplier:multiplicador|adder:adders[1].adderX|s[3]                                                                                                         ; 1                 ; 0       ;
+;      - sustractor:restador|Equal0~1                                                                                                                                 ; 1                 ; 0       ;
+;      - and_operation:operacion_and|WideNor0                                                                                                                         ; 1                 ; 0       ;
+;      - or_operation:operacion_or|WideNor0                                                                                                                           ; 1                 ; 0       ;
+;      - xor_operation:operacion_xor|WideNor0                                                                                                                         ; 1                 ; 0       ;
+;      - mux_alu:mux_flags|Mux0~0                                                                                                                                     ; 1                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~0                                                                                                                                     ; 1                 ; 0       ;
+;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[4]                                                                                                 ; 1                 ; 0       ;
+;      - multiplier:multiplicador|adder:adders[1].adderX|s[4]                                                                                                         ; 1                 ; 0       ;
+;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux~1                                                                                                  ; 1                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~4                                                                                                                                     ; 1                 ; 0       ;
+;      - display_7seg:display_a|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[15]~3                        ; 1                 ; 0       ;
+;      - display_7seg:display_a|Decoder1~0                                                                                                                            ; 1                 ; 0       ;
+;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[0]~1                    ; 1                 ; 0       ;
 ; a[2]                                                                                                                                                                ;                   ;         ;
 ;      - display_7seg:display_a|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_3_result_int[2]~13            ; 1                 ; 0       ;
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_1_result_int[0]~5  ; 1                 ; 0       ;
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_2_result_int[1]~9  ; 1                 ; 0       ;
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_1_result_int[0]~9        ; 1                 ; 0       ;
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|add_sub_2_result_int[1]~9        ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~0                                                                                                                            ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~3                                                                                                                            ; 1                 ; 0       ;
-;      - sustractor:restador|full_subtractor:subtractor_loop[2].fs|bout~0                                                                                             ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~1                                                                                                                            ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~4                                                                                                                            ; 1                 ; 0       ;
+;      - sustractor:restador|full_subtractor:subtractor_loop[3].fs|bout~0                                                                                             ; 1                 ; 0       ;
 ;      - modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[4]~2              ; 1                 ; 0       ;
 ;      - mux_alu:mux_resultados|Mux1~0                                                                                                                                ; 1                 ; 0       ;
-;      - shift_r:shift_right|ShiftRight0~4                                                                                                                            ; 1                 ; 0       ;
+;      - shift_r:shift_right|ShiftRight0~5                                                                                                                            ; 1                 ; 0       ;
 ;      - shift_l:shift_left|ShiftLeft0~3                                                                                                                              ; 1                 ; 0       ;
-;      - adder:sumador|carry_aux~0                                                                                                                                    ; 1                 ; 0       ;
+;      - adder:sumador|s[2]                                                                                                                                           ; 1                 ; 0       ;
+;      - sustractor:restador|Add0~2                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|s[2]                                                                                                         ; 1                 ; 0       ;
 ;      - adder:sumador|carry_aux[3]                                                                                                                                   ; 1                 ; 0       ;
+;      - sustractor:restador|Add0~3                                                                                                                                   ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[3]                                                                                                 ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|s[3]                                                                                                         ; 1                 ; 0       ;
+;      - sustractor:restador|Equal0~1                                                                                                                                 ; 1                 ; 0       ;
 ;      - and_operation:operacion_and|WideNor0                                                                                                                         ; 1                 ; 0       ;
 ;      - or_operation:operacion_or|WideNor0                                                                                                                           ; 1                 ; 0       ;
+;      - xor_operation:operacion_xor|WideNor0                                                                                                                         ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[1].adderX|carry_aux[4]                                                                                                 ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|s[4]                                                                                                         ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[2].adderX|carry_aux[5]                                                                                                 ; 1                 ; 0       ;
 ;      - multiplier:multiplicador|adder:adders[3].adderX|carry_aux~2                                                                                                  ; 1                 ; 0       ;
-;      - mux_alu:mux_flags|Mux1~4                                                                                                                                     ; 1                 ; 0       ;
+;      - mux_alu:mux_flags|Mux1~5                                                                                                                                     ; 1                 ; 0       ;
 ;      - display_7seg:display_a|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[14]~2                        ; 1                 ; 0       ;
 ;      - display_7seg:display_a|Decoder1~0                                                                                                                            ; 1                 ; 0       ;
 ;      - div_operation:operacion_div|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider|StageOut[4]~3                    ; 1                 ; 0       ;
@@ -1907,14 +1899,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 244 / 289,320 ( < 1 % ) ;
+; Block interconnects                         ; 242 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 11 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 53 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 87 / 56,300 ( < 1 % )   ;
+; C2 interconnects                            ; 57 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 95 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 35 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 27 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1970,12 +1962,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 88 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 90 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 33 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 39 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 88 / 130,992 ( < 1 % )  ;
-; R6 interconnects                            ; 97 / 266,960 ( < 1 % )  ;
+; R14 interconnects                           ; 32 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 37 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 103 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 85 / 266,960 ( < 1 % )  ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -2099,8 +2091,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; b[1]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; b[3]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; b[2]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; a[3]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; a[1]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; a[3]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; a[2]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; selbutton          ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
@@ -2165,10 +2157,10 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------+----------------------+-------------------+
 ; Source Register ; Destination Register ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; select[0]~reg0  ; select[1]~reg0       ; 0.189             ;
-; select[2]~reg0  ; select[3]~reg0       ; 0.177             ;
-; select[1]~reg0  ; select[2]~reg0       ; 0.174             ;
-; select[3]~reg0  ; select[1]~reg0       ; 0.167             ;
+; select[1]~reg0  ; select[3]~reg0       ; 0.202             ;
+; select[2]~reg0  ; select[3]~reg0       ; 0.183             ;
+; select[3]~reg0  ; select[1]~reg0       ; 0.172             ;
+; select[0]~reg0  ; select[1]~reg0       ; 0.120             ;
 +-----------------+----------------------+-------------------+
 Note: This table only shows the top 4 path(s) that have the largest delay added for hold.
 
@@ -2222,10 +2214,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/alu.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 6557 megabytes
-    Info: Processing ended: Thu Mar 27 20:48:21 2025
+    Info: Peak virtual memory: 6568 megabytes
+    Info: Processing ended: Thu Mar 27 23:09:31 2025
     Info: Elapsed time: 00:00:34
-    Info: Total CPU time (on all processors): 00:00:56
+    Info: Total CPU time (on all processors): 00:00:55
 
 
 +----------------------------+

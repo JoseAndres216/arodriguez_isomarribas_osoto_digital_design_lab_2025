@@ -194,7 +194,7 @@ flags_salida[1]              : AC23      : output : 2.5 V             :         
 VREFB5AN0                    : AC24      : power  :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5A        :                
 GND                          : AC26      : gnd    :                   :         :           :                
-result[0]                    : AC27      : output : 2.5 V             :         : 5A        : N              
+result[3]                    : AC27      : output : 2.5 V             :         : 5A        : N              
 a[2]                         : AC28      : input  : 2.5 V             :         : 5B        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC29      :        :                   :         : 5B        :                
 b[3]                         : AC30      : input  : 2.5 V             :         : 5B        : Y              
@@ -223,7 +223,7 @@ VCC_AUX                      : AD22      : power  :                   : 2.5V    
 GND                          : AD23      : gnd    :                   :         :           :                
 flags_salida[0]              : AD24      : output : 2.5 V             :         : 4A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD25      :        :                   :         : 5A        :                
-result[3]                    : AD26      : output : 2.5 V             :         : 5A        : N              
+result[0]                    : AD26      : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD27      :        :                   :         : 5A        :                
 VCCIO5A                      : AD28      : power  :                   : 2.5V    : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD29      :        :                   :         : 5B        :                

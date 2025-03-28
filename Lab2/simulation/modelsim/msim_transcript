@@ -12,45 +12,191 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/display_7seg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:09:18 on Mar 27,2025
+# Start time: 22:53:27 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/display_7seg.v 
 # -- Compiling module display_7seg
 # 
 # Top level modules:
 # 	display_7seg
-# End time: 21:09:19 on Mar 27,2025, Elapsed time: 0:00:01
+# End time: 22:53:27 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/shift_l.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:09:19 on Mar 27,2025
+# Start time: 22:53:27 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/shift_l.v 
 # -- Compiling module shift_l
 # 
 # Top level modules:
 # 	shift_l
-# End time: 21:09:19 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 22:53:27 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/shift_r.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:09:19 on Mar 27,2025
+# Start time: 22:53:27 on Mar 27,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/shift_r.v 
 # -- Compiling module shift_r
 # 
 # Top level modules:
 # 	shift_r
-# End time: 21:09:19 on Mar 27,2025, Elapsed time: 0:00:00
+# End time: 22:53:27 on Mar 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:09:19 on Mar 27,2025
+# Start time: 22:53:27 on Mar 27,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv 
 # -- Compiling module alu
-# ** Error (suppressible): C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv(100): (vlog-7061) Variable 'select' driven in an always_ff block, may not be driven by any other process. See C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv(19).
-# ** Error (suppressible): C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv(102): (vlog-7061) Variable 'select' driven in an always_ff block, may not be driven by any other process. See C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv(19).
-# End time: 21:09:19 on Mar 27,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./alu_run_msim_rtl_verilog.do line 11
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github..."
+# 
+# Top level modules:
+# 	alu
+# End time: 22:53:27 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:27 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 22:53:27 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:27 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv 
+# -- Compiling module full_subtractor
+# -- Compiling module sustractor
+# 
+# Top level modules:
+# 	sustractor
+# End time: 22:53:27 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:28 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv 
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# End time: 22:53:28 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:28 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv 
+# -- Compiling module mux_alu
+# 
+# Top level modules:
+# 	mux_alu
+# End time: 22:53:28 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:28 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv 
+# -- Compiling module and_operation
+# 
+# Top level modules:
+# 	and_operation
+# End time: 22:53:28 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:28 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv 
+# -- Compiling module xor_operation
+# 
+# Top level modules:
+# 	xor_operation
+# End time: 22:53:28 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:28 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv 
+# -- Compiling module or_operation
+# 
+# Top level modules:
+# 	or_operation
+# End time: 22:53:28 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:28 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv 
+# -- Compiling module modulo_operation
+# 
+# Top level modules:
+# 	modulo_operation
+# End time: 22:53:28 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/div_operation.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:28 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/div_operation.sv 
+# -- Compiling module div_operation
+# 
+# Top level modules:
+# 	div_operation
+# End time: 22:53:28 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:53:28 on Mar 27,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 22:53:28 on Mar 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  alu_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 22:53:28 on Mar 27,2025
+# Loading sv_std.std
+# Loading work.alu_tb
+# Loading work.alu
+# Loading work.adder
+# Loading work.sustractor
+# Loading work.multiplier
+# Loading work.div_operation
+# Loading work.or_operation
+# Loading work.xor_operation
+# Loading work.and_operation
+# Loading work.modulo_operation
+# Loading work.shift_l
+# Loading work.shift_r
+# Loading work.mux_alu
+# Loading work.display_7seg
+# Loading work.full_subtractor
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/uut/sumador File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 28
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: bloodxe  Hostname: ISAAC  ProcessID: 21788
+#           Attempting to use alternate WLF file "./wlftycdgtj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftycdgtj
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Tiempo=0 | a=0000 | b=0000 | select= 0 | result=0000 | flags=0010
+# Tiempo=10 | a=0011 | b=0001 | select= 0 | result=0100 | flags=0000
+# Tiempo=20 | a=0011 | b=0001 | select= 1 | result=0010 | flags=0000
+# Tiempo=40 | a=0101 | b=0011 | select= 1 | result=0010 | flags=0000
+# Tiempo=50 | a=0101 | b=0011 | select= 2 | result=1111 | flags=0000
+# Tiempo=70 | a=0110 | b=0010 | select= 2 | result=1100 | flags=0000
+# Tiempo=80 | a=0110 | b=0010 | select= 3 | result=0011 | flags=0000
+# Tiempo=100 | a=1111 | b=0001 | select= 3 | result=1111 | flags=0000
+# Tiempo=110 | a=1111 | b=0001 | select= 4 | result=0000 | flags=0010
+# ** Note: $stop    : C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv(47)
+#    Time: 170 ps  Iteration: 0  Instance: /alu_tb
+# Break in Module alu_tb at C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu_tb.sv line 47
+# End time: 22:54:14 on Mar 27,2025, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 3
