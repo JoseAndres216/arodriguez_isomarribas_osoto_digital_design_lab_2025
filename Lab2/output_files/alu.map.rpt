@@ -1,5 +1,5 @@
-Analysis & Elaboration report for alu
-Fri Mar 28 09:49:09 2025
+Analysis & Synthesis report for alu
+Fri Mar 28 12:43:51 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -7,36 +7,72 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |alu
-  5. Parameter Settings for User Entity Instance: adder:sumador
-  6. Parameter Settings for User Entity Instance: sustractor:restador
-  7. Parameter Settings for User Entity Instance: multiplier:multiplicador
-  8. Parameter Settings for User Entity Instance: multiplier:multiplicador|adder:adders[0].adderX
-  9. Parameter Settings for User Entity Instance: multiplier:multiplicador|adder:adders[1].adderX
- 10. Parameter Settings for User Entity Instance: multiplier:multiplicador|adder:adders[2].adderX
- 11. Parameter Settings for User Entity Instance: multiplier:multiplicador|adder:adders[3].adderX
- 12. Parameter Settings for User Entity Instance: div_operation:operacion_div
- 13. Parameter Settings for User Entity Instance: or_operation:operacion_or
- 14. Parameter Settings for User Entity Instance: xor_operation:operacion_xor
- 15. Parameter Settings for User Entity Instance: and_operation:operacion_and
- 16. Parameter Settings for User Entity Instance: modulo_operation:operacion_modulo
- 17. Parameter Settings for User Entity Instance: shift_l:shift_left
- 18. Parameter Settings for User Entity Instance: shift_r:shift_right
- 19. Parameter Settings for User Entity Instance: mux_alu:mux_resultados
- 20. Parameter Settings for User Entity Instance: mux_alu:mux_flags
- 21. Parameter Settings for User Entity Instance: display_7seg:display_a
- 22. Parameter Settings for User Entity Instance: display_7seg:display_b
- 23. Parameter Settings for User Entity Instance: display_7seg:display_r
- 24. Analysis & Elaboration Settings
- 25. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[3].adderX"
- 26. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[2].adderX"
- 27. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[1].adderX"
- 28. Port Connectivity Checks: "multiplier:multiplicador|adder:adders[0].adderX"
- 29. Port Connectivity Checks: "sustractor:restador|full_subtractor:subtractor_loop[0].fs"
- 30. Port Connectivity Checks: "adder:sumador"
- 31. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |test
+ 11. Parameter Settings for User Entity Instance: alu:uut
+ 12. Parameter Settings for User Entity Instance: alu:uut|adder:sumador
+ 13. Parameter Settings for User Entity Instance: alu:uut|sustractor:restador
+ 14. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador
+ 15. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[0].adderX
+ 16. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[1].adderX
+ 17. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[2].adderX
+ 18. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[3].adderX
+ 19. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[4].adderX
+ 20. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[5].adderX
+ 21. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[6].adderX
+ 22. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[7].adderX
+ 23. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[8].adderX
+ 24. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[9].adderX
+ 25. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[10].adderX
+ 26. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[11].adderX
+ 27. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[12].adderX
+ 28. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[13].adderX
+ 29. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[14].adderX
+ 30. Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[15].adderX
+ 31. Parameter Settings for User Entity Instance: alu:uut|div_operation:operacion_div
+ 32. Parameter Settings for User Entity Instance: alu:uut|or_operation:operacion_or
+ 33. Parameter Settings for User Entity Instance: alu:uut|xor_operation:operacion_xor
+ 34. Parameter Settings for User Entity Instance: alu:uut|and_operation:operacion_and
+ 35. Parameter Settings for User Entity Instance: alu:uut|modulo_operation:operacion_modulo
+ 36. Parameter Settings for User Entity Instance: alu:uut|shift_l:shift_left
+ 37. Parameter Settings for User Entity Instance: alu:uut|shift_r:shift_right
+ 38. Parameter Settings for User Entity Instance: alu:uut|mux_alu:mux_resultados
+ 39. Parameter Settings for User Entity Instance: alu:uut|mux_alu:mux_flags
+ 40. Parameter Settings for User Entity Instance: alu:uut|display_7seg:display_a
+ 41. Parameter Settings for User Entity Instance: alu:uut|display_7seg:display_b
+ 42. Parameter Settings for User Entity Instance: alu:uut|display_7seg:display_r
+ 43. Parameter Settings for Inferred Entity Instance: alu:uut|div_operation:operacion_div|lpm_divide:Div0
+ 44. Parameter Settings for Inferred Entity Instance: alu:uut|modulo_operation:operacion_modulo|lpm_divide:Mod0
+ 45. Port Connectivity Checks: "alu:uut|mux_alu:mux_flags"
+ 46. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[15].adderX"
+ 47. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[14].adderX"
+ 48. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[13].adderX"
+ 49. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[12].adderX"
+ 50. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[11].adderX"
+ 51. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[10].adderX"
+ 52. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[9].adderX"
+ 53. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[8].adderX"
+ 54. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[7].adderX"
+ 55. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[6].adderX"
+ 56. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[5].adderX"
+ 57. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[4].adderX"
+ 58. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[3].adderX"
+ 59. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[2].adderX"
+ 60. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[1].adderX"
+ 61. Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[0].adderX"
+ 62. Port Connectivity Checks: "alu:uut|sustractor:restador|full_subtractor:subtractor_loop[0].fs"
+ 63. Port Connectivity Checks: "alu:uut|adder:sumador"
+ 64. Port Connectivity Checks: "alu:uut"
+ 65. Post-Synthesis Netlist Statistics for Top Partition
+ 66. Elapsed Time Per Partition
+ 67. Analysis & Synthesis Messages
 
 
 
@@ -60,247 +96,36 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Mar 28 09:49:09 2025       ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; alu                                         ;
-; Top-level Entity Name         ; alu                                         ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |alu ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; N              ; 4     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: adder:sumador ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; N              ; 4     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sustractor:restador ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplier:multiplicador ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; N              ; 4     ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplier:multiplicador|adder:adders[0].adderX ;
-+----------------+-------+---------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                ;
-+----------------+-------+---------------------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                                      ;
-+----------------+-------+---------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplier:multiplicador|adder:adders[1].adderX ;
-+----------------+-------+---------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                ;
-+----------------+-------+---------------------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                                      ;
-+----------------+-------+---------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplier:multiplicador|adder:adders[2].adderX ;
-+----------------+-------+---------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                ;
-+----------------+-------+---------------------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                                      ;
-+----------------+-------+---------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplier:multiplicador|adder:adders[3].adderX ;
-+----------------+-------+---------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                ;
-+----------------+-------+---------------------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                                      ;
-+----------------+-------+---------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: div_operation:operacion_div ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; N              ; 4     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: or_operation:operacion_or ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; N              ; 4     ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: xor_operation:operacion_xor ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; N              ; 4     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: and_operation:operacion_and ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; N              ; 4     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: modulo_operation:operacion_modulo ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: shift_l:shift_left ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; N              ; 4     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: shift_r:shift_right ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 4     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_alu:mux_resultados ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; N              ; 4     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux_alu:mux_flags ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; N              ; 4     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display_7seg:display_a ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; N              ; 4     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display_7seg:display_b ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; N              ; 4     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: display_7seg:display_r ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; N              ; 4     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Mar 28 12:43:51 2025       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; alu                                         ;
+; Top-level Entity Name           ; test                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 4                                           ;
+; Total pins                      ; 59                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; alu                ; alu                ;
+; Top-level entity name                                                           ; test               ; alu                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -381,63 +206,766 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplier:multiplicador|adder:adders[3].adderX"                                                            ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; a[2..0] ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; a[7]    ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; cout    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; flags   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
++----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplier:multiplicador|adder:adders[2].adderX"                                                            ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; a[7..6] ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; a[1..0] ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; flags   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                         ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv                     ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/adder.sv                   ;         ;
+; sustractor.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv              ;         ;
+; multiplier.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv              ;         ;
+; mux_alu.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/mux_alu.sv                 ;         ;
+; and_operation.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/and_operation.sv           ;         ;
+; xor_operation.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/xor_operation.sv           ;         ;
+; or_operation.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/or_operation.sv            ;         ;
+; modulo_operation.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv        ;         ;
+; display_7seg.v                   ; yes             ; User Verilog HDL File        ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/display_7seg.v             ;         ;
+; div_operation.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/div_operation.sv           ;         ;
+; shift_l.v                        ; yes             ; User Verilog HDL File        ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/shift_l.v                  ;         ;
+; output_files/shift_r.v           ; yes             ; User Verilog HDL File        ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/shift_r.v     ;         ;
+; test.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv                    ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                               ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                           ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                ;         ;
+; db/lpm_divide_7dm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/db/lpm_divide_7dm.tdf      ;         ;
+; db/sign_div_unsign_dnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/db/sign_div_unsign_dnh.tdf ;         ;
+; db/alt_u_div_03f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/db/alt_u_div_03f.tdf       ;         ;
+; db/lpm_divide_a5m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/db/lpm_divide_a5m.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplier:multiplicador|adder:adders[1].adderX"                                                            ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; a[7..5] ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; a[0]    ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; flags   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 848        ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 1462       ;
+;     -- 7 input functions                    ; 16         ;
+;     -- 6 input functions                    ; 217        ;
+;     -- 5 input functions                    ; 383        ;
+;     -- 4 input functions                    ; 405        ;
+;     -- <=3 input functions                  ; 441        ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 4          ;
+;                                             ;            ;
+; I/O pins                                    ; 59         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; b[2]~input ;
+; Maximum fan-out                             ; 107        ;
+; Total fan-out                               ; 6287       ;
+; Average fan-out                             ; 3.97       ;
++---------------------------------------------+------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multiplier:multiplicador|adder:adders[0].adderX"                                                            ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; a[7..4] ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; b       ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; cin     ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; flags   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                               ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                             ; Entity Name         ; Library Name ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |test                                             ; 1462 (0)            ; 4 (0)                     ; 0                 ; 0          ; 59   ; 0            ; |test                                                                                                                                           ; test                ; work         ;
+;    |alu:uut|                                      ; 1462 (4)            ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut                                                                                                                                   ; alu                 ; work         ;
+;       |adder:sumador|                             ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|adder:sumador                                                                                                                     ; adder               ; work         ;
+;       |and_operation:operacion_and|               ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|and_operation:operacion_and                                                                                                       ; and_operation       ; work         ;
+;       |div_operation:operacion_div|               ; 326 (37)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|div_operation:operacion_div                                                                                                       ; div_operation       ; work         ;
+;          |lpm_divide:Div0|                        ; 289 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|div_operation:operacion_div|lpm_divide:Div0                                                                                       ; lpm_divide          ; work         ;
+;             |lpm_divide_7dm:auto_generated|       ; 289 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|div_operation:operacion_div|lpm_divide:Div0|lpm_divide_7dm:auto_generated                                                         ; lpm_divide_7dm      ; work         ;
+;                |sign_div_unsign_dnh:divider|      ; 289 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|div_operation:operacion_div|lpm_divide:Div0|lpm_divide_7dm:auto_generated|sign_div_unsign_dnh:divider                             ; sign_div_unsign_dnh ; work         ;
+;                   |alt_u_div_03f:divider|         ; 289 (289)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|div_operation:operacion_div|lpm_divide:Div0|lpm_divide_7dm:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_03f:divider       ; alt_u_div_03f       ; work         ;
+;       |modulo_operation:operacion_modulo|         ; 314 (1)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|modulo_operation:operacion_modulo                                                                                                 ; modulo_operation    ; work         ;
+;          |lpm_divide:Mod0|                        ; 313 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|modulo_operation:operacion_modulo|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_a5m:auto_generated|       ; 313 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_a5m:auto_generated                                                   ; lpm_divide_a5m      ; work         ;
+;                |sign_div_unsign_dnh:divider|      ; 313 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider                       ; sign_div_unsign_dnh ; work         ;
+;                   |alt_u_div_03f:divider|         ; 313 (313)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|modulo_operation:operacion_modulo|lpm_divide:Mod0|lpm_divide_a5m:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_03f:divider ; alt_u_div_03f       ; work         ;
+;       |multiplier:multiplicador|                  ; 506 (109)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador                                                                                                          ; multiplier          ; work         ;
+;          |adder:adders[10].adderX|                ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[10].adderX                                                                                  ; adder               ; work         ;
+;          |adder:adders[11].adderX|                ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[11].adderX                                                                                  ; adder               ; work         ;
+;          |adder:adders[12].adderX|                ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[12].adderX                                                                                  ; adder               ; work         ;
+;          |adder:adders[13].adderX|                ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[13].adderX                                                                                  ; adder               ; work         ;
+;          |adder:adders[14].adderX|                ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[14].adderX                                                                                  ; adder               ; work         ;
+;          |adder:adders[15].adderX|                ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[15].adderX                                                                                  ; adder               ; work         ;
+;          |adder:adders[1].adderX|                 ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[1].adderX                                                                                   ; adder               ; work         ;
+;          |adder:adders[2].adderX|                 ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[2].adderX                                                                                   ; adder               ; work         ;
+;          |adder:adders[3].adderX|                 ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[3].adderX                                                                                   ; adder               ; work         ;
+;          |adder:adders[4].adderX|                 ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[4].adderX                                                                                   ; adder               ; work         ;
+;          |adder:adders[5].adderX|                 ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[5].adderX                                                                                   ; adder               ; work         ;
+;          |adder:adders[6].adderX|                 ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[6].adderX                                                                                   ; adder               ; work         ;
+;          |adder:adders[7].adderX|                 ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[7].adderX                                                                                   ; adder               ; work         ;
+;          |adder:adders[8].adderX|                 ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[8].adderX                                                                                   ; adder               ; work         ;
+;          |adder:adders[9].adderX|                 ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|multiplier:multiplicador|adder:adders[9].adderX                                                                                   ; adder               ; work         ;
+;       |mux_alu:mux_flags|                         ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|mux_alu:mux_flags                                                                                                                 ; mux_alu             ; work         ;
+;       |mux_alu:mux_resultados|                    ; 65 (65)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|mux_alu:mux_resultados                                                                                                            ; mux_alu             ; work         ;
+;       |or_operation:operacion_or|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|or_operation:operacion_or                                                                                                         ; or_operation        ; work         ;
+;       |shift_l:shift_left|                        ; 57 (57)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|shift_l:shift_left                                                                                                                ; shift_l             ; work         ;
+;       |shift_r:shift_right|                       ; 58 (58)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|shift_r:shift_right                                                                                                               ; shift_r             ; work         ;
+;       |sustractor:restador|                       ; 48 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador                                                                                                               ; sustractor          ; work         ;
+;          |full_subtractor:subtractor_loop[10].fs| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[10].fs                                                                        ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[11].fs| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[11].fs                                                                        ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[12].fs| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[12].fs                                                                        ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[13].fs| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[13].fs                                                                        ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[14].fs| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[14].fs                                                                        ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[15].fs| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[15].fs                                                                        ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[1].fs|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[1].fs                                                                         ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[2].fs|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[2].fs                                                                         ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[3].fs|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[3].fs                                                                         ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[4].fs|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[4].fs                                                                         ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[5].fs|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[5].fs                                                                         ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[6].fs|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[6].fs                                                                         ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[7].fs|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[7].fs                                                                         ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[8].fs|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[8].fs                                                                         ; full_subtractor     ; work         ;
+;          |full_subtractor:subtractor_loop[9].fs|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|sustractor:restador|full_subtractor:subtractor_loop[9].fs                                                                         ; full_subtractor     ; work         ;
+;       |xor_operation:operacion_xor|               ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test|alu:uut|xor_operation:operacion_xor                                                                                                       ; xor_operation       ; work         ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sustractor:restador|full_subtractor:subtractor_loop[0].fs" ;
-+------+-------+----------+-------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                     ;
-+------+-------+----------+-------------------------------------------------------------+
-; bin  ; Input ; Info     ; Stuck at GND                                                ;
-+------+-------+----------+-------------------------------------------------------------+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 4     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft0   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft0   ;
+; 4:1                ; 18 bits   ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft0   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft0   ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft0   ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |test|alu:uut|shift_r:shift_right|ShiftRight0 ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft1   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft1   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft1   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_r:shift_right|ShiftLeft0  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_r:shift_right|ShiftLeft0  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_r:shift_right|ShiftLeft0  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft1   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |test|alu:uut|shift_r:shift_right|ShiftLeft0  ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 128 LEs              ; 32 LEs                 ; No         ; |test|alu:uut|mux_alu:mux_resultados|Mux6     ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |test|alu:uut|shift_l:shift_left|ShiftLeft0   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |test ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; N              ; 16    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; N              ; 16    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|adder:sumador ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; N              ; 16    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|sustractor:restador ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; N              ; 16    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[0].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[1].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[2].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[3].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[4].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[5].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[6].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[7].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[8].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[9].adderX ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[10].adderX ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[11].adderX ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[12].adderX ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[13].adderX ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[14].adderX ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|multiplier:multiplicador|adder:adders[15].adderX ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|div_operation:operacion_div ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|or_operation:operacion_or ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|xor_operation:operacion_xor ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|and_operation:operacion_and ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|modulo_operation:operacion_modulo ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|shift_l:shift_left ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; N              ; 16    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|shift_r:shift_right ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; N              ; 16    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|mux_alu:mux_resultados ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|mux_alu:mux_flags ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; N              ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|display_7seg:display_a ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|display_7seg:display_b ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:uut|display_7seg:display_r ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: alu:uut|div_operation:operacion_div|lpm_divide:Div0 ;
++------------------------+----------------+------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                       ;
++------------------------+----------------+------------------------------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                                                    ;
+; LPM_WIDTHD             ; 16             ; Untyped                                                    ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                    ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                    ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                    ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                    ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                    ;
+; CBXI_PARAMETER         ; lpm_divide_7dm ; Untyped                                                    ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                    ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                    ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                               ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                             ;
++------------------------+----------------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: alu:uut|modulo_operation:operacion_modulo|lpm_divide:Mod0 ;
++------------------------+----------------+------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                             ;
++------------------------+----------------+------------------------------------------------------------------+
+; LPM_WIDTHN             ; 16             ; Untyped                                                          ;
+; LPM_WIDTHD             ; 16             ; Untyped                                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                          ;
+; CBXI_PARAMETER         ; lpm_divide_a5m ; Untyped                                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                   ;
++------------------------+----------------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|mux_alu:mux_flags"                                                                                                                                   ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; sum         ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "sum[15..4]" will be connected to GND.         ;
+; sub         ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "sub[15..4]" will be connected to GND.         ;
+; mul         ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "mul[15..4]" will be connected to GND.         ;
+; div_res     ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "div_res[15..4]" will be connected to GND.     ;
+; mod_res     ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "mod_res[15..4]" will be connected to GND.     ;
+; and_res     ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "and_res[15..4]" will be connected to GND.     ;
+; or_res      ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "or_res[15..4]" will be connected to GND.      ;
+; xor_res     ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "xor_res[15..4]" will be connected to GND.     ;
+; shift_left  ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "shift_left[15..4]" will be connected to GND.  ;
+; shift_right ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "shift_right[15..4]" will be connected to GND. ;
+; out         ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (4 bits) it drives; bit(s) "out[15..4]" have no fanouts                              ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[15].adderX"                                                    ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                  ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[14..0] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[31]    ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; flags    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[14].adderX"                                                     ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..30] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[13..0]  ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[13].adderX"                                                     ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..29] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[12..0]  ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[12].adderX"                                                     ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..28] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[11..0]  ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[11].adderX"                                                     ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..27] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[10..0]  ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[10].adderX"                                                     ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..26] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[9..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[9].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..25] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[8..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[8].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..24] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[7..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[7].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..23] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[6..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[6].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..22] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[5..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[5].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..21] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[4..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[4].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..20] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[3..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[3].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..19] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[2..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[2].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..18] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[1..0]   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[1].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..17] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; a[0]      ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|multiplier:multiplicador|adder:adders[0].adderX"                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a[31..16] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; b         ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; cin       ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; flags     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut|sustractor:restador|full_subtractor:subtractor_loop[0].fs" ;
++------+-------+----------+---------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                             ;
++------+-------+----------+---------------------------------------------------------------------+
+; bin  ; Input ; Info     ; Stuck at GND                                                        ;
++------+-------+----------+---------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "adder:sumador"                                                                                                                                                                        ;
+; Port Connectivity Checks: "alu:uut|adder:sumador"                                                                                                                                                                ;
 +---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
 +---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -447,14 +975,71 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------------------+
+; Port Connectivity Checks: "alu:uut"                  ;
++---------+--------+----------+------------------------+
+; Port    ; Type   ; Severity ; Details                ;
++---------+--------+----------+------------------------+
+; seg_a_U ; Output ; Info     ; Explicitly unconnected ;
+; seg_a_T ; Output ; Info     ; Explicitly unconnected ;
+; seg_b_U ; Output ; Info     ; Explicitly unconnected ;
+; seg_b_T ; Output ; Info     ; Explicitly unconnected ;
+; seg_r_U ; Output ; Info     ; Explicitly unconnected ;
+; seg_r_T ; Output ; Info     ; Explicitly unconnected ;
++---------+--------+----------+------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 4                           ;
+;     plain             ; 4                           ;
+; arriav_lcell_comb     ; 1462                        ;
+;     arith             ; 361                         ;
+;         0 data inputs ; 54                          ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 27                          ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 234                         ;
+;     extend            ; 16                          ;
+;         7 data inputs ; 16                          ;
+;     normal            ; 1067                        ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 145                         ;
+;         3 data inputs ; 172                         ;
+;         4 data inputs ; 383                         ;
+;         5 data inputs ; 149                         ;
+;         6 data inputs ; 217                         ;
+;     shared            ; 18                          ;
+;         0 data inputs ; 6                           ;
+;         2 data inputs ; 6                           ;
+;         4 data inputs ; 6                           ;
+; boundary_port         ; 59                          ;
+;                       ;                             ;
+; Max LUT depth         ; 38.00                       ;
+; Average LUT depth     ; 28.42                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:05     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Mar 28 09:49:01 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu --analysis_and_elaboration
+    Info: Processing started: Fri Mar 28 12:43:36 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
@@ -494,33 +1079,73 @@ Info (12021): Found 1 design units, including 1 entities, in source file shift_l
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/shift_r.v
     Info (12023): Found entity 1: shift_r File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/output_files/shift_r.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file test.sv
-    Info (12023): Found entity 1: test File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 1
-Info (12127): Elaborating entity "alu" for the top level hierarchy
-Info (12128): Elaborating entity "adder" for hierarchy "adder:sumador" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 32
-Info (12128): Elaborating entity "sustractor" for hierarchy "sustractor:restador" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 39
-Warning (10230): Verilog HDL assignment warning at sustractor.sv(49): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv Line: 49
-Info (12128): Elaborating entity "full_subtractor" for hierarchy "sustractor:restador|full_subtractor:subtractor_loop[0].fs" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv Line: 38
-Info (12128): Elaborating entity "multiplier" for hierarchy "multiplier:multiplicador" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 46
-Warning (10230): Verilog HDL assignment warning at multiplier.sv(106): truncated value with size 8 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 106
-Info (12128): Elaborating entity "adder" for hierarchy "multiplier:multiplicador|adder:adders[0].adderX" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 21
-Info (12128): Elaborating entity "div_operation" for hierarchy "div_operation:operacion_div" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 53
-Warning (10230): Verilog HDL assignment warning at div_operation.sv(9): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/div_operation.sv Line: 9
-Info (12128): Elaborating entity "or_operation" for hierarchy "or_operation:operacion_or" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 60
-Info (12128): Elaborating entity "xor_operation" for hierarchy "xor_operation:operacion_xor" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 67
-Info (12128): Elaborating entity "and_operation" for hierarchy "and_operation:operacion_and" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 74
-Info (12128): Elaborating entity "modulo_operation" for hierarchy "modulo_operation:operacion_modulo" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 81
-Warning (10230): Verilog HDL assignment warning at modulo_operation.sv(14): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv Line: 14
-Info (12128): Elaborating entity "shift_l" for hierarchy "shift_l:shift_left" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 88
-Info (12128): Elaborating entity "shift_r" for hierarchy "shift_r:shift_right" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 95
-Info (12128): Elaborating entity "mux_alu" for hierarchy "mux_alu:mux_resultados" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 133
-Info (12128): Elaborating entity "display_7seg" for hierarchy "display_7seg:display_a" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 174
+    Info (12023): Found entity 1: test File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at test.sv(40): created implicit net for "out" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 40
+Info (12127): Elaborating entity "test" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at test.sv(40): object "out" assigned a value but never read File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 40
+Warning (10036): Verilog HDL or VHDL warning at test.sv(13): object "reg_A" assigned a value but never read File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 13
+Warning (10036): Verilog HDL or VHDL warning at test.sv(13): object "reg_B" assigned a value but never read File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 13
+Warning (10858): Verilog HDL warning at test.sv(13): object alu_result used but never assigned File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 13
+Warning (10230): Verilog HDL assignment warning at test.sv(40): truncated value with size 16 to match size of target (1) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 40
+Info (12128): Elaborating entity "alu" for hierarchy "alu:uut" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 37
+Info (12128): Elaborating entity "adder" for hierarchy "alu:uut|adder:sumador" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 32
+Info (12128): Elaborating entity "sustractor" for hierarchy "alu:uut|sustractor:restador" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 39
+Warning (10230): Verilog HDL assignment warning at sustractor.sv(49): truncated value with size 32 to match size of target (16) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv Line: 49
+Info (12128): Elaborating entity "full_subtractor" for hierarchy "alu:uut|sustractor:restador|full_subtractor:subtractor_loop[0].fs" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/sustractor.sv Line: 38
+Info (12128): Elaborating entity "multiplier" for hierarchy "alu:uut|multiplier:multiplicador" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 46
+Warning (10230): Verilog HDL assignment warning at multiplier.sv(106): truncated value with size 32 to match size of target (16) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 106
+Info (12128): Elaborating entity "adder" for hierarchy "alu:uut|multiplier:multiplicador|adder:adders[0].adderX" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/multiplier.sv Line: 21
+Info (12128): Elaborating entity "div_operation" for hierarchy "alu:uut|div_operation:operacion_div" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 53
+Warning (10230): Verilog HDL assignment warning at div_operation.sv(9): truncated value with size 32 to match size of target (16) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/div_operation.sv Line: 9
+Info (12128): Elaborating entity "or_operation" for hierarchy "alu:uut|or_operation:operacion_or" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 60
+Info (12128): Elaborating entity "xor_operation" for hierarchy "alu:uut|xor_operation:operacion_xor" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 67
+Info (12128): Elaborating entity "and_operation" for hierarchy "alu:uut|and_operation:operacion_and" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 74
+Info (12128): Elaborating entity "modulo_operation" for hierarchy "alu:uut|modulo_operation:operacion_modulo" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 81
+Warning (10230): Verilog HDL assignment warning at modulo_operation.sv(14): truncated value with size 32 to match size of target (16) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv Line: 14
+Info (12128): Elaborating entity "shift_l" for hierarchy "alu:uut|shift_l:shift_left" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 88
+Info (12128): Elaborating entity "shift_r" for hierarchy "alu:uut|shift_r:shift_right" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 95
+Info (12128): Elaborating entity "mux_alu" for hierarchy "alu:uut|mux_alu:mux_resultados" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 133
+Info (12128): Elaborating entity "display_7seg" for hierarchy "alu:uut|display_7seg:display_a" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/alu.sv Line: 174
 Warning (10230): Verilog HDL assignment warning at display_7seg.v(13): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/display_7seg.v Line: 13
 Warning (10230): Verilog HDL assignment warning at display_7seg.v(14): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/display_7seg.v Line: 14
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4770 megabytes
-    Info: Processing ended: Fri Mar 28 09:49:09 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:16
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:uut|div_operation:operacion_div|Div0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/div_operation.sv Line: 9
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:uut|modulo_operation:operacion_modulo|Mod0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv Line: 14
+Info (12130): Elaborated megafunction instantiation "alu:uut|div_operation:operacion_div|lpm_divide:Div0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/div_operation.sv Line: 9
+Info (12133): Instantiated megafunction "alu:uut|div_operation:operacion_div|lpm_divide:Div0" with the following parameter: File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/div_operation.sv Line: 9
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "16"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7dm.tdf
+    Info (12023): Found entity 1: lpm_divide_7dm File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/db/lpm_divide_7dm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_dnh File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/db/sign_div_unsign_dnh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_03f.tdf
+    Info (12023): Found entity 1: alt_u_div_03f File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/db/alt_u_div_03f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "alu:uut|modulo_operation:operacion_modulo|lpm_divide:Mod0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv Line: 14
+Info (12133): Instantiated megafunction "alu:uut|modulo_operation:operacion_modulo|lpm_divide:Mod0" with the following parameter: File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/modulo_operation.sv Line: 14
+    Info (12134): Parameter "LPM_WIDTHN" = "16"
+    Info (12134): Parameter "LPM_WIDTHD" = "16"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_a5m.tdf
+    Info (12023): Found entity 1: lpm_divide_a5m File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/db/lpm_divide_a5m.tdf Line: 25
+Warning (12241): 18 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 5
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab2/test.sv Line: 6
+Info (21057): Implemented 1521 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 35 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 1462 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4842 megabytes
+    Info: Processing ended: Fri Mar 28 12:43:51 2025
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:23
 
 
