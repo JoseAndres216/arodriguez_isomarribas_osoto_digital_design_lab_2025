@@ -1,0 +1,88 @@
+# Reading pref.tcl
+# do tarea2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:48:49 on Apr 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv 
+# -- Compiling module tarea2
+# 
+# Top level modules:
+# 	tarea2
+# End time: 19:48:49 on Apr 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:48:50 on Apr 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 19:48:50 on Apr 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/FSM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:48:50 on Apr 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/FSM.sv 
+# -- Compiling module FSM
+# 
+# Top level modules:
+# 	FSM
+# End time: 19:48:50 on Apr 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:48:50 on Apr 07,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv 
+# -- Compiling module tarea2_tb
+# 
+# Top level modules:
+# 	tarea2_tb
+# End time: 19:48:50 on Apr 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tarea2_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tarea2_tb 
+# Start time: 19:48:50 on Apr 07,2025
+# Loading sv_std.std
+# Loading work.tarea2_tb
+# Loading work.tarea2
+# Loading work.counter
+# Loading work.FSM
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'errorCountdown'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tarea2_tb/dut/errorCountdown File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv Line: 9
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv(9): [TFMPC] - Missing connection for port 'count'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'maintenanceCounter'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tarea2_tb/dut/maintenanceCounter File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv Line: 16
+# ** Warning: (vsim-3722) C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv(16): [TFMPC] - Missing connection for port 'timeOut'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Tiempo=0 | rst=1 | m=0 | mCounter=  0 | cicles_skipped=  z
+# Tiempo=15 | rst=0 | m=0 | mCounter=  0 | cicles_skipped=  z
+# Tiempo=25 | rst=0 | m=1 | mCounter=  0 | cicles_skipped=  z
+# Tiempo=30 | rst=0 | m=1 | mCounter=  1 | cicles_skipped=  z
+# Tiempo=40 | rst=0 | m=1 | mCounter=  2 | cicles_skipped=  z
+# Tiempo=45 | rst=0 | m=0 | mCounter=  2 | cicles_skipped=  z
+# Tiempo=55 | rst=1 | m=0 | mCounter=  0 | cicles_skipped=  z
+# Tiempo=65 | rst=0 | m=0 | mCounter=  0 | cicles_skipped=  z
+# ** Note: $stop    : C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv(40)
+#    Time: 145 ps  Iteration: 0  Instance: /tarea2_tb
+# Break in Module tarea2_tb at C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv line 40
+# End time: 19:49:21 on Apr 07,2025, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 4

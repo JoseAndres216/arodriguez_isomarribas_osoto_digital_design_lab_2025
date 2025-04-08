@@ -1,0 +1,8 @@
+module tarea2 (
+	input clk, rst, x,
+	output a, b
+);
+
+logic [1:0] state, next_state;
+
+endmodule

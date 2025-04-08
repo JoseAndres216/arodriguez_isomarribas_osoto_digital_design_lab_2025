@@ -1,0 +1,50 @@
+module tarea2_tb;
+
+    // Señales para conectar con el DUT (Device Under Test)
+    logic clk, rst, m;
+    logic [7:0] mCounter, cicles_skipped;
+
+    // Instancia del módulo bajo prueba (DUT)
+    tarea2 dut (
+        .clk(clk),
+        .rst(rst),
+        .m(m),
+        .mCounter(mCounter),
+        .cicles_skipped(cicles_skipped)
+    );
+
+    // Generación de reloj
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk; // Período de 10 unidades de tiempo
+    end
+
+    // Bloque de estímulos
+    initial begin
+        // Inicialización
+        rst = 1; m = 0;
+        #15 rst = 0; // Desactivar reset después de 15 unidades de tiempo
+
+        // Caso 1: Mantenimiento realizado
+        m = 1;
+        #20;
+
+        // Caso 2: Sin mantenimiento
+        m = 0;
+        #40;
+
+        // Caso 3: Reset activado nuevamente
+        rst = 1;
+        #10 rst = 0;
+        #30;
+
+        // Finalizar simulación
+        $finish;
+    end
+
+    // Monitoreo de resultados
+    initial begin
+        $monitor("Tiempo=%0t | rst=%b | m=%b | mCounter=%d | cicles_skipped=%d | state=%b", 
+                 $time, rst, m, mCounter, cicles_skipped, dut.state);
+    end
+endmodule

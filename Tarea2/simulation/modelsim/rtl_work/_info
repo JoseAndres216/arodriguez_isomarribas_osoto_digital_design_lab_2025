@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/simulation/modelsim
+vcounter
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1744076930
+!i10b 1
+!s100 iHR7TAm5D3=PTC`[f08eQ2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Io]Bf:ch;Nb`NcRYA8ZjOE2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1744060290
+8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/counter.sv
+FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/counter.sv
+!i122 1
+L0 1 16
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1744076930.000000
+!s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/counter.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2
+Z9 tCvgOpt 0
+vFSM
+R1
+R2
+!i10b 1
+!s100 J0H1T;B2kC<DnAgjK_k[L2
+R3
+I9@NPQO50eWUXTN9M`U3Dh1
+R4
+S1
+R0
+w1744076892
+8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/FSM.sv
+FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/FSM.sv
+!i122 2
+L0 1 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/FSM.sv|
+!i113 1
+R7
+R8
+R9
+n@f@s@m
+vtarea2
+R1
+!s110 1744076929
+!i10b 1
+!s100 ahVKXP_J7?FB0GIO]^YE40
+R3
+Iz@g<DSG;ed1gkg5AfSb>B0
+R4
+S1
+R0
+w1744075945
+8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv
+FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv
+!i122 0
+L0 2 31
+R5
+r1
+!s85 0
+31
+!s108 1744076929.000000
+!s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv|
+!i113 1
+R7
+R8
+R9
+vtarea2_tb
+R1
+R2
+!i10b 1
+!s100 a56JHF]S<N^I]`b<zIN6i3
+R3
+ICNSXzcRlUzOX=S`<i>]U?1
+R4
+S1
+R0
+w1744062550
+8C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv
+FC:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv
+!i122 3
+L0 1 49
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2|C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv|
+!i113 1
+R7
+R8
+R9

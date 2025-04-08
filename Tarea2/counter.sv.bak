@@ -1,0 +1,13 @@
+module counter (
+	input clk, rst, signal,
+	output [7:0] count
+);
+
+always_ff @(negedge clk or posedge rst) begin
+	if (rst)
+		count = 8'h00;
+	else if (signal)
+		count = count + 8'h01;
+end
+
+endmodule
