@@ -1,0 +1,15 @@
+module register (
+  input logic clk, 
+  input logic rst, 
+  input logic [7:0] A, 
+  output logic [7:0] regA 
+);
+  
+always_ff @(negedge clk or posedge rst) begin
+  if (rst) 
+    regA <= 8'h00; 
+  else
+    regA <= A; 
+end
+
+endmodule

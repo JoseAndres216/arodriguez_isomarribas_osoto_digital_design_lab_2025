@@ -1,0 +1,9 @@
+module mux2to1 (
+	input [7:0] A, B,
+	input sel,
+	output [7:0] C
+);
+
+assign C = sel ? A : B;
+
+endmodule 

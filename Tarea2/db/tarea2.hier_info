@@ -1,23 +1,29 @@
 |tarea2
 clk => clk.IN3
-rst => rst.IN3
-m => m.IN3
-mCounter[0] << counter:maintenanceCounter.count
-mCounter[1] << counter:maintenanceCounter.count
-mCounter[2] << counter:maintenanceCounter.count
-mCounter[3] << counter:maintenanceCounter.count
-mCounter[4] << counter:maintenanceCounter.count
-mCounter[5] << counter:maintenanceCounter.count
-mCounter[6] << counter:maintenanceCounter.count
-mCounter[7] << counter:maintenanceCounter.count
-cicles_skipped[0] << <GND>
-cicles_skipped[1] << <GND>
-cicles_skipped[2] << <GND>
-cicles_skipped[3] << <GND>
-cicles_skipped[4] << <GND>
-cicles_skipped[5] << <GND>
-cicles_skipped[6] << <GND>
-cicles_skipped[7] << <GND>
+rst => rst.IN2
+m => m.IN1
+muxOutput[0] <= mux2to1:muxInstance.C
+muxOutput[1] <= mux2to1:muxInstance.C
+muxOutput[2] <= mux2to1:muxInstance.C
+muxOutput[3] <= mux2to1:muxInstance.C
+muxOutput[4] <= mux2to1:muxInstance.C
+muxOutput[5] <= mux2to1:muxInstance.C
+muxOutput[6] <= mux2to1:muxInstance.C
+muxOutput[7] <= mux2to1:muxInstance.C
+
+
+|tarea2|FSM:fsm
+clk => state~1.DATAIN
+rst => Selector0.IN3
+rst => state~3.DATAIN
+rst => Selector1.IN1
+m => next_state.01.DATAB
+m => next_state.10.DATAB
+timeOut => Selector1.IN3
+timeOut => Selector0.IN2
+sel <= sel.DB_MAX_OUTPUT_PORT_TYPE
+inM <= inM.DB_MAX_OUTPUT_PORT_TYPE
+rstTimer <= rstTimer.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |tarea2|counter:errorCountdown
@@ -45,7 +51,6 @@ signal => count[3]~reg0.ENA
 signal => count[2]~reg0.ENA
 signal => count[1]~reg0.ENA
 signal => count[0]~reg0.ENA
-timeOut <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -81,7 +86,6 @@ signal => count[3]~reg0.ENA
 signal => count[2]~reg0.ENA
 signal => count[1]~reg0.ENA
 signal => count[0]~reg0.ENA
-timeOut <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -92,13 +96,58 @@ count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|tarea2|FSM:fsm
-clk => state~1.DATAIN
-rst => state~3.DATAIN
-m => next_state.01.DATAB
-m => next_state.10.DATAB
-timeOut => Selector1.IN3
-timeOut => Selector0.IN2
-error <= error.DB_MAX_OUTPUT_PORT_TYPE
+|tarea2|comparator:errorChecker
+A[0] => Equal0.IN7
+A[1] => Equal0.IN6
+A[2] => Equal0.IN5
+A[3] => Equal0.IN4
+A[4] => Equal0.IN3
+A[5] => Equal0.IN2
+A[6] => Equal0.IN1
+A[7] => Equal0.IN0
+B[0] => Equal0.IN15
+B[1] => Equal0.IN14
+B[2] => Equal0.IN13
+B[3] => Equal0.IN12
+B[4] => Equal0.IN11
+B[5] => Equal0.IN10
+B[6] => Equal0.IN9
+B[7] => Equal0.IN8
+equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tarea2|mux2to1:muxInstance
+A[0] => C.DATAB
+A[1] => C.DATAB
+A[2] => C.DATAB
+A[3] => C.DATAB
+A[4] => C.DATAB
+A[5] => C.DATAB
+A[6] => C.DATAB
+A[7] => C.DATAB
+B[0] => C.DATAA
+B[1] => C.DATAA
+B[2] => C.DATAA
+B[3] => C.DATAA
+B[4] => C.DATAA
+B[5] => C.DATAA
+B[6] => C.DATAA
+B[7] => C.DATAA
+sel => C.OUTPUTSELECT
+sel => C.OUTPUTSELECT
+sel => C.OUTPUTSELECT
+sel => C.OUTPUTSELECT
+sel => C.OUTPUTSELECT
+sel => C.OUTPUTSELECT
+sel => C.OUTPUTSELECT
+sel => C.OUTPUTSELECT
+C[0] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[1] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[4] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[5] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[6] <= C.DB_MAX_OUTPUT_PORT_TYPE
+C[7] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 

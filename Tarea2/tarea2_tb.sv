@@ -2,15 +2,14 @@ module tarea2_tb;
 
     // Señales de prueba
     logic clk, rst, m;
-    logic [7:0] mCounter, cicles_skipped;
+    logic [7:0] muxOutput;
 
     // Instancia del DUT (Device Under Test)
     tarea2 dut (
         .clk(clk),
         .rst(rst),
         .m(m),
-        .mCounter(mCounter),
-        .cicles_skipped(cicles_skipped)
+        .muxOutput(muxOutput)
     );
 
     // Generación de reloj
@@ -24,26 +23,24 @@ module tarea2_tb;
         // Inicialización
         rst = 1; m = 0;
         #15 rst = 0; // Desactivar reset después de 15 unidades de tiempo
-        
-        // Caso 1: Señal `m` activa
-        #10 m = 1;
-        #20 m = 0;
 
-        // Caso 2: Reset nuevamente
-        #10 rst = 1;
-        #10 rst = 0;
+        // Esperar 200 ciclos de reloj con m=0
+        #2000;
 
-        // Caso 3: Sin señal activa
-        #30 m = 0;
+        // Verificación
+        if (muxOutput == 8'hFF) begin
+            $display("TEST PASADO: muxOutput = %h después de 200 ciclos sin mantenimiento", muxOutput);
+        end else begin
+            $display("TEST FALLADO: muxOutput = %h (esperado 8'hFF)", muxOutput);
+        end
 
-        // Finalizar simulación
-        #50 $stop;
+        $stop;
     end
 
     // Monitoreo de resultados
     initial begin
-        $monitor("Tiempo=%0t | rst=%b | m=%b | mCounter=%d | cicles_skipped=%d", 
-                 $time, rst, m, mCounter, cicles_skipped);
+        $monitor("Tiempo=%0t | rst=%b | m=%b | muxOutput=%h", 
+                 $time, rst, m, muxOutput);
     end
 
 endmodule
