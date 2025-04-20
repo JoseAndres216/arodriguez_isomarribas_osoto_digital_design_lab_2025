@@ -20,7 +20,7 @@ always_comb
 		2'b00: if(m) next_state = 2'b01; else next_state = 2'b10;
 		2'b01: next_state = 2'b00; // actualizar contador de mantenimientos y volver a estado incial
 		2'b10: if(timeOut) next_state = 2'b11; else next_state = 2'b00; // decide siguiente estado segun contador
-		2'b11: if(rst) next_state = 2'b00; else next_state = 2'b11; // debe escribir error y enciclarse hasta que haya reset
+		2'b11: next_state = 2'b11; // debe escribir error y enciclarse hasta que haya reset
 		default: next_state = 2'b00;
 	endcase
 

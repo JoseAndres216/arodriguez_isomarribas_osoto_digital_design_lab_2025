@@ -1,22 +1,20 @@
 |tarea2
-clk => clk.IN3
-rst => rst.IN2
+clk => clk.IN4
+rst => rst.IN3
 m => m.IN1
-muxOutput[0] <= mux2to1:muxInstance.C
-muxOutput[1] <= mux2to1:muxInstance.C
-muxOutput[2] <= mux2to1:muxInstance.C
-muxOutput[3] <= mux2to1:muxInstance.C
-muxOutput[4] <= mux2to1:muxInstance.C
-muxOutput[5] <= mux2to1:muxInstance.C
-muxOutput[6] <= mux2to1:muxInstance.C
-muxOutput[7] <= mux2to1:muxInstance.C
+out[0] << register:regstr.regA
+out[1] << register:regstr.regA
+out[2] << register:regstr.regA
+out[3] << register:regstr.regA
+out[4] << register:regstr.regA
+out[5] << register:regstr.regA
+out[6] << register:regstr.regA
+out[7] << register:regstr.regA
 
 
 |tarea2|FSM:fsm
 clk => state~1.DATAIN
-rst => Selector0.IN3
 rst => state~3.DATAIN
-rst => Selector1.IN1
 m => next_state.01.DATAB
 m => next_state.10.DATAB
 timeOut => Selector1.IN3
@@ -149,5 +147,40 @@ C[4] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[5] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[6] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[7] <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|tarea2|register:regstr
+clk => regA[0]~reg0.CLK
+clk => regA[1]~reg0.CLK
+clk => regA[2]~reg0.CLK
+clk => regA[3]~reg0.CLK
+clk => regA[4]~reg0.CLK
+clk => regA[5]~reg0.CLK
+clk => regA[6]~reg0.CLK
+clk => regA[7]~reg0.CLK
+rst => regA[0]~reg0.ACLR
+rst => regA[1]~reg0.ACLR
+rst => regA[2]~reg0.ACLR
+rst => regA[3]~reg0.ACLR
+rst => regA[4]~reg0.ACLR
+rst => regA[5]~reg0.ACLR
+rst => regA[6]~reg0.ACLR
+rst => regA[7]~reg0.ACLR
+A[0] => regA[0]~reg0.DATAIN
+A[1] => regA[1]~reg0.DATAIN
+A[2] => regA[2]~reg0.DATAIN
+A[3] => regA[3]~reg0.DATAIN
+A[4] => regA[4]~reg0.DATAIN
+A[5] => regA[5]~reg0.DATAIN
+A[6] => regA[6]~reg0.DATAIN
+A[7] => regA[7]~reg0.DATAIN
+regA[0] <= regA[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[1] <= regA[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[2] <= regA[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[3] <= regA[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[4] <= regA[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[5] <= regA[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[6] <= regA[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[7] <= regA[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

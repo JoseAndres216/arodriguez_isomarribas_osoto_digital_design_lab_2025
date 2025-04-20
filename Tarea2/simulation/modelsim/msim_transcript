@@ -12,69 +12,79 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:10:50 on Apr 20,2025
+# Start time: 13:15:40 on Apr 20,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2.sv 
 # -- Compiling module tarea2
 # 
 # Top level modules:
 # 	tarea2
-# End time: 12:10:50 on Apr 20,2025, Elapsed time: 0:00:00
+# End time: 13:15:40 on Apr 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:10:50 on Apr 20,2025
+# Start time: 13:15:40 on Apr 20,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/counter.sv 
 # -- Compiling module counter
 # 
 # Top level modules:
 # 	counter
-# End time: 12:10:50 on Apr 20,2025, Elapsed time: 0:00:00
+# End time: 13:15:40 on Apr 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/FSM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:10:51 on Apr 20,2025
+# Start time: 13:15:40 on Apr 20,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/FSM.sv 
 # -- Compiling module FSM
 # 
 # Top level modules:
 # 	FSM
-# End time: 12:10:51 on Apr 20,2025, Elapsed time: 0:00:00
+# End time: 13:15:41 on Apr 20,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/comparator.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:10:51 on Apr 20,2025
+# Start time: 13:15:41 on Apr 20,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/comparator.sv 
 # -- Compiling module comparator
 # 
 # Top level modules:
 # 	comparator
-# End time: 12:10:51 on Apr 20,2025, Elapsed time: 0:00:00
+# End time: 13:15:41 on Apr 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/mux2to1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:10:51 on Apr 20,2025
+# Start time: 13:15:41 on Apr 20,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/mux2to1.sv 
 # -- Compiling module mux2to1
 # 
 # Top level modules:
 # 	mux2to1
-# End time: 12:10:51 on Apr 20,2025, Elapsed time: 0:00:00
+# End time: 13:15:41 on Apr 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:41 on Apr 20,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/register.sv 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 13:15:41 on Apr 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2 {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:10:51 on Apr 20,2025
+# Start time: 13:15:41 on Apr 20,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv 
 # -- Compiling module tarea2_tb
 # 
 # Top level modules:
 # 	tarea2_tb
-# End time: 12:10:51 on Apr 20,2025, Elapsed time: 0:00:00
+# End time: 13:15:41 on Apr 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tarea2_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tarea2_tb 
-# Start time: 12:10:51 on Apr 20,2025
+# Start time: 13:15:41 on Apr 20,2025
 # Loading sv_std.std
 # Loading work.tarea2_tb
 # Loading work.tarea2
@@ -82,6 +92,7 @@
 # Loading work.counter
 # Loading work.comparator
 # Loading work.mux2to1
+# Loading work.register
 # 
 # add wave *
 # view structure
@@ -89,12 +100,42 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Tiempo=0 | rst=1 | m=0 | muxOutput=00
-# Tiempo=15 | rst=0 | m=0 | muxOutput=00
-# Tiempo=2010 | rst=0 | m=0 | muxOutput=ff
-# TEST PASADO: muxOutput = ff después de 200 ciclos sin mantenimiento
-# ** Note: $stop    : C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv(37)
-#    Time: 2015 ps  Iteration: 0  Instance: /tarea2_tb
-# Break in Module tarea2_tb at C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv line 37
-# End time: 12:11:25 on Apr 20,2025, Elapsed time: 0:00:34
+# Tiempo=0 | rst=1 | m=1 | out=00
+# Tiempo=10 | rst=0 | m=1 | out=00
+# Tiempo=30 | rst=0 | m=1 | out=01
+# Tiempo=50 | rst=0 | m=1 | out=02
+# Tiempo=70 | rst=0 | m=1 | out=03
+# Tiempo=90 | rst=0 | m=1 | out=04
+# Tiempo=110 | rst=0 | m=1 | out=05
+# Tiempo=130 | rst=0 | m=1 | out=06
+# Tiempo=150 | rst=0 | m=1 | out=07
+# Tiempo=170 | rst=0 | m=1 | out=08
+# Tiempo=190 | rst=0 | m=1 | out=09
+# Tiempo=210 | rst=0 | m=1 | out=0a
+# Tiempo=230 | rst=0 | m=1 | out=0b
+# Tiempo=250 | rst=0 | m=1 | out=0c
+# Tiempo=270 | rst=0 | m=1 | out=0d
+# Tiempo=290 | rst=0 | m=1 | out=0e
+# Tiempo=310 | rst=0 | m=1 | out=0f
+# Tiempo=330 | rst=0 | m=1 | out=10
+# Tiempo=350 | rst=0 | m=1 | out=11
+# Tiempo=370 | rst=0 | m=1 | out=12
+# Tiempo=390 | rst=0 | m=1 | out=13
+# Tiempo=410 | rst=0 | m=1 | out=14
+# Tiempo=430 | rst=0 | m=1 | out=15
+# Tiempo=450 | rst=0 | m=1 | out=16
+# Tiempo=470 | rst=0 | m=1 | out=17
+# Tiempo=490 | rst=0 | m=1 | out=18
+# Tiempo=510 | rst=0 | m=1 | out=19
+# Test succeeded: mainteinance | out= 25
+# Tiempo=520 | rst=1 | m=0 | out=00
+# Tiempo=530 | rst=0 | m=0 | out=00
+# Tiempo=2530 | rst=0 | m=0 | out=ff
+# Test succeeded: error triggered | out=8'hFF
+# Tiempo=2540 | rst=0 | m=1 | out=ff
+# Tiempo=2560 | rst=0 | m=0 | out=ff
+# ** Note: $stop    : C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv(56)
+#    Time: 2660 ps  Iteration: 0  Instance: /tarea2_tb
+# Break in Module tarea2_tb at C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Tarea2/tarea2_tb.sv line 56
+# End time: 13:16:42 on Apr 20,2025, Elapsed time: 0:01:01
 # Errors: 0, Warnings: 0

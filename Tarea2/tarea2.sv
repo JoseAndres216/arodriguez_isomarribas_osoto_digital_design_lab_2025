@@ -1,11 +1,11 @@
 // tarea 2 FSM
 module tarea2 (
 	input clk, rst, m,
-	output [7:0] muxOutput
+	output [7:0] out
 );
 
 logic timeOut, sel, inM, rstTimer;
-logic [7:0] mCounter, cicles_skipped;
+logic [7:0] mCounter, cicles_skipped, muxOutput;
 
 	FSM fsm (
 		.clk(clk),
@@ -40,8 +40,15 @@ logic [7:0] mCounter, cicles_skipped;
 	mux2to1 muxInstance(
 		.A(8'hFF),
 		.B(mCounter),
-		.sel(timeOut),
+		.sel(sel),
 		.C(muxOutput)
+	);
+	
+	register regstr (
+		.clk(clk), 
+		.rst(rst), 
+		.A(muxOutput), 
+		.regA(out)
 	);
 	
 	
