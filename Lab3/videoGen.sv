@@ -1,35 +1,102 @@
 /**
  * @module videoGen
- * @brief Simple video generator for VGA display.
+ * @brief Connect4 video generator - version with per-cell color initialization.
  *
- * This module generates pixel color outputs (R, G, B) based on the current
- * screen coordinates (x, y). It draws characters from a character ROM and
- * a green rectangle overlay.
+ * This module generates VGA pixel color outputs (R, G, B) for a Connect4 board.
+ * Each cell can be assigned an individual color (8-bit RGB).
  *
- * The code is an adaptation from:
- * "Digital Design and Computer Architecture, Second Edition"
- * by David Money Harris & Sarah L. Harris.
- *
- * @param x Current horizontal pixel position (0 to 639).
- * @param y Current vertical pixel position (0 to 479).
+ * The board has 6 rows and 7 columns.
+ * 
+ * @param x Horizontal pixel coordinate (0 to 639).
+ * @param y Vertical pixel coordinate (0 to 479).
  * @param r 8-bit red color output.
  * @param g 8-bit green color output.
  * @param b 8-bit blue color output.
  */
+
 module videoGen(
+    input logic [9:0] x, y,
+    output logic [7:0] r, g, b
+);
 
-	input logic [9:0] x, y, 
-	output logic [7:0] r, g, b
-	);
+    // Signals for grid detection and cell identification
+    logic grid_on;      ///< High if (x,y) is inside the game board
+    logic [2:0] col;     ///< Column index (0 to 6)
+    logic [2:0] row;     ///< Row index (0 to 5)
+    logic in_hole;      ///< High if (x,y) is inside a hole (circle) in the board
 
-	logic pixel, inrect;
-	
-	// given y position, choose a character to display
-	// then look up the pixel value from the character ROM
-	// and display it in red or blue. Also draw a green rectangle.
-	chargenrom chargenromb(y[8:3]+8'd65, x[2:0], y[2:0], pixel);
-	rectgen rectgen(x, y, 10'd120, 10'd150, 10'd200, 10'd230, inrect);
-	assign {r, b} = (y[3]==0) ? {{8{pixel}},8'h00} : {8'h00,{8{pixel}}};
-	assign g = inrect ? 8'hFF : 8'h00;
-	
+    /**
+     * @typedef color_t
+     * @brief Structure to hold 8-bit RGB color for each cell.
+     */
+    typedef struct packed {
+        logic [7:0] r;   ///< Red component (0-255)
+        logic [7:0] g;   ///< Green component (0-255)
+        logic [7:0] b;   ///< Blue component (0-255)
+    } color_t;
+
+    /**
+     * @var board
+     * @brief 6x7 matrix of cell colors.
+     */
+    color_t board [0:5][0:6];
+
+    /**
+     * @brief Grid generator instance.
+     * 
+     * This module detects whether the current pixel belongs to the game board
+     * and maps pixel coordinates to board row/column indices.
+     */
+    tableGrid grid(x, y, grid_on, col, row, in_hole);
+
+    /**
+     * @brief Initial board color setup.
+     * 
+     * This block initializes all cells to white (empty),
+     * and sets a few colored pieces for testing.
+     */
+    initial begin
+        integer i, j;
+        // Set all cells to white (empty holes)
+        for (i = 0; i < 6; i = i + 1)
+            for (j = 0; j < 7; j = j + 1) begin
+                board[i][j].r = 8'hFF;
+                board[i][j].g = 8'hFF;
+                board[i][j].b = 8'hFF;
+            end
+
+        // Example pieces
+        board[5][3].r = 8'hFF; board[5][3].g = 8'h00; board[5][3].b = 8'h00; // Red piece
+        board[4][3].r = 8'hFF; board[4][3].g = 8'hFF; board[4][3].b = 8'h00; // Yellow piece
+        board[5][2].r = 8'hFF; board[5][2].g = 8'h00; board[5][2].b = 8'h00; // Red piece
+        board[5][4].r = 8'hFF; board[5][4].g = 8'hFF; board[5][4].b = 8'h00; // Yellow piece
+    end
+
+    /**
+     * @brief Pixel color generation logic.
+     *
+     * Depending on whether the pixel is inside the board and inside a hole,
+     * the corresponding cell color is output.
+     */
+    always_comb begin
+        if (grid_on) begin
+            if (in_hole) begin
+                // Output color of the corresponding cell
+                r = board[row][col].r;
+                g = board[row][col].g;
+                b = board[row][col].b;
+            end else begin
+                // Draw the board (blue background)
+                r = 8'h00;
+                g = 8'h00;
+                b = 8'hFF;
+            end
+        end else begin
+            // Outside the board (black background)
+            r = 8'h00;
+            g = 8'h00;
+            b = 8'h00;
+        end
+    end
+
 endmodule
