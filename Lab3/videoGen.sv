@@ -24,6 +24,7 @@ module videoGen(
     logic [2:0] col;     ///< Column index (0 to 6)
     logic [2:0] row;     ///< Row index (0 to 5)
     logic in_hole;      ///< High if (x,y) is inside a hole (circle) in the board
+	 logic in_selector;
 
     /**
      * @typedef color_t
@@ -47,7 +48,9 @@ module videoGen(
      * This module detects whether the current pixel belongs to the game board
      * and maps pixel coordinates to board row/column indices.
      */
-    tableGrid grid(x, y, grid_on, col, row, in_hole);
+    boardGrid grid(x, y, grid_on, col, row, in_hole);
+	 
+	 selectBox selector(x, y, 3'd2, 50, in_selector);
 
     /**
      * @brief Initial board color setup.
@@ -72,14 +75,15 @@ module videoGen(
         board[5][4].r = 8'hFF; board[5][4].g = 8'hFF; board[5][4].b = 8'h00; // Yellow piece
     end
 
-    /**
-     * @brief Pixel color generation logic.
-     *
-     * Depending on whether the pixel is inside the board and inside a hole,
-     * the corresponding cell color is output.
-     */
+    // pixel color logic
     always_comb begin
-        if (grid_on) begin
+		 if (in_selector) begin
+					// Dibujamos un rectángulo verde para la columna seleccionada
+					r = 8'h00;
+					g = 8'hFF;
+					b = 8'h00;
+        end 
+		  else if (grid_on) begin
             if (in_hole) begin
                 // Output color of the corresponding cell
                 r = board[row][col].r;

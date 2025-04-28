@@ -3,11 +3,11 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 35.600
+Slack : 35.407
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.677
+Slack : 0.678
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -19,15 +19,15 @@ Slack : 9.900
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.164
+Slack : 19.168
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 35.641
+Slack : 35.446
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.718
+Slack : 0.717
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -39,15 +39,15 @@ Slack : 9.926
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.114
+Slack : 19.115
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 37.386
+Slack : 37.292
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.304
+Slack : 0.303
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
@@ -59,11 +59,11 @@ Slack : 9.643
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.418
+Slack : 19.417
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 37.556
+Slack : 37.448
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
@@ -79,7 +79,7 @@ Slack : 9.632
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 19.404
+Slack : 19.405
 TNS   : 0.000
 
 ------------------------------------------------------------
