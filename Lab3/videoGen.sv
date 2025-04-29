@@ -1,11 +1,11 @@
 /**
  * @module videoGen
- * @brief Connect4 video generator - version with per-cell color initialization.
+ * @brief Connect4 video generator
  *
  * This module generates VGA pixel color outputs (R, G, B) for a Connect4 board.
- * Each cell can be assigned an individual color (8-bit RGB).
+`include "color_types.sv"
  *
- * The board has 6 rows and 7 columns.
+ * Displays a board with 6 rows and 7 columns and a selection rectangle
  * 
  * @param x Horizontal pixel coordinate (0 to 639).
  * @param y Vertical pixel coordinate (0 to 479).
@@ -16,6 +16,8 @@
 
 module videoGen(
     input logic [9:0] x, y,
+	 input logic [2:0] selectColumn,
+	 input color_t board [0:5][0:6],
     output logic [7:0] r, g, b
 );
 
@@ -26,21 +28,7 @@ module videoGen(
     logic in_hole;      ///< High if (x,y) is inside a hole (circle) in the board
 	 logic in_selector;
 
-    /**
-     * @typedef color_t
-     * @brief Structure to hold 8-bit RGB color for each cell.
-     */
-    typedef struct packed {
-        logic [7:0] r;   ///< Red component (0-255)
-        logic [7:0] g;   ///< Green component (0-255)
-        logic [7:0] b;   ///< Blue component (0-255)
-    } color_t;
 
-    /**
-     * @var board
-     * @brief 6x7 matrix of cell colors.
-     */
-    color_t board [0:5][0:6];
 
     /**
      * @brief Grid generator instance.
@@ -50,30 +38,9 @@ module videoGen(
      */
     boardGrid grid(x, y, grid_on, col, row, in_hole);
 	 
-	 selectBox selector(x, y, 3'd2, 50, in_selector);
+	 selectBox selector(x, y, selectColumn, 50, in_selector);
 
-    /**
-     * @brief Initial board color setup.
-     * 
-     * This block initializes all cells to white (empty),
-     * and sets a few colored pieces for testing.
-     */
-    initial begin
-        integer i, j;
-        // Set all cells to white (empty holes)
-        for (i = 0; i < 6; i = i + 1)
-            for (j = 0; j < 7; j = j + 1) begin
-                board[i][j].r = 8'hFF;
-                board[i][j].g = 8'hFF;
-                board[i][j].b = 8'hFF;
-            end
-
-        // Example pieces
-        board[5][3].r = 8'hFF; board[5][3].g = 8'h00; board[5][3].b = 8'h00; // Red piece
-        board[4][3].r = 8'hFF; board[4][3].g = 8'hFF; board[4][3].b = 8'h00; // Yellow piece
-        board[5][2].r = 8'hFF; board[5][2].g = 8'h00; board[5][2].b = 8'h00; // Red piece
-        board[5][4].r = 8'hFF; board[5][4].g = 8'hFF; board[5][4].b = 8'h00; // Yellow piece
-    end
+    
 
     // pixel color logic
     always_comb begin
