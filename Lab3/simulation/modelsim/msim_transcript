@@ -1,0 +1,157 @@
+# Reading pref.tcl
+# do lab3_run_msim_rtl_systemverilog.do
+# if ![file isdirectory lab3_iputf_libs] {
+# 	file mkdir lab3_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll_sim/pll.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:34 on Apr 30,2025
+# vlog -reportprogress 300 C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll_sim/pll.vo 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 12:05:34 on Apr 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3 {C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/board_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:34 on Apr 30,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3" C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/board_controller.sv 
+# -- Compiling module board_controller
+# 
+# Top level modules:
+# 	board_controller
+# End time: 12:05:34 on Apr 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3 {C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/victory_checker.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:34 on Apr 30,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3" C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/victory_checker.sv 
+# -- Compiling module victory_checker
+# 
+# Top level modules:
+# 	victory_checker
+# End time: 12:05:34 on Apr 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3 {C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/game_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:34 on Apr 30,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3" C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/game_core.sv 
+# -- Compiling module game_core
+# 
+# Top level modules:
+# 	game_core
+# End time: 12:05:34 on Apr 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3 {C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/tb_game_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:34 on Apr 30,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3" C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/tb_game_core.sv 
+# -- Compiling module tb_game_core
+# 
+# Top level modules:
+# 	tb_game_core
+# End time: 12:05:35 on Apr 30,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_game_core
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_game_core 
+# Start time: 12:05:35 on Apr 30,2025
+# Loading sv_std.std
+# Loading work.tb_game_core
+# Loading work.game_core
+# Loading work.board_controller
+# Loading work.victory_checker
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Jugador 1 coloco en columna 1
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 1 0 0 0 0 0 |
+# victory: 0, draw: 0
+# 
+# Jugador 2 coloco en columna 0
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 2 1 0 0 0 0 0 |
+# victory: 0, draw: 0
+# 
+# Jugador 1 coloco en columna 2
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 2 1 1 0 0 0 0 |
+# victory: 0, draw: 0
+# 
+# Jugador 2 coloco en columna 0
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 2 0 0 0 0 0 0 |
+# | 2 1 1 0 0 0 0 |
+# victory: 0, draw: 0
+# 
+# Jugador 1 coloco en columna 3
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 2 0 0 0 0 0 0 |
+# | 2 1 1 1 0 0 0 |
+# victory: 0, draw: 0
+# 
+# Jugador 2 coloco en columna 0
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 2 0 0 0 0 0 0 |
+# | 2 0 0 0 0 0 0 |
+# | 2 1 1 1 0 0 0 |
+# victory: 0, draw: 0
+# 
+# Jugador 1 coloco en columna 4
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 0 0 0 0 0 0 0 |
+# | 2 0 0 0 0 0 0 |
+# | 2 0 0 0 0 0 0 |
+# | 2 1 1 1 1 0 0 |
+# victory: 1, draw: 0
+# 
+# Completado
+# Break key hit
+# Break in Module tb_game_core at C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/tb_game_core.sv line 31
+# End time: 12:05:46 on Apr 30,2025, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0

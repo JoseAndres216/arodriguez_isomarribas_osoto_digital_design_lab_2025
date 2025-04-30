@@ -1,5 +1,5 @@
-Analysis & Synthesis report for lab3
-Mon Apr 28 18:14:08 2025
+Analysis & Elaboration report for lab3
+Wed Apr 30 12:05:28 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -7,27 +7,10 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis DSP Block Usage Summary
-  9. Analysis & Synthesis IP Cores Summary
- 10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
- 12. Parameter Settings for User Entity Instance: vgaController:vgaCont
- 13. Parameter Settings for Inferred Entity Instance: videoGen:videoGen|boardGrid:grid|lpm_divide:Div0
- 14. Parameter Settings for Inferred Entity Instance: videoGen:videoGen|boardGrid:grid|lpm_divide:Div1
- 15. Parameter Settings for Inferred Entity Instance: videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0
- 16. Parameter Settings for Inferred Entity Instance: videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1
- 17. Port Connectivity Checks: "videoGen:videoGen|selectBox:selector"
- 18. Port Connectivity Checks: "videoGen:videoGen"
- 19. Port Connectivity Checks: "pll:vgapll"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -51,36 +34,47 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 28 18:14:08 2025       ;
-; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                   ; lab3                                        ;
-; Top-level Entity Name           ; vga                                         ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 20                                          ;
-; Total pins                      ; 31                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 4                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 1                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Wed Apr 30 12:05:28 2025       ;
+; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                 ; lab3                                        ;
+; Top-level Entity Name         ; game_core                                   ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; vga                ; lab3               ;
+; Top-level entity name                                                           ; game_core          ; lab3               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -161,753 +155,61 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                         ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; vga.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv                     ;         ;
-; vgaController.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vgaController.sv           ;         ;
-; videoGen.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/videoGen.sv                ;         ;
-; rectgen.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/rectgen.sv                 ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File   ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll.v                      ; pll     ;
-; pll/pll_0002.v                   ; yes             ; User Verilog HDL File        ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll/pll_0002.v             ; pll     ;
-; selectBox.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv               ;         ;
-; boardGrid.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv               ;         ;
-; color_types.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/color_types.sv             ;         ;
-; altera_pll.v                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                  ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                               ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                           ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                ;         ;
-; db/lpm_divide_gbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/db/lpm_divide_gbm.tdf      ;         ;
-; db/sign_div_unsign_mlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/db/sign_div_unsign_mlh.tdf ;         ;
-; db/alt_u_div_ive.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/db/alt_u_div_ive.tdf       ;         ;
-; db/lpm_divide_j3m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/db/lpm_divide_j3m.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                              ;
-+---------------------------------------------+--------------------------------------------+
-; Resource                                    ; Usage                                      ;
-+---------------------------------------------+--------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 220                                        ;
-;                                             ;                                            ;
-; Combinational ALUT usage for logic          ; 428                                        ;
-;     -- 7 input functions                    ; 0                                          ;
-;     -- 6 input functions                    ; 12                                         ;
-;     -- 5 input functions                    ; 27                                         ;
-;     -- 4 input functions                    ; 39                                         ;
-;     -- <=3 input functions                  ; 350                                        ;
-;                                             ;                                            ;
-; Dedicated logic registers                   ; 20                                         ;
-;                                             ;                                            ;
-; I/O pins                                    ; 31                                         ;
-;                                             ;                                            ;
-; Total DSP Blocks                            ; 4                                          ;
-;                                             ;                                            ;
-; Total PLLs                                  ; 1                                          ;
-;     -- PLLs                                 ; 1                                          ;
-;                                             ;                                            ;
-; Maximum fan-out node                        ; videoGen:videoGen|boardGrid:grid|Mult0~477 ;
-; Maximum fan-out                             ; 32                                         ;
-; Total fan-out                               ; 1422                                       ;
-; Average fan-out                             ; 2.76                                       ;
-+---------------------------------------------+--------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                   ; Entity Name         ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |vga                                         ; 428 (0)             ; 20 (0)                    ; 0                 ; 4          ; 31   ; 0            ; |vga                                                                                                                                  ; vga                 ; work         ;
-;    |pll:vgapll|                              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll                                                                                                                       ; pll                 ; pll          ;
-;       |pll_0002:pll_inst|                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll|pll_0002:pll_inst                                                                                                     ; pll_0002            ; pll          ;
-;          |altera_pll:altera_pll_i|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i                                                                             ; altera_pll          ; work         ;
-;    |vgaController:vgaCont|                   ; 31 (31)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |vga|vgaController:vgaCont                                                                                                            ; vgaController       ; work         ;
-;    |videoGen:videoGen|                       ; 397 (10)            ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |vga|videoGen:videoGen                                                                                                                ; videoGen            ; work         ;
-;       |boardGrid:grid|                       ; 384 (88)            ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid                                                                                                 ; boardGrid           ; work         ;
-;          |lpm_divide:Div0|                   ; 70 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;             |lpm_divide_gbm:auto_generated|  ; 70 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Div0|lpm_divide_gbm:auto_generated                                                   ; lpm_divide_gbm      ; work         ;
-;                |sign_div_unsign_mlh:divider| ; 70 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Div0|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh ; work         ;
-;                   |alt_u_div_ive:divider|    ; 70 (70)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Div0|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider ; alt_u_div_ive       ; work         ;
-;          |lpm_divide:Div1|                   ; 70 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
-;             |lpm_divide_gbm:auto_generated|  ; 70 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Div1|lpm_divide_gbm:auto_generated                                                   ; lpm_divide_gbm      ; work         ;
-;                |sign_div_unsign_mlh:divider| ; 70 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Div1|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh ; work         ;
-;                   |alt_u_div_ive:divider|    ; 70 (70)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Div1|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider ; alt_u_div_ive       ; work         ;
-;          |lpm_divide:Mod0|                   ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;             |lpm_divide_j3m:auto_generated|  ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0|lpm_divide_j3m:auto_generated                                                   ; lpm_divide_j3m      ; work         ;
-;                |sign_div_unsign_mlh:divider| ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0|lpm_divide_j3m:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh ; work         ;
-;                   |alt_u_div_ive:divider|    ; 78 (78)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0|lpm_divide_j3m:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider ; alt_u_div_ive       ; work         ;
-;          |lpm_divide:Mod1|                   ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1                                                                                 ; lpm_divide          ; work         ;
-;             |lpm_divide_j3m:auto_generated|  ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1|lpm_divide_j3m:auto_generated                                                   ; lpm_divide_j3m      ; work         ;
-;                |sign_div_unsign_mlh:divider| ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1|lpm_divide_j3m:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh ; work         ;
-;                   |alt_u_div_ive:divider|    ; 78 (78)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1|lpm_divide_j3m:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider ; alt_u_div_ive       ; work         ;
-;       |selectBox:selector|                   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|selectBox:selector                                                                                             ; selectBox           ; work         ;
-;          |rectgen:box_rectgen|               ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga|videoGen:videoGen|selectBox:selector|rectgen:box_rectgen                                                                         ; rectgen             ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary  ;
-+---------------------------------+-------------+
-; Statistic                       ; Number Used ;
-+---------------------------------+-------------+
-; Two Independent 18x18           ; 2           ;
-; Sum of two 18x18                ; 2           ;
-; Total number of DSP blocks      ; 4           ;
-;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 6           ;
-+---------------------------------+-------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                             ;
-+--------+--------------+---------+--------------+--------------+-----------------+-----------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance ; IP Include File ;
-+--------+--------------+---------+--------------+--------------+-----------------+-----------------+
-; Altera ; altera_pll   ; 20.1    ; N/A          ; N/A          ; |vga|pll:vgapll ; pll.v           ;
-+--------+--------------+---------+--------------+--------------+-----------------+-----------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 20    ;
-; Number of registers using Synchronous Clear  ; 20    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 10    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i ;
-+--------------------------------------+------------------------+-----------------------------------+
-; Parameter Name                       ; Value                  ; Type                              ;
-+--------------------------------------+------------------------+-----------------------------------+
-; reference_clock_frequency            ; 50.0 MHz               ; String                            ;
-; fractional_vco_multiplier            ; false                  ; String                            ;
-; pll_type                             ; General                ; String                            ;
-; pll_subtype                          ; General                ; String                            ;
-; number_of_clocks                     ; 1                      ; Signed Integer                    ;
-; operation_mode                       ; direct                 ; String                            ;
-; deserialization_factor               ; 4                      ; Signed Integer                    ;
-; data_rate                            ; 0                      ; Signed Integer                    ;
-; sim_additional_refclk_cycles_to_lock ; 0                      ; Signed Integer                    ;
-; output_clock_frequency0              ; 25.175644 MHz          ; String                            ;
-; phase_shift0                         ; 0 ps                   ; String                            ;
-; duty_cycle0                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency1              ; 0 MHz                  ; String                            ;
-; phase_shift1                         ; 0 ps                   ; String                            ;
-; duty_cycle1                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency2              ; 0 MHz                  ; String                            ;
-; phase_shift2                         ; 0 ps                   ; String                            ;
-; duty_cycle2                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency3              ; 0 MHz                  ; String                            ;
-; phase_shift3                         ; 0 ps                   ; String                            ;
-; duty_cycle3                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency4              ; 0 MHz                  ; String                            ;
-; phase_shift4                         ; 0 ps                   ; String                            ;
-; duty_cycle4                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency5              ; 0 MHz                  ; String                            ;
-; phase_shift5                         ; 0 ps                   ; String                            ;
-; duty_cycle5                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency6              ; 0 MHz                  ; String                            ;
-; phase_shift6                         ; 0 ps                   ; String                            ;
-; duty_cycle6                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency7              ; 0 MHz                  ; String                            ;
-; phase_shift7                         ; 0 ps                   ; String                            ;
-; duty_cycle7                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency8              ; 0 MHz                  ; String                            ;
-; phase_shift8                         ; 0 ps                   ; String                            ;
-; duty_cycle8                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency9              ; 0 MHz                  ; String                            ;
-; phase_shift9                         ; 0 ps                   ; String                            ;
-; duty_cycle9                          ; 50                     ; Signed Integer                    ;
-; output_clock_frequency10             ; 0 MHz                  ; String                            ;
-; phase_shift10                        ; 0 ps                   ; String                            ;
-; duty_cycle10                         ; 50                     ; Signed Integer                    ;
-; output_clock_frequency11             ; 0 MHz                  ; String                            ;
-; phase_shift11                        ; 0 ps                   ; String                            ;
-; duty_cycle11                         ; 50                     ; Signed Integer                    ;
-; output_clock_frequency12             ; 0 MHz                  ; String                            ;
-; phase_shift12                        ; 0 ps                   ; String                            ;
-; duty_cycle12                         ; 50                     ; Signed Integer                    ;
-; output_clock_frequency13             ; 0 MHz                  ; String                            ;
-; phase_shift13                        ; 0 ps                   ; String                            ;
-; duty_cycle13                         ; 50                     ; Signed Integer                    ;
-; output_clock_frequency14             ; 0 MHz                  ; String                            ;
-; phase_shift14                        ; 0 ps                   ; String                            ;
-; duty_cycle14                         ; 50                     ; Signed Integer                    ;
-; output_clock_frequency15             ; 0 MHz                  ; String                            ;
-; phase_shift15                        ; 0 ps                   ; String                            ;
-; duty_cycle15                         ; 50                     ; Signed Integer                    ;
-; output_clock_frequency16             ; 0 MHz                  ; String                            ;
-; phase_shift16                        ; 0 ps                   ; String                            ;
-; duty_cycle16                         ; 50                     ; Signed Integer                    ;
-; output_clock_frequency17             ; 0 MHz                  ; String                            ;
-; phase_shift17                        ; 0 ps                   ; String                            ;
-; duty_cycle17                         ; 50                     ; Signed Integer                    ;
-; clock_name_0                         ;                        ; String                            ;
-; clock_name_1                         ;                        ; String                            ;
-; clock_name_2                         ;                        ; String                            ;
-; clock_name_3                         ;                        ; String                            ;
-; clock_name_4                         ;                        ; String                            ;
-; clock_name_5                         ;                        ; String                            ;
-; clock_name_6                         ;                        ; String                            ;
-; clock_name_7                         ;                        ; String                            ;
-; clock_name_8                         ;                        ; String                            ;
-; clock_name_global_0                  ; false                  ; String                            ;
-; clock_name_global_1                  ; false                  ; String                            ;
-; clock_name_global_2                  ; false                  ; String                            ;
-; clock_name_global_3                  ; false                  ; String                            ;
-; clock_name_global_4                  ; false                  ; String                            ;
-; clock_name_global_5                  ; false                  ; String                            ;
-; clock_name_global_6                  ; false                  ; String                            ;
-; clock_name_global_7                  ; false                  ; String                            ;
-; clock_name_global_8                  ; false                  ; String                            ;
-; m_cnt_hi_div                         ; 1                      ; Signed Integer                    ;
-; m_cnt_lo_div                         ; 1                      ; Signed Integer                    ;
-; m_cnt_bypass_en                      ; false                  ; String                            ;
-; m_cnt_odd_div_duty_en                ; false                  ; String                            ;
-; n_cnt_hi_div                         ; 1                      ; Signed Integer                    ;
-; n_cnt_lo_div                         ; 1                      ; Signed Integer                    ;
-; n_cnt_bypass_en                      ; false                  ; String                            ;
-; n_cnt_odd_div_duty_en                ; false                  ; String                            ;
-; c_cnt_hi_div0                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div0                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en0                     ; false                  ; String                            ;
-; c_cnt_in_src0                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en0               ; false                  ; String                            ;
-; c_cnt_prst0                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst0                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div1                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div1                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en1                     ; false                  ; String                            ;
-; c_cnt_in_src1                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en1               ; false                  ; String                            ;
-; c_cnt_prst1                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst1                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div2                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div2                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en2                     ; false                  ; String                            ;
-; c_cnt_in_src2                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en2               ; false                  ; String                            ;
-; c_cnt_prst2                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst2                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div3                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div3                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en3                     ; false                  ; String                            ;
-; c_cnt_in_src3                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en3               ; false                  ; String                            ;
-; c_cnt_prst3                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst3                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div4                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div4                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en4                     ; false                  ; String                            ;
-; c_cnt_in_src4                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en4               ; false                  ; String                            ;
-; c_cnt_prst4                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst4                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div5                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div5                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en5                     ; false                  ; String                            ;
-; c_cnt_in_src5                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en5               ; false                  ; String                            ;
-; c_cnt_prst5                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst5                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div6                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div6                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en6                     ; false                  ; String                            ;
-; c_cnt_in_src6                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en6               ; false                  ; String                            ;
-; c_cnt_prst6                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst6                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div7                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div7                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en7                     ; false                  ; String                            ;
-; c_cnt_in_src7                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en7               ; false                  ; String                            ;
-; c_cnt_prst7                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst7                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div8                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div8                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en8                     ; false                  ; String                            ;
-; c_cnt_in_src8                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en8               ; false                  ; String                            ;
-; c_cnt_prst8                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst8                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div9                        ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div9                        ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en9                     ; false                  ; String                            ;
-; c_cnt_in_src9                        ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en9               ; false                  ; String                            ;
-; c_cnt_prst9                          ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst9                   ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div10                       ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div10                       ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en10                    ; false                  ; String                            ;
-; c_cnt_in_src10                       ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en10              ; false                  ; String                            ;
-; c_cnt_prst10                         ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst10                  ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div11                       ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div11                       ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en11                    ; false                  ; String                            ;
-; c_cnt_in_src11                       ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en11              ; false                  ; String                            ;
-; c_cnt_prst11                         ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst11                  ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div12                       ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div12                       ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en12                    ; false                  ; String                            ;
-; c_cnt_in_src12                       ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en12              ; false                  ; String                            ;
-; c_cnt_prst12                         ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst12                  ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div13                       ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div13                       ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en13                    ; false                  ; String                            ;
-; c_cnt_in_src13                       ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en13              ; false                  ; String                            ;
-; c_cnt_prst13                         ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst13                  ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div14                       ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div14                       ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en14                    ; false                  ; String                            ;
-; c_cnt_in_src14                       ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en14              ; false                  ; String                            ;
-; c_cnt_prst14                         ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst14                  ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div15                       ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div15                       ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en15                    ; false                  ; String                            ;
-; c_cnt_in_src15                       ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en15              ; false                  ; String                            ;
-; c_cnt_prst15                         ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst15                  ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div16                       ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div16                       ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en16                    ; false                  ; String                            ;
-; c_cnt_in_src16                       ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en16              ; false                  ; String                            ;
-; c_cnt_prst16                         ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst16                  ; 0                      ; Signed Integer                    ;
-; c_cnt_hi_div17                       ; 1                      ; Signed Integer                    ;
-; c_cnt_lo_div17                       ; 1                      ; Signed Integer                    ;
-; c_cnt_bypass_en17                    ; false                  ; String                            ;
-; c_cnt_in_src17                       ; ph_mux_clk             ; String                            ;
-; c_cnt_odd_div_duty_en17              ; false                  ; String                            ;
-; c_cnt_prst17                         ; 1                      ; Signed Integer                    ;
-; c_cnt_ph_mux_prst17                  ; 0                      ; Signed Integer                    ;
-; pll_vco_div                          ; 1                      ; Signed Integer                    ;
-; pll_slf_rst                          ; false                  ; String                            ;
-; pll_bw_sel                           ; low                    ; String                            ;
-; pll_output_clk_frequency             ; 0 MHz                  ; String                            ;
-; pll_cp_current                       ; 0                      ; Signed Integer                    ;
-; pll_bwctrl                           ; 0                      ; Signed Integer                    ;
-; pll_fractional_division              ; 1                      ; Signed Integer                    ;
-; pll_fractional_cout                  ; 24                     ; Signed Integer                    ;
-; pll_dsm_out_sel                      ; 1st_order              ; String                            ;
-; mimic_fbclk_type                     ; gclk                   ; String                            ;
-; pll_fbclk_mux_1                      ; glb                    ; String                            ;
-; pll_fbclk_mux_2                      ; fb_1                   ; String                            ;
-; pll_m_cnt_in_src                     ; ph_mux_clk             ; String                            ;
-; pll_vcoph_div                        ; 1                      ; Signed Integer                    ;
-; refclk1_frequency                    ; 0 MHz                  ; String                            ;
-; pll_clkin_0_src                      ; clk_0                  ; String                            ;
-; pll_clkin_1_src                      ; clk_0                  ; String                            ;
-; pll_clk_loss_sw_en                   ; false                  ; String                            ;
-; pll_auto_clk_sw_en                   ; false                  ; String                            ;
-; pll_manu_clk_sw_en                   ; false                  ; String                            ;
-; pll_clk_sw_dly                       ; 0                      ; Signed Integer                    ;
-; pll_extclk_0_cnt_src                 ; pll_extclk_cnt_src_vss ; String                            ;
-; pll_extclk_1_cnt_src                 ; pll_extclk_cnt_src_vss ; String                            ;
-+--------------------------------------+------------------------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: vgaController:vgaCont ;
-+----------------+------------+--------------------------------------+
-; Parameter Name ; Value      ; Type                                 ;
-+----------------+------------+--------------------------------------+
-; HACTIVE        ; 1010000000 ; Unsigned Binary                      ;
-; HFP            ; 0000010000 ; Unsigned Binary                      ;
-; HSYN           ; 0001100000 ; Unsigned Binary                      ;
-; HBP            ; 0000110000 ; Unsigned Binary                      ;
-; HMAX           ; 1100100000 ; Unsigned Binary                      ;
-; VBP            ; 0000100000 ; Unsigned Binary                      ;
-; VACTIVE        ; 0111100000 ; Unsigned Binary                      ;
-; VFP            ; 0000001011 ; Unsigned Binary                      ;
-; VSYN           ; 0000000010 ; Unsigned Binary                      ;
-; VMAX           ; 1000001101 ; Unsigned Binary                      ;
-+----------------+------------+--------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: videoGen:videoGen|boardGrid:grid|lpm_divide:Div0 ;
-+------------------------+----------------+---------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                    ;
-+------------------------+----------------+---------------------------------------------------------+
-; LPM_WIDTHN             ; 10             ; Untyped                                                 ;
-; LPM_WIDTHD             ; 6              ; Untyped                                                 ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                 ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                 ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                 ;
-; CBXI_PARAMETER         ; lpm_divide_gbm ; Untyped                                                 ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                 ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                 ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                              ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                            ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                            ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                          ;
-+------------------------+----------------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: videoGen:videoGen|boardGrid:grid|lpm_divide:Div1 ;
-+------------------------+----------------+---------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                    ;
-+------------------------+----------------+---------------------------------------------------------+
-; LPM_WIDTHN             ; 10             ; Untyped                                                 ;
-; LPM_WIDTHD             ; 6              ; Untyped                                                 ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                 ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                 ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                 ;
-; CBXI_PARAMETER         ; lpm_divide_gbm ; Untyped                                                 ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                 ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                 ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                              ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                            ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                            ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                          ;
-+------------------------+----------------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0 ;
-+------------------------+----------------+---------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                    ;
-+------------------------+----------------+---------------------------------------------------------+
-; LPM_WIDTHN             ; 10             ; Untyped                                                 ;
-; LPM_WIDTHD             ; 6              ; Untyped                                                 ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                 ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                 ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                 ;
-; CBXI_PARAMETER         ; lpm_divide_j3m ; Untyped                                                 ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                 ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                 ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                              ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                            ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                            ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                          ;
-+------------------------+----------------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1 ;
-+------------------------+----------------+---------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                    ;
-+------------------------+----------------+---------------------------------------------------------+
-; LPM_WIDTHN             ; 10             ; Untyped                                                 ;
-; LPM_WIDTHD             ; 6              ; Untyped                                                 ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                 ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                 ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                 ;
-; CBXI_PARAMETER         ; lpm_divide_j3m ; Untyped                                                 ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                 ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                 ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                              ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                            ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                            ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                          ;
-+------------------------+----------------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "videoGen:videoGen|selectBox:selector"                                                                                                                                                        ;
-+----------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port           ; Type  ; Severity ; Details                                                                                                                                                                             ;
-+----------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; grid_top       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; grid_top[5..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; grid_top[9..6] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; grid_top[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; grid_top[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; grid_top[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-+----------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------+
-; Port Connectivity Checks: "videoGen:videoGen"        ;
-+--------------------+-------+----------+--------------+
-; Port               ; Type  ; Severity ; Details      ;
-+--------------------+-------+----------+--------------+
-; selectColumn[1..0] ; Input ; Info     ; Stuck at VCC ;
-; selectColumn[2]    ; Input ; Info     ; Stuck at GND ;
-; board[0..3]        ; Input ; Info     ; Stuck at VCC ;
-; board[4][0..2]     ; Input ; Info     ; Stuck at VCC ;
-; board[4][4..6]     ; Input ; Info     ; Stuck at VCC ;
-; board[4][3].r      ; Input ; Info     ; Stuck at VCC ;
-; board[4][3].g      ; Input ; Info     ; Stuck at VCC ;
-; board[4][3].b      ; Input ; Info     ; Stuck at GND ;
-; board[5][0..1]     ; Input ; Info     ; Stuck at VCC ;
-; board[5][5..6]     ; Input ; Info     ; Stuck at VCC ;
-; board[5][2].r      ; Input ; Info     ; Stuck at VCC ;
-; board[5][2].g      ; Input ; Info     ; Stuck at GND ;
-; board[5][2].b      ; Input ; Info     ; Stuck at GND ;
-; board[5][3].r      ; Input ; Info     ; Stuck at VCC ;
-; board[5][3].g      ; Input ; Info     ; Stuck at GND ;
-; board[5][3].b      ; Input ; Info     ; Stuck at GND ;
-; board[5][4].r      ; Input ; Info     ; Stuck at VCC ;
-; board[5][4].g      ; Input ; Info     ; Stuck at VCC ;
-; board[5][4].b      ; Input ; Info     ; Stuck at GND ;
-+--------------------+-------+----------+--------------+
-
-
-+-----------------------------------------------------+
-; Port Connectivity Checks: "pll:vgapll"              ;
-+--------+--------+----------+------------------------+
-; Port   ; Type   ; Severity ; Details                ;
-+--------+--------+----------+------------------------+
-; locked ; Output ; Info     ; Explicitly unconnected ;
-+--------+--------+----------+------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 20                          ;
-;     ENA SCLR          ; 10                          ;
-;     SCLR              ; 10                          ;
-; arriav_lcell_comb     ; 429                         ;
-;     arith             ; 213                         ;
-;         0 data inputs ; 32                          ;
-;         1 data inputs ; 53                          ;
-;         2 data inputs ; 44                          ;
-;         3 data inputs ; 60                          ;
-;         4 data inputs ; 24                          ;
-;     normal            ; 174                         ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 75                          ;
-;         3 data inputs ; 44                          ;
-;         4 data inputs ; 15                          ;
-;         5 data inputs ; 27                          ;
-;         6 data inputs ; 12                          ;
-;     shared            ; 42                          ;
-;         0 data inputs ; 4                           ;
-;         1 data inputs ; 24                          ;
-;         3 data inputs ; 14                          ;
-; arriav_mac            ; 4                           ;
-; boundary_port         ; 31                          ;
-; generic_pll           ; 1                           ;
-;                       ;                             ;
-; Max LUT depth         ; 12.20                       ;
-; Average LUT depth     ; 9.31                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Apr 28 18:13:58 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
+    Info: Processing started: Wed Apr 30 12:05:24 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga.sv
-    Info (12023): Found entity 1: vga File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 25
+    Info (12023): Found entity 1: vga File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file vgacontroller.sv
-    Info (12023): Found entity 1: vgaController File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vgaController.sv Line: 32
+    Info (12023): Found entity 1: vgaController File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vgaController.sv Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file videogen.sv
-    Info (12023): Found entity 1: videoGen File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/videoGen.sv Line: 17
+    Info (12023): Found entity 1: videoGen File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/videoGen.sv Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file chargenrom.sv
-    Info (12023): Found entity 1: chargenrom File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/chargenrom.sv Line: 20
+    Info (12023): Found entity 1: chargenrom File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/chargenrom.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file rectgen.sv
-    Info (12023): Found entity 1: rectgen File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/rectgen.sv Line: 20
+    Info (12023): Found entity 1: rectgen File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/rectgen.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: pll File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll.v Line: 8
+    Info (12023): Found entity 1: pll File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file pll/pll_0002.v
-    Info (12023): Found entity 1: pll_0002 File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll/pll_0002.v Line: 2
+    Info (12023): Found entity 1: pll_0002 File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll/pll_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file selectbox.sv
-    Info (12023): Found entity 1: selectBox File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv Line: 14
+    Info (12023): Found entity 1: selectBox File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file boardgrid.sv
-    Info (12023): Found entity 1: boardGrid File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 17
+    Info (12023): Found entity 1: boardGrid File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 17
 Info (12021): Found 0 design units, including 0 entities, in source file color_types.sv
-Info (12127): Elaborating entity "vga" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file board_controller.sv
+    Info (12023): Found entity 1: board_controller File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/board_controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file victory_checker.sv
+    Info (12023): Found entity 1: victory_checker File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/victory_checker.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file game_core.sv
+    Info (12023): Found entity 1: game_core File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/game_core.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file tb_game_core.sv
+    Info (12023): Found entity 1: tb_game_core File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/tb_game_core.sv Line: 3
+Info (12127): Elaborating entity "game_core" for the top level hierarchy
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
-Info (12128): Elaborating entity "pll" for hierarchy "pll:vgapll" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 71
-Info (12128): Elaborating entity "pll_0002" for hierarchy "pll:vgapll|pll_0002:pll_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll.v Line: 20
-Info (12128): Elaborating entity "altera_pll" for hierarchy "pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll/pll_0002.v Line: 85
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll/pll_0002.v Line: 85
-Info (12133): Instantiated megafunction "pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll/pll_0002.v Line: 85
-    Info (12134): Parameter "fractional_vco_multiplier" = "false"
-    Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
-    Info (12134): Parameter "operation_mode" = "direct"
-    Info (12134): Parameter "number_of_clocks" = "1"
-    Info (12134): Parameter "output_clock_frequency0" = "25.175644 MHz"
-    Info (12134): Parameter "phase_shift0" = "0 ps"
-    Info (12134): Parameter "duty_cycle0" = "50"
-    Info (12134): Parameter "output_clock_frequency1" = "0 MHz"
-    Info (12134): Parameter "phase_shift1" = "0 ps"
-    Info (12134): Parameter "duty_cycle1" = "50"
-    Info (12134): Parameter "output_clock_frequency2" = "0 MHz"
-    Info (12134): Parameter "phase_shift2" = "0 ps"
-    Info (12134): Parameter "duty_cycle2" = "50"
-    Info (12134): Parameter "output_clock_frequency3" = "0 MHz"
-    Info (12134): Parameter "phase_shift3" = "0 ps"
-    Info (12134): Parameter "duty_cycle3" = "50"
-    Info (12134): Parameter "output_clock_frequency4" = "0 MHz"
-    Info (12134): Parameter "phase_shift4" = "0 ps"
-    Info (12134): Parameter "duty_cycle4" = "50"
-    Info (12134): Parameter "output_clock_frequency5" = "0 MHz"
-    Info (12134): Parameter "phase_shift5" = "0 ps"
-    Info (12134): Parameter "duty_cycle5" = "50"
-    Info (12134): Parameter "output_clock_frequency6" = "0 MHz"
-    Info (12134): Parameter "phase_shift6" = "0 ps"
-    Info (12134): Parameter "duty_cycle6" = "50"
-    Info (12134): Parameter "output_clock_frequency7" = "0 MHz"
-    Info (12134): Parameter "phase_shift7" = "0 ps"
-    Info (12134): Parameter "duty_cycle7" = "50"
-    Info (12134): Parameter "output_clock_frequency8" = "0 MHz"
-    Info (12134): Parameter "phase_shift8" = "0 ps"
-    Info (12134): Parameter "duty_cycle8" = "50"
-    Info (12134): Parameter "output_clock_frequency9" = "0 MHz"
-    Info (12134): Parameter "phase_shift9" = "0 ps"
-    Info (12134): Parameter "duty_cycle9" = "50"
-    Info (12134): Parameter "output_clock_frequency10" = "0 MHz"
-    Info (12134): Parameter "phase_shift10" = "0 ps"
-    Info (12134): Parameter "duty_cycle10" = "50"
-    Info (12134): Parameter "output_clock_frequency11" = "0 MHz"
-    Info (12134): Parameter "phase_shift11" = "0 ps"
-    Info (12134): Parameter "duty_cycle11" = "50"
-    Info (12134): Parameter "output_clock_frequency12" = "0 MHz"
-    Info (12134): Parameter "phase_shift12" = "0 ps"
-    Info (12134): Parameter "duty_cycle12" = "50"
-    Info (12134): Parameter "output_clock_frequency13" = "0 MHz"
-    Info (12134): Parameter "phase_shift13" = "0 ps"
-    Info (12134): Parameter "duty_cycle13" = "50"
-    Info (12134): Parameter "output_clock_frequency14" = "0 MHz"
-    Info (12134): Parameter "phase_shift14" = "0 ps"
-    Info (12134): Parameter "duty_cycle14" = "50"
-    Info (12134): Parameter "output_clock_frequency15" = "0 MHz"
-    Info (12134): Parameter "phase_shift15" = "0 ps"
-    Info (12134): Parameter "duty_cycle15" = "50"
-    Info (12134): Parameter "output_clock_frequency16" = "0 MHz"
-    Info (12134): Parameter "phase_shift16" = "0 ps"
-    Info (12134): Parameter "duty_cycle16" = "50"
-    Info (12134): Parameter "output_clock_frequency17" = "0 MHz"
-    Info (12134): Parameter "phase_shift17" = "0 ps"
-    Info (12134): Parameter "duty_cycle17" = "50"
-    Info (12134): Parameter "pll_type" = "General"
-    Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "vgaController" for hierarchy "vgaController:vgaCont" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 74
-Info (12128): Elaborating entity "videoGen" for hierarchy "videoGen:videoGen" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
-Info (12128): Elaborating entity "boardGrid" for hierarchy "videoGen:videoGen|boardGrid:grid" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/videoGen.sv Line: 39
-Warning (10230): Verilog HDL assignment warning at boardGrid.sv(55): truncated value with size 32 to match size of target (10) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 55
-Warning (10230): Verilog HDL assignment warning at boardGrid.sv(56): truncated value with size 32 to match size of target (10) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 56
-Warning (10230): Verilog HDL assignment warning at boardGrid.sv(61): truncated value with size 32 to match size of target (3) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 61
-Warning (10230): Verilog HDL assignment warning at boardGrid.sv(62): truncated value with size 32 to match size of target (3) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 62
-Warning (10230): Verilog HDL assignment warning at boardGrid.sv(67): truncated value with size 32 to match size of target (10) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 67
-Warning (10230): Verilog HDL assignment warning at boardGrid.sv(68): truncated value with size 32 to match size of target (10) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 68
-Info (12128): Elaborating entity "selectBox" for hierarchy "videoGen:videoGen|selectBox:selector" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/videoGen.sv Line: 41
-Warning (10230): Verilog HDL assignment warning at selectBox.sv(27): truncated value with size 32 to match size of target (10) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at selectBox.sv(28): truncated value with size 32 to match size of target (10) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at selectBox.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv Line: 29
-Info (12128): Elaborating entity "rectgen" for hierarchy "videoGen:videoGen|selectBox:selector|rectgen:box_rectgen" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv Line: 41
-Info (278001): Inferred 4 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:videoGen|boardGrid:grid|Div0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 61
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:videoGen|boardGrid:grid|Div1" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 62
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:videoGen|boardGrid:grid|Mod0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 67
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "videoGen:videoGen|boardGrid:grid|Mod1" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 68
-Info (12130): Elaborated megafunction instantiation "videoGen:videoGen|boardGrid:grid|lpm_divide:Div0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 61
-Info (12133): Instantiated megafunction "videoGen:videoGen|boardGrid:grid|lpm_divide:Div0" with the following parameter: File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 61
-    Info (12134): Parameter "LPM_WIDTHN" = "10"
-    Info (12134): Parameter "LPM_WIDTHD" = "6"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_gbm.tdf
-    Info (12023): Found entity 1: lpm_divide_gbm File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/db/lpm_divide_gbm.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_mlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_mlh File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/db/sign_div_unsign_mlh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ive.tdf
-    Info (12023): Found entity 1: alt_u_div_ive File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/db/alt_u_div_ive.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 67
-Info (12133): Instantiated megafunction "videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0" with the following parameter: File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 67
-    Info (12134): Parameter "LPM_WIDTHN" = "10"
-    Info (12134): Parameter "LPM_WIDTHD" = "6"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_j3m.tdf
-    Info (12023): Found entity 1: lpm_divide_j3m File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/db/lpm_divide_j3m.tdf Line: 25
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 7 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 484 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 448 logic cells
-    Info (21065): Implemented 1 PLLs
-    Info (21062): Implemented 4 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Mon Apr 28 18:14:08 2025
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:18
+Info (12128): Elaborating entity "board_controller" for hierarchy "board_controller:bc" File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/game_core.sv Line: 25
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
+Info (12128): Elaborating entity "victory_checker" for hierarchy "victory_checker:vc" File: C:/Users/bloodxe/Desktop/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/game_core.sv Line: 34
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
+Warning (20013): Ignored 16 assignments for entity "pll" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity pll -sip pll.sip -library lib_pll was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 20.1 -entity pll -sip pll.sip -library lib_pll was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity pll -sip pll.sip -library lib_pll was ignored
+Warning (20013): Ignored 317 assignments for entity "pll_0002" -- entity does not exist in design
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4780 megabytes
+    Info: Processing ended: Wed Apr 30 12:05:28 2025
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:09
 
 
