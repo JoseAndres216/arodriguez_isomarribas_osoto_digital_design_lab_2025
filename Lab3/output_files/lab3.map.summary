@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Wed Apr 30 12:05:28 2025
+Analysis & Elaboration Status : Successful - Sat May 03 15:16:28 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : lab3
-Top-level Entity Name : game_core
+Top-level Entity Name : random_move_gen
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
