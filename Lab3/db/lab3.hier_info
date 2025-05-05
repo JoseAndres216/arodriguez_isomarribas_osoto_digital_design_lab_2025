@@ -1,6 +1,140 @@
-|vga
+|connect4_Top
 clk => clk.IN1
 rst => rst.IN1
+rx_pin => rx_pin.IN1
+tx_pin << uartController:uart_controller.tx_pin
+vgaclk << vga:vga_inst.vgaclk
+hsync << vga:vga_inst.hsync
+vsync << vga:vga_inst.vsync
+sync_b << vga:vga_inst.sync_b
+blank_b << vga:vga_inst.blank_b
+r[0] << vga:vga_inst.r[0]
+r[1] << vga:vga_inst.r[1]
+r[2] << vga:vga_inst.r[2]
+r[3] << vga:vga_inst.r[3]
+r[4] << vga:vga_inst.r[4]
+r[5] << vga:vga_inst.r[5]
+r[6] << vga:vga_inst.r[6]
+r[7] << vga:vga_inst.r[7]
+g[0] << vga:vga_inst.g[0]
+g[1] << vga:vga_inst.g[1]
+g[2] << vga:vga_inst.g[2]
+g[3] << vga:vga_inst.g[3]
+g[4] << vga:vga_inst.g[4]
+g[5] << vga:vga_inst.g[5]
+g[6] << vga:vga_inst.g[6]
+g[7] << vga:vga_inst.g[7]
+b[0] << vga:vga_inst.b[0]
+b[1] << vga:vga_inst.b[1]
+b[2] << vga:vga_inst.b[2]
+b[3] << vga:vga_inst.b[3]
+b[4] << vga:vga_inst.b[4]
+b[5] << vga:vga_inst.b[5]
+b[6] << vga:vga_inst.b[6]
+b[7] << vga:vga_inst.b[7]
+hex0[0] << hex7seg:hex_low.segments
+hex0[1] << hex7seg:hex_low.segments
+hex0[2] << hex7seg:hex_low.segments
+hex0[3] << hex7seg:hex_low.segments
+hex0[4] << hex7seg:hex_low.segments
+hex0[5] << hex7seg:hex_low.segments
+hex0[6] << hex7seg:hex_low.segments
+hex1[0] << hex7seg:hex_high.segments
+hex1[1] << hex7seg:hex_high.segments
+hex1[2] << hex7seg:hex_high.segments
+hex1[3] << hex7seg:hex_high.segments
+hex1[4] << hex7seg:hex_high.segments
+hex1[5] << hex7seg:hex_high.segments
+hex1[6] << hex7seg:hex_high.segments
+
+
+|connect4_Top|vga:vga_inst
+clk => clk.IN1
+rst => rst.IN1
+board[5][6][0] => videoGen:videoGen.board[5][6][0]
+board[5][6][1] => videoGen:videoGen.board[5][6][1]
+board[5][5][0] => videoGen:videoGen.board[5][5][0]
+board[5][5][1] => videoGen:videoGen.board[5][5][1]
+board[5][4][0] => videoGen:videoGen.board[5][4][0]
+board[5][4][1] => videoGen:videoGen.board[5][4][1]
+board[5][3][0] => videoGen:videoGen.board[5][3][0]
+board[5][3][1] => videoGen:videoGen.board[5][3][1]
+board[5][2][0] => videoGen:videoGen.board[5][2][0]
+board[5][2][1] => videoGen:videoGen.board[5][2][1]
+board[5][1][0] => videoGen:videoGen.board[5][1][0]
+board[5][1][1] => videoGen:videoGen.board[5][1][1]
+board[5][0][0] => videoGen:videoGen.board[5][0][0]
+board[5][0][1] => videoGen:videoGen.board[5][0][1]
+board[4][6][0] => videoGen:videoGen.board[4][6][0]
+board[4][6][1] => videoGen:videoGen.board[4][6][1]
+board[4][5][0] => videoGen:videoGen.board[4][5][0]
+board[4][5][1] => videoGen:videoGen.board[4][5][1]
+board[4][4][0] => videoGen:videoGen.board[4][4][0]
+board[4][4][1] => videoGen:videoGen.board[4][4][1]
+board[4][3][0] => videoGen:videoGen.board[4][3][0]
+board[4][3][1] => videoGen:videoGen.board[4][3][1]
+board[4][2][0] => videoGen:videoGen.board[4][2][0]
+board[4][2][1] => videoGen:videoGen.board[4][2][1]
+board[4][1][0] => videoGen:videoGen.board[4][1][0]
+board[4][1][1] => videoGen:videoGen.board[4][1][1]
+board[4][0][0] => videoGen:videoGen.board[4][0][0]
+board[4][0][1] => videoGen:videoGen.board[4][0][1]
+board[3][6][0] => videoGen:videoGen.board[3][6][0]
+board[3][6][1] => videoGen:videoGen.board[3][6][1]
+board[3][5][0] => videoGen:videoGen.board[3][5][0]
+board[3][5][1] => videoGen:videoGen.board[3][5][1]
+board[3][4][0] => videoGen:videoGen.board[3][4][0]
+board[3][4][1] => videoGen:videoGen.board[3][4][1]
+board[3][3][0] => videoGen:videoGen.board[3][3][0]
+board[3][3][1] => videoGen:videoGen.board[3][3][1]
+board[3][2][0] => videoGen:videoGen.board[3][2][0]
+board[3][2][1] => videoGen:videoGen.board[3][2][1]
+board[3][1][0] => videoGen:videoGen.board[3][1][0]
+board[3][1][1] => videoGen:videoGen.board[3][1][1]
+board[3][0][0] => videoGen:videoGen.board[3][0][0]
+board[3][0][1] => videoGen:videoGen.board[3][0][1]
+board[2][6][0] => videoGen:videoGen.board[2][6][0]
+board[2][6][1] => videoGen:videoGen.board[2][6][1]
+board[2][5][0] => videoGen:videoGen.board[2][5][0]
+board[2][5][1] => videoGen:videoGen.board[2][5][1]
+board[2][4][0] => videoGen:videoGen.board[2][4][0]
+board[2][4][1] => videoGen:videoGen.board[2][4][1]
+board[2][3][0] => videoGen:videoGen.board[2][3][0]
+board[2][3][1] => videoGen:videoGen.board[2][3][1]
+board[2][2][0] => videoGen:videoGen.board[2][2][0]
+board[2][2][1] => videoGen:videoGen.board[2][2][1]
+board[2][1][0] => videoGen:videoGen.board[2][1][0]
+board[2][1][1] => videoGen:videoGen.board[2][1][1]
+board[2][0][0] => videoGen:videoGen.board[2][0][0]
+board[2][0][1] => videoGen:videoGen.board[2][0][1]
+board[1][6][0] => videoGen:videoGen.board[1][6][0]
+board[1][6][1] => videoGen:videoGen.board[1][6][1]
+board[1][5][0] => videoGen:videoGen.board[1][5][0]
+board[1][5][1] => videoGen:videoGen.board[1][5][1]
+board[1][4][0] => videoGen:videoGen.board[1][4][0]
+board[1][4][1] => videoGen:videoGen.board[1][4][1]
+board[1][3][0] => videoGen:videoGen.board[1][3][0]
+board[1][3][1] => videoGen:videoGen.board[1][3][1]
+board[1][2][0] => videoGen:videoGen.board[1][2][0]
+board[1][2][1] => videoGen:videoGen.board[1][2][1]
+board[1][1][0] => videoGen:videoGen.board[1][1][0]
+board[1][1][1] => videoGen:videoGen.board[1][1][1]
+board[1][0][0] => videoGen:videoGen.board[1][0][0]
+board[1][0][1] => videoGen:videoGen.board[1][0][1]
+board[0][6][0] => videoGen:videoGen.board[0][6][0]
+board[0][6][1] => videoGen:videoGen.board[0][6][1]
+board[0][5][0] => videoGen:videoGen.board[0][5][0]
+board[0][5][1] => videoGen:videoGen.board[0][5][1]
+board[0][4][0] => videoGen:videoGen.board[0][4][0]
+board[0][4][1] => videoGen:videoGen.board[0][4][1]
+board[0][3][0] => videoGen:videoGen.board[0][3][0]
+board[0][3][1] => videoGen:videoGen.board[0][3][1]
+board[0][2][0] => videoGen:videoGen.board[0][2][0]
+board[0][2][1] => videoGen:videoGen.board[0][2][1]
+board[0][1][0] => videoGen:videoGen.board[0][1][0]
+board[0][1][1] => videoGen:videoGen.board[0][1][1]
+board[0][0][0] => videoGen:videoGen.board[0][0][0]
+board[0][0][1] => videoGen:videoGen.board[0][0][1]
 vgaclk <= pll:vgapll.outclk_0
 hsync <= vgaController:vgaCont.hsync
 vsync <= vgaController:vgaCont.vsync
@@ -32,21 +166,21 @@ b[6] <= videoGen:videoGen.b[6]
 b[7] <= videoGen:videoGen.b[7]
 
 
-|vga|pll:vgapll
+|connect4_Top|vga:vga_inst|pll:vgapll
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= pll_0002:pll_inst.outclk_0
 locked <= pll_0002:pll_inst.locked
 
 
-|vga|pll:vgapll|pll_0002:pll_inst
+|connect4_Top|vga:vga_inst|pll:vgapll|pll_0002:pll_inst
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= altera_pll:altera_pll_i.outclk
 locked <= altera_pll:altera_pll_i.locked
 
 
-|vga|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
+|connect4_Top|vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
 refclk => general[0].gpll.I_REFCLK
 refclk1 => ~NO_FANOUT~
 fbclk => ~NO_FANOUT~
@@ -218,7 +352,7 @@ cascade_out[0] <= <GND>
 zdbfbclk <> <GND>
 
 
-|vga|vgaController:vgaCont
+|connect4_Top|vga:vga_inst|vgaController:vgaCont
 vgaclk => y[0]~reg0.CLK
 vgaclk => y[1]~reg0.CLK
 vgaclk => y[2]~reg0.CLK
@@ -265,7 +399,7 @@ y[8] <= y[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 y[9] <= y[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen
+|connect4_Top|vga:vga_inst|videoGen:videoGen
 x[0] => x[0].IN2
 x[1] => x[1].IN2
 x[2] => x[2].IN2
@@ -399,7 +533,7 @@ b[6] <= b.DB_MAX_OUTPUT_PORT_TYPE
 b[7] <= b.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|boardGrid:grid
+|connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid
 x[0] => Div0.IN15
 x[0] => Mod0.IN15
 x[0] => LessThan0.IN20
@@ -473,7 +607,7 @@ row[2] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
 in_hole <= LessThan4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|videoGen:videoGen|selectBox:selector
+|connect4_Top|vga:vga_inst|videoGen:videoGen|selectBox:selector
 x[0] => x[0].IN1
 x[1] => x[1].IN1
 x[2] => x[2].IN1
@@ -513,7 +647,7 @@ grid_top[9] => box_bottom[9].IN1
 in_select <= rectgen:box_rectgen.inrect
 
 
-|vga|videoGen:videoGen|selectBox:selector|rectgen:box_rectgen
+|connect4_Top|vga:vga_inst|videoGen:videoGen|selectBox:selector|rectgen:box_rectgen
 x[0] => LessThan0.IN10
 x[0] => LessThan1.IN10
 x[1] => LessThan0.IN9
@@ -595,5 +729,224 @@ bot[7] => LessThan3.IN13
 bot[8] => LessThan3.IN12
 bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|connect4_Top|uartController:uart_controller
+clk => clk.IN2
+rst => rst.IN2
+rx_pin => rx_pin.IN1
+tx_pin <= uart_tx:uart_tx_inst.tx
+display_data[0] <= display_data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[1] <= display_data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[2] <= display_data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[3] <= display_data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[4] <= display_data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[5] <= display_data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[6] <= display_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[7] <= display_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst
+clk => rx_data[0].CLK
+clk => rx_data[1].CLK
+clk => rx_data[2].CLK
+clk => rx_data[3].CLK
+clk => rx_data[4].CLK
+clk => rx_data[5].CLK
+clk => rx_data[6].CLK
+clk => rx_data[7].CLK
+clk => ready~reg0.CLK
+clk => data[0]~reg0.CLK
+clk => data[1]~reg0.CLK
+clk => data[2]~reg0.CLK
+clk => data[3]~reg0.CLK
+clk => data[4]~reg0.CLK
+clk => data[5]~reg0.CLK
+clk => data[6]~reg0.CLK
+clk => data[7]~reg0.CLK
+clk => bit_index[0].CLK
+clk => bit_index[1].CLK
+clk => bit_index[2].CLK
+clk => clk_count[0].CLK
+clk => clk_count[1].CLK
+clk => clk_count[2].CLK
+clk => clk_count[3].CLK
+clk => clk_count[4].CLK
+clk => clk_count[5].CLK
+clk => clk_count[6].CLK
+clk => clk_count[7].CLK
+clk => clk_count[8].CLK
+clk => clk_count[9].CLK
+clk => clk_count[10].CLK
+clk => clk_count[11].CLK
+clk => clk_count[12].CLK
+clk => rx_sync.CLK
+clk => state~6.DATAIN
+reset => ready~reg0.ACLR
+reset => data[0]~reg0.ACLR
+reset => data[1]~reg0.ACLR
+reset => data[2]~reg0.ACLR
+reset => data[3]~reg0.ACLR
+reset => data[4]~reg0.ACLR
+reset => data[5]~reg0.ACLR
+reset => data[6]~reg0.ACLR
+reset => data[7]~reg0.ACLR
+reset => bit_index[0].ACLR
+reset => bit_index[1].ACLR
+reset => bit_index[2].ACLR
+reset => clk_count[0].ACLR
+reset => clk_count[1].ACLR
+reset => clk_count[2].ACLR
+reset => clk_count[3].ACLR
+reset => clk_count[4].ACLR
+reset => clk_count[5].ACLR
+reset => clk_count[6].ACLR
+reset => clk_count[7].ACLR
+reset => clk_count[8].ACLR
+reset => clk_count[9].ACLR
+reset => clk_count[10].ACLR
+reset => clk_count[11].ACLR
+reset => clk_count[12].ACLR
+reset => state~8.DATAIN
+reset => rx_data[0].ENA
+reset => rx_data[7].ENA
+reset => rx_data[6].ENA
+reset => rx_data[5].ENA
+reset => rx_data[4].ENA
+reset => rx_data[3].ENA
+reset => rx_data[2].ENA
+reset => rx_data[1].ENA
+rx => rx_sync.DATAIN
+data[0] <= data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready <= ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst
+clk => tx_data[0].CLK
+clk => tx_data[1].CLK
+clk => tx_data[2].CLK
+clk => tx_data[3].CLK
+clk => tx_data[4].CLK
+clk => tx_data[5].CLK
+clk => tx_data[6].CLK
+clk => tx_data[7].CLK
+clk => ready~reg0.CLK
+clk => bit_index[0].CLK
+clk => bit_index[1].CLK
+clk => bit_index[2].CLK
+clk => clk_count[0].CLK
+clk => clk_count[1].CLK
+clk => clk_count[2].CLK
+clk => clk_count[3].CLK
+clk => clk_count[4].CLK
+clk => clk_count[5].CLK
+clk => clk_count[6].CLK
+clk => clk_count[7].CLK
+clk => clk_count[8].CLK
+clk => clk_count[9].CLK
+clk => clk_count[10].CLK
+clk => clk_count[11].CLK
+clk => clk_count[12].CLK
+clk => tx~reg0.CLK
+clk => state~6.DATAIN
+reset => ready~reg0.PRESET
+reset => bit_index[0].ACLR
+reset => bit_index[1].ACLR
+reset => bit_index[2].ACLR
+reset => clk_count[0].ACLR
+reset => clk_count[1].ACLR
+reset => clk_count[2].ACLR
+reset => clk_count[3].ACLR
+reset => clk_count[4].ACLR
+reset => clk_count[5].ACLR
+reset => clk_count[6].ACLR
+reset => clk_count[7].ACLR
+reset => clk_count[8].ACLR
+reset => clk_count[9].ACLR
+reset => clk_count[10].ACLR
+reset => clk_count[11].ACLR
+reset => clk_count[12].ACLR
+reset => tx~reg0.PRESET
+reset => state~8.DATAIN
+reset => tx_data[0].ENA
+reset => tx_data[7].ENA
+reset => tx_data[6].ENA
+reset => tx_data[5].ENA
+reset => tx_data[4].ENA
+reset => tx_data[3].ENA
+reset => tx_data[2].ENA
+reset => tx_data[1].ENA
+data[0] => tx_data.DATAB
+data[1] => tx_data.DATAB
+data[2] => tx_data.DATAB
+data[3] => tx_data.DATAB
+data[4] => tx_data.DATAB
+data[5] => tx_data.DATAB
+data[6] => tx_data.DATAB
+data[7] => tx_data.DATAB
+send => tx_data.OUTPUTSELECT
+send => tx_data.OUTPUTSELECT
+send => tx_data.OUTPUTSELECT
+send => tx_data.OUTPUTSELECT
+send => tx_data.OUTPUTSELECT
+send => tx_data.OUTPUTSELECT
+send => tx_data.OUTPUTSELECT
+send => tx_data.OUTPUTSELECT
+send => state.OUTPUTSELECT
+send => state.OUTPUTSELECT
+send => state.OUTPUTSELECT
+send => state.OUTPUTSELECT
+send => state.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => clk_count.OUTPUTSELECT
+send => Selector1.IN1
+tx <= tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready <= ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|connect4_Top|hex7seg:hex_low
+value[0] => Decoder0.IN3
+value[1] => Decoder0.IN2
+value[2] => Decoder0.IN1
+value[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|connect4_Top|hex7seg:hex_high
+value[0] => Decoder0.IN3
+value[1] => Decoder0.IN2
+value[2] => Decoder0.IN1
+value[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
