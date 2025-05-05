@@ -24,6 +24,7 @@
 module vga(
 	input logic clk,					// 50 MHz FPGA clock
 	input logic rst,					// Reset Switch
+	input logic [1:0] board [0:5][0:6],
 	output logic vgaclk, 			// 25.175 MHz VGA clock
 	output logic hsync, vsync,
 	output logic sync_b, blank_b, // to monitor & DAC
@@ -32,29 +33,6 @@ module vga(
 
 	logic [9:0] x = 0;
 	logic [9:0] y = 0;
-	
-
-    logic [1:0] board [0:5][0:6];
-	 
-	 /**
-     * @brief Initial board color setup.
-     * 
-     * This block initializes all cells to white (empty),
-     * and sets a few colored pieces for testing.
-     */
-    initial begin
-        integer i, j;
-		  // Set all cells to white (empty holes)
-        for (i = 0; i < 6; i = i + 1)
-            for (j = 0; j < 7; j = j + 1)
-                board[i][j] = 2'b00;
-
-        // Example pieces
-        board[5][3] = 2'b01; // // Red piece
-        board[4][3] = 2'b10; // Yellow piece
-        board[5][2] = 2'b01; // Red piece
-        board[5][4] = 2'b10; // Yellow piece
-    end
 
 	// Use a PLL to create the 25.175 MHz VGA pixel clock
 	// 25.175 MHz clk period = 39.772 ns
@@ -78,7 +56,7 @@ module vga(
     .g(g),
     .b(b)
 	 );
-
+	 
 	
 endmodule
 
