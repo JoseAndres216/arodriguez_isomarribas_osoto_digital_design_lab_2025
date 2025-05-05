@@ -1,51 +1,51 @@
 |connect4_Top
-clk => clk.IN2
-rst => rst.IN2
+clk => clk.IN1
+rst => rst.IN1
 rx_pin => rx_pin.IN1
-tx_pin <= uart_tx:uart_tx_inst.tx
-vgaclk <= vga:vga_inst.vgaclk
-hsync <= vga:vga_inst.hsync
-vsync <= vga:vga_inst.vsync
-sync_b <= vga:vga_inst.sync_b
-blank_b <= vga:vga_inst.blank_b
-r[0] <= vga:vga_inst.r[0]
-r[1] <= vga:vga_inst.r[1]
-r[2] <= vga:vga_inst.r[2]
-r[3] <= vga:vga_inst.r[3]
-r[4] <= vga:vga_inst.r[4]
-r[5] <= vga:vga_inst.r[5]
-r[6] <= vga:vga_inst.r[6]
-r[7] <= vga:vga_inst.r[7]
-g[0] <= vga:vga_inst.g[0]
-g[1] <= vga:vga_inst.g[1]
-g[2] <= vga:vga_inst.g[2]
-g[3] <= vga:vga_inst.g[3]
-g[4] <= vga:vga_inst.g[4]
-g[5] <= vga:vga_inst.g[5]
-g[6] <= vga:vga_inst.g[6]
-g[7] <= vga:vga_inst.g[7]
-b[0] <= vga:vga_inst.b[0]
-b[1] <= vga:vga_inst.b[1]
-b[2] <= vga:vga_inst.b[2]
-b[3] <= vga:vga_inst.b[3]
-b[4] <= vga:vga_inst.b[4]
-b[5] <= vga:vga_inst.b[5]
-b[6] <= vga:vga_inst.b[6]
-b[7] <= vga:vga_inst.b[7]
-hex0[0] <= hex7seg:hex_low.segments
-hex0[1] <= hex7seg:hex_low.segments
-hex0[2] <= hex7seg:hex_low.segments
-hex0[3] <= hex7seg:hex_low.segments
-hex0[4] <= hex7seg:hex_low.segments
-hex0[5] <= hex7seg:hex_low.segments
-hex0[6] <= hex7seg:hex_low.segments
-hex1[0] <= hex7seg:hex_high.segments
-hex1[1] <= hex7seg:hex_high.segments
-hex1[2] <= hex7seg:hex_high.segments
-hex1[3] <= hex7seg:hex_high.segments
-hex1[4] <= hex7seg:hex_high.segments
-hex1[5] <= hex7seg:hex_high.segments
-hex1[6] <= hex7seg:hex_high.segments
+tx_pin << uartController:uart_controller.tx_pin
+vgaclk << vga:vga_inst.vgaclk
+hsync << vga:vga_inst.hsync
+vsync << vga:vga_inst.vsync
+sync_b << vga:vga_inst.sync_b
+blank_b << vga:vga_inst.blank_b
+r[0] << vga:vga_inst.r[0]
+r[1] << vga:vga_inst.r[1]
+r[2] << vga:vga_inst.r[2]
+r[3] << vga:vga_inst.r[3]
+r[4] << vga:vga_inst.r[4]
+r[5] << vga:vga_inst.r[5]
+r[6] << vga:vga_inst.r[6]
+r[7] << vga:vga_inst.r[7]
+g[0] << vga:vga_inst.g[0]
+g[1] << vga:vga_inst.g[1]
+g[2] << vga:vga_inst.g[2]
+g[3] << vga:vga_inst.g[3]
+g[4] << vga:vga_inst.g[4]
+g[5] << vga:vga_inst.g[5]
+g[6] << vga:vga_inst.g[6]
+g[7] << vga:vga_inst.g[7]
+b[0] << vga:vga_inst.b[0]
+b[1] << vga:vga_inst.b[1]
+b[2] << vga:vga_inst.b[2]
+b[3] << vga:vga_inst.b[3]
+b[4] << vga:vga_inst.b[4]
+b[5] << vga:vga_inst.b[5]
+b[6] << vga:vga_inst.b[6]
+b[7] << vga:vga_inst.b[7]
+hex0[0] << hex7seg:hex_low.segments
+hex0[1] << hex7seg:hex_low.segments
+hex0[2] << hex7seg:hex_low.segments
+hex0[3] << hex7seg:hex_low.segments
+hex0[4] << hex7seg:hex_low.segments
+hex0[5] << hex7seg:hex_low.segments
+hex0[6] << hex7seg:hex_low.segments
+hex1[0] << hex7seg:hex_high.segments
+hex1[1] << hex7seg:hex_high.segments
+hex1[2] << hex7seg:hex_high.segments
+hex1[3] << hex7seg:hex_high.segments
+hex1[4] << hex7seg:hex_high.segments
+hex1[5] << hex7seg:hex_high.segments
+hex1[6] << hex7seg:hex_high.segments
 
 
 |connect4_Top|vga:vga_inst
@@ -731,7 +731,22 @@ bot[9] => LessThan3.IN11
 inrect <= inrect.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|connect4_Top|uart_rx:uart_rx_inst
+|connect4_Top|uartController:uart_controller
+clk => clk.IN2
+rst => rst.IN2
+rx_pin => rx_pin.IN1
+tx_pin <= uart_tx:uart_tx_inst.tx
+display_data[0] <= display_data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[1] <= display_data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[2] <= display_data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[3] <= display_data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[4] <= display_data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[5] <= display_data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[6] <= display_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+display_data[7] <= display_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst
 clk => rx_data[0].CLK
 clk => rx_data[1].CLK
 clk => rx_data[2].CLK
@@ -813,7 +828,7 @@ data[7] <= data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ready <= ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|connect4_Top|uart_tx:uart_tx_inst
+|connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst
 clk => tx_data[0].CLK
 clk => tx_data[1].CLK
 clk => tx_data[2].CLK

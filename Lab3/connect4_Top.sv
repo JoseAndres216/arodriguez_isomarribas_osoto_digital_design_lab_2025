@@ -12,6 +12,7 @@ module connect4_Top (
 );
 
 	logic [1:0] board [0:5][0:6];
+	logic [7:0] display_data; // note to self: cambiar luego
 
 	initial begin
 		integer i, j;
@@ -39,81 +40,13 @@ module connect4_Top (
 		.b(b)
 	);
 
-	logic [7:0] rx_data;
-	logic rx_ready;
-	logic [7:0] tx_data;
-	logic tx_ready, tx_send;
-	logic [7:0] display_data;
-
-	// UART RX (desde Arduino)
-	uart_rx #(
-		.CLOCK_FREQ(50_000_000),
-		.BAUD_RATE(9600)
-	) uart_rx_inst (
+	uartController uart_controller (
 		.clk(clk),
-		.reset(rst),
-		.rx(rx_pin),
-		.data(rx_data),
-		.ready(rx_ready)
+		.rst(rst),
+		.rx_pin(rx_pin),
+		.tx_pin(tx_pin),
+		.display_data(display_data)
 	);
-
-	// UART TX (hacia Arduino)
-	uart_tx #(
-		.CLOCK_FREQ(50_000_000),
-		.BAUD_RATE(9600)
-	) uart_tx_inst (
-		.clk(clk),
-		.reset(rst),
-		.data(tx_data),
-		.send(tx_send),
-		.tx(tx_pin),
-		.ready(tx_ready)
-	);
-
-	typedef enum logic [1:0] {
-		IDLE,
-		PREPARE_SEND,
-		SEND,
-		WAIT_DONE
-	} state_t;
-
-	state_t state = IDLE;
-
-	always_ff @(posedge clk or posedge rst) begin
-		if (rst) begin
-			state <= IDLE;
-			tx_send <= 0;
-			tx_data <= 8'h4B; // 'K'
-			display_data <= 8'h00;
-		end else begin
-			tx_send <= 0; // Pulso de 1 ciclo
-
-			case (state)
-				IDLE: begin
-					if (rx_ready) begin
-						display_data <= rx_data;
-						state <= PREPARE_SEND;
-					end
-				end
-
-				PREPARE_SEND: begin
-					if (tx_ready) begin
-						tx_send <= 1;
-						state <= SEND;
-					end
-				end
-
-				SEND: begin
-					state <= WAIT_DONE;
-				end
-
-				WAIT_DONE: begin
-					if (!tx_ready)
-						state <= IDLE;  // Vuelve a intentar cuando TX esté ocupado (envío iniciado)
-				end
-			endcase
-		end
-	end
 
 	// Mostrar el valor en HEX (2 dígitos)
 	hex7seg hex_low (
