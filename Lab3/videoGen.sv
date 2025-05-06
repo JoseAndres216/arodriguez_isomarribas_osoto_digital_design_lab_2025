@@ -48,7 +48,7 @@ module videoGen(
     selectBox selector(
         .x(x),
         .y(y),
-        .selected_col(3'd0),  // Static selection for now (column 0); replace with selectColumn to enable dynamic
+        .selected_col(selectColumn),
         .grid_top(50),
         .in_select(in_selector)
     );

@@ -16,7 +16,9 @@ module connect4_Top (
 	logic [1:0] board [0:5][0:6];
 	logic [7:0] display_data; // note to self: can be deleted after debug communication
 	logic timeOut;  // t0
-   logic [3:0] current_seconds;  // Para 10 segundos, se necesitan 4 bits (log2(11) ≈ 3.5)
+   	logic [3:0] current_seconds;  // Para 10 segundos, se necesitan 4 bits (log2(11) ≈ 3.5)
+	logic [2:0] selectColumn; // Column to be highlighted (selected column)
+	logic changeColumn; // Button to change the selected column
 	
 
 	initial begin
@@ -31,10 +33,30 @@ module connect4_Top (
 		board[5][4] = 2'b10;
 	end
 
+	// will need another debouncer for the select button
+	debouncer #(
+		.N(20)
+	) debounce_inst (
+		.clk(clk),
+		.rst(rst),
+		.noisy_in(changeBtn),
+		.clean_out(changeColumn)
+	);
+
+	columnSelector #(
+		.N(3)
+	) column_selector (
+		.clk(clk),
+		.rst(rst),
+		.button(!changeColumn),
+		.selectColumn(selectColumn)
+	);
+
 	vga vga_inst (
 		.clk(clk),
 		.rst(rst),
 		.board(board),
+		.selectColumn(selectColumn),
 		.vgaclk(vgaclk),
 		.hsync(hsync),
 		.vsync(vsync),
@@ -79,6 +101,8 @@ module connect4_Top (
 		.B(current_seconds),
 		.equal(timeOut)
 	);
+
+    
 	
 /*
 	// this is useful to debug communication between ARDUINO and FGPA

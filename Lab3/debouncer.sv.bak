@@ -1,0 +1,32 @@
+module debouncer #(
+    parameter N = 20  // Número de bits del contador (ajusta según la frecuencia del reloj)
+)(
+    input  logic clk,         // Reloj del sistema
+    input  logic rst,         // Reset
+    input  logic noisy_in,    // Entrada con rebotes (botón físico)
+    output logic clean_out    // Salida limpia (1 pulso por pulsación estable)
+);
+
+    logic [N-1:0] counter;    // Contador para duración estable
+    logic stable_state;       // Último valor estable detectado
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            counter      <= 0;
+            stable_state <= 0;
+        end else begin
+            if (noisy_in != stable_state) begin
+                counter <= counter + 1;
+                if (counter == {N{1'b1}}) begin
+                    stable_state <= noisy_in;
+                    counter      <= 0;
+                end
+            end else begin
+                counter <= 0;
+            end
+        end
+    end
+
+    assign clean_out = stable_state;
+
+endmodule

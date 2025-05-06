@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Tue May 06 13:46:47 2025
+Tue May 06 15:38:30 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -22,28 +22,29 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  14. General Register Statistics
  15. Inverted Register Statistics
  16. Multiplexer Restructuring Statistics (Restructuring Performed)
- 17. Parameter Settings for User Entity Instance: vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
- 18. Parameter Settings for User Entity Instance: vga:vga_inst|vgaController:vgaCont
- 19. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_rx:uart_rx_inst
- 20. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_tx:uart_tx_inst
- 21. Parameter Settings for User Entity Instance: timer:myTimer
- 22. Parameter Settings for User Entity Instance: dec7seg:display7seg
- 23. Parameter Settings for User Entity Instance: comparator:comp_inst
- 24. Parameter Settings for Inferred Entity Instance: vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Div0
- 25. Parameter Settings for Inferred Entity Instance: vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Div1
- 26. Parameter Settings for Inferred Entity Instance: dec7seg:display7seg|lpm_divide:Mod0
- 27. Parameter Settings for Inferred Entity Instance: vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0
- 28. Parameter Settings for Inferred Entity Instance: vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1
- 29. Port Connectivity Checks: "comparator:comp_inst"
- 30. Port Connectivity Checks: "uartController:uart_controller|uart_tx:uart_tx_inst"
- 31. Port Connectivity Checks: "uartController:uart_controller"
- 32. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|selectBox:selector"
- 33. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen"
- 34. Port Connectivity Checks: "vga:vga_inst|pll:vgapll"
- 35. Port Connectivity Checks: "vga:vga_inst"
- 36. Post-Synthesis Netlist Statistics for Top Partition
- 37. Elapsed Time Per Partition
- 38. Analysis & Synthesis Messages
+ 17. Parameter Settings for User Entity Instance: debouncer:debounce_inst
+ 18. Parameter Settings for User Entity Instance: columnSelector:column_selector
+ 19. Parameter Settings for User Entity Instance: vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
+ 20. Parameter Settings for User Entity Instance: vga:vga_inst|vgaController:vgaCont
+ 21. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_rx:uart_rx_inst
+ 22. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_tx:uart_tx_inst
+ 23. Parameter Settings for User Entity Instance: timer:myTimer
+ 24. Parameter Settings for User Entity Instance: dec7seg:display7seg
+ 25. Parameter Settings for User Entity Instance: comparator:comp_inst
+ 26. Parameter Settings for Inferred Entity Instance: vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Div0
+ 27. Parameter Settings for Inferred Entity Instance: vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Div1
+ 28. Parameter Settings for Inferred Entity Instance: dec7seg:display7seg|lpm_divide:Mod0
+ 29. Parameter Settings for Inferred Entity Instance: vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod0
+ 30. Parameter Settings for Inferred Entity Instance: vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1
+ 31. Port Connectivity Checks: "comparator:comp_inst"
+ 32. Port Connectivity Checks: "uartController:uart_controller|uart_tx:uart_tx_inst"
+ 33. Port Connectivity Checks: "uartController:uart_controller"
+ 34. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|selectBox:selector"
+ 35. Port Connectivity Checks: "vga:vga_inst|pll:vgapll"
+ 36. Port Connectivity Checks: "vga:vga_inst"
+ 37. Post-Synthesis Netlist Statistics for Top Partition
+ 38. Elapsed Time Per Partition
+ 39. Analysis & Synthesis Messages
 
 
 
@@ -70,13 +71,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 06 13:46:47 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue May 06 15:38:30 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; lab3                                        ;
 ; Top-level Entity Name           ; connect4_Top                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 118                                         ;
+; Total registers                 ; 145                                         ;
 ; Total pins                      ; 49                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -216,6 +217,8 @@ https://fpgasoftware.intel.com/eula.
 ; timer.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/timer.sv                   ;         ;
 ; dec7seg.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/dec7seg.sv                 ;         ;
 ; comparator.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/comparator.sv              ;         ;
+; columnSelector.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/columnSelector.sv          ;         ;
+; debouncer.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/debouncer.sv               ;         ;
 ; altera_pll.v                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                  ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                               ;         ;
@@ -236,16 +239,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 303       ;
+; Estimate of Logic utilization (ALMs needed) ; 340       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 560       ;
+; Combinational ALUT usage for logic          ; 622       ;
 ;     -- 7 input functions                    ; 1         ;
-;     -- 6 input functions                    ; 44        ;
-;     -- 5 input functions                    ; 37        ;
-;     -- 4 input functions                    ; 53        ;
-;     -- <=3 input functions                  ; 425       ;
+;     -- 6 input functions                    ; 55        ;
+;     -- 5 input functions                    ; 38        ;
+;     -- 4 input functions                    ; 55        ;
+;     -- <=3 input functions                  ; 473       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 118       ;
+; Dedicated logic registers                   ; 145       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 49        ;
 ;                                             ;           ;
@@ -255,9 +258,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 99        ;
-; Total fan-out                               ; 2279      ;
-; Average fan-out                             ; 2.92      ;
+; Maximum fan-out                             ; 126       ;
+; Total fan-out                               ; 2565      ;
+; Average fan-out                             ; 2.95      ;
 +---------------------------------------------+-----------+
 
 
@@ -266,7 +269,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                         ; Entity Name         ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |connect4_Top                                   ; 560 (0)             ; 118 (0)                   ; 0                 ; 4          ; 49   ; 0            ; |connect4_Top                                                                                                                                               ; connect4_Top        ; work         ;
+; |connect4_Top                                   ; 622 (0)             ; 145 (0)                   ; 0                 ; 4          ; 49   ; 0            ; |connect4_Top                                                                                                                                               ; connect4_Top        ; work         ;
+;    |columnSelector:column_selector|             ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|columnSelector:column_selector                                                                                                                ; columnSelector      ; work         ;
+;    |debouncer:debounce_inst|                    ; 26 (26)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|debouncer:debounce_inst                                                                                                                       ; debouncer           ; work         ;
 ;    |dec7seg:display7seg|                        ; 17 (8)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|dec7seg:display7seg                                                                                                                           ; dec7seg             ; work         ;
 ;       |lpm_divide:Mod0|                         ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|dec7seg:display7seg|lpm_divide:Mod0                                                                                                           ; lpm_divide          ; work         ;
 ;          |lpm_divide_42m:auto_generated|        ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|dec7seg:display7seg|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                                             ; lpm_divide_42m      ; work         ;
@@ -276,13 +281,13 @@ https://fpgasoftware.intel.com/eula.
 ;    |uartController:uart_controller|             ; 83 (10)             ; 68 (6)                    ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|uartController:uart_controller                                                                                                                ; uartController      ; work         ;
 ;       |uart_rx:uart_rx_inst|                    ; 44 (44)             ; 39 (39)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst                                                                                           ; uart_rx             ; work         ;
 ;       |uart_tx:uart_tx_inst|                    ; 29 (29)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst                                                                                           ; uart_tx             ; work         ;
-;    |vga:vga_inst|                               ; 422 (0)             ; 20 (0)                    ; 0                 ; 4          ; 0    ; 0            ; |connect4_Top|vga:vga_inst                                                                                                                                  ; vga                 ; work         ;
+;    |vga:vga_inst|                               ; 453 (0)             ; 20 (0)                    ; 0                 ; 4          ; 0    ; 0            ; |connect4_Top|vga:vga_inst                                                                                                                                  ; vga                 ; work         ;
 ;       |pll:vgapll|                              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|pll:vgapll                                                                                                                       ; pll                 ; pll          ;
 ;          |pll_0002:pll_inst|                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|pll:vgapll|pll_0002:pll_inst                                                                                                     ; pll_0002            ; pll          ;
 ;             |altera_pll:altera_pll_i|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i                                                                             ; altera_pll          ; work         ;
-;       |vgaController:vgaCont|                   ; 31 (31)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|vgaController:vgaCont                                                                                                            ; vgaController       ; work         ;
-;       |videoGen:videoGen|                       ; 391 (13)            ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen                                                                                                                ; videoGen            ; work         ;
-;          |boardGrid:grid|                       ; 378 (82)            ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid                                                                                                 ; boardGrid           ; work         ;
+;       |vgaController:vgaCont|                   ; 30 (30)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|vgaController:vgaCont                                                                                                            ; vgaController       ; work         ;
+;       |videoGen:videoGen|                       ; 423 (11)            ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen                                                                                                                ; videoGen            ; work         ;
+;          |boardGrid:grid|                       ; 377 (81)            ; 0 (0)                     ; 0                 ; 4          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid                                                                                                 ; boardGrid           ; work         ;
 ;             |lpm_divide:Div0|                   ; 70 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;                |lpm_divide_gbm:auto_generated|  ; 70 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Div0|lpm_divide_gbm:auto_generated                                                   ; lpm_divide_gbm      ; work         ;
 ;                   |sign_div_unsign_mlh:divider| ; 70 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Div0|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh ; work         ;
@@ -299,6 +304,8 @@ https://fpgasoftware.intel.com/eula.
 ;                |lpm_divide_j3m:auto_generated|  ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1|lpm_divide_j3m:auto_generated                                                   ; lpm_divide_j3m      ; work         ;
 ;                   |sign_div_unsign_mlh:divider| ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1|lpm_divide_j3m:auto_generated|sign_div_unsign_mlh:divider                       ; sign_div_unsign_mlh ; work         ;
 ;                      |alt_u_div_ive:divider|    ; 78 (78)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1|lpm_divide_j3m:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider ; alt_u_div_ive       ; work         ;
+;          |selectBox:selector|                   ; 35 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|selectBox:selector                                                                                             ; selectBox           ; work         ;
+;             |rectgen:box_rectgen|               ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|selectBox:selector|rectgen:box_rectgen                                                                         ; rectgen             ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -394,12 +401,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 118   ;
-; Number of registers using Synchronous Clear  ; 72    ;
+; Total registers                              ; 145   ;
+; Number of registers using Synchronous Clear  ; 92    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 59    ;
+; Number of registers using Asynchronous Clear ; 84    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 70    ;
+; Number of registers using Clock Enable       ; 73    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -424,17 +431,38 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |connect4_Top|timer:myTimer|current_seconds[2]                                 ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |connect4_Top|timer:myTimer|cycle_counter[0]                                   ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |connect4_Top|debouncer:debounce_inst|count[11]                                ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |connect4_Top|timer:myTimer|cycle_counter[12]                                  ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|bit_index[2] ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst|bit_index[2] ;
-; 5:1                ; 13 bits   ; 39 LEs        ; 0 LEs                ; 39 LEs                 ; Yes        ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|clk_count[4] ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst|bit_index[0] ;
+; 5:1                ; 13 bits   ; 39 LEs        ; 0 LEs                ; 39 LEs                 ; Yes        ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|clk_count[3] ;
 ; 7:1                ; 13 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst|clk_count[7] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |connect4_Top|timer:myTimer|current_seconds[1]                                 ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|Selector5    ;
-; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |connect4_Top|uartController:uart_controller|Selector9                         ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|Selector3    ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |connect4_Top|uartController:uart_controller|Selector13                        ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|Selector6    ;
-; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst|Selector4    ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst|Selector1    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debouncer:debounce_inst ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; N              ; 20    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: columnSelector:column_selector ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 3     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -909,7 +937,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port           ; Type  ; Severity ; Details                                                                                                                                                                             ;
 +----------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; selected_col   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; grid_top       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; grid_top[5..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; grid_top[9..6] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
@@ -917,17 +944,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; grid_top[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; grid_top[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 +----------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------+
-; Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen" ;
-+-----------------+-------+----------+-----------------------+
-; Port            ; Type  ; Severity ; Details               ;
-+-----------------+-------+----------+-----------------------+
-; selectColumn[2] ; Input ; Info     ; Stuck at GND          ;
-; selectColumn[1] ; Input ; Info     ; Stuck at VCC          ;
-; selectColumn[0] ; Input ; Info     ; Stuck at GND          ;
-+-----------------+-------+----------+-----------------------+
 
 
 +-----------------------------------------------------+
@@ -965,30 +981,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 118                         ;
-;     CLR               ; 25                          ;
-;     ENA CLR           ; 8                           ;
+; arriav_ff             ; 145                         ;
+;     CLR               ; 27                          ;
+;     CLR SCLR          ; 20                          ;
+;     ENA CLR           ; 11                          ;
 ;     ENA CLR SCLR      ; 26                          ;
 ;     ENA SCLR          ; 36                          ;
 ;     SCLR              ; 10                          ;
-;     plain             ; 13                          ;
-; arriav_lcell_comb     ; 565                         ;
-;     arith             ; 265                         ;
+;     plain             ; 15                          ;
+; arriav_lcell_comb     ; 627                         ;
+;     arith             ; 300                         ;
 ;         0 data inputs ; 32                          ;
-;         1 data inputs ; 105                         ;
-;         2 data inputs ; 44                          ;
-;         3 data inputs ; 60                          ;
-;         4 data inputs ; 24                          ;
+;         1 data inputs ; 135                         ;
+;         2 data inputs ; 45                          ;
+;         3 data inputs ; 63                          ;
+;         4 data inputs ; 25                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 252                         ;
+;     normal            ; 279                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 81                          ;
-;         3 data inputs ; 55                          ;
-;         4 data inputs ; 29                          ;
-;         5 data inputs ; 37                          ;
-;         6 data inputs ; 44                          ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 89                          ;
+;         3 data inputs ; 60                          ;
+;         4 data inputs ; 30                          ;
+;         5 data inputs ; 38                          ;
+;         6 data inputs ; 55                          ;
 ;     shared            ; 47                          ;
 ;         0 data inputs ; 5                           ;
 ;         1 data inputs ; 28                          ;
@@ -998,7 +1015,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 12.20                       ;
-; Average LUT depth     ; 7.20                        ;
+; Average LUT depth     ; 6.84                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1017,7 +1034,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue May 06 13:46:37 2025
+    Info: Processing started: Tue May 06 15:38:20 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1057,12 +1074,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file dec7seg
     Info (12023): Found entity 1: dec7seg File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/dec7seg.sv Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.sv
     Info (12023): Found entity 1: comparator File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/comparator.sv Line: 13
+Info (12021): Found 1 design units, including 1 entities, in source file columnselector.sv
+    Info (12023): Found entity 1: columnSelector File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/columnSelector.sv Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file debouncer.sv
+    Info (12023): Found entity 1: debouncer File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/debouncer.sv Line: 20
 Info (12127): Elaborating entity "connect4_Top" for the top level hierarchy
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
-Info (12128): Elaborating entity "vga" for hierarchy "vga:vga_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 46
+Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:debounce_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at debouncer.sv(43): truncated value with size 32 to match size of target (20) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/debouncer.sv Line: 43
+Info (12128): Elaborating entity "columnSelector" for hierarchy "columnSelector:column_selector" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 53
+Warning (10230): Verilog HDL assignment warning at columnSelector.sv(41): truncated value with size 32 to match size of target (3) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/columnSelector.sv Line: 41
+Info (12128): Elaborating entity "vga" for hierarchy "vga:vga_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 68
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
-Info (12128): Elaborating entity "pll" for hierarchy "vga:vga_inst|pll:vgapll" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 42
+Info (12128): Elaborating entity "pll" for hierarchy "vga:vga_inst|pll:vgapll" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 43
 Info (12128): Elaborating entity "pll_0002" for hierarchy "vga:vga_inst|pll:vgapll|pll_0002:pll_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll.v Line: 20
 Info (12128): Elaborating entity "altera_pll" for hierarchy "vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/pll/pll_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
@@ -1128,8 +1153,8 @@ Info (12133): Instantiated megafunction "vga:vga_inst|pll:vgapll|pll_0002:pll_in
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "vgaController" for hierarchy "vga:vga_inst|vgaController:vgaCont" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 45
-Info (12128): Elaborating entity "videoGen" for hierarchy "vga:vga_inst|videoGen:videoGen" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 58
+Info (12128): Elaborating entity "vgaController" for hierarchy "vga:vga_inst|vgaController:vgaCont" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 46
+Info (12128): Elaborating entity "videoGen" for hierarchy "vga:vga_inst|videoGen:videoGen" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/vga.sv Line: 59
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
 Info (12128): Elaborating entity "boardGrid" for hierarchy "vga:vga_inst|videoGen:videoGen|boardGrid:grid" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/videoGen.sv Line: 45
@@ -1144,7 +1169,7 @@ Warning (10230): Verilog HDL assignment warning at selectBox.sv(27): truncated v
 Warning (10230): Verilog HDL assignment warning at selectBox.sv(28): truncated value with size 32 to match size of target (10) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv Line: 28
 Warning (10230): Verilog HDL assignment warning at selectBox.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv Line: 29
 Info (12128): Elaborating entity "rectgen" for hierarchy "vga:vga_inst|videoGen:videoGen|selectBox:selector|rectgen:box_rectgen" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/selectBox.sv Line: 41
-Info (12128): Elaborating entity "uartController" for hierarchy "uartController:uart_controller" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 54
+Info (12128): Elaborating entity "uartController" for hierarchy "uartController:uart_controller" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 76
 Warning (10240): Verilog HDL Always Construct warning at uartController.sv(87): inferring latch(es) for variable "tx_data", which holds its previous value in one or more paths through the always construct File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/uartController.sv Line: 87
 Info (10041): Inferred latch for "tx_data[0]" at uartController.sv(87) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/uartController.sv Line: 87
 Info (10041): Inferred latch for "tx_data[1]" at uartController.sv(87) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/uartController.sv Line: 87
@@ -1164,15 +1189,15 @@ Warning (10230): Verilog HDL assignment warning at uart_tx.sv(87): truncated val
 Warning (10230): Verilog HDL assignment warning at uart_tx.sv(98): truncated value with size 32 to match size of target (13) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/uart_tx.sv Line: 98
 Warning (10230): Verilog HDL assignment warning at uart_tx.sv(102): truncated value with size 32 to match size of target (3) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/uart_tx.sv Line: 102
 Warning (10230): Verilog HDL assignment warning at uart_tx.sv(111): truncated value with size 32 to match size of target (13) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/uart_tx.sv Line: 111
-Info (12128): Elaborating entity "timer" for hierarchy "timer:myTimer" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 64
+Info (12128): Elaborating entity "timer" for hierarchy "timer:myTimer" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 86
 Warning (10230): Verilog HDL assignment warning at timer.sv(35): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/timer.sv Line: 35
 Warning (10230): Verilog HDL assignment warning at timer.sv(49): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/timer.sv Line: 49
 Warning (10230): Verilog HDL assignment warning at timer.sv(53): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/timer.sv Line: 53
 Warning (10230): Verilog HDL assignment warning at timer.sv(55): truncated value with size 32 to match size of target (26) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/timer.sv Line: 55
-Info (12128): Elaborating entity "dec7seg" for hierarchy "dec7seg:display7seg" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 73
+Info (12128): Elaborating entity "dec7seg" for hierarchy "dec7seg:display7seg" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 95
 Warning (10230): Verilog HDL assignment warning at dec7seg.sv(33): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/dec7seg.sv Line: 33
 Warning (10230): Verilog HDL assignment warning at dec7seg.sv(34): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/dec7seg.sv Line: 34
-Info (12128): Elaborating entity "comparator" for hierarchy "comparator:comp_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 81
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:comp_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 103
 Info (278001): Inferred 5 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga:vga_inst|videoGen:videoGen|boardGrid:grid|Div0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 61
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga:vga_inst|videoGen:videoGen|boardGrid:grid|Div1" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 62
@@ -1220,19 +1245,18 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 7 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "changeBtn" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 4
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "selectBtn" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 5
-Info (21057): Implemented 646 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 710 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 44 output pins
-    Info (21061): Implemented 592 logic cells
+    Info (21061): Implemented 656 logic cells
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 4 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 4839 megabytes
-    Info: Processing ended: Tue May 06 13:46:47 2025
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4840 megabytes
+    Info: Processing ended: Tue May 06 15:38:30 2025
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:18
 
 

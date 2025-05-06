@@ -172,6 +172,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "changeBtn",
+					"strict" : false
+				},
+				{
 					"name" : "rx_pin",
 					"strict" : false
 				}

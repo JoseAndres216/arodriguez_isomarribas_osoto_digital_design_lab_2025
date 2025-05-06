@@ -25,6 +25,7 @@ module vga(
 	input logic clk,					// 50 MHz FPGA clock
 	input logic rst,					// Reset Switch
 	input logic [1:0] board [0:5][0:6],
+	input logic [2:0] selectColumn,	// Column to be highlighted
 	output logic vgaclk, 			// 25.175 MHz VGA clock
 	output logic hsync, vsync,
 	output logic sync_b, blank_b, // to monitor & DAC
@@ -50,7 +51,7 @@ module vga(
 	videoGen videoGen(
     .x(x),
     .y(y),
-    .selectColumn(3'd2),
+    .selectColumn(selectColumn),
     .board(board),
     .r(r),
     .g(g),
