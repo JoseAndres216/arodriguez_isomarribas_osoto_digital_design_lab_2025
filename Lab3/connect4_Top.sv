@@ -1,18 +1,22 @@
 module connect4_Top (	
 	input logic clk,				// 50 MHz FPGA clock
 	input logic rst,				// Reset Switch
-   input  logic rx_pin,           // Pin conectado al TX del Arduino
-   output logic tx_pin,           // Pin conectado al RX del Arduino
+	input logic changeBtn,	// change column button
+	input logic selectBtn,	// select button 2
+	input  logic rx_pin,           // Pin conectado al TX del Arduino
+	output logic tx_pin,           // Pin conectado al RX del Arduino
 	output logic vgaclk, 			// 25.175 MHz VGA clock
 	output logic hsync, vsync,
 	output logic sync_b, blank_b, // to monitor & DAC
 	output logic [7:0] r, g, b,    // to video DAC
 	output logic [6:0] hex0,       // Dígito menos significativo
-   output logic [6:0] hex1        // Dígito más significativo
+	output logic [6:0] hex1        // Dígito más significativo
 );
 
 	logic [1:0] board [0:5][0:6];
-	logic [7:0] display_data; // note to self: cambiar luego
+	logic [7:0] display_data; // note to self: can be deleted after debug communication
+	logic timeOut;
+	
 
 	initial begin
 		integer i, j;
@@ -48,7 +52,21 @@ module connect4_Top (
 		.display_data(display_data)
 	);
 
-	// Mostrar el valor en HEX (2 dígitos)
+	// TODO: probar en FPGA el timer con dec7seg:
+	timer #(
+    .CLOCK_FREQ_HZ(50_000_000),
+    .seconds_target(10)
+	) myTimer (
+    .clk(clk),
+    .rst(rst),
+    .segU(hex0),
+    .segT(hex1),
+    .timeOut(timeOut)
+	);
+	
+/*
+	// this is useful to debug communication between ARDUINO and FGPA
+	
 	hex7seg hex_low (
 		.value(display_data[3:0]),
 		.segments(hex0)
@@ -58,5 +76,5 @@ module connect4_Top (
 		.value(display_data[7:4]),
 		.segments(hex1)
 	);
-
+*/
 endmodule
