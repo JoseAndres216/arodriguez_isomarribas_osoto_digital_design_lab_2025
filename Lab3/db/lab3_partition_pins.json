@@ -152,14 +152,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "hex1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "hex1[2]",
-					"strict" : false
-				},
-				{
 					"name" : "hex1[3]",
 					"strict" : false
 				},
@@ -169,10 +161,6 @@
 				},
 				{
 					"name" : "hex1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "hex1[6]",
 					"strict" : false
 				},
 				{

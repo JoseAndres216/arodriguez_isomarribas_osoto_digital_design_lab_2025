@@ -15,7 +15,8 @@ module connect4_Top (
 
 	logic [1:0] board [0:5][0:6];
 	logic [7:0] display_data; // note to self: can be deleted after debug communication
-	logic timeOut;
+	logic timeOut;  // t0
+   logic [3:0] current_seconds;  // Para 10 segundos, se necesitan 4 bits (log2(11) ≈ 3.5)
 	
 
 	initial begin
@@ -52,16 +53,31 @@ module connect4_Top (
 		.display_data(display_data)
 	);
 
-	// TODO: probar en FPGA el timer con dec7seg:
+	
 	timer #(
     .CLOCK_FREQ_HZ(50_000_000),
     .seconds_target(10)
 	) myTimer (
     .clk(clk),
     .rst(rst),
-    .segU(hex0),
-    .segT(hex1),
-    .timeOut(timeOut)
+    .current_seconds(current_seconds)
+	);
+	
+	
+	dec7seg #(
+        .N(4)
+    ) display7seg (
+        .value(current_seconds),
+        .segU(hex0),
+        .segT(hex1)
+    );
+	 
+	comparator #(
+		.N(4)
+	) comp_inst (
+		.A(4'b0000),
+		.B(current_seconds),
+		.equal(timeOut)
 	);
 	
 /*
