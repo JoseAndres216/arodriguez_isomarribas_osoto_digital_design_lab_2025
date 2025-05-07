@@ -1,1 +1,1 @@
-Info (10281): Verilog HDL Declaration information at connect4_Top.sv(15): object "send" differs only in case from object "SEND" in the same scope File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 15
+Warning (10268): Verilog HDL information at FSM.sv(52): always construct contains both blocking and non-blocking assignments File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/FSM.sv Line: 52

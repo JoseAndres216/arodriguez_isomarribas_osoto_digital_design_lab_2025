@@ -1,4 +1,4 @@
-module connect4_fsm (
+module FSM (
     input logic clk,
     input logic reset,
     input logic start_button,
@@ -15,17 +15,14 @@ module connect4_fsm (
     output logic show_winner,
     output logic show_draw,
     output logic show_start_screen,
-	 output logic activate_selector,
-	 output logic [3:0] estado
-
+    output logic update_board,
+    output logic activate_selectedColumn // Column selected by the player
 );
 
-
     typedef enum logic [3:0] {
+        S_RESET,
         S_START_SCREEN,
         S_WAIT_FOR_MOVE,
-        S_START_SCREEN1,
-        S_START_SCREEN2,
         S_TIMEOUT_RANDOM_MOVE,
         S_DROP_PIECE,
         S_CHECK_VICTORY,
@@ -39,47 +36,63 @@ module connect4_fsm (
     // Estado actual
     always_ff @(posedge clk or posedge reset) begin
         if (reset)
-            current_state <= S_START_SCREEN;
+            current_state <= S_RESET;
         else
             current_state <= next_state;
     end
 
     // Lógica de transición de estados y señales de control
     always_comb begin
-
+        // Valores por defecto
+        enable_timer = 0;
+        reset_timer = 0;
+        random_move = 0;
+        drop_piece = 0;
+        switch_player = 0;
+        show_winner = 0;
+        show_draw = 0;
+        show_start_screen = 0;
+        update_board = 0;
 
         next_state = current_state;
 
         case (current_state)
 
+            S_RESET: begin
+                reset_timer = 1;
+                show_start_screen = 1;
+                next_state = S_START_SCREEN;
+            end
+
             S_START_SCREEN: begin
-                if (start_button)
-                    next_state = S_START_SCREEN1;
-            end
-
-            S_START_SCREEN1: begin
-                if (start_button)
-                    next_state = S_START_SCREEN2;
-            end
-
-            S_START_SCREEN2: begin
+                show_start_screen = 1;
                 if (start_button)
                     next_state = S_WAIT_FOR_MOVE;
             end
 
             S_WAIT_FOR_MOVE: begin
-                
-                if (player2_move)
-                    next_state = S_DROP_PIECE;
+                enable_timer = 1;
+                if (player1_move || player2_move)
+                    activate_selectedColumn = 1; // Activar la columna seleccionada por el jugador
+                    //next_state = S_DROP_PIECE;
                 else if (timeout)
-                    next_state = S_TIMEOUT_RANDOM_MOVE;
+                    activate_selectedColumn = 1; // Activar la columna seleccionada por el jugador
+                    //next_state = S_TIMEOUT_RANDOM_MOVE;
+                else
+                    activate_selectedColumn = 0; // Activar la columna seleccionada por el jugador
+
             end
 
             S_TIMEOUT_RANDOM_MOVE: begin
+                random_move = 1;
+                drop_piece = 1;
+                update_board = 1;
                 next_state = S_CHECK_VICTORY;
             end
 
             S_DROP_PIECE: begin
+                drop_piece = 1;
+                update_board = 1;
                 next_state = S_CHECK_VICTORY;
             end
 
@@ -89,63 +102,28 @@ module connect4_fsm (
                 else if (draw_detected)
                     next_state = S_DRAW;
                 else
-                    next_state = S_SWITCH_PLAYER; // CAMBIAR ESTOOOO
+                    next_state = S_SWITCH_PLAYER;
             end
 
             S_VICTORY: begin
-               // show_winner = 1;
+                show_winner = 1;
                 // No cambio de estado, se queda mostrando victoria
             end
 
             S_DRAW: begin
-               // show_draw = 1;
+                show_draw = 1;
                 // No cambio de estado, se queda mostrando empate
             end
 
             S_SWITCH_PLAYER: begin
-                //switch_player = 1;
-               // reset_timer = 1;
+                switch_player = 1;
+                reset_timer = 1;
                 next_state = S_WAIT_FOR_MOVE;
             end
 
-            default: next_state = S_START_SCREEN;
+            default: next_state = S_RESET;
 
         endcase
     end
-	 
-	  
-    always_comb begin
-        // Valores por defecto EXPLÍCITOS al inicio
-        enable_timer = 0;
-        random_move = 0;
-        switch_player = 0;
-        show_winner = 0;
-        show_draw = 0;
-        show_start_screen = 0;
-      
-
-        // Asignaciones específicas por estado
-        case (current_state)
-            S_START_SCREEN: begin
-					 show_start_screen = 1;
-            end
-
-            S_WAIT_FOR_MOVE: begin
-					 enable_timer = 1;
-            end
-
-            S_TIMEOUT_RANDOM_MOVE: begin
-                random_move = 1;
-            end
-
-          
-            default: ;
-        endcase
-    end
-
-assign estado = current_state;
-assign activate_selector = ((current_state == S_WAIT_FOR_MOVE) && player1_move) ? 1 : 0; // Activar selector solo en este estado
-assign reset_timer = (current_state == S_SWITCH_PLAYER) ? 1 : 0; 
-assign drop_piece = ((current_state == S_DROP_PIECE) || (current_state == S_TIMEOUT_RANDOM_MOVE)) ? 1 : 0; // Activar drop_piece solo en este estado
 
 endmodule

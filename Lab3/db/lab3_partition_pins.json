@@ -164,6 +164,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "change_LED",
+					"strict" : false
+				},
+				{
+					"name" : "play_LED",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
@@ -173,6 +181,10 @@
 				},
 				{
 					"name" : "changeBtn",
+					"strict" : false
+				},
+				{
+					"name" : "playBtn",
 					"strict" : false
 				},
 				{

@@ -28,7 +28,7 @@ module debouncer #(
 
     logic [N-1:0] count;
     logic        sync_0, sync_1;
-    logic        stable_state;
+    logic        stable_state = 1; // State of the debounced signal
 
     always_ff @(posedge clk) begin
         sync_0 <= noisy_in;
@@ -50,6 +50,6 @@ module debouncer #(
         end
     end
 
-    assign clean_out = stable_state;
+    assign clean_out = !stable_state;
 
 endmodule

@@ -22,3 +22,16 @@ state.START_BIT 0 0 1 1 0
 state.DATA_BITS 0 1 0 1 0 
 state.STOP_BIT 1 0 0 1 0 
 state.DONE 0 0 0 1 1 
+
+State Machine - |connect4_Top|connect4_fsm:fsm_inst|current_state
+Name current_state.S_SWITCH_PLAYER current_state.S_DRAW current_state.S_VICTORY current_state.S_CHECK_VICTORY current_state.S_DROP_PIECE current_state.S_TIMEOUT_RANDOM_MOVE current_state.S_START_SCREEN2 current_state.S_START_SCREEN1 current_state.S_WAIT_FOR_MOVE current_state.S_START_SCREEN 
+current_state.S_START_SCREEN 0 0 0 0 0 0 0 0 0 0 
+current_state.S_WAIT_FOR_MOVE 0 0 0 0 0 0 0 0 1 1 
+current_state.S_START_SCREEN1 0 0 0 0 0 0 0 1 0 1 
+current_state.S_START_SCREEN2 0 0 0 0 0 0 1 0 0 1 
+current_state.S_TIMEOUT_RANDOM_MOVE 0 0 0 0 0 1 0 0 0 1 
+current_state.S_DROP_PIECE 0 0 0 0 1 0 0 0 0 1 
+current_state.S_CHECK_VICTORY 0 0 0 1 0 0 0 0 0 1 
+current_state.S_VICTORY 0 0 1 0 0 0 0 0 0 1 
+current_state.S_DRAW 0 1 0 0 0 0 0 0 0 1 
+current_state.S_SWITCH_PLAYER 1 0 0 0 0 0 0 0 0 1 
