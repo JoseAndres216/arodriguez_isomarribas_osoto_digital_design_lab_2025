@@ -180,11 +180,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "changeBtn",
+					"name" : "playBtn",
 					"strict" : false
 				},
 				{
-					"name" : "playBtn",
+					"name" : "changeBtn",
 					"strict" : false
 				},
 				{

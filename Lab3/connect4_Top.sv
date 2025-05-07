@@ -32,6 +32,10 @@ module connect4_Top (
     logic [2:0] last_row, last_col;
 
 	logic start_button_edge;   // flanco de subida del botón "play"
+
+	// Si es movimiento aleatorio, se selecciona columna al azar
+    logic [2:0] random_col;
+	logic [2:0] selected_col;
 	
 /*
 	initial begin
@@ -108,7 +112,7 @@ edge_detector edge_detect_start (
         .clk(clk),
         .reset(rst),
         .drop_piece(drop_piece),
-        .input_col(selectedColumn),
+        .input_col(selected_col),
         .player_turn(player_turn),
         .last_row(last_row),
         .last_col(last_col),
@@ -166,9 +170,16 @@ edge_detector edge_detect_start (
 		.equal(timeOut)
 	);
 
-	assign change_LED = changeColumn; // LED to indicate the change column button pressed
+	   random_move_gen rng (
+        .clk(clk),
+        .rst(rst),
+		.gen(random_move),
+        .move(random_col)
+    );
+
+	assign change_LED = random_move; // LED to indicate the change column button pressed
 	assign play_LED = play; // LED to indicate the player turn (0 = player 1, 1 = player 2)
-    
+    assign selected_col = (random_move) ? random_col : selectedColumn;
 	
 /*
 	// this is useful to debug communication between ARDUINO and FGPA

@@ -112,8 +112,6 @@ module connect4_fsm (
     always_comb begin
         // Valores por defecto EXPLÍCITOS al inicio
         enable_timer = 0;
-        random_move = 0;
-        switch_player = 0;
         show_winner = 0;
         show_draw = 0;
         show_start_screen = 0;
@@ -129,10 +127,6 @@ module connect4_fsm (
 					 enable_timer = 1;
             end
 
-            S_TIMEOUT_RANDOM_MOVE: begin
-                random_move = 1;
-            end
-
           
             default: ;
         endcase
@@ -141,6 +135,7 @@ module connect4_fsm (
 assign estado = current_state;
 assign activate_selector = ((current_state == S_WAIT_FOR_MOVE) && player1_move) ? 1 : 0; // Activar selector solo en este estado
 assign reset_timer = ((current_state == S_SWITCH_PLAYER) || (current_state == S_START_SCREEN) ) ? 1 : 0; 
+assign random_move = (current_state == S_TIMEOUT_RANDOM_MOVE) ? 1 : 0; // Activar random_move solo en este estado
 assign drop_piece = ((current_state == S_DROP_PIECE) || (current_state == S_TIMEOUT_RANDOM_MOVE)) ? 1 : 0; // Activar drop_piece solo en este estado
 
 endmodule
