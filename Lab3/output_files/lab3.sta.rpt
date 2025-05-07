@@ -1,5 +1,5 @@
 Timing Analyzer report for lab3
-Wed May 07 02:04:50 2025
+Wed May 07 03:10:17 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -100,14 +100,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.48        ;
+; Average used               ; 1.66        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  16.1%      ;
-;     Processor 3            ;  16.0%      ;
-;     Processor 4            ;  15.8%      ;
+;     Processor 2            ;  22.4%      ;
+;     Processor 3            ;  22.1%      ;
+;     Processor 4            ;  21.7%      ;
 +----------------------------+-------------+
 
 
@@ -127,8 +127,8 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+---------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                      ; Note ;
 +------------+-----------------+---------------------------------------------------------------------------------+------+
-; 68.77 MHz  ; 68.77 MHz       ; clk                                                                             ;      ;
-; 219.44 MHz ; 219.44 MHz      ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 57.61 MHz  ; 57.61 MHz       ; clk                                                                             ;      ;
+; 210.39 MHz ; 210.39 MHz      ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +------------+-----------------+---------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -144,8 +144,8 @@ HTML report is unavailable in plain text report export.
 +---------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
-; clk                                                                             ; 5.459  ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 35.163 ; 0.000         ;
+; clk                                                                             ; 2.642  ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 34.967 ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -154,8 +154,8 @@ HTML report is unavailable in plain text report export.
 +---------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                           ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------+-------+---------------+
-; clk                                                                             ; 0.345 ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.674 ; 0.000         ;
+; clk                                                                             ; 0.323 ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.675 ; 0.000         ;
 +---------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -177,8 +177,8 @@ No paths to report.
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
 ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.325  ; 0.000         ;
-; clk                                                                             ; 9.398  ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.167 ; 0.000         ;
+; clk                                                                             ; 9.391  ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.168 ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -189,7 +189,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 2
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 33.634 ns
+Worst Case Available Settling Time: 36.128 ns
 
 
 
@@ -199,8 +199,8 @@ Worst Case Available Settling Time: 33.634 ns
 +------------+-----------------+---------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                      ; Note ;
 +------------+-----------------+---------------------------------------------------------------------------------+------+
-; 67.51 MHz  ; 67.51 MHz       ; clk                                                                             ;      ;
-; 222.67 MHz ; 222.67 MHz      ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 58.78 MHz  ; 58.78 MHz       ; clk                                                                             ;      ;
+; 212.95 MHz ; 212.95 MHz      ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +------------+-----------------+---------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -210,8 +210,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
-; clk                                                                             ; 5.187  ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 35.229 ; 0.000         ;
+; clk                                                                             ; 2.986  ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 35.024 ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -220,8 +220,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                           ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------+-------+---------------+
-; clk                                                                             ; 0.321 ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.715 ; 0.000         ;
+; clk                                                                             ; 0.302 ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.717 ; 0.000         ;
 +---------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -243,8 +243,8 @@ No paths to report.
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
 ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.325  ; 0.000         ;
-; clk                                                                             ; 9.322  ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.115 ; 0.000         ;
+; clk                                                                             ; 9.320  ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.116 ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -255,7 +255,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 2
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 33.757 ns
+Worst Case Available Settling Time: 36.152 ns
 
 
 
@@ -265,8 +265,8 @@ Worst Case Available Settling Time: 33.757 ns
 +---------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
-; clk                                                                             ; 12.489 ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 37.119 ; 0.000         ;
+; clk                                                                             ; 9.693  ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 36.924 ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -276,7 +276,7 @@ Worst Case Available Settling Time: 33.757 ns
 ; Clock                                                                           ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------+-------+---------------+
 ; clk                                                                             ; 0.181 ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.303 ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.302 ; 0.000         ;
 +---------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -298,8 +298,8 @@ No paths to report.
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
 ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.325  ; 0.000         ;
-; clk                                                                             ; 9.404  ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.415 ; 0.000         ;
+; clk                                                                             ; 9.405  ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.416 ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -310,7 +310,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 2
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 35.890 ns
+Worst Case Available Settling Time: 37.711 ns
 
 
 
@@ -320,8 +320,8 @@ Worst Case Available Settling Time: 35.890 ns
 +---------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                           ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------+--------+---------------+
-; clk                                                                             ; 12.955 ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 37.317 ; 0.000         ;
+; clk                                                                             ; 10.686 ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 37.125 ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -330,7 +330,7 @@ Worst Case Available Settling Time: 35.890 ns
 +---------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                           ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------+-------+---------------+
-; clk                                                                             ; 0.170 ; 0.000         ;
+; clk                                                                             ; 0.171 ; 0.000         ;
 ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.294 ; 0.000         ;
 +---------------------------------------------------------------------------------+-------+---------------+
 
@@ -354,7 +354,7 @@ No paths to report.
 +---------------------------------------------------------------------------------+--------+---------------+
 ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.325  ; 0.000         ;
 ; clk                                                                             ; 9.408  ; 0.000         ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.404 ; 0.000         ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 19.405 ; 0.000         ;
 +---------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -365,7 +365,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 2
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 36.283 ns
+Worst Case Available Settling Time: 37.852 ns
 
 
 
@@ -375,10 +375,10 @@ Worst Case Available Settling Time: 36.283 ns
 +----------------------------------------------------------------------------------+--------+-------+----------+---------+---------------------+
 ; Clock                                                                            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +----------------------------------------------------------------------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                                 ; 5.187  ; 0.170 ; N/A      ; N/A     ; 0.325               ;
-;  clk                                                                             ; 5.187  ; 0.170 ; N/A      ; N/A     ; 9.322               ;
+; Worst-case Slack                                                                 ; 2.642  ; 0.171 ; N/A      ; N/A     ; 0.325               ;
+;  clk                                                                             ; 2.642  ; 0.171 ; N/A      ; N/A     ; 9.320               ;
 ;  vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A    ; N/A   ; N/A      ; N/A     ; 0.325               ;
-;  vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 35.163 ; 0.294 ; N/A      ; N/A     ; 19.115              ;
+;  vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 34.967 ; 0.294 ; N/A      ; N/A     ; 19.116              ;
 ; Design-wide TNS                                                                  ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  clk                                                                             ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 ;  vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A    ; N/A   ; N/A      ; N/A     ; 0.000               ;
@@ -669,25 +669,25 @@ Worst Case Available Settling Time: 36.283 ns
 +------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                                                                                                                               ;
-+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+----------+----------+----------+----------+
-; From Clock                                                                      ; To Clock                                                                        ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk                                                                             ; clk                                                                             ; 13750005 ; 0        ; 0        ; 0        ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1760     ; 0        ; 0        ; 0        ;
-+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+----------+----------+----------+----------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                                                                                                ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------+----------+----------+----------+
+; From Clock                                                                      ; To Clock                                                                        ; RR Paths  ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------+----------+----------+----------+
+; clk                                                                             ; clk                                                                             ; 771693478 ; 0        ; 0        ; 0        ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1760      ; 0        ; 0        ; 0        ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                                                                                                                                ;
-+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+----------+----------+----------+----------+
-; From Clock                                                                      ; To Clock                                                                        ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk                                                                             ; clk                                                                             ; 13750005 ; 0        ; 0        ; 0        ;
-; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1760     ; 0        ; 0        ; 0        ;
-+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+----------+----------+----------+----------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                                                                                                 ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------+----------+----------+----------+
+; From Clock                                                                      ; To Clock                                                                        ; RR Paths  ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------+----------+----------+----------+
+; clk                                                                             ; clk                                                                             ; 771693478 ; 0        ; 0        ; 0        ;
+; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1760      ; 0        ; 0        ; 0        ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -711,9 +711,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 4     ; 4    ;
-; Unconstrained Input Port Paths  ; 314   ; 314  ;
+; Unconstrained Input Port Paths  ; 301   ; 301  ;
 ; Unconstrained Output Ports      ; 43    ; 43   ;
-; Unconstrained Output Port Paths ; 1932  ; 1932 ;
+; Unconstrained Output Port Paths ; 2172  ; 2172 ;
 +---------------------------------+-------+------+
 
 
@@ -860,7 +860,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed May 07 02:04:43 2025
+    Info: Processing started: Wed May 07 03:10:09 2025
 Info: Command: quartus_sta lab3 -c lab3
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -883,30 +883,30 @@ Info (332143): No user constrained clock uncertainty found in the design. Callin
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
-Info (332146): Worst-case setup slack is 5.459
+Info (332146): Worst-case setup slack is 2.642
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     5.459               0.000 clk 
-    Info (332119):    35.163               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.345
+    Info (332119):     2.642               0.000 clk 
+    Info (332119):    34.967               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.323
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.345               0.000 clk 
-    Info (332119):     0.674               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.323               0.000 clk 
+    Info (332119):     0.675               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 0.325
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.325               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     9.398               0.000 clk 
-    Info (332119):    19.167               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.391               0.000 clk 
+    Info (332119):    19.168               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 2
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 33.634 ns
+    Info (332114): Worst Case Available Settling Time: 36.128 ns
     Info (332114): 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
@@ -916,30 +916,30 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): Cell: vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 5.187
+Info (332146): Worst-case setup slack is 2.986
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     5.187               0.000 clk 
-    Info (332119):    35.229               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.321
+    Info (332119):     2.986               0.000 clk 
+    Info (332119):    35.024               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.302
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.321               0.000 clk 
-    Info (332119):     0.715               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.302               0.000 clk 
+    Info (332119):     0.717               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 0.325
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.325               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     9.322               0.000 clk 
-    Info (332119):    19.115               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.320               0.000 clk 
+    Info (332119):    19.116               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 2
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 33.757 ns
+    Info (332114): Worst Case Available Settling Time: 36.152 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
@@ -949,30 +949,30 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): Cell: vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 12.489
+Info (332146): Worst-case setup slack is 9.693
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    12.489               0.000 clk 
-    Info (332119):    37.119               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.693               0.000 clk 
+    Info (332119):    36.924               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case hold slack is 0.181
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.181               0.000 clk 
-    Info (332119):     0.303               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.302               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 0.325
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.325               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     9.404               0.000 clk 
-    Info (332119):    19.415               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.405               0.000 clk 
+    Info (332119):    19.416               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 2
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 35.890 ns
+    Info (332114): Worst Case Available Settling Time: 37.711 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
@@ -980,15 +980,15 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): Cell: vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 12.955
+Info (332146): Worst-case setup slack is 10.686
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    12.955               0.000 clk 
-    Info (332119):    37.317               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.170
+    Info (332119):    10.686               0.000 clk 
+    Info (332119):    37.125               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.171
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.170               0.000 clk 
+    Info (332119):     0.171               0.000 clk 
     Info (332119):     0.294               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
@@ -997,20 +997,20 @@ Info (332146): Worst-case minimum pulse width slack is 0.325
     Info (332119): ========= =================== =====================
     Info (332119):     0.325               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.408               0.000 clk 
-    Info (332119):    19.404               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    19.405               0.000 vga_inst|vgapll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 2 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 2
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 36.283 ns
+    Info (332114): Worst Case Available Settling Time: 37.852 ns
     Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 5182 megabytes
-    Info: Processing ended: Wed May 07 02:04:50 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 5190 megabytes
+    Info: Processing ended: Wed May 07 03:10:17 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:11
 
 

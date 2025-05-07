@@ -40,6 +40,11 @@ module connect4_Top (
 	logic current_player_play; // 0 = player 1, 1 = player 2
 	logic current_player_move; // 0 = player 1, 1 = player 2
 	logic playerdelete_move; // 0 = player 1, 1 = player 2
+
+	 logic [2:0] win_r0, win_c0;
+    logic [2:0] win_r1, win_c1;
+    logic [2:0] win_r2, win_c2;
+    logic [2:0] win_r3, win_c3;
 	
 /*
 	initial begin
@@ -111,13 +116,18 @@ edge_detector edge_detect_start (
 	);
 
 
-    // DUT
-    board_controller uut (
+	 // Instancia del controlador del tablero
+    board_controller board_ctrl (
         .clk(clk),
         .reset(rst),
         .drop_piece(drop_piece),
         .input_col(selected_col),
         .player_turn(switch_player),
+        .victory_detected(victory_detected),
+        .win_r0(win_r0), .win_c0(win_c0),
+        .win_r1(win_r1), .win_c1(win_c1),
+        .win_r2(win_r2), .win_c2(win_c2),
+        .win_r3(win_r3), .win_c3(win_c3),
         .last_row(last_row),
         .last_col(last_col),
         .board(board)
@@ -183,12 +193,17 @@ edge_detector edge_detect_start (
         .move(random_col)
     );
 
-	victory_checker vc (
+	// Instancia del verificador de victoria
+    victory_checker vc (
         .board(board),
         .last_row(last_row),
         .last_col(last_col),
         .victory_detected(victory_detected),
-        .draw_detected(draw_detected)
+        .draw_detected(draw_detected),
+        .win_r0(win_r0), .win_c0(win_c0),
+        .win_r1(win_r1), .win_c1(win_c1),
+        .win_r2(win_r2), .win_c2(win_c2),
+        .win_r3(win_r3), .win_c3(win_c3)
     );
 /*
 	 incrementer #(
@@ -206,7 +221,7 @@ edge_detector edge_detect_start (
     assign selected_col = (random_move) ? random_col : selectedColumn;
 	assign current_player_play = (switch_player) ? player2_play : start_button_edge; // 0 = player 1, 1 = player 2
 	assign current_player_move = (switch_player) ? player2_move : player1_move; // 0 = player 1, 1 = player 2
-	 
+	 // TODO: filtro para no permitir que el jugador anterior juegue de nuevo
 /*
 	// this is useful to debug communication between ARDUINO and FGPA
 	

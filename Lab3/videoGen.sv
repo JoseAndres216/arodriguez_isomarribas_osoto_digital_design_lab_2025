@@ -86,6 +86,11 @@ module videoGen(
                     r = 8'hFF;
                     g = 8'hFF;
                     b = 8'h00;
+                end else if (board[row][col] == 2'b11) begin
+                    // ugly Purple piece
+                    r = 8'hA0;
+                    g = 8'h20;
+                    b = 8'hF0;
                 end else begin
                     // Safety fallback (white)
                     r = 8'hFF;

@@ -1,17 +1,20 @@
 module board_controller (
     input  logic clk,
     input  logic reset,
+    input  logic drop_piece,
 
-    input  logic drop_piece, // Señal de la FSM para "activar" el módulo (con flanco de subida)
+    input  logic [2:0] input_col,
+    input  logic player_turn,
 
-    input  logic [2:0] input_col,       // columna seleccionada (0–6)
-    input  logic player_turn,          // 0 = jugador 1, 1 = jugador 2 - Jugador Actual
+    input  logic victory_detected,
+    input  logic [2:0] win_r0, win_c0,
+    input  logic [2:0] win_r1, win_c1,
+    input  logic [2:0] win_r2, win_c2,
+    input  logic [2:0] win_r3, win_c3,
 
-    output logic [2:0] last_row, // Esto se necesita para el chequeo de victoria
-    output logic [2:0] last_col, // Esto se necesita para el chequeo de victoria
-
-    output logic [1:0] board [0:5][0:6] // Tablero
-    // 2'b00 = vacío, 2'b01 = jugador 1, 2'b10 = jugador 2
+    output logic [2:0] last_row,
+    output logic [2:0] last_col,
+    output logic [1:0] board [0:5][0:6]
 );
 
     logic [1:0] player_code;
@@ -32,7 +35,8 @@ module board_controller (
         end else begin
             drop_piece_prev <= drop_piece;
 
-            if (~drop_piece_prev && drop_piece) begin // Flanco de subida
+            // Colocar ficha en flanco de subida
+            if (~drop_piece_prev && drop_piece) begin
                 last_col <= input_col;
                 for (int r = 5; r >= 0; r--) begin
                     if (board[r][input_col] == 2'b00) begin
@@ -41,6 +45,14 @@ module board_controller (
                         break;
                     end
                 end
+            end
+
+            // Marcar fichas ganadoras si hay victoria
+            if (victory_detected) begin
+                board[win_r0][win_c0] <= 2'b11;
+                board[win_r1][win_c1] <= 2'b11;
+                board[win_r2][win_c2] <= 2'b11;
+                board[win_r3][win_c3] <= 2'b11;
             end
         end
     end
