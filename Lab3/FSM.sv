@@ -88,8 +88,8 @@ module connect4_fsm (
             end
 
             S_VICTORY: begin
-               // show_winner = 1;
-                // No cambio de estado, se queda mostrando victoria
+               next_state = S_START_SCREEN; // Volver a la pantalla de inicio después de mostrar el ganador
+            //show_winner = 1; // Mostrar el ganador
             end
 
             S_DRAW: begin

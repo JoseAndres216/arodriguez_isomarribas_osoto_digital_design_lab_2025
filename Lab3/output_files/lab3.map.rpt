@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Wed May 07 00:40:14 2025
+Wed May 07 00:47:58 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -77,13 +77,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 07 00:40:14 2025       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 07 00:47:58 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; lab3                                        ;
 ; Top-level Entity Name           ; connect4_Top                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 225                                         ;
+; Total registers                 ; 233                                         ;
 ; Total pins                      ; 51                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -229,6 +229,7 @@ https://fpgasoftware.intel.com/eula.
 ; board_controller.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/board_controller.sv        ;         ;
 ; edge_detector.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/edge_detector.sv           ;         ;
 ; random_move_gen.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/random_move_gen.sv         ;         ;
+; victory_checker.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/victory_checker.sv         ;         ;
 ; altera_pll.v                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                  ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                               ;         ;
@@ -252,16 +253,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 455       ;
+; Estimate of Logic utilization (ALMs needed) ; 576       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 798       ;
-;     -- 7 input functions                    ; 8         ;
-;     -- 6 input functions                    ; 101       ;
-;     -- 5 input functions                    ; 57        ;
-;     -- 4 input functions                    ; 71        ;
-;     -- <=3 input functions                  ; 561       ;
+; Combinational ALUT usage for logic          ; 983       ;
+;     -- 7 input functions                    ; 13        ;
+;     -- 6 input functions                    ; 154       ;
+;     -- 5 input functions                    ; 126       ;
+;     -- 4 input functions                    ; 80        ;
+;     -- <=3 input functions                  ; 610       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 225       ;
+; Dedicated logic registers                   ; 233       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 51        ;
 ;                                             ;           ;
@@ -271,9 +272,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 206       ;
-; Total fan-out                               ; 3513      ;
-; Average fan-out                             ; 3.11      ;
+; Maximum fan-out                             ; 214       ;
+; Total fan-out                               ; 4417      ;
+; Average fan-out                             ; 3.34      ;
 +---------------------------------------------+-----------+
 
 
@@ -282,24 +283,24 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                         ; Entity Name         ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |connect4_Top                                   ; 798 (2)             ; 225 (0)                   ; 0                 ; 4          ; 51   ; 0            ; |connect4_Top                                                                                                                                               ; connect4_Top        ; work         ;
-;    |board_controller:uut|                       ; 78 (78)             ; 43 (43)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|board_controller:uut                                                                                                                          ; board_controller    ; work         ;
+; |connect4_Top                                   ; 983 (2)             ; 233 (0)                   ; 0                 ; 4          ; 51   ; 0            ; |connect4_Top                                                                                                                                               ; connect4_Top        ; work         ;
+;    |board_controller:uut|                       ; 80 (80)             ; 49 (49)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|board_controller:uut                                                                                                                          ; board_controller    ; work         ;
 ;    |columnSelector:column_selector|             ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|columnSelector:column_selector                                                                                                                ; columnSelector      ; work         ;
-;    |connect4_fsm:fsm_inst|                      ; 8 (8)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|connect4_fsm:fsm_inst                                                                                                                         ; connect4_fsm        ; work         ;
+;    |connect4_fsm:fsm_inst|                      ; 14 (14)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|connect4_fsm:fsm_inst                                                                                                                         ; connect4_fsm        ; work         ;
 ;    |debouncer:debounce2_inst|                   ; 26 (26)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|debouncer:debounce2_inst                                                                                                                      ; debouncer           ; work         ;
 ;    |debouncer:debounce_inst|                    ; 26 (26)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|debouncer:debounce_inst                                                                                                                       ; debouncer           ; work         ;
-;    |dec7seg:display7seg|                        ; 18 (9)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|dec7seg:display7seg                                                                                                                           ; dec7seg             ; work         ;
+;    |dec7seg:display7seg|                        ; 19 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|dec7seg:display7seg                                                                                                                           ; dec7seg             ; work         ;
 ;       |lpm_divide:Mod0|                         ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|dec7seg:display7seg|lpm_divide:Mod0                                                                                                           ; lpm_divide          ; work         ;
 ;          |lpm_divide_42m:auto_generated|        ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|dec7seg:display7seg|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                                             ; lpm_divide_42m      ; work         ;
 ;             |sign_div_unsign_7kh:divider|       ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|dec7seg:display7seg|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                                                 ; sign_div_unsign_7kh ; work         ;
 ;                |alt_u_div_kse:divider|          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|dec7seg:display7seg|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider                           ; alt_u_div_kse       ; work         ;
-;    |edge_detector:edge_detect_start|            ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|edge_detector:edge_detect_start                                                                                                               ; edge_detector       ; work         ;
+;    |edge_detector:edge_detect_start|            ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|edge_detector:edge_detect_start                                                                                                               ; edge_detector       ; work         ;
 ;    |random_move_gen:rng|                        ; 37 (2)              ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|random_move_gen:rng                                                                                                                           ; random_move_gen     ; work         ;
 ;       |lpm_divide:Mod0|                         ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|random_move_gen:rng|lpm_divide:Mod0                                                                                                           ; lpm_divide          ; work         ;
 ;          |lpm_divide_62m:auto_generated|        ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|random_move_gen:rng|lpm_divide:Mod0|lpm_divide_62m:auto_generated                                                                             ; lpm_divide_62m      ; work         ;
 ;             |sign_div_unsign_9kh:divider|       ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|random_move_gen:rng|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider                                                 ; sign_div_unsign_9kh ; work         ;
 ;                |alt_u_div_ose:divider|          ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|random_move_gen:rng|lpm_divide:Mod0|lpm_divide_62m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_ose:divider                           ; alt_u_div_ose       ; work         ;
-;    |timer:myTimer|                              ; 41 (41)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|timer:myTimer                                                                                                                                 ; timer               ; work         ;
+;    |timer:myTimer|                              ; 40 (40)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|timer:myTimer                                                                                                                                 ; timer               ; work         ;
 ;    |uartController:uart_controller|             ; 83 (10)             ; 68 (6)                    ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|uartController:uart_controller                                                                                                                ; uartController      ; work         ;
 ;       |uart_rx:uart_rx_inst|                    ; 44 (44)             ; 39 (39)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst                                                                                           ; uart_rx             ; work         ;
 ;       |uart_tx:uart_tx_inst|                    ; 29 (29)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst                                                                                           ; uart_tx             ; work         ;
@@ -328,6 +329,7 @@ https://fpgasoftware.intel.com/eula.
 ;                      |alt_u_div_ive:divider|    ; 78 (78)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|boardGrid:grid|lpm_divide:Mod1|lpm_divide_j3m:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider ; alt_u_div_ive       ; work         ;
 ;          |selectBox:selector|                   ; 43 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|selectBox:selector                                                                                             ; selectBox           ; work         ;
 ;             |rectgen:box_rectgen|               ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|vga:vga_inst|videoGen:videoGen|selectBox:selector|rectgen:box_rectgen                                                                         ; rectgen             ; work         ;
+;    |victory_checker:vc|                         ; 178 (178)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |connect4_Top|victory_checker:vc                                                                                                                            ; victory_checker     ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -414,75 +416,73 @@ Encoding Type:  One-Hot
 +-------------------------------------+-------------------------------+----------------------+-------------------------+-------------------------------+----------------------------+-------------------------------------+-------------------------------+-------------------------------+------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                        ;
-+------------------------------------------------------------------+--------------------------------------------------------+
-; Register name                                                    ; Reason for Removal                                     ;
-+------------------------------------------------------------------+--------------------------------------------------------+
-; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[0]   ; Stuck at VCC due to stuck port data_in                 ;
-; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[7]   ; Stuck at GND due to stuck port data_in                 ;
-; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[6]   ; Stuck at VCC due to stuck port data_in                 ;
-; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[4,5] ; Stuck at GND due to stuck port data_in                 ;
-; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[3]   ; Stuck at VCC due to stuck port data_in                 ;
-; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[2]   ; Stuck at GND due to stuck port data_in                 ;
-; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[1]   ; Stuck at VCC due to stuck port data_in                 ;
-; board_controller:uut|board[0][0][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[0][1][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[0][2][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[0][3][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[0][4][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[0][5][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[0][6][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[1][0][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[1][1][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[1][2][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[1][3][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[1][4][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[1][5][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[1][6][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[2][0][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[2][1][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[2][2][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[2][3][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[2][4][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[2][5][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[2][6][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[3][0][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[3][1][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[3][2][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[3][3][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[3][4][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[3][5][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[3][6][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[4][0][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[4][1][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[4][2][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[4][3][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[4][4][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[4][5][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[4][6][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[5][0][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[5][1][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[5][2][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[5][3][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[5][4][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[5][5][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; board_controller:uut|board[5][6][1]                              ; Stuck at GND due to stuck port data_in                 ;
-; uartController:uart_controller|state~9                           ; Lost fanout                                            ;
-; uartController:uart_controller|state~10                          ; Lost fanout                                            ;
-; uartController:uart_controller|uart_tx:uart_tx_inst|state~9      ; Lost fanout                                            ;
-; uartController:uart_controller|uart_tx:uart_tx_inst|state~10     ; Lost fanout                                            ;
-; uartController:uart_controller|uart_rx:uart_rx_inst|state~9      ; Lost fanout                                            ;
-; uartController:uart_controller|uart_rx:uart_rx_inst|state~10     ; Lost fanout                                            ;
-; connect4_fsm:fsm_inst|current_state~4                            ; Lost fanout                                            ;
-; connect4_fsm:fsm_inst|current_state~5                            ; Lost fanout                                            ;
-; connect4_fsm:fsm_inst|current_state~6                            ; Lost fanout                                            ;
-; connect4_fsm:fsm_inst|current_state~7                            ; Lost fanout                                            ;
-; connect4_fsm:fsm_inst|current_state.S_VICTORY                    ; Merged with connect4_fsm:fsm_inst|current_state.S_DRAW ;
-; connect4_fsm:fsm_inst|current_state.S_DRAW                       ; Stuck at GND due to stuck port data_in                 ;
-; connect4_fsm:fsm_inst|current_state.S_CHECK_VICTORY              ; Merged with board_controller:uut|drop_piece_prev       ;
-; Total Number of Removed Registers = 63                           ;                                                        ;
-+------------------------------------------------------------------+--------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                  ;
++------------------------------------------------------------------+--------------------------------------------------+
+; Register name                                                    ; Reason for Removal                               ;
++------------------------------------------------------------------+--------------------------------------------------+
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[0]   ; Stuck at VCC due to stuck port data_in           ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[7]   ; Stuck at GND due to stuck port data_in           ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[6]   ; Stuck at VCC due to stuck port data_in           ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[4,5] ; Stuck at GND due to stuck port data_in           ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[3]   ; Stuck at VCC due to stuck port data_in           ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[2]   ; Stuck at GND due to stuck port data_in           ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[1]   ; Stuck at VCC due to stuck port data_in           ;
+; board_controller:uut|board[0][0][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[0][1][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[0][2][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[0][3][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[0][4][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[0][5][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[0][6][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[1][0][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[1][1][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[1][2][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[1][3][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[1][4][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[1][5][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[1][6][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[2][0][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[2][1][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[2][2][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[2][3][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[2][4][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[2][5][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[2][6][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[3][0][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[3][1][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[3][2][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[3][3][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[3][4][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[3][5][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[3][6][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[4][0][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[4][1][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[4][2][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[4][3][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[4][4][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[4][5][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[4][6][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[5][0][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[5][1][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[5][2][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[5][3][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[5][4][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[5][5][1]                              ; Stuck at GND due to stuck port data_in           ;
+; board_controller:uut|board[5][6][1]                              ; Stuck at GND due to stuck port data_in           ;
+; uartController:uart_controller|state~9                           ; Lost fanout                                      ;
+; uartController:uart_controller|state~10                          ; Lost fanout                                      ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|state~9      ; Lost fanout                                      ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|state~10     ; Lost fanout                                      ;
+; uartController:uart_controller|uart_rx:uart_rx_inst|state~9      ; Lost fanout                                      ;
+; uartController:uart_controller|uart_rx:uart_rx_inst|state~10     ; Lost fanout                                      ;
+; connect4_fsm:fsm_inst|current_state~4                            ; Lost fanout                                      ;
+; connect4_fsm:fsm_inst|current_state~5                            ; Lost fanout                                      ;
+; connect4_fsm:fsm_inst|current_state~6                            ; Lost fanout                                      ;
+; connect4_fsm:fsm_inst|current_state~7                            ; Lost fanout                                      ;
+; connect4_fsm:fsm_inst|current_state.S_CHECK_VICTORY              ; Merged with board_controller:uut|drop_piece_prev ;
+; Total Number of Removed Registers = 61                           ;                                                  ;
++------------------------------------------------------------------+--------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -490,12 +490,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 225   ;
+; Total registers                              ; 233   ;
 ; Number of registers using Synchronous Clear  ; 112   ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 162   ;
+; Number of registers using Asynchronous Clear ; 170   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 73    ;
+; Number of registers using Clock Enable       ; 81    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -506,7 +506,7 @@ Encoding Type:  One-Hot
 ; Inverted Register                                           ; Fan out ;
 +-------------------------------------------------------------+---------+
 ; uartController:uart_controller|uart_tx:uart_tx_inst|tx      ; 2       ;
-; timer:myTimer|current_seconds[1]                            ; 6       ;
+; timer:myTimer|current_seconds[1]                            ; 7       ;
 ; timer:myTimer|current_seconds[3]                            ; 5       ;
 ; random_move_gen:rng|lfsr[0]                                 ; 3       ;
 ; uartController:uart_controller|uart_tx:uart_tx_inst|ready   ; 6       ;
@@ -520,23 +520,41 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |connect4_Top|timer:myTimer|current_seconds[2]                                 ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |connect4_Top|debouncer:debounce2_inst|count[13]                               ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |connect4_Top|debouncer:debounce_inst|count[9]                                 ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |connect4_Top|timer:myTimer|cycle_counter[10]                                  ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|bit_index[0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |connect4_Top|timer:myTimer|current_seconds[0]                                 ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |connect4_Top|debouncer:debounce2_inst|count[2]                                ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |connect4_Top|debouncer:debounce_inst|count[19]                                ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |connect4_Top|board_controller:uut|last_row[1]                                 ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |connect4_Top|timer:myTimer|cycle_counter[2]                                   ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|bit_index[2] ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst|bit_index[0] ;
-; 5:1                ; 13 bits   ; 39 LEs        ; 0 LEs                ; 39 LEs                 ; Yes        ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|clk_count[2] ;
-; 7:1                ; 13 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst|clk_count[5] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |connect4_Top|timer:myTimer|current_seconds[1]                                 ;
+; 5:1                ; 13 bits   ; 39 LEs        ; 0 LEs                ; 39 LEs                 ; Yes        ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|clk_count[5] ;
+; 7:1                ; 13 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst|clk_count[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |connect4_Top|timer:myTimer|current_seconds[3]                                 ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux3                                          ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux93                                         ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux85                                         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux87                                         ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux25                                         ;
 ; 8:1                ; 6 bits    ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |connect4_Top|board_controller:uut|Mux5                                        ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |connect4_Top|vga:vga_inst|videoGen:videoGen|b[0]                              ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|Selector5    ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |connect4_Top|connect4_fsm:fsm_inst|Selector4                                  ;
-; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |connect4_Top|uartController:uart_controller|Selector13                        ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|Selector4    ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux139                                        ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux69                                         ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux167                                        ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux41                                         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux125                                        ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux167                                        ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux97                                         ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux41                                         ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux101                                        ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux43                                         ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux171                                        ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |connect4_Top|victory_checker:vc|Mux111                                        ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|Selector3    ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |connect4_Top|connect4_fsm:fsm_inst|Selector4                                  ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |connect4_Top|uartController:uart_controller|Selector9                         ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |connect4_Top|uartController:uart_controller|uart_tx:uart_tx_inst|Selector6    ;
 ; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |connect4_Top|uartController:uart_controller|uart_rx:uart_rx_inst|Selector3    ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 9 LEs                ; 6 LEs                  ; No         ; |connect4_Top|connect4_fsm:fsm_inst|Selector8                                  ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |connect4_Top|connect4_fsm:fsm_inst|Selector8                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 
 
@@ -1091,15 +1109,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "board_controller:uut"                                                                      ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; player_turn ; Input  ; Info     ; Stuck at GND                                                                        ;
-; last_row    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; last_col    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------+
+; Port Connectivity Checks: "board_controller:uut" ;
++-------------+-------+----------+-----------------+
+; Port        ; Type  ; Severity ; Details         ;
++-------------+-------+----------+-----------------+
+; player_turn ; Input ; Info     ; Stuck at GND    ;
++-------------+-------+----------+-----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -1121,31 +1137,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 225                         ;
+; arriav_ff             ; 233                         ;
 ;     CLR               ; 85                          ;
 ;     CLR SCLR          ; 40                          ;
-;     ENA CLR           ; 11                          ;
+;     ENA CLR           ; 19                          ;
 ;     ENA CLR SCLR      ; 26                          ;
 ;     ENA SCLR          ; 36                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 17                          ;
-; arriav_lcell_comb     ; 805                         ;
+; arriav_lcell_comb     ; 990                         ;
 ;     arith             ; 344                         ;
 ;         0 data inputs ; 37                          ;
 ;         1 data inputs ; 165                         ;
 ;         2 data inputs ; 46                          ;
 ;         3 data inputs ; 68                          ;
 ;         4 data inputs ; 28                          ;
-;     extend            ; 8                           ;
-;         7 data inputs ; 8                           ;
-;     normal            ; 406                         ;
+;     extend            ; 13                          ;
+;         7 data inputs ; 13                          ;
+;     normal            ; 586                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 8                           ;
-;         2 data inputs ; 110                         ;
-;         3 data inputs ; 85                          ;
-;         4 data inputs ; 43                          ;
-;         5 data inputs ; 57                          ;
-;         6 data inputs ; 101                         ;
+;         2 data inputs ; 119                         ;
+;         3 data inputs ; 125                         ;
+;         4 data inputs ; 52                          ;
+;         5 data inputs ; 126                         ;
+;         6 data inputs ; 154                         ;
 ;     shared            ; 47                          ;
 ;         0 data inputs ; 5                           ;
 ;         1 data inputs ; 28                          ;
@@ -1155,7 +1171,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 15.00                       ;
-; Average LUT depth     ; 7.59                        ;
+; Average LUT depth     ; 8.09                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1164,7 +1180,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1174,7 +1190,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed May 07 00:40:02 2025
+    Info: Processing started: Wed May 07 00:47:45 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1224,6 +1240,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file edge_de
     Info (12023): Found entity 1: edge_detector File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/edge_detector.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file random_move_gen.sv
     Info (12023): Found entity 1: random_move_gen File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/random_move_gen.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file victory_checker.sv
+    Info (12023): Found entity 1: victory_checker File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/victory_checker.sv Line: 1
 Info (12127): Elaborating entity "connect4_Top" for the top level hierarchy
 Warning (10030): Net "player_turn" at connect4_Top.sv(31) has no driver or initial value, using a default initial value '0' File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 31
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
@@ -1358,6 +1376,9 @@ Warning (10230): Verilog HDL assignment warning at dec7seg.sv(34): truncated val
 Info (12128): Elaborating entity "comparator" for hierarchy "comparator:comp_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 171
 Info (12128): Elaborating entity "random_move_gen" for hierarchy "random_move_gen:rng" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 178
 Warning (10230): Verilog HDL assignment warning at random_move_gen.sv(22): truncated value with size 32 to match size of target (3) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/random_move_gen.sv Line: 22
+Info (12128): Elaborating entity "victory_checker" for hierarchy "victory_checker:vc" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/connect4_Top.sv Line: 186
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "board" into its bus
 Info (278001): Inferred 6 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga:vga_inst|videoGen:videoGen|boardGrid:grid|Div0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 61
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga:vga_inst|videoGen:videoGen|boardGrid:grid|Div1" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/Lab3/boardGrid.sv Line: 62
@@ -1424,17 +1445,17 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Info (21057): Implemented 898 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1088 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 46 output pins
-    Info (21061): Implemented 842 logic cells
+    Info (21061): Implemented 1032 logic cells
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 4 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 4843 megabytes
-    Info: Processing ended: Wed May 07 00:40:14 2025
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 4846 megabytes
+    Info: Processing ended: Wed May 07 00:47:58 2025
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+

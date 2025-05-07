@@ -177,6 +177,14 @@ edge_detector edge_detect_start (
         .move(random_col)
     );
 
+	victory_checker vc (
+        .board(board),
+        .last_row(last_row),
+        .last_col(last_col),
+        .victory_detected(victory_detected),
+        .draw_detected(draw_detected)
+    );
+
 	assign change_LED = random_move; // LED to indicate the change column button pressed
 	assign play_LED = play; // LED to indicate the player turn (0 = player 1, 1 = player 2)
     assign selected_col = (random_move) ? random_col : selectedColumn;
