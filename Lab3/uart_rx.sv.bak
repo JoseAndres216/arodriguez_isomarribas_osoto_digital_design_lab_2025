@@ -1,0 +1,52 @@
+module uart_rx (
+    input  logic       clk,         // Reloj principal (25 MHz)
+    input  logic       rst,         // Señal de reinicio
+    input  logic       rx,          // Entrada serial UART (desde TX del Arduino)
+    output logic [7:0] data_out,    // Dato recibido de 8 bits
+    output logic       received     // Señal que indica que se recibió un byte válido
+);
+
+    parameter BAUD_DIV = 2604;      // Número de ciclos de reloj por bit
+    logic [12:0] clk_cnt;           // Contador de ciclos de reloj
+    logic [3:0]  bit_cnt;           // Contador de bits recibidos
+    logic [7:0]  rx_shift;          // Registro de desplazamiento para datos entrantes
+    logic        rx_d1, rx_d2;      // Registros para sincronizar la señal 'rx'
+    logic        sampling;          // Indica si se está en medio de la recepción
+
+    // Doble registro para evitar errores por metastabilidad
+    always_ff @(posedge clk) begin
+        rx_d1 <= rx;
+        rx_d2 <= rx_d1;
+    end
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            clk_cnt  <= 0;
+            bit_cnt  <= 0;
+            sampling <= 0;
+            received <= 0;
+        end else begin
+            received <= 0;  // Valor por defecto (pulsado solo 1 ciclo al recibir)
+            if (!sampling && rx_d2 == 0) begin
+                // Detección de start bit
+                sampling <= 1;
+                clk_cnt  <= BAUD_DIV / 2;  // Para muestreo al centro del primer bit
+                bit_cnt  <= 0;
+            end else if (sampling) begin
+                if (clk_cnt == BAUD_DIV - 1) begin
+                    clk_cnt <= 0;
+                    bit_cnt <= bit_cnt + 1;
+
+                    if (bit_cnt < 8)
+                        rx_shift <= {rx_d2, rx_shift[7:1]};  // Captura bit recibido
+                    else if (bit_cnt == 8) begin
+                        data_out <= rx_shift;  // Transferencia completa del dato
+                        received <= 1;         // Señal de recepción válida
+                        sampling <= 0;         // Finaliza la recepción
+                    end
+                end else
+                    clk_cnt <= clk_cnt + 1;    // Esperar hasta el siguiente bit
+            end
+        end
+    end
+endmodule

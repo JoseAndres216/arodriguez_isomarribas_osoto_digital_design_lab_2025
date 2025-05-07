@@ -1,69 +1,110 @@
 /**
  * @module videoGen
- * @brief Connect4 video generator
+ * @brief VGA pixel color generator for a Connect4 game board.
  *
- * This module generates VGA pixel color outputs (R, G, B) for a Connect4 board.
-`include "color_types.sv"
+ * This module determines the color output (R, G, B) for each pixel on a VGA display
+ * based on the game board state of a Connect4 game. It displays:
+ * - A 7x6 grid representing the board
+ * - Circular "holes" where player pieces are placed
+ * - A green selector rectangle highlighting the selected column
  *
- * Displays a board with 6 rows and 7 columns and a selection rectangle
- * 
- * @param x Horizontal pixel coordinate (0 to 639).
- * @param y Vertical pixel coordinate (0 to 479).
- * @param r 8-bit red color output.
- * @param g 8-bit green color output.
- * @param b 8-bit blue color output.
+ * @param x            Horizontal pixel coordinate (range: 0 to 639).
+ * @param y            Vertical pixel coordinate (range: 0 to 479).
+ * @param selectColumn Selected column index (0 to 6), indicates where a new piece will be placed.
+ * @param board        6x7 array representing the Connect4 board.
+ *                     Each cell can be:
+ *                       2'b00 = empty (white),
+ *                       2'b01 = red piece,
+ *                       2'b10 = yellow piece.
+ * @param r            8-bit red component of the pixel output.
+ * @param g            8-bit green component of the pixel output.
+ * @param b            8-bit blue component of the pixel output.
  */
 
 module videoGen(
     input logic [9:0] x, y,
-	 input logic [2:0] selectColumn,
-	 input color_t board [0:5][0:6],
+    input logic [2:0] selectColumn,
+    input logic [1:0] board [0:5][0:6],
     output logic [7:0] r, g, b
 );
 
-    // Signals for grid detection and cell identification
-    logic grid_on;      ///< High if (x,y) is inside the game board
-    logic [2:0] col;     ///< Column index (0 to 6)
-    logic [2:0] row;     ///< Row index (0 to 5)
-    logic in_hole;      ///< High if (x,y) is inside a hole (circle) in the board
-	 logic in_selector;
+    // Signals from the board grid detector
+    logic grid_on;         ///< High when the current pixel is within the board grid area
+    logic [2:0] col, row;  ///< Column and row indices derived from the (x, y) position
+    logic in_hole;         ///< High when the pixel is inside a circular hole
+    logic in_selector;     ///< High when the pixel is inside the selection box
 
+    // Grid decoder: identifies if (x,y) is in the board and maps it to a row/col
+    boardGrid grid(
+        .x(x),
+        .y(y),
+        .grid_on(grid_on),
+        .col(col),
+        .row(row),
+        .in_hole(in_hole)
+    );
 
+    // Selector box module: highlights the selected column with a green rectangle
+    selectBox selector(
+        .x(x),
+        .y(y),
+        .selected_col(selectColumn),
+        .grid_top(50),
+        .in_select(in_selector)
+    );
 
     /**
-     * @brief Grid generator instance.
-     * 
-     * This module detects whether the current pixel belongs to the game board
-     * and maps pixel coordinates to board row/column indices.
+     * @brief Main combinational block for pixel color generation.
+     *
+     * Determines the color of the current pixel based on:
+     * - Whether it's in the selector
+     * - Whether it's in the board grid
+     * - Whether it's inside a circular hole
+     * - What value is present in the board[row][col]
      */
-    boardGrid grid(x, y, grid_on, col, row, in_hole);
-	 
-	 selectBox selector(x, y, selectColumn, 50, in_selector);
-
-    
-
-    // pixel color logic
     always_comb begin
-		 if (in_selector) begin
-					// Dibujamos un rectángulo verde para la columna seleccionada
-					r = 8'h00;
-					g = 8'hFF;
-					b = 8'h00;
-        end 
-		  else if (grid_on) begin
+        if (in_selector) begin
+            // Green selector rectangle
+            r = 8'h00;
+            g = 8'hFF;
+            b = 8'h00;
+        end else if (grid_on) begin
             if (in_hole) begin
-                // Output color of the corresponding cell
-                r = board[row][col].r;
-                g = board[row][col].g;
-                b = board[row][col].b;
+                // Inside a circular hole, show the color based on the board state
+                if (board[row][col] == 2'b00) begin
+                    // Empty hole (white)
+                    r = 8'hFF;
+                    g = 8'hFF;
+                    b = 8'hFF;
+                end else if (board[row][col] == 2'b01) begin
+                    // Red piece
+                    r = 8'hFF;
+                    g = 8'h00;
+                    b = 8'h00;
+                end else if (board[row][col] == 2'b10) begin
+                    // Yellow piece
+                    r = 8'hFF;
+                    g = 8'hFF;
+                    b = 8'h00;
+                end else if (board[row][col] == 2'b11) begin
+                    // ugly Purple piece
+                    r = 8'hA0;
+                    g = 8'h20;
+                    b = 8'hF0;
+                end else begin
+                    // Safety fallback (white)
+                    r = 8'hFF;
+                    g = 8'hFF;
+                    b = 8'hFF;
+                end
             end else begin
-                // Draw the board (blue background)
+                // Inside grid but not in a hole (board background - blue)
                 r = 8'h00;
                 g = 8'h00;
                 b = 8'hFF;
             end
         end else begin
-            // Outside the board (black background)
+            // Outside of the board grid (black background)
             r = 8'h00;
             g = 8'h00;
             b = 8'h00;

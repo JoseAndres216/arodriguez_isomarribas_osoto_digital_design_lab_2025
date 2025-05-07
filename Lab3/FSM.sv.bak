@@ -1,0 +1,129 @@
+module FSM (
+    input logic clk,
+    input logic reset,
+    input logic start_button,
+    input logic player1_move,
+    input logic player2_move,
+    input logic timeout,
+    input logic victory_detected,
+    input logic draw_detected,
+    output logic enable_timer,
+    output logic reset_timer,
+    output logic random_move,
+    output logic drop_piece,
+    output logic switch_player,
+    output logic show_winner,
+    output logic show_draw,
+    output logic show_start_screen,
+    output logic update_board,
+    output logic activate_selectedColumn // Column selected by the player
+);
+
+    typedef enum logic [3:0] {
+        S_RESET,
+        S_START_SCREEN,
+        S_WAIT_FOR_MOVE,
+        S_TIMEOUT_RANDOM_MOVE,
+        S_DROP_PIECE,
+        S_CHECK_VICTORY,
+        S_VICTORY,
+        S_DRAW,
+        S_SWITCH_PLAYER
+    } state_t;
+
+    state_t current_state, next_state;
+
+    // Estado actual
+    always_ff @(posedge clk or posedge reset) begin
+        if (reset)
+            current_state <= S_RESET;
+        else
+            current_state <= next_state;
+    end
+
+    // Lógica de transición de estados y señales de control
+    always_comb begin
+        // Valores por defecto
+        enable_timer = 0;
+        reset_timer = 0;
+        random_move = 0;
+        drop_piece = 0;
+        switch_player = 0;
+        show_winner = 0;
+        show_draw = 0;
+        show_start_screen = 0;
+        update_board = 0;
+
+        next_state = current_state;
+
+        case (current_state)
+
+            S_RESET: begin
+                reset_timer = 1;
+                show_start_screen = 1;
+                next_state = S_START_SCREEN;
+            end
+
+            S_START_SCREEN: begin
+                show_start_screen = 1;
+                if (start_button)
+                    next_state = S_WAIT_FOR_MOVE;
+            end
+
+            S_WAIT_FOR_MOVE: begin
+                enable_timer = 1;
+                if (player1_move || player2_move)
+                    activate_selectedColumn = 1; // Activar la columna seleccionada por el jugador
+                    //next_state = S_DROP_PIECE;
+                else if (timeout)
+                    activate_selectedColumn = 1; // Activar la columna seleccionada por el jugador
+                    //next_state = S_TIMEOUT_RANDOM_MOVE;
+                else
+                    activate_selectedColumn = 0; // Activar la columna seleccionada por el jugador
+
+            end
+
+            S_TIMEOUT_RANDOM_MOVE: begin
+                random_move = 1;
+                drop_piece = 1;
+                update_board = 1;
+                next_state = S_CHECK_VICTORY;
+            end
+
+            S_DROP_PIECE: begin
+                drop_piece = 1;
+                update_board = 1;
+                next_state = S_CHECK_VICTORY;
+            end
+
+            S_CHECK_VICTORY: begin
+                if (victory_detected)
+                    next_state = S_VICTORY;
+                else if (draw_detected)
+                    next_state = S_DRAW;
+                else
+                    next_state = S_SWITCH_PLAYER;
+            end
+
+            S_VICTORY: begin
+                show_winner = 1;
+                // No cambio de estado, se queda mostrando victoria
+            end
+
+            S_DRAW: begin
+                show_draw = 1;
+                // No cambio de estado, se queda mostrando empate
+            end
+
+            S_SWITCH_PLAYER: begin
+                switch_player = 1;
+                reset_timer = 1;
+                next_state = S_WAIT_FOR_MOVE;
+            end
+
+            default: next_state = S_RESET;
+
+        endcase
+    end
+
+endmodule
