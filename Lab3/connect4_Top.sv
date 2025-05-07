@@ -21,7 +21,7 @@ module connect4_Top (
    	logic [3:0] current_seconds;  // Para 10 segundos, se necesitan 4 bits (log2(11) ≈ 3.5)
 	logic [2:0] selectedColumn; // Column to be highlighted (selected column)
 	logic changeColumn; // debounced Button signal  to change the selected column
-	logic play; //  debounced Button signal to confirm the selected column or play the piece
+	logic player1_play; //  debounced Button signal to confirm the selected column or play the piece
 	logic player1_move, player2_move; // Signals to indicate the player's move,
 	logic activate_selector; // Initialize the selected column to 0
 
@@ -36,6 +36,10 @@ module connect4_Top (
 	// Si es movimiento aleatorio, se selecciona columna al azar
     logic [2:0] random_col;
 	logic [2:0] selected_col;
+	logic player2_play; // 0 = player 1, 1 = player 2
+	logic current_player_play; // 0 = player 1, 1 = player 2
+	logic current_player_move; // 0 = player 1, 1 = player 2
+	logic playerdelete_move; // 0 = player 1, 1 = player 2
 	
 /*
 	initial begin
@@ -54,7 +58,7 @@ module connect4_Top (
 edge_detector edge_detect_start (
     .clk(clk),
     .rst(rst),
-    .signal_in(play),
+    .signal_in(player1_play),
     .rising_edge(start_button_edge)
 );
 	debouncer #(
@@ -63,7 +67,7 @@ edge_detector edge_detect_start (
 		.clk(clk),
 		.rst(rst),
 		.noisy_in(changeBtn),
-		.clean_out(changeColumn)
+		.clean_out(player1_move)
 	);
 
 	columnSelector #(
@@ -81,16 +85,16 @@ edge_detector edge_detect_start (
 		.clk(clk),
 		.rst(rst),
 		.noisy_in(playBtn),
-		.clean_out(play)
+		.clean_out(player1_play)
 	);
 	
 	// Instancia del módulo FSM
 	connect4_fsm fsm_inst (
 		.clk(clk),
 		.reset(rst),
-		.start_button(start_button_edge),
-		.player1_move(changeColumn),
-		.player2_move(player2_move),
+		.start_button(current_player_play),
+		.player1_move(current_player_move),
+		.player2_move(playerdelete_move),
 		.timeout(timeOut),
 		.victory_detected(victory_detected),
 		.draw_detected(draw_detected),
@@ -113,7 +117,7 @@ edge_detector edge_detect_start (
         .reset(rst),
         .drop_piece(drop_piece),
         .input_col(selected_col),
-        .player_turn(player_turn),
+        .player_turn(switch_player),
         .last_row(last_row),
         .last_col(last_col),
         .board(board)
@@ -140,7 +144,9 @@ edge_detector edge_detect_start (
 		.rst(rst),
 		.rx_pin(rx_pin),
 		.tx_pin(tx_pin),
-		.display_data(display_data)
+		.display_data(display_data),
+		.button_A(player2_move),
+		.button_B(player2_play)
 	);
 
 	
@@ -184,11 +190,23 @@ edge_detector edge_detect_start (
         .victory_detected(victory_detected),
         .draw_detected(draw_detected)
     );
-
+/*
+	 incrementer #(
+        .WIDTH(1),
+        .INCREMENT(1)
+    ) my_incrementer (
+        .clk(clk),
+        .reset(rst),
+        .enable(switch_player),
+        .data_out(player_turn)
+    );
+*/
 	assign change_LED = random_move; // LED to indicate the change column button pressed
-	assign play_LED = play; // LED to indicate the player turn (0 = player 1, 1 = player 2)
+	assign play_LED = player1_play; // LED to indicate the player turn (0 = player 1, 1 = player 2)
     assign selected_col = (random_move) ? random_col : selectedColumn;
-	
+	assign current_player_play = (switch_player) ? player2_play : start_button_edge; // 0 = player 1, 1 = player 2
+	assign current_player_move = (switch_player) ? player2_move : player1_move; // 0 = player 1, 1 = player 2
+	 
 /*
 	// this is useful to debug communication between ARDUINO and FGPA
 	

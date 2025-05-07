@@ -26,7 +26,9 @@ module uartController (
     input logic rst,                ///< Active-high reset signal
     input  logic rx_pin,            ///< UART RX line (connected to Arduino TX)
     output logic tx_pin,            ///< UART TX line (connected to Arduino RX)
-    output logic [7:0] display_data ///< Output data for display purposes
+    output logic [7:0] display_data, ///< Output data for display purposes
+    output logic button_A,
+    output logic button_B           ///< Trigger signal to send a byte over UART
 );
 
     // Internal UART communication signals
@@ -129,14 +131,17 @@ module uartController (
                     case (rx_data)
                         8'h43: begin // ASCII 'C'
                             display_data <= rx_data;
+                            button_A <= 1'b1; // Trigger action for column change
                             // TODO: Add action for column change
                         end
                         8'h53: begin // ASCII 'S'
                             display_data <= rx_data;
+                            button_B <= 1'b1; // Trigger action for column change
                             // TODO: Add action for column selection
                         end
                         default: begin
-                            // Invalid or unsupported command received
+                            button_A <= 1'b0;
+                            button_B <= 1'b0;
                         end
                     endcase
                     state <= WAIT_COMMAND;

@@ -38,10 +38,14 @@ module connect4_fsm (
 
     // Estado actual
     always_ff @(posedge clk or posedge reset) begin
-        if (reset)
+        if (reset) begin
             current_state <= S_START_SCREEN;
-        else
+            switch_player <= 1'b0;
+        end else begin
             current_state <= next_state;
+            if (current_state == S_SWITCH_PLAYER) 
+                switch_player <= !switch_player; // Cambiar de jugador
+            end
     end
 
     // Lógica de transición de estados y señales de control
@@ -107,35 +111,12 @@ module connect4_fsm (
 
         endcase
     end
-	 
-	  
-    always_comb begin
-        // Valores por defecto EXPLÍCITOS al inicio
-        enable_timer = 0;
-        show_winner = 0;
-        show_draw = 0;
-        show_start_screen = 0;
-      
-
-        // Asignaciones específicas por estado
-        case (current_state)
-            S_START_SCREEN: begin
-					 show_start_screen = 1;
-            end
-
-            S_WAIT_FOR_MOVE: begin
-					 enable_timer = 1;
-            end
-
-          
-            default: ;
-        endcase
-    end
 
 assign estado = current_state;
 assign activate_selector = ((current_state == S_WAIT_FOR_MOVE) && player1_move) ? 1 : 0; // Activar selector solo en este estado
 assign reset_timer = ((current_state == S_SWITCH_PLAYER) || (current_state == S_START_SCREEN) ) ? 1 : 0; 
 assign random_move = (current_state == S_TIMEOUT_RANDOM_MOVE) ? 1 : 0; // Activar random_move solo en este estado
 assign drop_piece = ((current_state == S_DROP_PIECE) || (current_state == S_TIMEOUT_RANDOM_MOVE)) ? 1 : 0; // Activar drop_piece solo en este estado
+//assign switch_player = (current_state == S_SWITCH_PLAYER) ? 1 : 0; // Activar switch_player solo en este estado
 
 endmodule
