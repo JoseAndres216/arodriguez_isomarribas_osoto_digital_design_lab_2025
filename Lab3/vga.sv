@@ -1,4 +1,3 @@
-`include "color_types.sv"
 /**
  * @module vga
  * @brief VGA video signal generator.
@@ -25,6 +24,8 @@
 module vga(
 	input logic clk,					// 50 MHz FPGA clock
 	input logic rst,					// Reset Switch
+	input logic [1:0] board [0:5][0:6],
+	input logic [2:0] selectColumn,	// Column to be highlighted
 	output logic vgaclk, 			// 25.175 MHz VGA clock
 	output logic hsync, vsync,
 	output logic sync_b, blank_b, // to monitor & DAC
@@ -33,35 +34,6 @@ module vga(
 
 	logic [9:0] x = 0;
 	logic [9:0] y = 0;
-	
-    /**
-     * @var board
-     * @brief 6x7 matrix of cell colors.
-     */
-    color_t board [0:5][0:6];
-	 
-	 /**
-     * @brief Initial board color setup.
-     * 
-     * This block initializes all cells to white (empty),
-     * and sets a few colored pieces for testing.
-     */
-    initial begin
-        integer i, j;
-        // Set all cells to white (empty holes)
-        for (i = 0; i < 6; i = i + 1)
-            for (j = 0; j < 7; j = j + 1) begin
-                board[i][j].r = 8'hFF;
-                board[i][j].g = 8'hFF;
-                board[i][j].b = 8'hFF;
-            end
-
-        // Example pieces
-        board[5][3].r = 8'hFF; board[5][3].g = 8'h00; board[5][3].b = 8'h00; // Red piece
-        board[4][3].r = 8'hFF; board[4][3].g = 8'hFF; board[4][3].b = 8'h00; // Yellow piece
-        board[5][2].r = 8'hFF; board[5][2].g = 8'h00; board[5][2].b = 8'h00; // Red piece
-        board[5][4].r = 8'hFF; board[5][4].g = 8'hFF; board[5][4].b = 8'h00; // Yellow piece
-    end
 
 	// Use a PLL to create the 25.175 MHz VGA pixel clock
 	// 25.175 MHz clk period = 39.772 ns
@@ -79,13 +51,13 @@ module vga(
 	videoGen videoGen(
     .x(x),
     .y(y),
-    .selectColumn(3'd2),
+    .selectColumn(selectColumn),
     .board(board),
     .r(r),
     .g(g),
     .b(b)
 	 );
-
+	 
 	
 endmodule
 

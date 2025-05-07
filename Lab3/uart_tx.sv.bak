@@ -1,0 +1,40 @@
+module uart_tx (
+    input  logic       clk,
+    input  logic       rst,
+    input  logic [7:0] data_in,
+    input  logic       send,
+    output logic       tx,
+    output logic       busy
+);
+
+    parameter BAUD_DIV = 2604; // para 9600bps con reloj de 50MHz
+    logic [12:0] clk_cnt;
+    logic [3:0]  bit_cnt;
+    logic [9:0]  tx_shift;
+
+    assign busy = (bit_cnt != 0);
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            clk_cnt  <= 0;
+            bit_cnt  <= 0;
+            tx_shift <= 10'b1111111111;
+            tx       <= 1'b1;
+        end else begin
+            if (send && !busy) begin
+                tx_shift <= {1'b1, data_in, 1'b0}; // stop, data, start
+                bit_cnt  <= 10;
+                clk_cnt  <= 0;
+            end else if (busy) begin
+                if (clk_cnt == BAUD_DIV - 1) begin
+                    clk_cnt <= 0;
+                    tx      <= tx_shift[0];
+                    tx_shift <= {1'b1, tx_shift[9:1]};
+                    bit_cnt <= bit_cnt - 1;
+                end else begin
+                    clk_cnt <= clk_cnt + 1;
+                end
+            end
+        end
+    end
+endmodule

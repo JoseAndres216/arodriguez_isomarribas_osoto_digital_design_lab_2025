@@ -1,6 +1,0 @@
-// file: color_types.sv
-typedef struct packed {
-    logic [7:0] r;
-    logic [7:0] g;
-    logic [7:0] b;
-} color_t;

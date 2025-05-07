@@ -1,0 +1,51 @@
+module connect4_Top (	
+	input logic clk,					// 50 MHz FPGA clock
+	input logic rst,					// Reset Switch
+   input  logic rx_pin,    // Pin conectado al TX del Arduino,
+   output logic tx_pin,     // Pin conectado al RX del Arduino
+	output logic vgaclk, 			// 25.175 MHz VGA clock
+	output logic hsync, vsync,
+	output logic sync_b, blank_b, // to monitor & DAC
+	output logic [7:0] r, g, b    // to video DAC
+);
+
+	logic [1:0] board [0:5][0:6];
+	 
+	/**
+	* @brief Initial board color setup.
+	* 
+	* This block initializes all cells to white (empty),
+	* and sets a few colored pieces for testing.
+	*/
+	initial begin
+		integer i, j;
+		// Set all cells to white (empty holes)
+		for (i = 0; i < 6; i = i + 1)
+			for (j = 0; j < 7; j = j + 1)
+				 board[i][j] = 2'b00;
+
+		// Example pieces
+		board[5][3] = 2'b01; // // Red piece
+		board[4][3] = 2'b10; // Yellow piece
+		board[5][2] = 2'b01; // Red piece
+		board[5][4] = 2'b10; // Yellow piece
+	end
+	
+	vga vga_inst (
+	  .clk(clk),
+	  .rst(rst),
+	  .board(board),
+	  .rx_pin(rx_pin),
+	  .tx_pin(tx_pin),
+	  .vgaclk(vgaclk),
+	  .hsync(hsync),
+	  .vsync(vsync),
+	  .sync_b(sync_b),
+	  .blank_b(blank_b),
+	  .r(r),
+	  .g(g),
+	  .b(b)
+    );
+
+
+endmodule
