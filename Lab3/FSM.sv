@@ -59,17 +59,12 @@ module connect4_fsm (
 
             S_START_SCREEN1: begin
                 if (start_button)
-                    next_state = S_START_SCREEN2;
-            end
-
-            S_START_SCREEN2: begin
-                if (start_button)
                     next_state = S_WAIT_FOR_MOVE;
             end
 
             S_WAIT_FOR_MOVE: begin
                 
-                if (player2_move)
+                if (start_button)
                     next_state = S_DROP_PIECE;
                 else if (timeout)
                     next_state = S_TIMEOUT_RANDOM_MOVE;
@@ -145,7 +140,7 @@ module connect4_fsm (
 
 assign estado = current_state;
 assign activate_selector = ((current_state == S_WAIT_FOR_MOVE) && player1_move) ? 1 : 0; // Activar selector solo en este estado
-assign reset_timer = (current_state == S_SWITCH_PLAYER) ? 1 : 0; 
+assign reset_timer = ((current_state == S_SWITCH_PLAYER) || (current_state == S_START_SCREEN) ) ? 1 : 0; 
 assign drop_piece = ((current_state == S_DROP_PIECE) || (current_state == S_TIMEOUT_RANDOM_MOVE)) ? 1 : 0; // Activar drop_piece solo en este estado
 
 endmodule

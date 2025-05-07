@@ -30,6 +30,8 @@ module connect4_Top (
 	logic [3:0] estado;
 	logic player_turn;
     logic [2:0] last_row, last_col;
+
+	logic start_button_edge;   // flanco de subida del botón "play"
 	
 /*
 	initial begin
@@ -44,6 +46,13 @@ module connect4_Top (
 		board[5][4] = 2'b10;
 	end
 */
+
+edge_detector edge_detect_start (
+    .clk(clk),
+    .rst(rst),
+    .signal_in(play),
+    .rising_edge(start_button_edge)
+);
 	debouncer #(
 		.N(20)
 	) debounce_inst (
@@ -75,7 +84,7 @@ module connect4_Top (
 	connect4_fsm fsm_inst (
 		.clk(clk),
 		.reset(rst),
-		.start_button(play),
+		.start_button(start_button_edge),
 		.player1_move(changeColumn),
 		.player2_move(player2_move),
 		.timeout(timeOut),
