@@ -92,7 +92,7 @@ module connect4_fsm (
             end
 
             S_VICTORY: begin
-               next_state = S_START_SCREEN; // Volver a la pantalla de inicio después de mostrar el ganador
+               next_state = S_VICTORY; // Volver a la pantalla de inicio después de mostrar el ganador
             //show_winner = 1; // Mostrar el ganador
             end
 
