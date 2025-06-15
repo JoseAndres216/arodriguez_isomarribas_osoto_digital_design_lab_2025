@@ -1,43 +1,26 @@
-module alu(
-    input  logic [31:0] a, b,
-    input  logic [1:0]  alucontrol,
-    output logic [31:0] result,
-    output logic [3:0]  flags // [N, Z, C, V]
-);
-    logic [31:0] sum, diff;
-    logic carry_out_add, carry_out_sub;
-    logic overflow_add, overflow_sub;
+module alu #(parameter N = 4)(input logic [N-1:0] a, b,
+										input logic ci,
+										input logic [3:0] selec_alu,
+										output logic [N-1:0] result,
+										output logic f_N, f_Z, f_C, f_V);
+	
+	logic [N-1:0] result_suma, result_resta;			
+	logic [N-1:0] result_and, result_or;
+	logic co_suma, co_resta;
 
-    // Suma
-    assign {carry_out_add, sum} = a + b;
-    assign overflow_add = (~a[31] & ~b[31] & sum[31]) | (a[31] & b[31] & ~sum[31]);
 
-    // Resta
-    assign {carry_out_sub, diff} = a - b;
-    assign overflow_sub = (~a[31] & b[31] & diff[31]) | (a[31] & ~b[31] & ~diff[31]);
+	sumador_N_bits #(N) sum(a, b, ci, result_suma, co_suma);
+	restador_N_bits #(N) rest(a, b,ci,result_resta, co_resta);
 
-    always_comb begin
-        case (alucontrol)
-            2'b00: begin // AND
-                result = a & b;
-                flags = {result[31], (result == 0), 1'b0, 1'b0};
-            end
-            2'b01: begin // OR
-                result = a | b;
-                flags = {result[31], (result == 0), 1'b0, 1'b0};
-            end
-            2'b10: begin // ADD
-                result = sum;
-                flags = {result[31], (result == 0), carry_out_add, overflow_add};
-            end
-            2'b11: begin // SUB
-                result = diff;
-                flags = {result[31], (result == 0), carry_out_sub, overflow_sub};
-            end
-            default: begin
-                result = 32'b0;
-                flags = 4'b0000;
-            end
-        endcase
-    end
-endmodule
+	operador_and #(N) op_and (a, b, result_and); 
+	operador_or #(N) op_or (a, b, result_or); 
+
+	mux_alu #(N) Mux_Alu (result_suma, result_resta, result_and, result_or, selec_alu, result);
+
+	flag_negativo  flag_N(co_resta, selec_alu, f_N);
+	flag_carry  flag_C (co_suma, co_resta, selec_alu, f_C);
+	flag_zero #(N) flag_Z (result, f_C, f_Z);
+	flag_overflow #(N) flag_V (a, b, result, selec_alu, f_V);
+
+					
+endmodule 
