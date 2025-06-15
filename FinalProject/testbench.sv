@@ -1,3 +1,4 @@
+
 module testbench();
     logic clk;
     logic reset;
@@ -9,6 +10,7 @@ module testbench();
 
     // initialize test
     initial begin
+        $display("Inicio de Testbench");
         reset <= 1;
         #22;
         reset <= 0;
@@ -24,7 +26,9 @@ module testbench();
 
     // check that 7 gets written to address 0x64 at end of program
     always @(negedge clk) begin
+        //$display("MemWrite=%b, DataAdr=%h, WriteData=%d, reset=%b, clk=%b", MemWrite, DataAdr, WriteData, reset, clk);
         if (MemWrite) begin
+            $display("checking write data");
             if (DataAdr === 100 && WriteData === 7) begin
                 $display("Simulation succeeded");
                 $stop;
@@ -35,10 +39,5 @@ module testbench();
         end
     end
 
-    // Detener simulación después de 10 segundos
-    initial begin
-        #50000;
-        $display("Simulation stopped after 10 seconds");
-        $stop;
-    end
+ 
 endmodule
