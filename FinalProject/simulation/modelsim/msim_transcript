@@ -1,0 +1,209 @@
+# Reading pref.tcl
+# do FinalProject_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:57 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 19:30:57 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:57 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 19:30:57 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:57 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 19:30:57 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:57 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv 
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condlogic
+# End time: 19:30:57 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:57 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 19:30:57 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:57 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 19:30:58 on Jun 14,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:58 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 19:30:58 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:58 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 19:30:58 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:58 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 19:30:58 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopenr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:58 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopenr.sv 
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# End time: 19:30:58 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:58 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 19:30:58 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:58 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 19:30:58 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:58 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 19:30:58 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:58 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:30:58 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:58 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 19:30:59 on Jun 14,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject {C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:30:59 on Jun 14,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject" C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 19:30:59 on Jun 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 19:30:59 on Jun 14,2025
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arm
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.flopenr
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.adder
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Simulation stopped after 10 seconds
+# ** Note: $stop    : C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/testbench.sv(42)
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/testbench.sv line 42
+# End time: 19:32:04 on Jun 14,2025, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 0
