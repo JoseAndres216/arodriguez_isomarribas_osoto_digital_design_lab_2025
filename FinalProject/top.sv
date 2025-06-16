@@ -10,8 +10,8 @@ module top(input logic clk, reset,
 								WriteData, ReadData);
 								
 	imem imem(PC, Instr);
-	//rom rom(PC[7:0], clk, Instr);
-	dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData);
+	//rom mem(PC, clk, Instr);
+	dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData, MemWriteB, DataAdrB, WriteDataB, ReadDataB);
 	// clk = seconds, MemWrite = wren, DataAdr = address, WriteData = data, ReadData = q;
 	
 
