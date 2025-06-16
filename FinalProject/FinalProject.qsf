@@ -67,9 +67,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
 set_global_assignment -name SYSTEMVERILOG_FILE top.sv
 set_global_assignment -name SYSTEMVERILOG_FILE dmem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE imem.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -96,4 +93,17 @@ set_global_assignment -name SYSTEMVERILOG_FILE flag_zero.sv
 set_global_assignment -name SYSTEMVERILOG_FILE flag_overflow.sv
 set_global_assignment -name SYSTEMVERILOG_FILE divisor_N_bits.sv
 set_global_assignment -name SOURCE_FILE memfile.dat
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_AA30 -to reset
+set_location_assignment PIN_AC22 -to led
+set_global_assignment -name SYSTEMVERILOG_FILE top_FPGA.sv
+set_global_assignment -name MIF_FILE ROM.mif
+set_global_assignment -name QIP_FILE rom.qip
+set_global_assignment -name MIF_FILE RAM.mif
+set_global_assignment -name QIP_FILE ram.qip
+set_global_assignment -name SYSTEMVERILOG_FILE write_mem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE counter.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
