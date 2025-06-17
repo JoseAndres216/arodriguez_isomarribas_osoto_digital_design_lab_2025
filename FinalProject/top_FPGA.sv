@@ -100,7 +100,7 @@ module top_FPGA(input logic clk, reset,
 					led = 1;
 				end 
 				
-			else if (DataAdrB === 100 && ReadDataB === 0) 
+			else if (DataAdr === 100 && ReadData !== 7) 
 				begin
 					led = 0;
 				end
