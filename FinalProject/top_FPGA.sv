@@ -24,7 +24,7 @@ module top_FPGA(input logic clk, reset,
 	imem imem(PC, Instr);
 	dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData, MemWriteB, DataAdrB, WriteDataB, ReadDataB);
 	// clk = seconds, MemWrite = wren, DataAdr = address, WriteData = data, ReadData = q;
-	write_mem writeMem(clk, {~debounced2, ~debounced1, ~debounced0}, timeOut, MemWriteB, DataAdrB, WriteDataB);
+	write_mem writeMem(clk, ~btn, timeOut, MemWriteB, DataAdrB, WriteDataB);
 	// buscar Chipselect
 
 	timer #(
