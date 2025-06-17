@@ -1,0 +1,140 @@
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=256;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+    00 : E04F000F;
+    01 : 00000000;
+    02 : 00000000;
+    03 : 00000000;
+
+    04 : E2802005;
+    05 : 00000000;
+    06 : 00000000;
+    07 : 00000000;
+
+    08 : E280300C;
+    09 : 00000000;
+    0A : 00000000;
+    0B : 00000000;
+
+    0C : E2437009;
+    0D : 00000000;
+    0E : 00000000;
+    0F : 00000000;
+
+    10 : E1874002;
+    11 : 00000000;
+    12 : 00000000;
+    13 : 00000000;
+
+    14 : E0035004;
+    15 : 00000000;
+    16 : 00000000;
+    17 : 00000000;
+
+    18 : E0855004;
+    19 : 00000000;
+    1A : 00000000;
+    1B : 00000000;
+
+    1C : E0558007;
+    1D : 00000000;
+    1E : 00000000;
+    1F : 00000000;
+
+    20 : 0A00000C;
+    21 : 00000000;
+    22 : 00000000;
+    23 : 00000000;
+
+    24 : E0538004;
+    25 : 00000000;
+    26 : 00000000;
+    27 : 00000000;
+
+    28 : AA000000;
+    29 : 00000000;
+    2A : 00000000;
+    2B : 00000000;
+
+    2C : E2805000;
+    2D : 00000000;
+    2E : 00000000;
+    2F : 00000000;
+
+    30 : E0578002;
+    31 : 00000000;
+    32 : 00000000;
+    33 : 00000000;
+
+    34 : B2857001;
+    35 : 00000000;
+    36 : 00000000;
+    37 : 00000000;
+
+    38 : E0477002;
+    39 : 00000000;
+    3A : 00000000;
+    3B : 00000000;
+
+    3C : E5837054;
+    3D : 00000000;
+    3E : 00000000;
+    3F : 00000000;
+
+    40 : E5902060;
+    41 : 00000000;
+    42 : 00000000;
+    43 : 00000000;
+
+    44 : E08FF000;
+    45 : 00000000;
+    46 : 00000000;
+    47 : 00000000;
+
+    48 : E280200E;
+    49 : 00000000;
+    4A : 00000000;
+    4B : 00000000;
+
+    4C : EA000001;
+    4D : 00000000;
+    4E : 00000000;
+    4F : 00000000;
+
+    50 : E280200D;
+    51 : 00000000;
+    52 : 00000000;
+    53 : 00000000;
+
+    54 : E280200A;
+    55 : 00000000;
+    56 : 00000000;
+    57 : 00000000;
+
+    58 : E5802064;
+    59 : 00000000;
+    5A : 00000000;
+    5B : 00000000;
+    [5C..FF] : 00000000;
+END;
