@@ -9,6 +9,7 @@ module write_mem(
 
 logic flag = 1; // Bandera para controlar la escritura
 
+
 always_ff @ (posedge clk) begin
     if (timeOut && flag && btn[0]) begin
         enable <= 1'b1;
@@ -16,15 +17,16 @@ always_ff @ (posedge clk) begin
         data   <= 32'd9;
         flag <= 1'b0; // Desactiva la bandera para evitar múltiples escrituras
     end
-    else if (btn[1]) begin
+    else if (timeOut && flag && btn[1]) begin
         enable <= 1'b1;
         addr   <= 32'd100;
-        data   <= 32'd7;
+        data   <= 32'd8;
+        flag <= 1'b0; // Desactiva la bandera para evitar múltiples escrituras
     end
     else if (btn[2]) begin
         enable <= 1'b1;
         addr   <= 32'd100;
-        data   <= 32'd8;
+        data   <= 32'd3;
     end
     else begin
         enable <= 1'b0;

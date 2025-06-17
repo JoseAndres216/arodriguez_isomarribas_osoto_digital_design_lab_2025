@@ -1,6 +1,6 @@
 module top_FPGA(input logic clk, reset,
 				input logic [2:0] btn,
-				output logic led);
+				output logic [1:0] led);
 				
 	logic [31:0] WriteData, DataAdr;
 	logic MemWrite;
@@ -95,14 +95,21 @@ module top_FPGA(input logic clk, reset,
 	begin
 		if(1'b1) // Cambiar a MemWriteB
 		begin
-			if(DataAdr === 100 && ReadData === 7) 
+			if(DataAdr === 100 && ReadData === 1) 
 				begin
-					led = 1;
+					led[1] = 1;
+					led[0] = 0;
 				end 
 				
-			else if (DataAdr === 100 && ReadData !== 7) 
+			else if (DataAdr === 100 && ReadData === 2) 
 				begin
-					led = 0;
+					led[0] = 1;
+					led[1] = 0;
+				end
+			else if (DataAdr === 100) 
+				begin
+					led[0] = 0;
+					led[1] = 0;
 				end
 		end
 	end

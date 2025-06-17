@@ -4,7 +4,8 @@ reset => reset.IN8
 btn[0] => btn[0].IN1
 btn[1] => btn[1].IN1
 btn[2] => btn[2].IN1
-led << led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[0] <= led[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_FPGA|arm:arm
@@ -14785,6 +14786,7 @@ rd_b[31] <= Mux32.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_FPGA|write_mem:writeMem
+clk => flag.CLK
 clk => data[0]~reg0.CLK
 clk => data[1]~reg0.CLK
 clk => data[2]~reg0.CLK
@@ -14850,11 +14852,8 @@ clk => addr[29]~reg0.CLK
 clk => addr[30]~reg0.CLK
 clk => addr[31]~reg0.CLK
 clk => enable~reg0.CLK
-btn[0] => always0.IN0
-btn[1] => enable.OUTPUTSELECT
-btn[1] => data.OUTPUTSELECT
-btn[1] => data.DATAA
-btn[1] => data.DATAA
+btn[0] => always0.IN1
+btn[1] => always0.IN1
 btn[2] => enable.DATAA
 btn[2] => data.DATAA
 timeOut => always0.IN1

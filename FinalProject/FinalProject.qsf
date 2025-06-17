@@ -95,7 +95,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE divisor_N_bits.sv
 set_global_assignment -name SOURCE_FILE memfile.dat
 set_location_assignment PIN_AF14 -to clk
 set_location_assignment PIN_AA30 -to reset
-set_location_assignment PIN_AC22 -to led
 set_global_assignment -name SYSTEMVERILOG_FILE top_FPGA.sv
 set_global_assignment -name MIF_FILE ROM.mif
 set_global_assignment -name QIP_FILE rom.qip
@@ -114,4 +113,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE comparator.sv
 set_global_assignment -name SYSTEMVERILOG_FILE edge_detector.sv
 set_global_assignment -name SYSTEMVERILOG_FILE debouncer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE control_mem_b.sv
+set_location_assignment PIN_AC22 -to led[0]
+set_location_assignment PIN_AB22 -to led[1]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
