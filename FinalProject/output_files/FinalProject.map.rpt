@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FinalProject
-Tue Jun 17 17:18:44 2025
+Tue Jun 17 21:22:00 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,50 +13,51 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
- 14. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
- 15. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux
- 16. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg
- 17. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1
- 18. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2
- 19. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux
- 20. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux
- 21. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
- 22. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
- 23. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu
- 24. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum
- 25. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest
- 26. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg
- 27. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta
- 28. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|operador_and:op_and
- 29. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|operador_or:op_or
- 30. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu
- 31. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_zero:flag_Z
- 32. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V
- 33. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V|divisor_N_bits:div
- 34. Parameter Settings for User Entity Instance: timer:myTimer
- 35. Parameter Settings for User Entity Instance: comparator:comp_inst
- 36. Parameter Settings for User Entity Instance: debouncer:debounce0
- 37. Parameter Settings for User Entity Instance: debouncer:debounce1
- 38. Parameter Settings for User Entity Instance: debouncer:debounce2
- 39. Port Connectivity Checks: "edge_detector:edge_detector2"
- 40. Port Connectivity Checks: "edge_detector:edge_detector1"
- 41. Port Connectivity Checks: "edge_detector:edge_detector0"
- 42. Port Connectivity Checks: "comparator:comp_inst"
- 43. Port Connectivity Checks: "dmem:dmem"
- 44. Port Connectivity Checks: "arm:arm|datapath:dp|alu:alu"
- 45. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
- 46. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
- 47. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
- 48. Post-Synthesis Netlist Statistics for Top Partition
- 49. Elapsed Time Per Partition
- 50. Analysis & Synthesis Messages
- 51. Analysis & Synthesis Suppressed Messages
+  8. State Machine - |top_FPGA|uartController:uart_controller|state
+  9. State Machine - |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|state
+ 10. State Machine - |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|state
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
+ 17. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
+ 18. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux
+ 19. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg
+ 20. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1
+ 21. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2
+ 22. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux
+ 23. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux
+ 24. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
+ 25. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
+ 26. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu
+ 27. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum
+ 28. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest
+ 29. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg
+ 30. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta
+ 31. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|operador_and:op_and
+ 32. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|operador_or:op_or
+ 33. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu
+ 34. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_zero:flag_Z
+ 35. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V
+ 36. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V|divisor_N_bits:div
+ 37. Parameter Settings for User Entity Instance: timer:myTimer
+ 38. Parameter Settings for User Entity Instance: comparator:comp_inst
+ 39. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_rx:uart_rx_inst
+ 40. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_tx:uart_tx_inst
+ 41. Port Connectivity Checks: "uartController:uart_controller|uart_tx:uart_tx_inst"
+ 42. Port Connectivity Checks: "uartController:uart_controller"
+ 43. Port Connectivity Checks: "comparator:comp_inst"
+ 44. Port Connectivity Checks: "dmem:dmem"
+ 45. Port Connectivity Checks: "arm:arm|datapath:dp|alu:alu"
+ 46. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
+ 47. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
+ 48. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
+ 49. Post-Synthesis Netlist Statistics for Top Partition
+ 50. Elapsed Time Per Partition
+ 51. Analysis & Synthesis Messages
+ 52. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -83,14 +84,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jun 17 17:18:44 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 17 21:22:00 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; FinalProject                                ;
 ; Top-level Entity Name           ; top_FPGA                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2310                                        ;
-; Total pins                      ; 7                                           ;
+; Total registers                 ; 2379                                        ;
+; Total pins                      ; 9                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -247,8 +248,9 @@ https://fpgasoftware.intel.com/eula.
 ; write_mem.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/write_mem.sv       ;         ;
 ; timer.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/timer.sv           ;         ;
 ; comparator.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/comparator.sv      ;         ;
-; edge_detector.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/edge_detector.sv   ;         ;
-; debouncer.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/debouncer.sv       ;         ;
+; uartController.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv  ;         ;
+; uart_tx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_tx.sv         ;         ;
+; uart_rx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_rx.sv         ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -257,25 +259,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1699      ;
+; Estimate of Logic utilization (ALMs needed) ; 1741      ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1382      ;
-;     -- 7 input functions                    ; 5         ;
-;     -- 6 input functions                    ; 946       ;
-;     -- 5 input functions                    ; 93        ;
-;     -- 4 input functions                    ; 97        ;
-;     -- <=3 input functions                  ; 241       ;
+; Combinational ALUT usage for logic          ; 1473      ;
+;     -- 7 input functions                    ; 6         ;
+;     -- 6 input functions                    ; 959       ;
+;     -- 5 input functions                    ; 105       ;
+;     -- 4 input functions                    ; 121       ;
+;     -- <=3 input functions                  ; 282       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 2310      ;
+; Dedicated logic registers                   ; 2379      ;
 ;                                             ;           ;
-; I/O pins                                    ; 7         ;
+; I/O pins                                    ; 9         ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 2310      ;
-; Total fan-out                               ; 14148     ;
-; Average fan-out                             ; 3.82      ;
+; Maximum fan-out                             ; 2379      ;
+; Total fan-out                               ; 14732     ;
+; Average fan-out                             ; 3.81      ;
 +---------------------------------------------+-----------+
 
 
@@ -284,32 +286,32 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                               ; Entity Name     ; Library Name ;
 +-------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |top_FPGA                                             ; 1382 (16)           ; 2310 (2)                  ; 0                 ; 0          ; 7    ; 0            ; |top_FPGA                                                                                                         ; top_FPGA        ; work         ;
-;    |arm:arm|                                          ; 491 (0)             ; 225 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm                                                                                                 ; arm             ; work         ;
+; |top_FPGA                                             ; 1473 (16)           ; 2379 (2)                  ; 0                 ; 0          ; 9    ; 0            ; |top_FPGA                                                                                                         ; top_FPGA        ; work         ;
+;    |arm:arm|                                          ; 493 (0)             ; 225 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm                                                                                                 ; arm             ; work         ;
 ;       |controller:c|                                  ; 15 (0)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c                                                                                    ; controller      ; work         ;
 ;          |condlogic:cl|                               ; 9 (5)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c|condlogic:cl                                                                       ; condlogic       ; work         ;
 ;             |flopenr:flagreg1|                        ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1                                                      ; flopenr         ; work         ;
 ;          |decoder:dec|                                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c|decoder:dec                                                                        ; decoder         ; work         ;
-;       |datapath:dp|                                   ; 476 (0)             ; 224 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp                                                                                     ; datapath        ; work         ;
+;       |datapath:dp|                                   ; 478 (0)             ; 224 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp                                                                                     ; datapath        ; work         ;
 ;          |adder:pcadd1|                               ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|adder:pcadd1                                                                        ; adder           ; work         ;
 ;          |adder:pcadd2|                               ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|adder:pcadd2                                                                        ; adder           ; work         ;
-;          |alu:alu|                                    ; 160 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu                                                                             ; alu             ; work         ;
+;          |alu:alu|                                    ; 162 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu                                                                             ; alu             ; work         ;
 ;             |mux_alu:Mux_Alu|                         ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu                                                             ; mux_alu         ; work         ;
-;             |restador_N_bits:rest|                    ; 63 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest                                                        ; restador_N_bits ; work         ;
-;                |sumador_N_bits:resta|                 ; 63 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta                                   ; sumador_N_bits  ; work         ;
+;             |restador_N_bits:rest|                    ; 64 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest                                                        ; restador_N_bits ; work         ;
+;                |sumador_N_bits:resta|                 ; 64 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta                                   ; sumador_N_bits  ; work         ;
 ;                   |sumador_1_bit:gen_loop[10].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[10].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[11].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[11].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[12].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[12].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[13].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[13].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[14].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[14].sum1b3 ; sumador_1_bit   ; work         ;
+;                   |sumador_1_bit:gen_loop[14].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[14].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[15].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[15].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[16].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[16].sum1b3 ; sumador_1_bit   ; work         ;
+;                   |sumador_1_bit:gen_loop[16].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[16].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[17].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[17].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[18].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[18].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[19].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[19].sum1b3 ; sumador_1_bit   ; work         ;
+;                   |sumador_1_bit:gen_loop[19].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[19].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[1].sum1b3|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[1].sum1b3  ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[20].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[20].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[21].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[21].sum1b3 ; sumador_1_bit   ; work         ;
+;                   |sumador_1_bit:gen_loop[21].sum1b3| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[21].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[22].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[22].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[23].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[23].sum1b3 ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[24].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[24].sum1b3 ; sumador_1_bit   ; work         ;
@@ -326,20 +328,20 @@ https://fpgasoftware.intel.com/eula.
 ;                   |sumador_1_bit:gen_loop[7].sum1b3|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[7].sum1b3  ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[8].sum1b3|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[8].sum1b3  ; sumador_1_bit   ; work         ;
 ;                   |sumador_1_bit:gen_loop[9].sum1b3|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[9].sum1b3  ; sumador_1_bit   ; work         ;
-;             |sumador_N_bits:sum|                      ; 63 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum                                                          ; sumador_N_bits  ; work         ;
+;             |sumador_N_bits:sum|                      ; 64 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum                                                          ; sumador_N_bits  ; work         ;
 ;                |sumador_1_bit:gen_loop[10].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[10].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[11].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[11].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[12].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[12].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[13].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[13].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[14].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[14].sum1b3                        ; sumador_1_bit   ; work         ;
+;                |sumador_1_bit:gen_loop[14].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[14].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[15].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[15].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[16].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[16].sum1b3                        ; sumador_1_bit   ; work         ;
+;                |sumador_1_bit:gen_loop[16].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[16].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[17].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[17].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[18].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[18].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[19].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[19].sum1b3                        ; sumador_1_bit   ; work         ;
+;                |sumador_1_bit:gen_loop[19].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[19].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[1].sum1b3|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[1].sum1b3                         ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[20].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[20].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[21].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[21].sum1b3                        ; sumador_1_bit   ; work         ;
+;                |sumador_1_bit:gen_loop[21].sum1b3|    ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[21].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[22].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[22].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[23].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[23].sum1b3                        ; sumador_1_bit   ; work         ;
 ;                |sumador_1_bit:gen_loop[24].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[24].sum1b3                        ; sumador_1_bit   ; work         ;
@@ -365,314 +367,372 @@ https://fpgasoftware.intel.com/eula.
 ;    |dmem:dmem|                                        ; 804 (804)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|dmem:dmem                                                                                               ; dmem            ; work         ;
 ;    |imem:imem|                                        ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|imem:imem                                                                                               ; imem            ; work         ;
 ;    |timer:myTimer|                                    ; 40 (40)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|timer:myTimer                                                                                           ; timer           ; work         ;
+;    |uartController:uart_controller|                   ; 89 (12)             ; 69 (7)                    ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|uartController:uart_controller                                                                          ; uartController  ; work         ;
+;       |uart_rx:uart_rx_inst|                          ; 46 (46)             ; 39 (39)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst                                                     ; uart_rx         ; work         ;
+;       |uart_tx:uart_tx_inst|                          ; 31 (31)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst                                                     ; uart_tx         ; work         ;
 ;    |write_mem:writeMem|                               ; 6 (6)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|write_mem:writeMem                                                                                      ; write_mem       ; work         ;
 +-------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                    ;
-+---------------------------------------------------------+---------------------------------------------+
-; Register name                                           ; Reason for Removal                          ;
-+---------------------------------------------------------+---------------------------------------------+
-; write_mem:writeMem|data[2,4..31]                        ; Stuck at GND due to stuck port data_in      ;
-; write_mem:writeMem|addr[2]                              ; Stuck at VCC due to stuck port data_in      ;
-; write_mem:writeMem|addr[3,4]                            ; Stuck at GND due to stuck port data_in      ;
-; write_mem:writeMem|addr[5,6]                            ; Stuck at VCC due to stuck port data_in      ;
-; write_mem:writeMem|addr[7]                              ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|controller:c|condlogic:cl|flopenr:flagreg0|q[1] ; Lost fanout                                 ;
-; arm:arm|controller:c|condlogic:cl|flopenr:flagreg1|q[1] ; Lost fanout                                 ;
-; arm:arm|controller:c|condlogic:cl|flopenr:flagreg0|q[0] ; Lost fanout                                 ;
-; arm:arm|datapath:dp|regfile:rf|rf~128                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~160                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~192                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~224                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~256                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~288                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~320                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~352                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~129                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~161                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~193                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~225                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~257                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~289                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~321                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~353                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~130                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~162                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~194                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~226                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~258                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~290                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~322                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~354                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~131                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~163                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~195                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~227                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~259                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~291                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~323                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~355                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~132                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~164                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~196                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~228                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~260                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~292                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~324                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~356                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~133                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~165                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~197                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~229                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~261                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~293                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~325                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~357                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~134                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~166                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~198                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~230                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~262                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~294                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~326                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~358                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~135                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~167                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~199                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~231                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~263                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~295                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~327                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~359                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~136                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~168                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~200                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~232                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~264                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~296                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~328                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~360                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~137                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~169                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~201                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~233                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~265                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~297                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~329                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~361                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~138                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~170                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~202                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~234                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~266                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~298                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~330                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~362                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~139                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~171                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~203                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~235                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~267                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~299                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~331                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~363                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~140                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~172                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~204                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~236                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~268                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~300                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~332                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~364                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~141                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~173                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~205                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~237                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~269                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~301                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~333                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~365                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~142                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~174                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~206                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~238                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~270                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~302                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~334                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~366                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~143                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~175                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~207                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~239                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~271                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~303                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~335                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~367                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~144                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~176                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~208                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~240                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~272                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~304                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~336                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~368                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~145                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~177                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~209                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~241                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~273                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~305                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~337                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~369                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~146                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~178                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~210                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~242                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~274                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~306                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~338                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~370                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~147                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~179                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~211                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~243                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~275                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~307                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~339                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~371                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~148                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~180                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~212                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~244                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~276                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~308                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~340                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~372                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~149                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~181                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~213                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~245                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~277                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~309                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~341                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~373                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~150                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~182                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~214                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~246                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~278                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~310                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~342                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~374                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~151                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~183                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~215                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~247                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~279                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~311                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~343                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~375                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~152                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~184                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~216                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~248                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~280                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~312                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~344                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~376                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~153                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~185                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~217                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~249                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~281                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~313                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~345                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~377                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~154                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~186                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~218                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~250                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~282                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~314                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~346                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~378                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~155                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~187                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~219                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~251                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~283                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~315                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~347                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~379                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~156                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~188                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~220                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~252                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~284                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~316                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~348                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~380                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~157                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~189                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~221                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~253                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~285                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~317                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~349                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~381                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~158                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~190                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~222                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~254                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~286                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~318                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~350                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~382                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~159                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~191                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~223                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~255                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~287                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~319                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~351                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~383                   ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~419                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~418                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~417                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~416                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~420                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~421                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~422                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~423                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~440                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~435                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~430                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~425                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~424                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~426                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~427                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~428                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~429                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~431                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~432                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~433                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~434                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~436                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~437                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~438                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~439                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~441                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~442                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~443                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~444                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~445                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~446                   ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~447                   ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 326                 ;                                             ;
-+---------------------------------------------------------+---------------------------------------------+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_FPGA|uartController:uart_controller|state                                                                         ;
++---------------------------+--------------------+---------------------------+----------------------+------------+-----------------------+
+; Name                      ; state.WAIT_COMMAND ; state.WAIT_HANDSHAKE_DONE ; state.HANDSHAKE_SEND ; state.IDLE ; state.PROCESS_COMMAND ;
++---------------------------+--------------------+---------------------------+----------------------+------------+-----------------------+
+; state.IDLE                ; 0                  ; 0                         ; 0                    ; 0          ; 0                     ;
+; state.HANDSHAKE_SEND      ; 0                  ; 0                         ; 1                    ; 1          ; 0                     ;
+; state.WAIT_HANDSHAKE_DONE ; 0                  ; 1                         ; 0                    ; 1          ; 0                     ;
+; state.WAIT_COMMAND        ; 1                  ; 0                         ; 0                    ; 1          ; 0                     ;
+; state.PROCESS_COMMAND     ; 0                  ; 0                         ; 0                    ; 1          ; 1                     ;
++---------------------------+--------------------+---------------------------+----------------------+------------+-----------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|state               ;
++-----------------+----------------+-----------------+-----------------+------------+---------------+
+; Name            ; state.STOP_BIT ; state.DATA_BITS ; state.START_BIT ; state.IDLE ; state.CLEANUP ;
++-----------------+----------------+-----------------+-----------------+------------+---------------+
+; state.IDLE      ; 0              ; 0               ; 0               ; 0          ; 0             ;
+; state.START_BIT ; 0              ; 0               ; 1               ; 1          ; 0             ;
+; state.DATA_BITS ; 0              ; 1               ; 0               ; 1          ; 0             ;
+; state.STOP_BIT  ; 1              ; 0               ; 0               ; 1          ; 0             ;
+; state.CLEANUP   ; 0              ; 0               ; 0               ; 1          ; 1             ;
++-----------------+----------------+-----------------+-----------------+------------+---------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------+
+; State Machine - |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|state            ;
++-----------------+----------------+-----------------+-----------------+------------+------------+
+; Name            ; state.STOP_BIT ; state.DATA_BITS ; state.START_BIT ; state.IDLE ; state.DONE ;
++-----------------+----------------+-----------------+-----------------+------------+------------+
+; state.IDLE      ; 0              ; 0               ; 0               ; 0          ; 0          ;
+; state.START_BIT ; 0              ; 0               ; 1               ; 1          ; 0          ;
+; state.DATA_BITS ; 0              ; 1               ; 0               ; 1          ; 0          ;
+; state.STOP_BIT  ; 1              ; 0               ; 0               ; 1          ; 0          ;
+; state.DONE      ; 0              ; 0               ; 0               ; 1          ; 1          ;
++-----------------+----------------+-----------------+-----------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                             ;
++------------------------------------------------------------------+---------------------------------------------+
+; Register name                                                    ; Reason for Removal                          ;
++------------------------------------------------------------------+---------------------------------------------+
+; write_mem:writeMem|data[2,4..31]                                 ; Stuck at GND due to stuck port data_in      ;
+; write_mem:writeMem|addr[2]                                       ; Stuck at VCC due to stuck port data_in      ;
+; write_mem:writeMem|addr[3,4]                                     ; Stuck at GND due to stuck port data_in      ;
+; write_mem:writeMem|addr[5,6]                                     ; Stuck at VCC due to stuck port data_in      ;
+; write_mem:writeMem|addr[7]                                       ; Stuck at GND due to stuck port data_in      ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[0]   ; Stuck at VCC due to stuck port data_in      ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[7]   ; Stuck at GND due to stuck port data_in      ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[6]   ; Stuck at VCC due to stuck port data_in      ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[4,5] ; Stuck at GND due to stuck port data_in      ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[3]   ; Stuck at VCC due to stuck port data_in      ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[2]   ; Stuck at GND due to stuck port data_in      ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx_data[1]   ; Stuck at VCC due to stuck port data_in      ;
+; arm:arm|controller:c|condlogic:cl|flopenr:flagreg0|q[1]          ; Lost fanout                                 ;
+; arm:arm|controller:c|condlogic:cl|flopenr:flagreg1|q[1]          ; Lost fanout                                 ;
+; arm:arm|controller:c|condlogic:cl|flopenr:flagreg0|q[0]          ; Lost fanout                                 ;
+; uartController:uart_controller|state~9                           ; Lost fanout                                 ;
+; uartController:uart_controller|state~10                          ; Lost fanout                                 ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|state~9      ; Lost fanout                                 ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|state~10     ; Lost fanout                                 ;
+; uartController:uart_controller|uart_rx:uart_rx_inst|state~9      ; Lost fanout                                 ;
+; uartController:uart_controller|uart_rx:uart_rx_inst|state~10     ; Lost fanout                                 ;
+; arm:arm|datapath:dp|regfile:rf|rf~128                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~160                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~192                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~224                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~256                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~288                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~320                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~352                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~129                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~161                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~193                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~225                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~257                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~289                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~321                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~353                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~130                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~162                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~194                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~226                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~258                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~290                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~322                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~354                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~131                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~163                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~195                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~227                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~259                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~291                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~323                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~355                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~132                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~164                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~196                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~228                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~260                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~292                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~324                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~356                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~133                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~165                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~197                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~229                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~261                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~293                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~325                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~357                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~134                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~166                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~198                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~230                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~262                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~294                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~326                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~358                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~135                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~167                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~199                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~231                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~263                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~295                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~327                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~359                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~136                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~168                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~200                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~232                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~264                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~296                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~328                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~360                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~137                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~169                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~201                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~233                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~265                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~297                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~329                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~361                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~138                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~170                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~202                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~234                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~266                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~298                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~330                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~362                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~139                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~171                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~203                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~235                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~267                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~299                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~331                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~363                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~140                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~172                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~204                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~236                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~268                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~300                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~332                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~364                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~141                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~173                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~205                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~237                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~269                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~301                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~333                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~365                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~142                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~174                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~206                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~238                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~270                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~302                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~334                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~366                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~143                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~175                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~207                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~239                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~271                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~303                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~335                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~367                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~144                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~176                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~208                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~240                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~272                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~304                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~336                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~368                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~145                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~177                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~209                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~241                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~273                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~305                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~337                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~369                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~146                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~178                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~210                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~242                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~274                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~306                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~338                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~370                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~147                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~179                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~211                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~243                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~275                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~307                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~339                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~371                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~148                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~180                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~212                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~244                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~276                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~308                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~340                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~372                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~149                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~181                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~213                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~245                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~277                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~309                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~341                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~373                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~150                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~182                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~214                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~246                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~278                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~310                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~342                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~374                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~151                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~183                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~215                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~247                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~279                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~311                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~343                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~375                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~152                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~184                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~216                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~248                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~280                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~312                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~344                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~376                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~153                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~185                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~217                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~249                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~281                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~313                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~345                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~377                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~154                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~186                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~218                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~250                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~282                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~314                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~346                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~378                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~155                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~187                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~219                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~251                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~283                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~315                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~347                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~379                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~156                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~188                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~220                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~252                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~284                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~316                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~348                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~380                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~157                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~189                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~221                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~253                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~285                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~317                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~349                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~381                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~158                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~190                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~222                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~254                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~286                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~318                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~350                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~382                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~159                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~191                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~223                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~255                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~287                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~319                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~351                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~383                            ; Stuck at GND due to stuck port data_in      ;
+; arm:arm|datapath:dp|regfile:rf|rf~417                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~416                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~418                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~419                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~421                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~420                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~422                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~423                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~440                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~437                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~436                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~435                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~434                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~433                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~432                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~431                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~430                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~429                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~428                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~427                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~426                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~425                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~424                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~438                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~439                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~441                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~442                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~443                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~444                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~445                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~446                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~447                            ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 340                          ;                                             ;
++------------------------------------------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -681,19 +741,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                        ;
 +---------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 ; arm:arm|datapath:dp|regfile:rf|rf~134 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~422, arm:arm|datapath:dp|regfile:rf|rf~423, ;
-;                                       ; due to stuck port data_in ; arm:arm|datapath:dp|regfile:rf|rf~440, arm:arm|datapath:dp|regfile:rf|rf~435, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~430, arm:arm|datapath:dp|regfile:rf|rf~425, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~424, arm:arm|datapath:dp|regfile:rf|rf~426, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~427, arm:arm|datapath:dp|regfile:rf|rf~428, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~429, arm:arm|datapath:dp|regfile:rf|rf~431, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~432, arm:arm|datapath:dp|regfile:rf|rf~433, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~434, arm:arm|datapath:dp|regfile:rf|rf~436, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~437, arm:arm|datapath:dp|regfile:rf|rf~439, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~441, arm:arm|datapath:dp|regfile:rf|rf~442, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~443, arm:arm|datapath:dp|regfile:rf|rf~444, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~445, arm:arm|datapath:dp|regfile:rf|rf~446, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~447                                         ;
-; arm:arm|datapath:dp|regfile:rf|rf~129 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~418, arm:arm|datapath:dp|regfile:rf|rf~417  ;
+;                                       ; due to stuck port data_in ; arm:arm|datapath:dp|regfile:rf|rf~440, arm:arm|datapath:dp|regfile:rf|rf~437, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~436, arm:arm|datapath:dp|regfile:rf|rf~435, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~434, arm:arm|datapath:dp|regfile:rf|rf~433, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~432, arm:arm|datapath:dp|regfile:rf|rf~431, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~430, arm:arm|datapath:dp|regfile:rf|rf~429, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~428, arm:arm|datapath:dp|regfile:rf|rf~427, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~426, arm:arm|datapath:dp|regfile:rf|rf~425, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~424, arm:arm|datapath:dp|regfile:rf|rf~438, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~439, arm:arm|datapath:dp|regfile:rf|rf~441, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~442, arm:arm|datapath:dp|regfile:rf|rf~443, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~444, arm:arm|datapath:dp|regfile:rf|rf~445, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~446, arm:arm|datapath:dp|regfile:rf|rf~447  ;
+; arm:arm|datapath:dp|regfile:rf|rf~129 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~417, arm:arm|datapath:dp|regfile:rf|rf~418  ;
 ;                                       ; due to stuck port data_in ;                                                                               ;
 ; arm:arm|datapath:dp|regfile:rf|rf~128 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~416                                         ;
 ;                                       ; due to stuck port data_in ;                                                                               ;
@@ -703,8 +763,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                       ; due to stuck port data_in ;                                                                               ;
 ; arm:arm|datapath:dp|regfile:rf|rf~133 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~421                                         ;
 ;                                       ; due to stuck port data_in ;                                                                               ;
-; arm:arm|datapath:dp|regfile:rf|rf~149 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~438                                         ;
-;                                       ; due to stuck port data_in ;                                                                               ;
 +---------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 
 
@@ -713,108 +771,119 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2310  ;
-; Number of registers using Synchronous Clear  ; 55    ;
+; Total registers                              ; 2379  ;
+; Number of registers using Synchronous Clear  ; 81    ;
 ; Number of registers using Synchronous Load   ; 30    ;
-; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Clear ; 92    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2270  ;
+; Number of registers using Clock Enable       ; 2304  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; write_mem:writeMem|flag                ; 5       ;
-; timer:myTimer|current_seconds[3]       ; 10      ;
-; timer:myTimer|current_seconds[1]       ; 3       ;
-; Total number of inverted registers = 3 ;         ;
-+----------------------------------------+---------+
++-----------------------------------------------------------------------+
+; Inverted Register Statistics                                          ;
++-------------------------------------------------------------+---------+
+; Inverted Register                                           ; Fan out ;
++-------------------------------------------------------------+---------+
+; uartController:uart_controller|uart_tx:uart_tx_inst|tx      ; 2       ;
+; uartController:uart_controller|uart_tx:uart_tx_inst|ready   ; 6       ;
+; write_mem:writeMem|flag                                     ; 5       ;
+; timer:myTimer|current_seconds[3]                            ; 10      ;
+; timer:myTimer|current_seconds[1]                            ; 3       ;
+; uartController:uart_controller|uart_rx:uart_rx_inst|rx_sync ; 10      ;
+; Total number of inverted registers = 6                      ;         ;
++-------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[63][8]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[62][12]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[61][22]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[60][22]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[59][22]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[58][29]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[57][18]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[56][27]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[55][10]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[54][5]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[53][1]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[52][24]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[51][3]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[50][23]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[49][1]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[48][4]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[47][15]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[46][15]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[45][20]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[44][20]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[43][23]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[42][19]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[41][8]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[40][19]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[39][16]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[38][19]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[37][6]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[36][26]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[35][6]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[34][17]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[33][17]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[32][12]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[31][12]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[30][13]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[29][14]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[28][20]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[27][28]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[26][24]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[24][18]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[23][11]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[22][21]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[21][5]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[20][1]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[19][27]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[18][10]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[17][5]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[16][17]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[15][15]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[14][29]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[13][18]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[12][3]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[11][30]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[10][16]                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[9][16]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[8][8]                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[7][15]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[6][3]                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[5][0]                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[4][6]                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[3][20]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[2][11]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[1][10]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[0][9]                              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_FPGA|timer:myTimer|current_seconds[2]                 ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top_FPGA|timer:myTimer|cycle_counter[16]                  ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 0 LEs                ; 58 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[25][9]                             ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_FPGA|dmem:dmem|RAM[25][1]                             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_FPGA|timer:myTimer|current_seconds[1]                 ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[22]           ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[1]            ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[7]            ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|Mux6 ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[9]            ;
-; 64:1               ; 32 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |top_FPGA|dmem:dmem|Mux8                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[63][12]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[62][10]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[61][15]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[60][1]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[59][12]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[58][9]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[57][5]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[56][14]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[55][27]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[54][27]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[53][27]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[52][16]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[51][2]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[50][31]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[49][3]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[48][20]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[47][30]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[46][8]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[45][14]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[44][15]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[43][27]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[42][8]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[41][20]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[40][9]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[39][23]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[38][22]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[37][24]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[36][29]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[35][6]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[34][27]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[33][23]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[32][17]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[31][6]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[30][18]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[29][15]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[28][30]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[27][2]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[26][15]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[24][1]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[23][10]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[22][14]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[21][1]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[20][7]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[19][27]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[18][4]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[17][9]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[16][30]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[15][27]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[14][20]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[13][17]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[12][29]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[11][19]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[10][12]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[9][22]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[8][19]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[7][28]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[6][22]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[5][22]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[4][22]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[3][30]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[2][12]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[1][28]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[0][22]                                              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_FPGA|timer:myTimer|current_seconds[0]                                  ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top_FPGA|timer:myTimer|cycle_counter[24]                                   ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 0 LEs                ; 58 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[25][9]                                              ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_FPGA|dmem:dmem|RAM[25][3]                                              ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|bit_index[0]  ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|bit_index[0]  ;
+; 5:1                ; 13 bits   ; 39 LEs        ; 0 LEs                ; 39 LEs                 ; Yes        ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|clk_count[2]  ;
+; 7:1                ; 13 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|clk_count[12] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_FPGA|timer:myTimer|current_seconds[3]                                  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[14]                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[1]                             ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[6]                             ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|Mux22                 ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[11]                            ;
+; 64:1               ; 32 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |top_FPGA|dmem:dmem|Mux26                                                   ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|Selector5     ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |top_FPGA|uartController:uart_controller|Selector9                          ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|Selector4     ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|Selector0     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -1048,61 +1117,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:debounce0 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 20    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uartController:uart_controller|uart_rx:uart_rx_inst ;
++----------------+----------+----------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                 ;
++----------------+----------+----------------------------------------------------------------------+
+; CLOCK_FREQ     ; 50000000 ; Signed Integer                                                       ;
+; BAUD_RATE      ; 9600     ; Signed Integer                                                       ;
++----------------+----------+----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:debounce1 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 20    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uartController:uart_controller|uart_tx:uart_tx_inst ;
++----------------+----------+----------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                 ;
++----------------+----------+----------------------------------------------------------------------+
+; CLOCK_FREQ     ; 50000000 ; Signed Integer                                                       ;
+; BAUD_RATE      ; 9600     ; Signed Integer                                                       ;
++----------------+----------+----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:debounce2 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 20    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uartController:uart_controller|uart_tx:uart_tx_inst" ;
++------------+-------+----------+-------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                         ;
++------------+-------+----------+-------------------------------------------------+
+; data[1..0] ; Input ; Info     ; Stuck at VCC                                    ;
+; data[5..4] ; Input ; Info     ; Stuck at GND                                    ;
+; data[7]    ; Input ; Info     ; Stuck at GND                                    ;
+; data[6]    ; Input ; Info     ; Stuck at VCC                                    ;
+; data[3]    ; Input ; Info     ; Stuck at VCC                                    ;
+; data[2]    ; Input ; Info     ; Stuck at GND                                    ;
++------------+-------+----------+-------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "edge_detector:edge_detector2"                                                              ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; rising_edge ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "edge_detector:edge_detector1"                                                              ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; rising_edge ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "edge_detector:edge_detector0"                                                              ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; rising_edge ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uartController:uart_controller"                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; display_data ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------+
@@ -1168,28 +1225,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2310                        ;
-;     CLR               ; 1                           ;
+; arriav_ff             ; 2379                        ;
+;     CLR               ; 26                          ;
 ;     CLR SLD           ; 30                          ;
 ;     ENA               ; 2213                        ;
-;     ENA CLR           ; 2                           ;
+;     ENA CLR           ; 10                          ;
+;     ENA CLR SCLR      ; 26                          ;
 ;     ENA SCLR          ; 55                          ;
-;     plain             ; 9                           ;
-; arriav_lcell_comb     ; 1382                        ;
-;     arith             ; 86                          ;
-;         1 data inputs ; 86                          ;
-;     extend            ; 5                           ;
-;         7 data inputs ; 5                           ;
-;     normal            ; 1291                        ;
-;         2 data inputs ; 97                          ;
-;         3 data inputs ; 58                          ;
-;         4 data inputs ; 97                          ;
-;         5 data inputs ; 93                          ;
-;         6 data inputs ; 946                         ;
-; boundary_port         ; 7                           ;
+;     plain             ; 19                          ;
+; arriav_lcell_comb     ; 1474                        ;
+;     arith             ; 112                         ;
+;         1 data inputs ; 112                         ;
+;     extend            ; 6                           ;
+;         7 data inputs ; 6                           ;
+;     normal            ; 1356                        ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 107                         ;
+;         3 data inputs ; 62                          ;
+;         4 data inputs ; 121                         ;
+;         5 data inputs ; 105                         ;
+;         6 data inputs ; 959                         ;
+; boundary_port         ; 9                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 8.66                        ;
+; Average LUT depth     ; 8.40                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1208,7 +1267,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 17 17:18:25 2025
+    Info: Processing started: Tue Jun 17 21:21:40 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FinalProject -c FinalProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1272,6 +1331,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file flag_ov
     Info (12023): Found entity 1: flag_overflow File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flag_overflow.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file divisor_n_bits.sv
     Info (12023): Found entity 1: divisor_N_bits File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/divisor_N_bits.sv Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at top_FPGA.sv(56): ignored dangling comma in List of Port Connections File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file top_fpga.sv
     Info (12023): Found entity 1: top_FPGA File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rom.v
@@ -1292,13 +1352,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file debounc
     Info (12023): Found entity 1: debouncer File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/debouncer.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file control_mem_b.sv
     Info (12023): Found entity 1: control_mem_b File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/control_mem_b.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file uartcontroller.sv
+    Info (12023): Found entity 1: uartController File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file uart_tx.sv
+    Info (12023): Found entity 1: uart_tx File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_tx.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file uart_rx.sv
+    Info (12023): Found entity 1: uart_rx File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_rx.sv Line: 18
 Warning (10236): Verilog HDL Implicit Net warning at top.sv(14): created implicit net for "MemWriteB" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top.sv Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at top.sv(14): created implicit net for "DataAdrB" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top.sv Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at top.sv(14): created implicit net for "WriteDataB" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top.sv Line: 14
 Warning (10236): Verilog HDL Implicit Net warning at top.sv(14): created implicit net for "ReadDataB" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top.sv Line: 14
-Warning (10037): Verilog HDL or VHDL warning at top_FPGA.sv(96): conditional expression evaluates to a constant File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 96
+Warning (10037): Verilog HDL or VHDL warning at top_FPGA.sv(62): conditional expression evaluates to a constant File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 62
 Info (12127): Elaborating entity "top_FPGA" for the top level hierarchy
-Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 22
+Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 24
 Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv Line: 16
 Info (12128): Elaborating entity "decoder" for hierarchy "arm:arm|controller:c|decoder:dec" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv Line: 17
 Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm|controller:c|condlogic:cl" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv Line: 21
@@ -1325,24 +1391,41 @@ Info (12128): Elaborating entity "flag_carry" for hierarchy "arm:arm|datapath:dp
 Info (12128): Elaborating entity "flag_zero" for hierarchy "arm:arm|datapath:dp|alu:alu|flag_zero:flag_Z" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 22
 Info (12128): Elaborating entity "flag_overflow" for hierarchy "arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 23
 Info (12128): Elaborating entity "divisor_N_bits" for hierarchy "arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V|divisor_N_bits:div" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flag_overflow.sv Line: 6
-Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 24
+Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 26
 Warning (10850): Verilog HDL warning at imem.sv(6): number of words (15) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv Line: 6
 Warning (10030): Net "RAM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv Line: 4
 Warning (10030): Net "RAM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv Line: 4
 Warning (10030): Net "RAM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv Line: 4
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 25
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 27
 Warning (10230): Verilog HDL assignment warning at dmem.sv(18): truncated value with size 30 to match size of target (6) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/dmem.sv Line: 18
 Warning (10230): Verilog HDL assignment warning at dmem.sv(19): truncated value with size 30 to match size of target (6) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/dmem.sv Line: 19
-Info (12128): Elaborating entity "write_mem" for hierarchy "write_mem:writeMem" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 27
-Info (12128): Elaborating entity "timer" for hierarchy "timer:myTimer" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 37
+Info (12128): Elaborating entity "write_mem" for hierarchy "write_mem:writeMem" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 29
+Info (12128): Elaborating entity "timer" for hierarchy "timer:myTimer" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 39
 Warning (10230): Verilog HDL assignment warning at timer.sv(35): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/timer.sv Line: 35
 Warning (10230): Verilog HDL assignment warning at timer.sv(49): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/timer.sv Line: 49
 Warning (10230): Verilog HDL assignment warning at timer.sv(53): truncated value with size 32 to match size of target (4) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/timer.sv Line: 53
 Warning (10230): Verilog HDL assignment warning at timer.sv(55): truncated value with size 32 to match size of target (26) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/timer.sv Line: 55
-Info (12128): Elaborating entity "comparator" for hierarchy "comparator:comp_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 45
-Info (12128): Elaborating entity "edge_detector" for hierarchy "edge_detector:edge_detector0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 52
-Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:debounce0" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 60
-Warning (10230): Verilog HDL assignment warning at debouncer.sv(43): truncated value with size 32 to match size of target (20) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/debouncer.sv Line: 43
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:comp_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 47
+Info (12128): Elaborating entity "uartController" for hierarchy "uartController:uart_controller" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 56
+Warning (10240): Verilog HDL Always Construct warning at uartController.sv(88): inferring latch(es) for variable "tx_data", which holds its previous value in one or more paths through the always construct File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 88
+Info (10041): Inferred latch for "tx_data[0]" at uartController.sv(88) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 88
+Info (10041): Inferred latch for "tx_data[1]" at uartController.sv(88) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 88
+Info (10041): Inferred latch for "tx_data[2]" at uartController.sv(88) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 88
+Info (10041): Inferred latch for "tx_data[3]" at uartController.sv(88) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 88
+Info (10041): Inferred latch for "tx_data[4]" at uartController.sv(88) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 88
+Info (10041): Inferred latch for "tx_data[5]" at uartController.sv(88) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 88
+Info (10041): Inferred latch for "tx_data[6]" at uartController.sv(88) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 88
+Info (10041): Inferred latch for "tx_data[7]" at uartController.sv(88) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 88
+Info (12128): Elaborating entity "uart_rx" for hierarchy "uartController:uart_controller|uart_rx:uart_rx_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 53
+Warning (10230): Verilog HDL assignment warning at uart_rx.sv(90): truncated value with size 32 to match size of target (13) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_rx.sv Line: 90
+Warning (10230): Verilog HDL assignment warning at uart_rx.sv(102): truncated value with size 32 to match size of target (3) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_rx.sv Line: 102
+Warning (10230): Verilog HDL assignment warning at uart_rx.sv(105): truncated value with size 32 to match size of target (13) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_rx.sv Line: 105
+Warning (10230): Verilog HDL assignment warning at uart_rx.sv(114): truncated value with size 32 to match size of target (13) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_rx.sv Line: 114
+Info (12128): Elaborating entity "uart_tx" for hierarchy "uartController:uart_controller|uart_tx:uart_tx_inst" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv Line: 69
+Warning (10230): Verilog HDL assignment warning at uart_tx.sv(87): truncated value with size 32 to match size of target (13) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_tx.sv Line: 87
+Warning (10230): Verilog HDL assignment warning at uart_tx.sv(98): truncated value with size 32 to match size of target (13) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_tx.sv Line: 98
+Warning (10230): Verilog HDL assignment warning at uart_tx.sv(102): truncated value with size 32 to match size of target (3) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_tx.sv Line: 102
+Warning (10230): Verilog HDL assignment warning at uart_tx.sv(111): truncated value with size 32 to match size of target (13) File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_tx.sv Line: 111
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "arm:arm|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/regfile.sv Line: 7
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/db/FinalProject.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
@@ -1380,19 +1463,21 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[30]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
     Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[31]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (17049): 9 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/output_files/FinalProject.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3658 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 3651 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "btn[2]" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 2
+Info (21057): Implemented 3764 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 3755 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 62 warnings
     Info: Peak virtual memory: 4852 megabytes
-    Info: Processing ended: Tue Jun 17 17:18:44 2025
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Processing ended: Tue Jun 17 21:22:00 2025
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +------------------------------------------+

@@ -1,5 +1,7 @@
 module top_FPGA(input logic clk, reset,
 				input logic [2:0] btn,
+				input  logic rx_pin,           // Pin conectado al TX del Arduino
+				output logic tx_pin,           // Pin conectado al RX del Arduino
 				output logic [1:0] led);
 				
 	logic [31:0] WriteData, DataAdr;
@@ -13,8 +15,8 @@ module top_FPGA(input logic clk, reset,
    	logic [3:0] current_seconds;  // Para 10 segundos, se necesitan 4 bits (log2(11) ≈ 3.5)
 	logic timeOut;  // t0
 
-	logic semidebounced0, semidebounced1, semidebounced2;
-	logic debounced0, debounced1, debounced2;
+	logic [7:0] display_data; // currently not used, but can be used to display the transmited data on a 7-segment (debbuging)
+	logic arduino_btn;
 
 	
 	// instantiate processor and memories
@@ -23,8 +25,8 @@ module top_FPGA(input logic clk, reset,
 								
 	imem imem(PC, Instr);
 	dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData, MemWriteB, DataAdrB, WriteDataB, ReadDataB);
-	// clk = seconds, MemWrite = wren, DataAdr = address, WriteData = data, ReadData = q;
-	write_mem writeMem(clk, ~btn, timeOut, MemWriteB, DataAdrB, WriteDataB);
+
+	write_mem writeMem(clk, {~btn[1], arduino_btn, ~btn[0]}, timeOut, MemWriteB, DataAdrB, WriteDataB);
 	// buscar Chipselect
 
 	timer #(
@@ -44,56 +46,20 @@ module top_FPGA(input logic clk, reset,
 		.equal(timeOut)
 	);
 
-	edge_detector edge_detector0 (
-    .clk(clk),
-    .rst(reset),
-    .signal_in(semidebounced0),
-    .rising_edge(debounced0)
-);
-	debouncer #(
-		.N(20)
-	) debounce0 (
+	uartController uart_controller (
 		.clk(clk),
 		.rst(reset),
-		.noisy_in(btn[0]),
-		.clean_out(semidebounced0)
-	);
-
-	edge_detector edge_detector1 (
-	.clk(clk),
-	.rst(reset),
-	.signal_in(semidebounced1),
-	.rising_edge(debounced1)
-);
-	debouncer #(
-		.N(20)
-	) debounce1 (
-		.clk(clk),
-		.rst(reset),
-		.noisy_in(btn[1]),
-		.clean_out(semidebounced1)
-	);
-	
-	edge_detector edge_detector2 (
-	.clk(clk),
-	.rst(reset),
-	.signal_in(semidebounced2),
-	.rising_edge(debounced2)
-);
-	debouncer #(
-		.N(20)
-	) debounce2 (
-		.clk(clk),
-		.rst(reset),
-		.noisy_in(btn[2]),
-		.clean_out(semidebounced2)
+		.rx_pin(rx_pin),
+		.tx_pin(tx_pin),
+		.display_data(display_data),
+		.button_A(arduino_btn),
 	);
 	
 
 	
 	always @(negedge clk)
 	begin
-		if(1'b1) // Cambiar a MemWriteB
+		if(1'b1) // delete
 		begin
 			if(DataAdr === 100 && ReadData === 1) 
 				begin
