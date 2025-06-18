@@ -2,7 +2,12 @@ module top_FPGA(input logic clk, reset,
 				input logic [2:0] btn,
 				input  logic rx_pin,           // Pin conectado al TX del Arduino
 				output logic tx_pin,           // Pin conectado al RX del Arduino
-				output logic [1:0] led);
+				output logic [1:0] led,
+				output logic vgaclk, 			// 25.175 MHz VGA clock
+				output logic hsync, vsync,
+				output logic sync_b, blank_b, // to monitor & DAC
+				output logic [7:0] r, g, b    // to video DAC
+				);
 				
 	logic [31:0] WriteData, DataAdr;
 	logic MemWrite;
@@ -17,7 +22,6 @@ module top_FPGA(input logic clk, reset,
 
 	logic [7:0] display_data; // currently not used, but can be used to display the transmited data on a 7-segment (debbuging)
 	logic arduino_btn;
-
 	
 	// instantiate processor and memories
 	arm arm(clk, reset, PC, Instr, MemWrite, DataAdr,
@@ -55,6 +59,19 @@ module top_FPGA(input logic clk, reset,
 		.button_A(arduino_btn),
 	);
 	
+	vga vga_inst (
+		.clk(clk),
+		.rst(1'b0),
+		.circles({timeOut, led[1], led[0]}), // Circles not used in this example
+		.vgaclk(vgaclk),
+		.hsync(hsync),
+		.vsync(vsync),
+		.sync_b(sync_b),
+		.blank_b(blank_b),
+		.r(r),
+		.g(g),
+		.b(b)
+	);
 
 	
 	always @(negedge clk)
