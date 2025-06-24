@@ -1,3 +1,31 @@
+/**
+ * @module condlogic
+ * @brief Lógica de evaluación de condiciones para el procesador ARM simplificado.
+ *
+ * Este módulo implementa la lógica de control condicional, permitiendo que las operaciones de escritura en registros,
+ * memoria y el salto de programa (PC) solo ocurran si se cumplen las condiciones especificadas por la instrucción.
+ * Evalúa los flags de la ALU y las señales de control, y habilita o inhibe las acciones según el resultado de la condición.
+ *
+ * Entradas:
+ *   - clk: Señal de reloj.
+ *   - reset: Señal de reinicio.
+ *   - Cond: Código de condición de la instrucción.
+ *   - ALUFlags: Flags actuales de la ALU (N, Z, C, V).
+ *   - FlagW: Señales para habilitar la actualización de flags.
+ *   - PCS: Señal para salto condicional del PC.
+ *   - RegW: Señal para habilitar escritura en registros.
+ *   - MemW: Señal para habilitar escritura en memoria.
+ *   - NoWrite: Señal para inhibir escritura en instrucciones especiales.
+ *
+ * Salidas:
+ *   - PCSrc: Habilita el salto condicional del PC.
+ *   - RegWrite: Habilita la escritura en registros bajo condición.
+ *   - MemWrite: Habilita la escritura en memoria bajo condición.
+ *
+ * Componentes internos:
+ *   - flagreg1, flagreg0: Registros para almacenar los flags de condición.
+ *   - condcheck: Evalúa si la condición de la instrucción se cumple.
+ */
 module condlogic(input logic clk, reset,
 						input logic [3:0] Cond,
 						input logic [3:0] ALUFlags,

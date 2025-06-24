@@ -1,3 +1,29 @@
+/**
+ * @module decoder
+ * @brief Decodificador principal de instrucciones para el procesador ARM simplificado.
+ *
+ * Este módulo interpreta los campos principales de la instrucción (Op, Funct, Rd) y genera las señales de control
+ * necesarias para la ejecución de instrucciones en el procesador. Determina el tipo de operación (procesamiento de datos,
+ * carga, almacenamiento, salto), controla la selección de registros, el uso de inmediatos, la operación de la ALU,
+ * la actualización de flags y la lógica de salto.
+ *
+ * Entradas:
+ *   - Op: Campo de operación principal de la instrucción.
+ *   - Funct: Campo de función que especifica la operación detallada.
+ *   - Rd: Registro destino.
+ *
+ * Salidas:
+ *   - FlagW: Señales para actualización de flags.
+ *   - PCS: Señal para actualización del PC.
+ *   - RegW: Habilita escritura en registros.
+ *   - MemW: Habilita escritura en memoria.
+ *   - MemtoReg: Selección de fuente de datos para escritura en registros.
+ *   - ALUSrc: Selección de fuente para la ALU.
+ *   - ImmSrc: Selección de fuente de inmediato.
+ *   - RegSrc: Selección de fuente de registros.
+ *   - ALUControl: Señal de control para la operación de la ALU.
+ *   - NoWrite: Señal para inhibir escritura en ciertas instrucciones.
+ */
 module decoder(input logic [1:0] Op,
 					input logic [5:0] Funct,
 					input logic [3:0] Rd,

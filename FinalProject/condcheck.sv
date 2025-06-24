@@ -1,3 +1,18 @@
+/**
+ * @module condcheck
+ * @brief Evaluador de condiciones para instrucciones ARM.
+ *
+ * Este módulo implementa la lógica de evaluación de condiciones para instrucciones condicionales del procesador ARM.
+ * Recibe el campo de condición de la instrucción y los flags actuales (N, Z, C, V), y determina si la condición se cumple,
+ * habilitando o inhibiendo la ejecución de la instrucción según corresponda.
+ *
+ * Entradas:
+ *   - Cond: Código de condición de 4 bits de la instrucción ARM.
+ *   - Flags: Vector de 4 bits con los flags actuales {N, Z, C, V}.
+ *
+ * Salidas:
+ *   - CondEx: Señal que indica si la condición se cumple (1) o no (0).
+ */
 module condcheck(input logic [3:0] Cond, input logic [3:0] Flags, output logic CondEx);
 
 	logic neg, zero, carry, overflow, ge;

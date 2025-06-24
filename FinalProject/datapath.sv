@@ -1,3 +1,34 @@
+/**
+ * @module datapath
+ * @brief Ruta de datos principal del procesador ARM simplificado.
+ *
+ * Este módulo implementa la ruta de datos del procesador, integrando el banco de registros, la ALU,
+ * la lógica de selección de operandos, la extensión de inmediatos y el cálculo del PC.
+ * Recibe señales de control del controlador y ejecuta las operaciones necesarias para cada instrucción,
+ * gestionando el flujo de datos entre registros, memoria y la ALU, así como la actualización de los flags de condición.
+ *
+ * Entradas:
+ *   - clk: Señal de reloj.
+ *   - reset: Señal de reinicio.
+ *   - RegSrc: Selección de fuente de registros.
+ *   - RegWrite: Habilita escritura en registros.
+ *   - ImmSrc: Selección de fuente de inmediato.
+ *   - ALUSrc: Selección de fuente para la ALU.
+ *   - ALUControl: Señal de control para la operación de la ALU.
+ *   - MemtoReg: Selección de datos a escribir en registros.
+ *   - PCSrc: Selección de fuente para el PC (salto condicional).
+ *   - Instr: Instrucción actual.
+ *   - ReadData: Datos leídos desde la memoria de datos.
+ *
+ * Salidas:
+ *   - flag_N, flag_Z, flag_C, flag_V: Flags de condición de la ALU.
+ *   - PC: Contador de programa.
+ *   - ALUResult: Resultado de la operación de la ALU.
+ *   - WriteData: Datos a escribir en la memoria de datos.
+ *
+ * Componentes internos:
+ *   - Banco de registros, multiplexores, ALU, extensión de inmediatos y lógica de PC.
+ */
 module datapath(input logic clk, reset,
 						input logic [1:0] RegSrc,
 						input logic RegWrite,

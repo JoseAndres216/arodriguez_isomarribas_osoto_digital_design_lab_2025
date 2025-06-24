@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FinalProject
-Tue Jun 24 04:48:55 2025
+Tue Jun 24 05:26:51 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -86,7 +86,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jun 24 04:48:55 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 24 05:26:51 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; FinalProject                                ;
 ; Top-level Entity Name           ; top_FPGA                                    ;
@@ -1575,7 +1575,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -1585,30 +1585,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 24 04:48:39 2025
+    Info: Processing started: Tue Jun 24 05:26:24 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FinalProject -c FinalProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
-    Info (12023): Found entity 1: arm File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv Line: 1
+    Info (12023): Found entity 1: arm File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
-    Info (12023): Found entity 1: controller File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv Line: 1
+    Info (12023): Found entity 1: controller File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv Line: 30
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/decoder.sv Line: 1
+    Info (12023): Found entity 1: decoder File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/decoder.sv Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file condlogic.sv
-    Info (12023): Found entity 1: condlogic File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv Line: 1
+    Info (12023): Found entity 1: condlogic File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
-    Info (12023): Found entity 1: datapath File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 1
+    Info (12023): Found entity 1: datapath File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
     Info (12023): Found entity 1: regfile File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/regfile.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
     Info (12023): Found entity 1: adder File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
-    Info (12023): Found entity 1: extend File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/extend.sv Line: 1
+    Info (12023): Found entity 1: extend File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/extend.sv Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
-    Info (12023): Found entity 1: flopr File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopr.sv Line: 1
+    Info (12023): Found entity 1: flopr File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopr.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
-    Info (12023): Found entity 1: flopenr File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopenr.sv Line: 1
+    Info (12023): Found entity 1: flopenr File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopenr.sv Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
     Info (12023): Found entity 1: mux2 File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
@@ -1622,7 +1622,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: alu File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file condcheck.sv
-    Info (12023): Found entity 1: condcheck File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condcheck.sv Line: 1
+    Info (12023): Found entity 1: condcheck File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condcheck.sv Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file mux_alu.sv
     Info (12023): Found entity 1: mux_alu File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sumador_n_bits.sv
@@ -1659,7 +1659,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file ram.v
 Info (12021): Found 1 design units, including 1 entities, in source file write_mem.sv
     Info (12023): Found entity 1: write_mem File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/write_mem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
-    Info (12023): Found entity 1: counter File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/counter.sv Line: 1
+    Info (12023): Found entity 1: counter File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/counter.sv Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file timer.sv
     Info (12023): Found entity 1: timer File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/timer.sv Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.sv
@@ -1695,19 +1695,19 @@ Warning (10236): Verilog HDL Implicit Net warning at top.sv(14): created implici
 Warning (10037): Verilog HDL or VHDL warning at top_FPGA.sv(79): conditional expression evaluates to a constant File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 79
 Info (12127): Elaborating entity "top_FPGA" for the top level hierarchy
 Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 28
-Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv Line: 16
-Info (12128): Elaborating entity "decoder" for hierarchy "arm:arm|controller:c|decoder:dec" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv Line: 17
-Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm|controller:c|condlogic:cl" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv Line: 21
-Info (12128): Elaborating entity "flopenr" for hierarchy "arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv Line: 13
-Info (12128): Elaborating entity "condcheck" for hierarchy "arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv Line: 18
-Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm|datapath:dp" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv Line: 23
-Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 20
-Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 21
-Info (12128): Elaborating entity "adder" for hierarchy "arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 22
-Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 26
-Info (12128): Elaborating entity "regfile" for hierarchy "arm:arm|datapath:dp|regfile:rf" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 28
-Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 30
-Info (12128): Elaborating entity "alu" for hierarchy "arm:arm|datapath:dp|alu:alu" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 34
+Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv Line: 41
+Info (12128): Elaborating entity "decoder" for hierarchy "arm:arm|controller:c|decoder:dec" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv Line: 46
+Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm|controller:c|condlogic:cl" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv Line: 50
+Info (12128): Elaborating entity "flopenr" for hierarchy "arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv Line: 41
+Info (12128): Elaborating entity "condcheck" for hierarchy "arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv Line: 46
+Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm|datapath:dp" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv Line: 48
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 51
+Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 52
+Info (12128): Elaborating entity "adder" for hierarchy "arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 53
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 57
+Info (12128): Elaborating entity "regfile" for hierarchy "arm:arm|datapath:dp|regfile:rf" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 59
+Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 61
+Info (12128): Elaborating entity "alu" for hierarchy "arm:arm|datapath:dp|alu:alu" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 65
 Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 30
 Warning (10850): Verilog HDL warning at imem.sv(6): number of words (15) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv Line: 6
 Warning (10030): Net "RAM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv Line: 4
@@ -1833,10 +1833,10 @@ Info (21057): Implemented 4119 device resources after synthesis - the final reso
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 10 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4863 megabytes
-    Info: Processing ended: Tue Jun 24 04:48:55 2025
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 4867 megabytes
+    Info: Processing ended: Tue Jun 24 05:26:51 2025
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:32
 
 
 +------------------------------------------+
