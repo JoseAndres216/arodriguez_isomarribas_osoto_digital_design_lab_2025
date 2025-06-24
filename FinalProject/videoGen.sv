@@ -28,19 +28,19 @@ module videoGen(
 
     // Parámetros para separación y colores de los círculos
     parameter int SEP = 130; // Separación entre centros (más separados)
-    parameter logic [7:0] COLOR1_R = 8'hFF, COLOR1_G = 8'h00, COLOR1_B = 8'h00; // Rojo
-    parameter logic [7:0] COLOR2_R = 8'h00, COLOR2_G = 8'hFF, COLOR2_B = 8'h00; // Verde
-    parameter logic [7:0] COLOR3_R = 8'h00, COLOR3_G = 8'h00, COLOR3_B = 8'hFF; // Azul
-    parameter logic [7:0] COLOR4_R = 8'hFF, COLOR4_G = 8'hFF, COLOR4_B = 8'h00; // Amarillo
+    parameter logic [7:0] COLOR1_R = 8'hFF, COLOR1_G = 8'h00, COLOR1_B = 8'h00; // Red
+    parameter logic [7:0] COLOR2_R = 8'hFF, COLOR2_G = 8'hFF, COLOR2_B = 8'h00; // Yellow
+    parameter logic [7:0] COLOR3_R = 8'hFF, COLOR3_G = 8'hFF, COLOR3_B = 8'h00; // Green
+    parameter logic [7:0] COLOR4_R = 8'hFF, COLOR4_G = 8'h00, COLOR4_B = 8'hFF; // Magenta
     parameter logic [7:0] COLOR5_R = 8'hFF, COLOR5_G = 8'h00, COLOR5_B = 8'hFF; // Magenta
 
     // Nuevos parámetros para los colores alternativos de los else
-    parameter logic [7:0] ALT3_R = 8'h55, ALT3_G = 8'h55, ALT3_B = 8'h55;
-    parameter logic [7:0] ALT4_R = 8'h00, ALT4_G = 8'h00, ALT4_B = 8'h00;
-    parameter logic [7:0] ALT5_R = 8'h00, ALT5_G = 8'h00, ALT5_B = 8'h00;
+    parameter logic [7:0] ALT3_R = 8'h55, ALT3_G = 8'h55, ALT3_B = 8'h55; // Green
+    parameter logic [7:0] ALT4_R = 8'h12, ALT4_G = 8'h37, ALT4_B = 8'h64;
+    parameter logic [7:0] ALT5_R = 8'h85, ALT5_G = 8'h66, ALT5_B = 8'h99;
 
-    circlegen circ1(x, y, 10'd320, 10'd240, 10'd40, inrect1);
-    circlegen circ2(x, y, 10'd320-SEP, 10'd240, 10'd40, inrect2);
+    circlegen circ1(x, y, 10'd320-SEP, 10'd240, 10'd40, inrect1);
+    circlegen circ2(x, y, 10'd320, 10'd240, 10'd40, inrect2);
     circlegen circ3(x, y, 10'd320+SEP, 10'd240, 10'd40, inrect3);
     circlegen circ4(x, y, 10'd320-SEP/2, 10'd240+90, 10'd40, inrect4);
     circlegen circ5(x, y, 10'd320+SEP/2, 10'd240+90, 10'd40, inrect5);
@@ -56,34 +56,34 @@ module videoGen(
             b = COLOR2_B;
         end else if (inrect3) begin
             if (circles[2]) begin
-                r = COLOR3_R;
-                g = COLOR3_G;
-                b = COLOR3_B;
-            end
-            else begin
                 r = ALT3_R;
                 g = ALT3_G;
                 b = ALT3_B;
             end
+            else begin
+                r = COLOR3_R;
+                g = COLOR3_G;
+                b = COLOR3_B;
+            end
         end else if (inrect4) begin
             if (circles[1]) begin
-                r = COLOR4_R;
-                g = COLOR4_G;
-                b = COLOR4_B;
-            end else begin
                 r = ALT4_R;
                 g = ALT4_G;
                 b = ALT4_B;
+            end else begin
+                r = COLOR4_R;
+                g = COLOR4_G;
+                b = COLOR4_B;
             end
         end else if (inrect5) begin
             if (circles[0]) begin
-                r = COLOR5_R;
-                g = COLOR5_G;
-                b = COLOR5_B;
-            end else begin
                 r = ALT5_R;
                 g = ALT5_G;
                 b = ALT5_B;
+            end else begin
+                r = COLOR5_R;
+                g = COLOR5_G;
+                b = COLOR5_B;
             end
         end else begin
             r = 8'h00;

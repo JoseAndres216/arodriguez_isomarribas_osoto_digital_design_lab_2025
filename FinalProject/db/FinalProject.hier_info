@@ -1681,2303 +1681,440 @@ y[31] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_FPGA|arm:arm|datapath:dp|alu:alu
-a[0] => a[0].IN5
-a[1] => a[1].IN5
-a[2] => a[2].IN5
-a[3] => a[3].IN5
-a[4] => a[4].IN5
-a[5] => a[5].IN5
-a[6] => a[6].IN5
-a[7] => a[7].IN5
-a[8] => a[8].IN5
-a[9] => a[9].IN5
-a[10] => a[10].IN5
-a[11] => a[11].IN5
-a[12] => a[12].IN5
-a[13] => a[13].IN5
-a[14] => a[14].IN5
-a[15] => a[15].IN5
-a[16] => a[16].IN5
-a[17] => a[17].IN5
-a[18] => a[18].IN5
-a[19] => a[19].IN5
-a[20] => a[20].IN5
-a[21] => a[21].IN5
-a[22] => a[22].IN5
-a[23] => a[23].IN5
-a[24] => a[24].IN5
-a[25] => a[25].IN5
-a[26] => a[26].IN5
-a[27] => a[27].IN5
-a[28] => a[28].IN5
-a[29] => a[29].IN5
-a[30] => a[30].IN5
-a[31] => a[31].IN5
-b[0] => b[0].IN5
-b[1] => b[1].IN5
-b[2] => b[2].IN5
-b[3] => b[3].IN5
-b[4] => b[4].IN5
-b[5] => b[5].IN5
-b[6] => b[6].IN5
-b[7] => b[7].IN5
-b[8] => b[8].IN5
-b[9] => b[9].IN5
-b[10] => b[10].IN5
-b[11] => b[11].IN5
-b[12] => b[12].IN5
-b[13] => b[13].IN5
-b[14] => b[14].IN5
-b[15] => b[15].IN5
-b[16] => b[16].IN5
-b[17] => b[17].IN5
-b[18] => b[18].IN5
-b[19] => b[19].IN5
-b[20] => b[20].IN5
-b[21] => b[21].IN5
-b[22] => b[22].IN5
-b[23] => b[23].IN5
-b[24] => b[24].IN5
-b[25] => b[25].IN5
-b[26] => b[26].IN5
-b[27] => b[27].IN5
-b[28] => b[28].IN5
-b[29] => b[29].IN5
-b[30] => b[30].IN5
-b[31] => b[31].IN5
-ci => ci.IN2
-selec_alu[0] => selec_alu[0].IN4
-selec_alu[1] => selec_alu[1].IN4
-selec_alu[2] => selec_alu[2].IN4
-selec_alu[3] => selec_alu[3].IN4
-result[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result[3].DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= result[4].DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= result[5].DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= result[6].DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= result[7].DB_MAX_OUTPUT_PORT_TYPE
-result[8] <= result[8].DB_MAX_OUTPUT_PORT_TYPE
-result[9] <= result[9].DB_MAX_OUTPUT_PORT_TYPE
-result[10] <= result[10].DB_MAX_OUTPUT_PORT_TYPE
-result[11] <= result[11].DB_MAX_OUTPUT_PORT_TYPE
-result[12] <= result[12].DB_MAX_OUTPUT_PORT_TYPE
-result[13] <= result[13].DB_MAX_OUTPUT_PORT_TYPE
-result[14] <= result[14].DB_MAX_OUTPUT_PORT_TYPE
-result[15] <= result[15].DB_MAX_OUTPUT_PORT_TYPE
-result[16] <= result[16].DB_MAX_OUTPUT_PORT_TYPE
-result[17] <= result[17].DB_MAX_OUTPUT_PORT_TYPE
-result[18] <= result[18].DB_MAX_OUTPUT_PORT_TYPE
-result[19] <= result[19].DB_MAX_OUTPUT_PORT_TYPE
-result[20] <= result[20].DB_MAX_OUTPUT_PORT_TYPE
-result[21] <= result[21].DB_MAX_OUTPUT_PORT_TYPE
-result[22] <= result[22].DB_MAX_OUTPUT_PORT_TYPE
-result[23] <= result[23].DB_MAX_OUTPUT_PORT_TYPE
-result[24] <= result[24].DB_MAX_OUTPUT_PORT_TYPE
-result[25] <= result[25].DB_MAX_OUTPUT_PORT_TYPE
-result[26] <= result[26].DB_MAX_OUTPUT_PORT_TYPE
-result[27] <= result[27].DB_MAX_OUTPUT_PORT_TYPE
-result[28] <= result[28].DB_MAX_OUTPUT_PORT_TYPE
-result[29] <= result[29].DB_MAX_OUTPUT_PORT_TYPE
-result[30] <= result[30].DB_MAX_OUTPUT_PORT_TYPE
-result[31] <= result[31].DB_MAX_OUTPUT_PORT_TYPE
-f_N <= flag_negativo:flag_N.port2
-f_Z <= flag_zero:flag_Z.port2
-f_C <= f_C.DB_MAX_OUTPUT_PORT_TYPE
-f_V <= flag_overflow:flag_V.port4
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum
-a[0] => a[0].IN1
-a[1] => a[1].IN1
-a[2] => a[2].IN1
-a[3] => a[3].IN1
-a[4] => a[4].IN1
-a[5] => a[5].IN1
-a[6] => a[6].IN1
-a[7] => a[7].IN1
-a[8] => a[8].IN1
-a[9] => a[9].IN1
-a[10] => a[10].IN1
-a[11] => a[11].IN1
-a[12] => a[12].IN1
-a[13] => a[13].IN1
-a[14] => a[14].IN1
-a[15] => a[15].IN1
-a[16] => a[16].IN1
-a[17] => a[17].IN1
-a[18] => a[18].IN1
-a[19] => a[19].IN1
-a[20] => a[20].IN1
-a[21] => a[21].IN1
-a[22] => a[22].IN1
-a[23] => a[23].IN1
-a[24] => a[24].IN1
-a[25] => a[25].IN1
-a[26] => a[26].IN1
-a[27] => a[27].IN1
-a[28] => a[28].IN1
-a[29] => a[29].IN1
-a[30] => a[30].IN1
-a[31] => a[31].IN1
-b[0] => b[0].IN1
-b[1] => b[1].IN1
-b[2] => b[2].IN1
-b[3] => b[3].IN1
-b[4] => b[4].IN1
-b[5] => b[5].IN1
-b[6] => b[6].IN1
-b[7] => b[7].IN1
-b[8] => b[8].IN1
-b[9] => b[9].IN1
-b[10] => b[10].IN1
-b[11] => b[11].IN1
-b[12] => b[12].IN1
-b[13] => b[13].IN1
-b[14] => b[14].IN1
-b[15] => b[15].IN1
-b[16] => b[16].IN1
-b[17] => b[17].IN1
-b[18] => b[18].IN1
-b[19] => b[19].IN1
-b[20] => b[20].IN1
-b[21] => b[21].IN1
-b[22] => b[22].IN1
-b[23] => b[23].IN1
-b[24] => b[24].IN1
-b[25] => b[25].IN1
-b[26] => b[26].IN1
-b[27] => b[27].IN1
-b[28] => b[28].IN1
-b[29] => b[29].IN1
-b[30] => b[30].IN1
-b[31] => b[31].IN1
-ci => ci.IN1
-sum[0] <= sumador_1_bit:sum1b2.port3
-sum[1] <= sumador_1_bit:gen_loop[1].sum1b3.port3
-sum[2] <= sumador_1_bit:gen_loop[2].sum1b3.port3
-sum[3] <= sumador_1_bit:gen_loop[3].sum1b3.port3
-sum[4] <= sumador_1_bit:gen_loop[4].sum1b3.port3
-sum[5] <= sumador_1_bit:gen_loop[5].sum1b3.port3
-sum[6] <= sumador_1_bit:gen_loop[6].sum1b3.port3
-sum[7] <= sumador_1_bit:gen_loop[7].sum1b3.port3
-sum[8] <= sumador_1_bit:gen_loop[8].sum1b3.port3
-sum[9] <= sumador_1_bit:gen_loop[9].sum1b3.port3
-sum[10] <= sumador_1_bit:gen_loop[10].sum1b3.port3
-sum[11] <= sumador_1_bit:gen_loop[11].sum1b3.port3
-sum[12] <= sumador_1_bit:gen_loop[12].sum1b3.port3
-sum[13] <= sumador_1_bit:gen_loop[13].sum1b3.port3
-sum[14] <= sumador_1_bit:gen_loop[14].sum1b3.port3
-sum[15] <= sumador_1_bit:gen_loop[15].sum1b3.port3
-sum[16] <= sumador_1_bit:gen_loop[16].sum1b3.port3
-sum[17] <= sumador_1_bit:gen_loop[17].sum1b3.port3
-sum[18] <= sumador_1_bit:gen_loop[18].sum1b3.port3
-sum[19] <= sumador_1_bit:gen_loop[19].sum1b3.port3
-sum[20] <= sumador_1_bit:gen_loop[20].sum1b3.port3
-sum[21] <= sumador_1_bit:gen_loop[21].sum1b3.port3
-sum[22] <= sumador_1_bit:gen_loop[22].sum1b3.port3
-sum[23] <= sumador_1_bit:gen_loop[23].sum1b3.port3
-sum[24] <= sumador_1_bit:gen_loop[24].sum1b3.port3
-sum[25] <= sumador_1_bit:gen_loop[25].sum1b3.port3
-sum[26] <= sumador_1_bit:gen_loop[26].sum1b3.port3
-sum[27] <= sumador_1_bit:gen_loop[27].sum1b3.port3
-sum[28] <= sumador_1_bit:gen_loop[28].sum1b3.port3
-sum[29] <= sumador_1_bit:gen_loop[29].sum1b3.port3
-sum[30] <= sumador_1_bit:gen_loop[30].sum1b3.port3
-sum[31] <= sumador_1_bit:sum1b14.port3
-co <= sumador_1_bit:sum1b14.port4
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:sum1b2
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[1].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[2].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[3].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[4].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[5].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[6].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[7].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[8].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[9].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[10].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[11].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[12].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[13].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[14].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[15].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[16].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[17].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[18].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[19].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[20].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[21].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[22].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[23].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[24].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[25].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[26].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[27].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[28].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[29].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[30].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:sum1b14
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest
-a[0] => a[0].IN1
-a[1] => a[1].IN1
-a[2] => a[2].IN1
-a[3] => a[3].IN1
-a[4] => a[4].IN1
-a[5] => a[5].IN1
-a[6] => a[6].IN1
-a[7] => a[7].IN1
-a[8] => a[8].IN1
-a[9] => a[9].IN1
-a[10] => a[10].IN1
-a[11] => a[11].IN1
-a[12] => a[12].IN1
-a[13] => a[13].IN1
-a[14] => a[14].IN1
-a[15] => a[15].IN1
-a[16] => a[16].IN1
-a[17] => a[17].IN1
-a[18] => a[18].IN1
-a[19] => a[19].IN1
-a[20] => a[20].IN1
-a[21] => a[21].IN1
-a[22] => a[22].IN1
-a[23] => a[23].IN1
-a[24] => a[24].IN1
-a[25] => a[25].IN1
-a[26] => a[26].IN1
-a[27] => a[27].IN1
-a[28] => a[28].IN1
-a[29] => a[29].IN1
-a[30] => a[30].IN1
-a[31] => a[31].IN1
-b[0] => b[0].IN1
-b[1] => b[1].IN1
-b[2] => b[2].IN1
-b[3] => b[3].IN1
-b[4] => b[4].IN1
-b[5] => b[5].IN1
-b[6] => b[6].IN1
-b[7] => b[7].IN1
-b[8] => b[8].IN1
-b[9] => b[9].IN1
-b[10] => b[10].IN1
-b[11] => b[11].IN1
-b[12] => b[12].IN1
-b[13] => b[13].IN1
-b[14] => b[14].IN1
-b[15] => b[15].IN1
-b[16] => b[16].IN1
-b[17] => b[17].IN1
-b[18] => b[18].IN1
-b[19] => b[19].IN1
-b[20] => b[20].IN1
-b[21] => b[21].IN1
-b[22] => b[22].IN1
-b[23] => b[23].IN1
-b[24] => b[24].IN1
-b[25] => b[25].IN1
-b[26] => b[26].IN1
-b[27] => b[27].IN1
-b[28] => b[28].IN1
-b[29] => b[29].IN1
-b[30] => b[30].IN1
-b[31] => b[31].IN1
-ci => ci.IN1
-rest[0] <= sumador_N_bits:resta.port3
-rest[1] <= sumador_N_bits:resta.port3
-rest[2] <= sumador_N_bits:resta.port3
-rest[3] <= sumador_N_bits:resta.port3
-rest[4] <= sumador_N_bits:resta.port3
-rest[5] <= sumador_N_bits:resta.port3
-rest[6] <= sumador_N_bits:resta.port3
-rest[7] <= sumador_N_bits:resta.port3
-rest[8] <= sumador_N_bits:resta.port3
-rest[9] <= sumador_N_bits:resta.port3
-rest[10] <= sumador_N_bits:resta.port3
-rest[11] <= sumador_N_bits:resta.port3
-rest[12] <= sumador_N_bits:resta.port3
-rest[13] <= sumador_N_bits:resta.port3
-rest[14] <= sumador_N_bits:resta.port3
-rest[15] <= sumador_N_bits:resta.port3
-rest[16] <= sumador_N_bits:resta.port3
-rest[17] <= sumador_N_bits:resta.port3
-rest[18] <= sumador_N_bits:resta.port3
-rest[19] <= sumador_N_bits:resta.port3
-rest[20] <= sumador_N_bits:resta.port3
-rest[21] <= sumador_N_bits:resta.port3
-rest[22] <= sumador_N_bits:resta.port3
-rest[23] <= sumador_N_bits:resta.port3
-rest[24] <= sumador_N_bits:resta.port3
-rest[25] <= sumador_N_bits:resta.port3
-rest[26] <= sumador_N_bits:resta.port3
-rest[27] <= sumador_N_bits:resta.port3
-rest[28] <= sumador_N_bits:resta.port3
-rest[29] <= sumador_N_bits:resta.port3
-rest[30] <= sumador_N_bits:resta.port3
-rest[31] <= sumador_N_bits:resta.port3
-co <= negador_1_bit:con.port1
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg
-a[0] => a[0].IN1
-a[1] => a[1].IN1
-a[2] => a[2].IN1
-a[3] => a[3].IN1
-a[4] => a[4].IN1
-a[5] => a[5].IN1
-a[6] => a[6].IN1
-a[7] => a[7].IN1
-a[8] => a[8].IN1
-a[9] => a[9].IN1
-a[10] => a[10].IN1
-a[11] => a[11].IN1
-a[12] => a[12].IN1
-a[13] => a[13].IN1
-a[14] => a[14].IN1
-a[15] => a[15].IN1
-a[16] => a[16].IN1
-a[17] => a[17].IN1
-a[18] => a[18].IN1
-a[19] => a[19].IN1
-a[20] => a[20].IN1
-a[21] => a[21].IN1
-a[22] => a[22].IN1
-a[23] => a[23].IN1
-a[24] => a[24].IN1
-a[25] => a[25].IN1
-a[26] => a[26].IN1
-a[27] => a[27].IN1
-a[28] => a[28].IN1
-a[29] => a[29].IN1
-a[30] => a[30].IN1
-a[31] => a[31].IN1
-result[0] <= negador_1_bit:gen_loop[0].uut.port1
-result[1] <= negador_1_bit:gen_loop[1].uut.port1
-result[2] <= negador_1_bit:gen_loop[2].uut.port1
-result[3] <= negador_1_bit:gen_loop[3].uut.port1
-result[4] <= negador_1_bit:gen_loop[4].uut.port1
-result[5] <= negador_1_bit:gen_loop[5].uut.port1
-result[6] <= negador_1_bit:gen_loop[6].uut.port1
-result[7] <= negador_1_bit:gen_loop[7].uut.port1
-result[8] <= negador_1_bit:gen_loop[8].uut.port1
-result[9] <= negador_1_bit:gen_loop[9].uut.port1
-result[10] <= negador_1_bit:gen_loop[10].uut.port1
-result[11] <= negador_1_bit:gen_loop[11].uut.port1
-result[12] <= negador_1_bit:gen_loop[12].uut.port1
-result[13] <= negador_1_bit:gen_loop[13].uut.port1
-result[14] <= negador_1_bit:gen_loop[14].uut.port1
-result[15] <= negador_1_bit:gen_loop[15].uut.port1
-result[16] <= negador_1_bit:gen_loop[16].uut.port1
-result[17] <= negador_1_bit:gen_loop[17].uut.port1
-result[18] <= negador_1_bit:gen_loop[18].uut.port1
-result[19] <= negador_1_bit:gen_loop[19].uut.port1
-result[20] <= negador_1_bit:gen_loop[20].uut.port1
-result[21] <= negador_1_bit:gen_loop[21].uut.port1
-result[22] <= negador_1_bit:gen_loop[22].uut.port1
-result[23] <= negador_1_bit:gen_loop[23].uut.port1
-result[24] <= negador_1_bit:gen_loop[24].uut.port1
-result[25] <= negador_1_bit:gen_loop[25].uut.port1
-result[26] <= negador_1_bit:gen_loop[26].uut.port1
-result[27] <= negador_1_bit:gen_loop[27].uut.port1
-result[28] <= negador_1_bit:gen_loop[28].uut.port1
-result[29] <= negador_1_bit:gen_loop[29].uut.port1
-result[30] <= negador_1_bit:gen_loop[30].uut.port1
-result[31] <= negador_1_bit:gen_loop[31].uut.port1
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[0].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[1].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[2].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[3].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[4].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[5].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[6].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[7].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[8].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[9].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[10].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[11].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[12].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[13].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[14].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[15].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[16].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[17].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[18].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[19].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[20].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[21].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[22].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[23].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[24].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[25].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[26].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[27].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[28].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[29].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[30].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[31].uut
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_1_bit:cn
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta
-a[0] => a[0].IN1
-a[1] => a[1].IN1
-a[2] => a[2].IN1
-a[3] => a[3].IN1
-a[4] => a[4].IN1
-a[5] => a[5].IN1
-a[6] => a[6].IN1
-a[7] => a[7].IN1
-a[8] => a[8].IN1
-a[9] => a[9].IN1
-a[10] => a[10].IN1
-a[11] => a[11].IN1
-a[12] => a[12].IN1
-a[13] => a[13].IN1
-a[14] => a[14].IN1
-a[15] => a[15].IN1
-a[16] => a[16].IN1
-a[17] => a[17].IN1
-a[18] => a[18].IN1
-a[19] => a[19].IN1
-a[20] => a[20].IN1
-a[21] => a[21].IN1
-a[22] => a[22].IN1
-a[23] => a[23].IN1
-a[24] => a[24].IN1
-a[25] => a[25].IN1
-a[26] => a[26].IN1
-a[27] => a[27].IN1
-a[28] => a[28].IN1
-a[29] => a[29].IN1
-a[30] => a[30].IN1
-a[31] => a[31].IN1
-b[0] => b[0].IN1
-b[1] => b[1].IN1
-b[2] => b[2].IN1
-b[3] => b[3].IN1
-b[4] => b[4].IN1
-b[5] => b[5].IN1
-b[6] => b[6].IN1
-b[7] => b[7].IN1
-b[8] => b[8].IN1
-b[9] => b[9].IN1
-b[10] => b[10].IN1
-b[11] => b[11].IN1
-b[12] => b[12].IN1
-b[13] => b[13].IN1
-b[14] => b[14].IN1
-b[15] => b[15].IN1
-b[16] => b[16].IN1
-b[17] => b[17].IN1
-b[18] => b[18].IN1
-b[19] => b[19].IN1
-b[20] => b[20].IN1
-b[21] => b[21].IN1
-b[22] => b[22].IN1
-b[23] => b[23].IN1
-b[24] => b[24].IN1
-b[25] => b[25].IN1
-b[26] => b[26].IN1
-b[27] => b[27].IN1
-b[28] => b[28].IN1
-b[29] => b[29].IN1
-b[30] => b[30].IN1
-b[31] => b[31].IN1
-ci => ci.IN1
-sum[0] <= sumador_1_bit:sum1b2.port3
-sum[1] <= sumador_1_bit:gen_loop[1].sum1b3.port3
-sum[2] <= sumador_1_bit:gen_loop[2].sum1b3.port3
-sum[3] <= sumador_1_bit:gen_loop[3].sum1b3.port3
-sum[4] <= sumador_1_bit:gen_loop[4].sum1b3.port3
-sum[5] <= sumador_1_bit:gen_loop[5].sum1b3.port3
-sum[6] <= sumador_1_bit:gen_loop[6].sum1b3.port3
-sum[7] <= sumador_1_bit:gen_loop[7].sum1b3.port3
-sum[8] <= sumador_1_bit:gen_loop[8].sum1b3.port3
-sum[9] <= sumador_1_bit:gen_loop[9].sum1b3.port3
-sum[10] <= sumador_1_bit:gen_loop[10].sum1b3.port3
-sum[11] <= sumador_1_bit:gen_loop[11].sum1b3.port3
-sum[12] <= sumador_1_bit:gen_loop[12].sum1b3.port3
-sum[13] <= sumador_1_bit:gen_loop[13].sum1b3.port3
-sum[14] <= sumador_1_bit:gen_loop[14].sum1b3.port3
-sum[15] <= sumador_1_bit:gen_loop[15].sum1b3.port3
-sum[16] <= sumador_1_bit:gen_loop[16].sum1b3.port3
-sum[17] <= sumador_1_bit:gen_loop[17].sum1b3.port3
-sum[18] <= sumador_1_bit:gen_loop[18].sum1b3.port3
-sum[19] <= sumador_1_bit:gen_loop[19].sum1b3.port3
-sum[20] <= sumador_1_bit:gen_loop[20].sum1b3.port3
-sum[21] <= sumador_1_bit:gen_loop[21].sum1b3.port3
-sum[22] <= sumador_1_bit:gen_loop[22].sum1b3.port3
-sum[23] <= sumador_1_bit:gen_loop[23].sum1b3.port3
-sum[24] <= sumador_1_bit:gen_loop[24].sum1b3.port3
-sum[25] <= sumador_1_bit:gen_loop[25].sum1b3.port3
-sum[26] <= sumador_1_bit:gen_loop[26].sum1b3.port3
-sum[27] <= sumador_1_bit:gen_loop[27].sum1b3.port3
-sum[28] <= sumador_1_bit:gen_loop[28].sum1b3.port3
-sum[29] <= sumador_1_bit:gen_loop[29].sum1b3.port3
-sum[30] <= sumador_1_bit:gen_loop[30].sum1b3.port3
-sum[31] <= sumador_1_bit:sum1b14.port3
-co <= sumador_1_bit:sum1b14.port4
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:sum1b2
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[1].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[2].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[3].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[4].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[5].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[6].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[7].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[8].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[9].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[10].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[11].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[12].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[13].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[14].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[15].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[16].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[17].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[18].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[19].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[20].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[21].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[22].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[23].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[24].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[25].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[26].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[27].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[28].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[29].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[30].sum1b3
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:sum1b14
-a => sum.IN0
-a => co.IN0
-a => co.IN0
-b => sum.IN1
-b => co.IN0
-b => co.IN1
-ci => sum.IN1
-ci => co.IN1
-ci => co.IN1
-sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
-co <= co.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_1_bit:con
-a => result.DATAIN
-result <= a.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|operador_and:op_and
-a[0] => result.IN0
-a[1] => result.IN0
-a[2] => result.IN0
-a[3] => result.IN0
-a[4] => result.IN0
-a[5] => result.IN0
-a[6] => result.IN0
-a[7] => result.IN0
-a[8] => result.IN0
-a[9] => result.IN0
-a[10] => result.IN0
-a[11] => result.IN0
-a[12] => result.IN0
-a[13] => result.IN0
-a[14] => result.IN0
-a[15] => result.IN0
-a[16] => result.IN0
-a[17] => result.IN0
-a[18] => result.IN0
-a[19] => result.IN0
-a[20] => result.IN0
-a[21] => result.IN0
-a[22] => result.IN0
-a[23] => result.IN0
-a[24] => result.IN0
-a[25] => result.IN0
-a[26] => result.IN0
-a[27] => result.IN0
-a[28] => result.IN0
-a[29] => result.IN0
-a[30] => result.IN0
-a[31] => result.IN0
-b[0] => result.IN1
-b[1] => result.IN1
-b[2] => result.IN1
-b[3] => result.IN1
-b[4] => result.IN1
-b[5] => result.IN1
-b[6] => result.IN1
-b[7] => result.IN1
-b[8] => result.IN1
-b[9] => result.IN1
-b[10] => result.IN1
-b[11] => result.IN1
-b[12] => result.IN1
-b[13] => result.IN1
-b[14] => result.IN1
-b[15] => result.IN1
-b[16] => result.IN1
-b[17] => result.IN1
-b[18] => result.IN1
-b[19] => result.IN1
-b[20] => result.IN1
-b[21] => result.IN1
-b[22] => result.IN1
-b[23] => result.IN1
-b[24] => result.IN1
-b[25] => result.IN1
-b[26] => result.IN1
-b[27] => result.IN1
-b[28] => result.IN1
-b[29] => result.IN1
-b[30] => result.IN1
-b[31] => result.IN1
-result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[8] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[9] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[10] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[11] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[12] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[13] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[14] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[15] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[16] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[17] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[18] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[19] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[20] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[21] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[22] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[23] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[24] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[25] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[26] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[27] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[28] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[29] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|operador_or:op_or
-a[0] => result.IN0
-a[1] => result.IN0
-a[2] => result.IN0
-a[3] => result.IN0
-a[4] => result.IN0
-a[5] => result.IN0
-a[6] => result.IN0
-a[7] => result.IN0
-a[8] => result.IN0
-a[9] => result.IN0
-a[10] => result.IN0
-a[11] => result.IN0
-a[12] => result.IN0
-a[13] => result.IN0
-a[14] => result.IN0
-a[15] => result.IN0
-a[16] => result.IN0
-a[17] => result.IN0
-a[18] => result.IN0
-a[19] => result.IN0
-a[20] => result.IN0
-a[21] => result.IN0
-a[22] => result.IN0
-a[23] => result.IN0
-a[24] => result.IN0
-a[25] => result.IN0
-a[26] => result.IN0
-a[27] => result.IN0
-a[28] => result.IN0
-a[29] => result.IN0
-a[30] => result.IN0
-a[31] => result.IN0
-b[0] => result.IN1
-b[1] => result.IN1
-b[2] => result.IN1
-b[3] => result.IN1
-b[4] => result.IN1
-b[5] => result.IN1
-b[6] => result.IN1
-b[7] => result.IN1
-b[8] => result.IN1
-b[9] => result.IN1
-b[10] => result.IN1
-b[11] => result.IN1
-b[12] => result.IN1
-b[13] => result.IN1
-b[14] => result.IN1
-b[15] => result.IN1
-b[16] => result.IN1
-b[17] => result.IN1
-b[18] => result.IN1
-b[19] => result.IN1
-b[20] => result.IN1
-b[21] => result.IN1
-b[22] => result.IN1
-b[23] => result.IN1
-b[24] => result.IN1
-b[25] => result.IN1
-b[26] => result.IN1
-b[27] => result.IN1
-b[28] => result.IN1
-b[29] => result.IN1
-b[30] => result.IN1
-b[31] => result.IN1
-result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[8] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[9] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[10] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[11] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[12] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[13] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[14] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[15] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[16] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[17] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[18] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[19] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[20] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[21] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[22] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[23] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[24] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[25] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[26] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[27] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[28] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[29] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu
-result_suma[0] => Mux0.IN12
-result_suma[1] => Mux1.IN12
-result_suma[2] => Mux2.IN12
-result_suma[3] => Mux3.IN12
-result_suma[4] => Mux4.IN12
-result_suma[5] => Mux5.IN12
-result_suma[6] => Mux6.IN12
-result_suma[7] => Mux7.IN12
-result_suma[8] => Mux8.IN12
-result_suma[9] => Mux9.IN12
-result_suma[10] => Mux10.IN12
-result_suma[11] => Mux11.IN12
-result_suma[12] => Mux12.IN12
-result_suma[13] => Mux13.IN12
-result_suma[14] => Mux14.IN12
-result_suma[15] => Mux15.IN12
-result_suma[16] => Mux16.IN12
-result_suma[17] => Mux17.IN12
-result_suma[18] => Mux18.IN12
-result_suma[19] => Mux19.IN12
-result_suma[20] => Mux20.IN12
-result_suma[21] => Mux21.IN12
-result_suma[22] => Mux22.IN12
-result_suma[23] => Mux23.IN12
-result_suma[24] => Mux24.IN12
-result_suma[25] => Mux25.IN12
-result_suma[26] => Mux26.IN12
-result_suma[27] => Mux27.IN12
-result_suma[28] => Mux28.IN12
-result_suma[29] => Mux29.IN12
-result_suma[30] => Mux30.IN12
-result_suma[31] => Mux31.IN12
-result_resta[0] => Mux0.IN13
-result_resta[1] => Mux1.IN13
-result_resta[2] => Mux2.IN13
-result_resta[3] => Mux3.IN13
-result_resta[4] => Mux4.IN13
-result_resta[5] => Mux5.IN13
-result_resta[6] => Mux6.IN13
-result_resta[7] => Mux7.IN13
-result_resta[8] => Mux8.IN13
-result_resta[9] => Mux9.IN13
-result_resta[10] => Mux10.IN13
-result_resta[11] => Mux11.IN13
-result_resta[12] => Mux12.IN13
-result_resta[13] => Mux13.IN13
-result_resta[14] => Mux14.IN13
-result_resta[15] => Mux15.IN13
-result_resta[16] => Mux16.IN13
-result_resta[17] => Mux17.IN13
-result_resta[18] => Mux18.IN13
-result_resta[19] => Mux19.IN13
-result_resta[20] => Mux20.IN13
-result_resta[21] => Mux21.IN13
-result_resta[22] => Mux22.IN13
-result_resta[23] => Mux23.IN13
-result_resta[24] => Mux24.IN13
-result_resta[25] => Mux25.IN13
-result_resta[26] => Mux26.IN13
-result_resta[27] => Mux27.IN13
-result_resta[28] => Mux28.IN13
-result_resta[29] => Mux29.IN13
-result_resta[30] => Mux30.IN13
-result_resta[31] => Mux31.IN13
-result_and[0] => Mux0.IN14
-result_and[1] => Mux1.IN14
-result_and[2] => Mux2.IN14
-result_and[3] => Mux3.IN14
-result_and[4] => Mux4.IN14
-result_and[5] => Mux5.IN14
-result_and[6] => Mux6.IN14
-result_and[7] => Mux7.IN14
-result_and[8] => Mux8.IN14
-result_and[9] => Mux9.IN14
-result_and[10] => Mux10.IN14
-result_and[11] => Mux11.IN14
-result_and[12] => Mux12.IN14
-result_and[13] => Mux13.IN14
-result_and[14] => Mux14.IN14
-result_and[15] => Mux15.IN14
-result_and[16] => Mux16.IN14
-result_and[17] => Mux17.IN14
-result_and[18] => Mux18.IN14
-result_and[19] => Mux19.IN14
-result_and[20] => Mux20.IN14
-result_and[21] => Mux21.IN14
-result_and[22] => Mux22.IN14
-result_and[23] => Mux23.IN14
-result_and[24] => Mux24.IN14
-result_and[25] => Mux25.IN14
-result_and[26] => Mux26.IN14
-result_and[27] => Mux27.IN14
-result_and[28] => Mux28.IN14
-result_and[29] => Mux29.IN14
-result_and[30] => Mux30.IN14
-result_and[31] => Mux31.IN14
-result_or[0] => Mux0.IN15
-result_or[1] => Mux1.IN15
-result_or[2] => Mux2.IN15
-result_or[3] => Mux3.IN15
-result_or[4] => Mux4.IN15
-result_or[5] => Mux5.IN15
-result_or[6] => Mux6.IN15
-result_or[7] => Mux7.IN15
-result_or[8] => Mux8.IN15
-result_or[9] => Mux9.IN15
-result_or[10] => Mux10.IN15
-result_or[11] => Mux11.IN15
-result_or[12] => Mux12.IN15
-result_or[13] => Mux13.IN15
-result_or[14] => Mux14.IN15
-result_or[15] => Mux15.IN15
-result_or[16] => Mux16.IN15
-result_or[17] => Mux17.IN15
-result_or[18] => Mux18.IN15
-result_or[19] => Mux19.IN15
-result_or[20] => Mux20.IN15
-result_or[21] => Mux21.IN15
-result_or[22] => Mux22.IN15
-result_or[23] => Mux23.IN15
-result_or[24] => Mux24.IN15
-result_or[25] => Mux25.IN15
-result_or[26] => Mux26.IN15
-result_or[27] => Mux27.IN15
-result_or[28] => Mux28.IN15
-result_or[29] => Mux29.IN15
-result_or[30] => Mux30.IN15
-result_or[31] => Mux31.IN15
-select_alu[0] => Mux0.IN19
-select_alu[0] => Mux1.IN19
-select_alu[0] => Mux2.IN19
-select_alu[0] => Mux3.IN19
-select_alu[0] => Mux4.IN19
-select_alu[0] => Mux5.IN19
-select_alu[0] => Mux6.IN19
-select_alu[0] => Mux7.IN19
-select_alu[0] => Mux8.IN19
-select_alu[0] => Mux9.IN19
-select_alu[0] => Mux10.IN19
-select_alu[0] => Mux11.IN19
-select_alu[0] => Mux12.IN19
-select_alu[0] => Mux13.IN19
-select_alu[0] => Mux14.IN19
-select_alu[0] => Mux15.IN19
-select_alu[0] => Mux16.IN19
-select_alu[0] => Mux17.IN19
-select_alu[0] => Mux18.IN19
-select_alu[0] => Mux19.IN19
-select_alu[0] => Mux20.IN19
-select_alu[0] => Mux21.IN19
-select_alu[0] => Mux22.IN19
-select_alu[0] => Mux23.IN19
-select_alu[0] => Mux24.IN19
-select_alu[0] => Mux25.IN19
-select_alu[0] => Mux26.IN19
-select_alu[0] => Mux27.IN19
-select_alu[0] => Mux28.IN19
-select_alu[0] => Mux29.IN19
-select_alu[0] => Mux30.IN19
-select_alu[0] => Mux31.IN19
-select_alu[0] => Mux32.IN19
-select_alu[1] => Mux0.IN18
-select_alu[1] => Mux1.IN18
-select_alu[1] => Mux2.IN18
-select_alu[1] => Mux3.IN18
-select_alu[1] => Mux4.IN18
-select_alu[1] => Mux5.IN18
-select_alu[1] => Mux6.IN18
-select_alu[1] => Mux7.IN18
-select_alu[1] => Mux8.IN18
-select_alu[1] => Mux9.IN18
-select_alu[1] => Mux10.IN18
-select_alu[1] => Mux11.IN18
-select_alu[1] => Mux12.IN18
-select_alu[1] => Mux13.IN18
-select_alu[1] => Mux14.IN18
-select_alu[1] => Mux15.IN18
-select_alu[1] => Mux16.IN18
-select_alu[1] => Mux17.IN18
-select_alu[1] => Mux18.IN18
-select_alu[1] => Mux19.IN18
-select_alu[1] => Mux20.IN18
-select_alu[1] => Mux21.IN18
-select_alu[1] => Mux22.IN18
-select_alu[1] => Mux23.IN18
-select_alu[1] => Mux24.IN18
-select_alu[1] => Mux25.IN18
-select_alu[1] => Mux26.IN18
-select_alu[1] => Mux27.IN18
-select_alu[1] => Mux28.IN18
-select_alu[1] => Mux29.IN18
-select_alu[1] => Mux30.IN18
-select_alu[1] => Mux31.IN18
-select_alu[1] => Mux32.IN18
-select_alu[2] => Mux0.IN17
-select_alu[2] => Mux1.IN17
-select_alu[2] => Mux2.IN17
-select_alu[2] => Mux3.IN17
-select_alu[2] => Mux4.IN17
-select_alu[2] => Mux5.IN17
-select_alu[2] => Mux6.IN17
-select_alu[2] => Mux7.IN17
-select_alu[2] => Mux8.IN17
-select_alu[2] => Mux9.IN17
-select_alu[2] => Mux10.IN17
-select_alu[2] => Mux11.IN17
-select_alu[2] => Mux12.IN17
-select_alu[2] => Mux13.IN17
-select_alu[2] => Mux14.IN17
-select_alu[2] => Mux15.IN17
-select_alu[2] => Mux16.IN17
-select_alu[2] => Mux17.IN17
-select_alu[2] => Mux18.IN17
-select_alu[2] => Mux19.IN17
-select_alu[2] => Mux20.IN17
-select_alu[2] => Mux21.IN17
-select_alu[2] => Mux22.IN17
-select_alu[2] => Mux23.IN17
-select_alu[2] => Mux24.IN17
-select_alu[2] => Mux25.IN17
-select_alu[2] => Mux26.IN17
-select_alu[2] => Mux27.IN17
-select_alu[2] => Mux28.IN17
-select_alu[2] => Mux29.IN17
-select_alu[2] => Mux30.IN17
-select_alu[2] => Mux31.IN17
-select_alu[2] => Mux32.IN17
-select_alu[3] => Mux0.IN16
-select_alu[3] => Mux1.IN16
-select_alu[3] => Mux2.IN16
-select_alu[3] => Mux3.IN16
-select_alu[3] => Mux4.IN16
-select_alu[3] => Mux5.IN16
-select_alu[3] => Mux6.IN16
-select_alu[3] => Mux7.IN16
-select_alu[3] => Mux8.IN16
-select_alu[3] => Mux9.IN16
-select_alu[3] => Mux10.IN16
-select_alu[3] => Mux11.IN16
-select_alu[3] => Mux12.IN16
-select_alu[3] => Mux13.IN16
-select_alu[3] => Mux14.IN16
-select_alu[3] => Mux15.IN16
-select_alu[3] => Mux16.IN16
-select_alu[3] => Mux17.IN16
-select_alu[3] => Mux18.IN16
-select_alu[3] => Mux19.IN16
-select_alu[3] => Mux20.IN16
-select_alu[3] => Mux21.IN16
-select_alu[3] => Mux22.IN16
-select_alu[3] => Mux23.IN16
-select_alu[3] => Mux24.IN16
-select_alu[3] => Mux25.IN16
-select_alu[3] => Mux26.IN16
-select_alu[3] => Mux27.IN16
-select_alu[3] => Mux28.IN16
-select_alu[3] => Mux29.IN16
-select_alu[3] => Mux30.IN16
-select_alu[3] => Mux31.IN16
-select_alu[3] => Mux32.IN16
-result[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result[3].DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= result[4].DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= result[5].DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= result[6].DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= result[7].DB_MAX_OUTPUT_PORT_TYPE
-result[8] <= result[8].DB_MAX_OUTPUT_PORT_TYPE
-result[9] <= result[9].DB_MAX_OUTPUT_PORT_TYPE
-result[10] <= result[10].DB_MAX_OUTPUT_PORT_TYPE
-result[11] <= result[11].DB_MAX_OUTPUT_PORT_TYPE
-result[12] <= result[12].DB_MAX_OUTPUT_PORT_TYPE
-result[13] <= result[13].DB_MAX_OUTPUT_PORT_TYPE
-result[14] <= result[14].DB_MAX_OUTPUT_PORT_TYPE
-result[15] <= result[15].DB_MAX_OUTPUT_PORT_TYPE
-result[16] <= result[16].DB_MAX_OUTPUT_PORT_TYPE
-result[17] <= result[17].DB_MAX_OUTPUT_PORT_TYPE
-result[18] <= result[18].DB_MAX_OUTPUT_PORT_TYPE
-result[19] <= result[19].DB_MAX_OUTPUT_PORT_TYPE
-result[20] <= result[20].DB_MAX_OUTPUT_PORT_TYPE
-result[21] <= result[21].DB_MAX_OUTPUT_PORT_TYPE
-result[22] <= result[22].DB_MAX_OUTPUT_PORT_TYPE
-result[23] <= result[23].DB_MAX_OUTPUT_PORT_TYPE
-result[24] <= result[24].DB_MAX_OUTPUT_PORT_TYPE
-result[25] <= result[25].DB_MAX_OUTPUT_PORT_TYPE
-result[26] <= result[26].DB_MAX_OUTPUT_PORT_TYPE
-result[27] <= result[27].DB_MAX_OUTPUT_PORT_TYPE
-result[28] <= result[28].DB_MAX_OUTPUT_PORT_TYPE
-result[29] <= result[29].DB_MAX_OUTPUT_PORT_TYPE
-result[30] <= result[30].DB_MAX_OUTPUT_PORT_TYPE
-result[31] <= result[31].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|flag_negativo:flag_N
-co_resta => flag.IN1
-selec_alu[0] => Equal0.IN0
-selec_alu[1] => Equal0.IN3
-selec_alu[2] => Equal0.IN2
-selec_alu[3] => Equal0.IN1
-flag <= flag.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|flag_carry:flag_C
-co_suma => flag.IN1
-co_resta => flag.IN1
-selec_alu[0] => Equal0.IN0
-selec_alu[0] => Equal1.IN3
-selec_alu[1] => Equal0.IN3
-selec_alu[1] => Equal1.IN2
-selec_alu[2] => Equal0.IN2
-selec_alu[2] => Equal1.IN1
-selec_alu[3] => Equal0.IN1
-selec_alu[3] => Equal1.IN0
-flag <= flag.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|flag_zero:flag_Z
-result[0] => Equal0.IN31
-result[1] => Equal0.IN30
-result[2] => Equal0.IN29
-result[3] => Equal0.IN28
-result[4] => Equal0.IN27
-result[5] => Equal0.IN26
-result[6] => Equal0.IN25
-result[7] => Equal0.IN24
-result[8] => Equal0.IN23
-result[9] => Equal0.IN22
-result[10] => Equal0.IN21
-result[11] => Equal0.IN20
-result[12] => Equal0.IN19
-result[13] => Equal0.IN18
-result[14] => Equal0.IN17
-result[15] => Equal0.IN16
-result[16] => Equal0.IN15
-result[17] => Equal0.IN14
-result[18] => Equal0.IN13
-result[19] => Equal0.IN12
-result[20] => Equal0.IN11
-result[21] => Equal0.IN10
-result[22] => Equal0.IN9
-result[23] => Equal0.IN8
-result[24] => Equal0.IN7
-result[25] => Equal0.IN6
-result[26] => Equal0.IN5
-result[27] => Equal0.IN4
-result[28] => Equal0.IN3
-result[29] => Equal0.IN2
-result[30] => Equal0.IN1
-result[31] => Equal0.IN0
-flag_C => flag_Z.IN1
-flag_Z <= flag_Z.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V
-a[0] => Equal0.IN31
-a[1] => Equal0.IN30
-a[2] => Equal0.IN29
-a[3] => Equal0.IN28
-a[4] => Equal0.IN27
-a[5] => Equal0.IN26
-a[6] => Equal0.IN25
-a[7] => Equal0.IN24
-a[8] => Equal0.IN23
-a[9] => Equal0.IN22
-a[10] => Equal0.IN21
-a[11] => Equal0.IN20
-a[12] => Equal0.IN19
-a[13] => Equal0.IN18
-a[14] => Equal0.IN17
-a[15] => Equal0.IN16
-a[16] => Equal0.IN15
-a[17] => Equal0.IN14
-a[18] => Equal0.IN13
-a[19] => Equal0.IN12
-a[20] => Equal0.IN11
-a[21] => Equal0.IN10
-a[22] => Equal0.IN9
-a[23] => Equal0.IN8
-a[24] => Equal0.IN7
-a[25] => Equal0.IN6
-a[26] => Equal0.IN5
-a[27] => Equal0.IN4
-a[28] => Equal0.IN3
-a[29] => Equal0.IN2
-a[30] => Equal0.IN1
-a[31] => Equal0.IN0
-b[0] => b[0].IN1
-b[1] => b[1].IN1
-b[2] => b[2].IN1
-b[3] => b[3].IN1
-b[4] => b[4].IN1
-b[5] => b[5].IN1
-b[6] => b[6].IN1
-b[7] => b[7].IN1
-b[8] => b[8].IN1
-b[9] => b[9].IN1
-b[10] => b[10].IN1
-b[11] => b[11].IN1
-b[12] => b[12].IN1
-b[13] => b[13].IN1
-b[14] => b[14].IN1
-b[15] => b[15].IN1
-b[16] => b[16].IN1
-b[17] => b[17].IN1
-b[18] => b[18].IN1
-b[19] => b[19].IN1
-b[20] => b[20].IN1
-b[21] => b[21].IN1
-b[22] => b[22].IN1
-b[23] => b[23].IN1
-b[24] => b[24].IN1
-b[25] => b[25].IN1
-b[26] => b[26].IN1
-b[27] => b[27].IN1
-b[28] => b[28].IN1
-b[29] => b[29].IN1
-b[30] => b[30].IN1
-b[31] => b[31].IN1
-result[0] => result[0].IN1
-result[1] => result[1].IN1
-result[2] => result[2].IN1
-result[3] => result[3].IN1
-result[4] => result[4].IN1
-result[5] => result[5].IN1
-result[6] => result[6].IN1
-result[7] => result[7].IN1
-result[8] => result[8].IN1
-result[9] => result[9].IN1
-result[10] => result[10].IN1
-result[11] => result[11].IN1
-result[12] => result[12].IN1
-result[13] => result[13].IN1
-result[14] => result[14].IN1
-result[15] => result[15].IN1
-result[16] => result[16].IN1
-result[17] => result[17].IN1
-result[18] => result[18].IN1
-result[19] => result[19].IN1
-result[20] => result[20].IN1
-result[21] => result[21].IN1
-result[22] => result[22].IN1
-result[23] => result[23].IN1
-result[24] => result[24].IN1
-result[25] => result[25].IN1
-result[26] => result[26].IN1
-result[27] => result[27].IN1
-result[28] => result[28].IN1
-result[29] => result[29].IN1
-result[30] => result[30].IN1
-result[31] => result[31].IN1
-selec_alu[0] => Equal1.IN3
-selec_alu[1] => Equal1.IN0
-selec_alu[2] => Equal1.IN2
-selec_alu[3] => Equal1.IN1
-flag <= flag.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_FPGA|arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V|divisor_N_bits:div
-a[0] => Div0.IN31
-a[1] => Div0.IN30
-a[2] => Div0.IN29
-a[3] => Div0.IN28
-a[4] => Div0.IN27
-a[5] => Div0.IN26
-a[6] => Div0.IN25
-a[7] => Div0.IN24
-a[8] => Div0.IN23
-a[9] => Div0.IN22
-a[10] => Div0.IN21
-a[11] => Div0.IN20
-a[12] => Div0.IN19
-a[13] => Div0.IN18
-a[14] => Div0.IN17
-a[15] => Div0.IN16
-a[16] => Div0.IN15
-a[17] => Div0.IN14
-a[18] => Div0.IN13
-a[19] => Div0.IN12
-a[20] => Div0.IN11
-a[21] => Div0.IN10
-a[22] => Div0.IN9
-a[23] => Div0.IN8
-a[24] => Div0.IN7
-a[25] => Div0.IN6
-a[26] => Div0.IN5
-a[27] => Div0.IN4
-a[28] => Div0.IN3
-a[29] => Div0.IN2
-a[30] => Div0.IN1
-a[31] => Div0.IN0
-b[0] => Div0.IN63
-b[1] => Div0.IN62
-b[2] => Div0.IN61
-b[3] => Div0.IN60
-b[4] => Div0.IN59
-b[5] => Div0.IN58
-b[6] => Div0.IN57
-b[7] => Div0.IN56
-b[8] => Div0.IN55
-b[9] => Div0.IN54
-b[10] => Div0.IN53
-b[11] => Div0.IN52
-b[12] => Div0.IN51
-b[13] => Div0.IN50
-b[14] => Div0.IN49
-b[15] => Div0.IN48
-b[16] => Div0.IN47
-b[17] => Div0.IN46
-b[18] => Div0.IN45
-b[19] => Div0.IN44
-b[20] => Div0.IN43
-b[21] => Div0.IN42
-b[22] => Div0.IN41
-b[23] => Div0.IN40
-b[24] => Div0.IN39
-b[25] => Div0.IN38
-b[26] => Div0.IN37
-b[27] => Div0.IN36
-b[28] => Div0.IN35
-b[29] => Div0.IN34
-b[30] => Div0.IN33
-b[31] => Div0.IN32
-result[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[7] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[8] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[9] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[10] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[11] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[12] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[13] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[14] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[15] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[16] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[17] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[18] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[19] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[20] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[21] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[22] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[23] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[24] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[25] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[26] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[27] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[28] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[29] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[30] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-result[31] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => Add0.IN32
+a[0] => Add2.IN64
+a[0] => and_res[0].IN0
+a[0] => or_res[0].IN0
+a[1] => Add0.IN31
+a[1] => Add2.IN63
+a[1] => and_res[1].IN0
+a[1] => or_res[1].IN0
+a[2] => Add0.IN30
+a[2] => Add2.IN62
+a[2] => and_res[2].IN0
+a[2] => or_res[2].IN0
+a[3] => Add0.IN29
+a[3] => Add2.IN61
+a[3] => and_res[3].IN0
+a[3] => or_res[3].IN0
+a[4] => Add0.IN28
+a[4] => Add2.IN60
+a[4] => and_res[4].IN0
+a[4] => or_res[4].IN0
+a[5] => Add0.IN27
+a[5] => Add2.IN59
+a[5] => and_res[5].IN0
+a[5] => or_res[5].IN0
+a[6] => Add0.IN26
+a[6] => Add2.IN58
+a[6] => and_res[6].IN0
+a[6] => or_res[6].IN0
+a[7] => Add0.IN25
+a[7] => Add2.IN57
+a[7] => and_res[7].IN0
+a[7] => or_res[7].IN0
+a[8] => Add0.IN24
+a[8] => Add2.IN56
+a[8] => and_res[8].IN0
+a[8] => or_res[8].IN0
+a[9] => Add0.IN23
+a[9] => Add2.IN55
+a[9] => and_res[9].IN0
+a[9] => or_res[9].IN0
+a[10] => Add0.IN22
+a[10] => Add2.IN54
+a[10] => and_res[10].IN0
+a[10] => or_res[10].IN0
+a[11] => Add0.IN21
+a[11] => Add2.IN53
+a[11] => and_res[11].IN0
+a[11] => or_res[11].IN0
+a[12] => Add0.IN20
+a[12] => Add2.IN52
+a[12] => and_res[12].IN0
+a[12] => or_res[12].IN0
+a[13] => Add0.IN19
+a[13] => Add2.IN51
+a[13] => and_res[13].IN0
+a[13] => or_res[13].IN0
+a[14] => Add0.IN18
+a[14] => Add2.IN50
+a[14] => and_res[14].IN0
+a[14] => or_res[14].IN0
+a[15] => Add0.IN17
+a[15] => Add2.IN49
+a[15] => and_res[15].IN0
+a[15] => or_res[15].IN0
+a[16] => Add0.IN16
+a[16] => Add2.IN48
+a[16] => and_res[16].IN0
+a[16] => or_res[16].IN0
+a[17] => Add0.IN15
+a[17] => Add2.IN47
+a[17] => and_res[17].IN0
+a[17] => or_res[17].IN0
+a[18] => Add0.IN14
+a[18] => Add2.IN46
+a[18] => and_res[18].IN0
+a[18] => or_res[18].IN0
+a[19] => Add0.IN13
+a[19] => Add2.IN45
+a[19] => and_res[19].IN0
+a[19] => or_res[19].IN0
+a[20] => Add0.IN12
+a[20] => Add2.IN44
+a[20] => and_res[20].IN0
+a[20] => or_res[20].IN0
+a[21] => Add0.IN11
+a[21] => Add2.IN43
+a[21] => and_res[21].IN0
+a[21] => or_res[21].IN0
+a[22] => Add0.IN10
+a[22] => Add2.IN42
+a[22] => and_res[22].IN0
+a[22] => or_res[22].IN0
+a[23] => Add0.IN9
+a[23] => Add2.IN41
+a[23] => and_res[23].IN0
+a[23] => or_res[23].IN0
+a[24] => Add0.IN8
+a[24] => Add2.IN40
+a[24] => and_res[24].IN0
+a[24] => or_res[24].IN0
+a[25] => Add0.IN7
+a[25] => Add2.IN39
+a[25] => and_res[25].IN0
+a[25] => or_res[25].IN0
+a[26] => Add0.IN6
+a[26] => Add2.IN38
+a[26] => and_res[26].IN0
+a[26] => or_res[26].IN0
+a[27] => Add0.IN5
+a[27] => Add2.IN37
+a[27] => and_res[27].IN0
+a[27] => or_res[27].IN0
+a[28] => Add0.IN4
+a[28] => Add2.IN36
+a[28] => and_res[28].IN0
+a[28] => or_res[28].IN0
+a[29] => Add0.IN3
+a[29] => Add2.IN35
+a[29] => and_res[29].IN0
+a[29] => or_res[29].IN0
+a[30] => Add0.IN2
+a[30] => Add2.IN34
+a[30] => and_res[30].IN0
+a[30] => or_res[30].IN0
+a[31] => Add0.IN1
+a[31] => overflow_sum.IN0
+a[31] => overflow_sum.IN1
+a[31] => Add2.IN33
+a[31] => overflow_diff.IN1
+a[31] => and_res[31].IN0
+a[31] => or_res[31].IN0
+b[0] => Add0.IN64
+b[0] => and_res[0].IN1
+b[0] => or_res[0].IN1
+b[0] => Add2.IN32
+b[1] => Add0.IN63
+b[1] => and_res[1].IN1
+b[1] => or_res[1].IN1
+b[1] => Add2.IN31
+b[2] => Add0.IN62
+b[2] => and_res[2].IN1
+b[2] => or_res[2].IN1
+b[2] => Add2.IN30
+b[3] => Add0.IN61
+b[3] => and_res[3].IN1
+b[3] => or_res[3].IN1
+b[3] => Add2.IN29
+b[4] => Add0.IN60
+b[4] => and_res[4].IN1
+b[4] => or_res[4].IN1
+b[4] => Add2.IN28
+b[5] => Add0.IN59
+b[5] => and_res[5].IN1
+b[5] => or_res[5].IN1
+b[5] => Add2.IN27
+b[6] => Add0.IN58
+b[6] => and_res[6].IN1
+b[6] => or_res[6].IN1
+b[6] => Add2.IN26
+b[7] => Add0.IN57
+b[7] => and_res[7].IN1
+b[7] => or_res[7].IN1
+b[7] => Add2.IN25
+b[8] => Add0.IN56
+b[8] => and_res[8].IN1
+b[8] => or_res[8].IN1
+b[8] => Add2.IN24
+b[9] => Add0.IN55
+b[9] => and_res[9].IN1
+b[9] => or_res[9].IN1
+b[9] => Add2.IN23
+b[10] => Add0.IN54
+b[10] => and_res[10].IN1
+b[10] => or_res[10].IN1
+b[10] => Add2.IN22
+b[11] => Add0.IN53
+b[11] => and_res[11].IN1
+b[11] => or_res[11].IN1
+b[11] => Add2.IN21
+b[12] => Add0.IN52
+b[12] => and_res[12].IN1
+b[12] => or_res[12].IN1
+b[12] => Add2.IN20
+b[13] => Add0.IN51
+b[13] => and_res[13].IN1
+b[13] => or_res[13].IN1
+b[13] => Add2.IN19
+b[14] => Add0.IN50
+b[14] => and_res[14].IN1
+b[14] => or_res[14].IN1
+b[14] => Add2.IN18
+b[15] => Add0.IN49
+b[15] => and_res[15].IN1
+b[15] => or_res[15].IN1
+b[15] => Add2.IN17
+b[16] => Add0.IN48
+b[16] => and_res[16].IN1
+b[16] => or_res[16].IN1
+b[16] => Add2.IN16
+b[17] => Add0.IN47
+b[17] => and_res[17].IN1
+b[17] => or_res[17].IN1
+b[17] => Add2.IN15
+b[18] => Add0.IN46
+b[18] => and_res[18].IN1
+b[18] => or_res[18].IN1
+b[18] => Add2.IN14
+b[19] => Add0.IN45
+b[19] => and_res[19].IN1
+b[19] => or_res[19].IN1
+b[19] => Add2.IN13
+b[20] => Add0.IN44
+b[20] => and_res[20].IN1
+b[20] => or_res[20].IN1
+b[20] => Add2.IN12
+b[21] => Add0.IN43
+b[21] => and_res[21].IN1
+b[21] => or_res[21].IN1
+b[21] => Add2.IN11
+b[22] => Add0.IN42
+b[22] => and_res[22].IN1
+b[22] => or_res[22].IN1
+b[22] => Add2.IN10
+b[23] => Add0.IN41
+b[23] => and_res[23].IN1
+b[23] => or_res[23].IN1
+b[23] => Add2.IN9
+b[24] => Add0.IN40
+b[24] => and_res[24].IN1
+b[24] => or_res[24].IN1
+b[24] => Add2.IN8
+b[25] => Add0.IN39
+b[25] => and_res[25].IN1
+b[25] => or_res[25].IN1
+b[25] => Add2.IN7
+b[26] => Add0.IN38
+b[26] => and_res[26].IN1
+b[26] => or_res[26].IN1
+b[26] => Add2.IN6
+b[27] => Add0.IN37
+b[27] => and_res[27].IN1
+b[27] => or_res[27].IN1
+b[27] => Add2.IN5
+b[28] => Add0.IN36
+b[28] => and_res[28].IN1
+b[28] => or_res[28].IN1
+b[28] => Add2.IN4
+b[29] => Add0.IN35
+b[29] => and_res[29].IN1
+b[29] => or_res[29].IN1
+b[29] => Add2.IN3
+b[30] => Add0.IN34
+b[30] => and_res[30].IN1
+b[30] => or_res[30].IN1
+b[30] => Add2.IN2
+b[31] => Add0.IN33
+b[31] => overflow_sum.IN1
+b[31] => and_res[31].IN1
+b[31] => or_res[31].IN1
+b[31] => Add2.IN1
+ci => Add1.IN66
+ci => Add3.IN66
+selec_alu[0] => Mux0.IN15
+selec_alu[0] => Mux1.IN15
+selec_alu[0] => Mux2.IN15
+selec_alu[0] => Mux3.IN15
+selec_alu[0] => Mux4.IN15
+selec_alu[0] => Mux5.IN15
+selec_alu[0] => Mux6.IN15
+selec_alu[0] => Mux7.IN15
+selec_alu[0] => Mux8.IN15
+selec_alu[0] => Mux9.IN15
+selec_alu[0] => Mux10.IN15
+selec_alu[0] => Mux11.IN15
+selec_alu[0] => Mux12.IN15
+selec_alu[0] => Mux13.IN15
+selec_alu[0] => Mux14.IN15
+selec_alu[0] => Mux15.IN15
+selec_alu[0] => Mux16.IN15
+selec_alu[0] => Mux17.IN15
+selec_alu[0] => Mux18.IN15
+selec_alu[0] => Mux19.IN15
+selec_alu[0] => Mux20.IN15
+selec_alu[0] => Mux21.IN15
+selec_alu[0] => Mux22.IN15
+selec_alu[0] => Mux23.IN15
+selec_alu[0] => Mux24.IN15
+selec_alu[0] => Mux25.IN15
+selec_alu[0] => Mux26.IN15
+selec_alu[0] => Mux27.IN15
+selec_alu[0] => Mux28.IN15
+selec_alu[0] => Mux29.IN15
+selec_alu[0] => Mux30.IN15
+selec_alu[0] => Mux31.IN15
+selec_alu[0] => Equal1.IN7
+selec_alu[0] => Equal2.IN7
+selec_alu[1] => Mux0.IN14
+selec_alu[1] => Mux1.IN14
+selec_alu[1] => Mux2.IN14
+selec_alu[1] => Mux3.IN14
+selec_alu[1] => Mux4.IN14
+selec_alu[1] => Mux5.IN14
+selec_alu[1] => Mux6.IN14
+selec_alu[1] => Mux7.IN14
+selec_alu[1] => Mux8.IN14
+selec_alu[1] => Mux9.IN14
+selec_alu[1] => Mux10.IN14
+selec_alu[1] => Mux11.IN14
+selec_alu[1] => Mux12.IN14
+selec_alu[1] => Mux13.IN14
+selec_alu[1] => Mux14.IN14
+selec_alu[1] => Mux15.IN14
+selec_alu[1] => Mux16.IN14
+selec_alu[1] => Mux17.IN14
+selec_alu[1] => Mux18.IN14
+selec_alu[1] => Mux19.IN14
+selec_alu[1] => Mux20.IN14
+selec_alu[1] => Mux21.IN14
+selec_alu[1] => Mux22.IN14
+selec_alu[1] => Mux23.IN14
+selec_alu[1] => Mux24.IN14
+selec_alu[1] => Mux25.IN14
+selec_alu[1] => Mux26.IN14
+selec_alu[1] => Mux27.IN14
+selec_alu[1] => Mux28.IN14
+selec_alu[1] => Mux29.IN14
+selec_alu[1] => Mux30.IN14
+selec_alu[1] => Mux31.IN14
+selec_alu[1] => Equal1.IN6
+selec_alu[1] => Equal2.IN6
+selec_alu[2] => Mux0.IN13
+selec_alu[2] => Mux1.IN13
+selec_alu[2] => Mux2.IN13
+selec_alu[2] => Mux3.IN13
+selec_alu[2] => Mux4.IN13
+selec_alu[2] => Mux5.IN13
+selec_alu[2] => Mux6.IN13
+selec_alu[2] => Mux7.IN13
+selec_alu[2] => Mux8.IN13
+selec_alu[2] => Mux9.IN13
+selec_alu[2] => Mux10.IN13
+selec_alu[2] => Mux11.IN13
+selec_alu[2] => Mux12.IN13
+selec_alu[2] => Mux13.IN13
+selec_alu[2] => Mux14.IN13
+selec_alu[2] => Mux15.IN13
+selec_alu[2] => Mux16.IN13
+selec_alu[2] => Mux17.IN13
+selec_alu[2] => Mux18.IN13
+selec_alu[2] => Mux19.IN13
+selec_alu[2] => Mux20.IN13
+selec_alu[2] => Mux21.IN13
+selec_alu[2] => Mux22.IN13
+selec_alu[2] => Mux23.IN13
+selec_alu[2] => Mux24.IN13
+selec_alu[2] => Mux25.IN13
+selec_alu[2] => Mux26.IN13
+selec_alu[2] => Mux27.IN13
+selec_alu[2] => Mux28.IN13
+selec_alu[2] => Mux29.IN13
+selec_alu[2] => Mux30.IN13
+selec_alu[2] => Mux31.IN13
+selec_alu[2] => Equal1.IN5
+selec_alu[2] => Equal2.IN5
+selec_alu[3] => Mux0.IN12
+selec_alu[3] => Mux1.IN12
+selec_alu[3] => Mux2.IN12
+selec_alu[3] => Mux3.IN12
+selec_alu[3] => Mux4.IN12
+selec_alu[3] => Mux5.IN12
+selec_alu[3] => Mux6.IN12
+selec_alu[3] => Mux7.IN12
+selec_alu[3] => Mux8.IN12
+selec_alu[3] => Mux9.IN12
+selec_alu[3] => Mux10.IN12
+selec_alu[3] => Mux11.IN12
+selec_alu[3] => Mux12.IN12
+selec_alu[3] => Mux13.IN12
+selec_alu[3] => Mux14.IN12
+selec_alu[3] => Mux15.IN12
+selec_alu[3] => Mux16.IN12
+selec_alu[3] => Mux17.IN12
+selec_alu[3] => Mux18.IN12
+selec_alu[3] => Mux19.IN12
+selec_alu[3] => Mux20.IN12
+selec_alu[3] => Mux21.IN12
+selec_alu[3] => Mux22.IN12
+selec_alu[3] => Mux23.IN12
+selec_alu[3] => Mux24.IN12
+selec_alu[3] => Mux25.IN12
+selec_alu[3] => Mux26.IN12
+selec_alu[3] => Mux27.IN12
+selec_alu[3] => Mux28.IN12
+selec_alu[3] => Mux29.IN12
+selec_alu[3] => Mux30.IN12
+selec_alu[3] => Mux31.IN12
+selec_alu[3] => Equal1.IN4
+selec_alu[3] => Equal2.IN4
+result[0] <= Mux31.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= Mux30.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Mux29.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Mux28.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= Mux27.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= Mux26.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= Mux25.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= Mux24.DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= Mux23.DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= Mux22.DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= Mux21.DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= Mux20.DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+result[16] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+result[17] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+result[18] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+result[19] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+result[20] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+result[21] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+result[22] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+result[23] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+result[24] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+result[25] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+result[26] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+result[27] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+result[28] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+result[29] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+result[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+result[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+f_N <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+f_Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+f_C <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+f_V <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_FPGA|imem:imem
@@ -15517,11 +13654,18 @@ y[6] => y[6].IN5
 y[7] => y[7].IN5
 y[8] => y[8].IN5
 y[9] => y[9].IN5
+circles[0] => g.DATAB
 circles[0] => r.DATAB
-circles[1] => r.DATAB
 circles[1] => g.DATAB
+circles[1] => g.DATAB
+circles[1] => r.DATAB
+circles[1] => r.DATAB
+circles[2] => b.DATAB
 circles[2] => b.DATAB
 circles[2] => r.DATAB
+circles[2] => r.DATAB
+circles[2] => r.DATAB
+circles[2] => g.DATAB
 circles[2] => g.DATAB
 r[0] <= r.DB_MAX_OUTPUT_PORT_TYPE
 r[1] <= r.DB_MAX_OUTPUT_PORT_TYPE

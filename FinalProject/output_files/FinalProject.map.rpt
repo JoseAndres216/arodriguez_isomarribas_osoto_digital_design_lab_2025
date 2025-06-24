@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FinalProject
-Wed Jun 18 00:40:34 2025
+Tue Jun 24 04:48:55 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -34,42 +34,32 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  26. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
  27. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
  28. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu
- 29. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum
- 30. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest
- 31. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg
- 32. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta
- 33. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|operador_and:op_and
- 34. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|operador_or:op_or
- 35. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu
- 36. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_zero:flag_Z
- 37. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V
- 38. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V|divisor_N_bits:div
- 39. Parameter Settings for User Entity Instance: timer:myTimer
- 40. Parameter Settings for User Entity Instance: comparator:comp_inst
- 41. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_rx:uart_rx_inst
- 42. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_tx:uart_tx_inst
- 43. Parameter Settings for User Entity Instance: vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
- 44. Parameter Settings for User Entity Instance: vga:vga_inst|vgaController:vgaCont
- 45. Parameter Settings for User Entity Instance: vga:vga_inst|videoGen:videoGen
- 46. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ5"
- 47. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ4"
- 48. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ3"
- 49. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ2"
- 50. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ1"
- 51. Port Connectivity Checks: "vga:vga_inst|pll:vgapll"
- 52. Port Connectivity Checks: "vga:vga_inst"
- 53. Port Connectivity Checks: "uartController:uart_controller|uart_tx:uart_tx_inst"
- 54. Port Connectivity Checks: "uartController:uart_controller"
- 55. Port Connectivity Checks: "comparator:comp_inst"
- 56. Port Connectivity Checks: "dmem:dmem"
- 57. Port Connectivity Checks: "arm:arm|datapath:dp|alu:alu"
- 58. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
- 59. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
- 60. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
- 61. Post-Synthesis Netlist Statistics for Top Partition
- 62. Elapsed Time Per Partition
- 63. Analysis & Synthesis Messages
- 64. Analysis & Synthesis Suppressed Messages
+ 29. Parameter Settings for User Entity Instance: timer:myTimer
+ 30. Parameter Settings for User Entity Instance: comparator:comp_inst
+ 31. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_rx:uart_rx_inst
+ 32. Parameter Settings for User Entity Instance: uartController:uart_controller|uart_tx:uart_tx_inst
+ 33. Parameter Settings for User Entity Instance: vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i
+ 34. Parameter Settings for User Entity Instance: vga:vga_inst|vgaController:vgaCont
+ 35. Parameter Settings for User Entity Instance: vga:vga_inst|videoGen:videoGen
+ 36. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ5"
+ 37. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ4"
+ 38. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ3"
+ 39. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ2"
+ 40. Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ1"
+ 41. Port Connectivity Checks: "vga:vga_inst|pll:vgapll"
+ 42. Port Connectivity Checks: "vga:vga_inst"
+ 43. Port Connectivity Checks: "uartController:uart_controller|uart_tx:uart_tx_inst"
+ 44. Port Connectivity Checks: "uartController:uart_controller"
+ 45. Port Connectivity Checks: "comparator:comp_inst"
+ 46. Port Connectivity Checks: "dmem:dmem"
+ 47. Port Connectivity Checks: "arm:arm|datapath:dp|alu:alu"
+ 48. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
+ 49. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
+ 50. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
+ 51. Post-Synthesis Netlist Statistics for Top Partition
+ 52. Elapsed Time Per Partition
+ 53. Analysis & Synthesis Messages
+ 54. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -96,7 +86,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jun 18 00:40:34 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 24 04:48:55 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; FinalProject                                ;
 ; Top-level Entity Name           ; top_FPGA                                    ;
@@ -222,54 +212,41 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                         ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; arm.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv             ;         ;
-; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv      ;         ;
-; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/decoder.sv         ;         ;
-; condlogic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv       ;         ;
-; datapath.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv        ;         ;
-; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/regfile.sv         ;         ;
-; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/adder.sv           ;         ;
-; extend.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/extend.sv          ;         ;
-; flopr.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopr.sv           ;         ;
-; flopenr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopenr.sv         ;         ;
-; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux2.sv            ;         ;
-; dmem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/dmem.sv            ;         ;
-; imem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv            ;         ;
-; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv             ;         ;
-; condcheck.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condcheck.sv       ;         ;
-; mux_alu.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv         ;         ;
-; sumador_N_bits.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/sumador_N_bits.sv  ;         ;
-; sumador_1_bit.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/sumador_1_bit.sv   ;         ;
-; restador_N_bits.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/restador_N_bits.sv ;         ;
-; negador_1_bit.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/negador_1_bit.sv   ;         ;
-; negador_N_bits.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/negador_N_bits.sv  ;         ;
-; operador_and.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/operador_and.sv    ;         ;
-; operador_or.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/operador_or.sv     ;         ;
-; flag_negativo.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flag_negativo.sv   ;         ;
-; flag_carry.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flag_carry.sv      ;         ;
-; flag_zero.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flag_zero.sv       ;         ;
-; flag_overflow.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flag_overflow.sv   ;         ;
-; divisor_N_bits.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/divisor_N_bits.sv  ;         ;
-; memfile.dat                      ; yes             ; User Unspecified File        ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/memfile.dat        ;         ;
-; top_FPGA.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv        ;         ;
-; write_mem.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/write_mem.sv       ;         ;
-; timer.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/timer.sv           ;         ;
-; comparator.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/comparator.sv      ;         ;
-; uartController.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv  ;         ;
-; uart_tx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_tx.sv         ;         ;
-; uart_rx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_rx.sv         ;         ;
-; vga.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/vga.sv             ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File   ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/pll.v              ; pll     ;
-; pll/pll_0002.v                   ; yes             ; User Verilog HDL File        ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/pll/pll_0002.v     ; pll     ;
-; vgaController.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/vgaController.sv   ;         ;
-; videoGen.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/videoGen.sv        ;         ;
-; altera_pll.v                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                  ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------+---------+
+; arm.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/arm.sv            ;         ;
+; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/controller.sv     ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/decoder.sv        ;         ;
+; condlogic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condlogic.sv      ;         ;
+; datapath.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv       ;         ;
+; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/regfile.sv        ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/adder.sv          ;         ;
+; extend.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/extend.sv         ;         ;
+; flopr.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopr.sv          ;         ;
+; flopenr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flopenr.sv        ;         ;
+; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux2.sv           ;         ;
+; dmem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/dmem.sv           ;         ;
+; imem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv           ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv            ;         ;
+; condcheck.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/condcheck.sv      ;         ;
+; memfile.dat                      ; yes             ; User Unspecified File        ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/memfile.dat       ;         ;
+; top_FPGA.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv       ;         ;
+; write_mem.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/write_mem.sv      ;         ;
+; timer.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/timer.sv          ;         ;
+; comparator.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/comparator.sv     ;         ;
+; uartController.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uartController.sv ;         ;
+; uart_tx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_tx.sv        ;         ;
+; uart_rx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/uart_rx.sv        ;         ;
+; vga.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/vga.sv            ;         ;
+; pll.v                            ; yes             ; User Wizard-Generated File   ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/pll.v             ; pll     ;
+; pll/pll_0002.v                   ; yes             ; User Verilog HDL File        ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/pll/pll_0002.v    ; pll     ;
+; vgaController.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/vgaController.sv  ;         ;
+; videoGen.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/videoGen.sv       ;         ;
+; altera_pll.v                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                 ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -277,14 +254,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1836      ;
+; Estimate of Logic utilization (ALMs needed) ; 1834      ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1785      ;
-;     -- 7 input functions                    ; 8         ;
-;     -- 6 input functions                    ; 1037      ;
-;     -- 5 input functions                    ; 127       ;
-;     -- 4 input functions                    ; 127       ;
-;     -- <=3 input functions                  ; 486       ;
+; Combinational ALUT usage for logic          ; 1768      ;
+;     -- 7 input functions                    ; 4         ;
+;     -- 6 input functions                    ; 1001      ;
+;     -- 5 input functions                    ; 180       ;
+;     -- 4 input functions                    ; 131       ;
+;     -- <=3 input functions                  ; 452       ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 2399      ;
 ;                                             ;           ;
@@ -297,112 +274,53 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 2380      ;
-; Total fan-out                               ; 15923     ;
-; Average fan-out                             ; 3.73      ;
+; Total fan-out                               ; 15922     ;
+; Average fan-out                             ; 3.74      ;
 +---------------------------------------------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                 ;
-+-------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                               ; Entity Name     ; Library Name ;
-+-------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |top_FPGA                                             ; 1785 (16)           ; 2399 (2)                  ; 0                 ; 10         ; 38   ; 0            ; |top_FPGA                                                                                                         ; top_FPGA        ; work         ;
-;    |arm:arm|                                          ; 486 (0)             ; 225 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm                                                                                                 ; arm             ; work         ;
-;       |controller:c|                                  ; 15 (0)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c                                                                                    ; controller      ; work         ;
-;          |condlogic:cl|                               ; 9 (5)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c|condlogic:cl                                                                       ; condlogic       ; work         ;
-;             |flopenr:flagreg1|                        ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1                                                      ; flopenr         ; work         ;
-;          |decoder:dec|                                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c|decoder:dec                                                                        ; decoder         ; work         ;
-;       |datapath:dp|                                   ; 471 (0)             ; 224 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp                                                                                     ; datapath        ; work         ;
-;          |adder:pcadd1|                               ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|adder:pcadd1                                                                        ; adder           ; work         ;
-;          |adder:pcadd2|                               ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|adder:pcadd2                                                                        ; adder           ; work         ;
-;          |alu:alu|                                    ; 160 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu                                                                             ; alu             ; work         ;
-;             |mux_alu:Mux_Alu|                         ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu                                                             ; mux_alu         ; work         ;
-;             |restador_N_bits:rest|                    ; 61 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest                                                        ; restador_N_bits ; work         ;
-;                |sumador_N_bits:resta|                 ; 61 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta                                   ; sumador_N_bits  ; work         ;
-;                   |sumador_1_bit:gen_loop[10].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[10].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[11].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[11].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[12].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[12].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[13].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[13].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[14].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[14].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[15].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[15].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[16].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[16].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[17].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[17].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[18].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[18].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[1].sum1b3|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[1].sum1b3  ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[20].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[20].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[21].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[21].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[22].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[22].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[23].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[23].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[24].sum1b3| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[24].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[25].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[25].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[26].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[26].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[27].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[27].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[28].sum1b3| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[28].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[2].sum1b3|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[2].sum1b3  ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[30].sum1b3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[30].sum1b3 ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[3].sum1b3|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[3].sum1b3  ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[4].sum1b3|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[4].sum1b3  ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[5].sum1b3|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[5].sum1b3  ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[6].sum1b3|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[6].sum1b3  ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[7].sum1b3|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[7].sum1b3  ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[8].sum1b3|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[8].sum1b3  ; sumador_1_bit   ; work         ;
-;                   |sumador_1_bit:gen_loop[9].sum1b3|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta|sumador_1_bit:gen_loop[9].sum1b3  ; sumador_1_bit   ; work         ;
-;             |sumador_N_bits:sum|                      ; 61 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum                                                          ; sumador_N_bits  ; work         ;
-;                |sumador_1_bit:gen_loop[10].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[10].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[11].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[11].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[12].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[12].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[13].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[13].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[14].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[14].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[15].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[15].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[16].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[16].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[17].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[17].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[18].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[18].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[1].sum1b3|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[1].sum1b3                         ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[20].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[20].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[21].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[21].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[22].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[22].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[23].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[23].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[24].sum1b3|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[24].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[25].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[25].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[26].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[26].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[27].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[27].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[28].sum1b3|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[28].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[2].sum1b3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[2].sum1b3                         ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[30].sum1b3|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[30].sum1b3                        ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[3].sum1b3|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[3].sum1b3                         ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[4].sum1b3|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[4].sum1b3                         ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[5].sum1b3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[5].sum1b3                         ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[6].sum1b3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[6].sum1b3                         ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[7].sum1b3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[7].sum1b3                         ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[8].sum1b3|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[8].sum1b3                         ; sumador_1_bit   ; work         ;
-;                |sumador_1_bit:gen_loop[9].sum1b3|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:gen_loop[9].sum1b3                         ; sumador_1_bit   ; work         ;
-;          |flopr:pcreg|                                ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|flopr:pcreg                                                                         ; flopr           ; work         ;
-;          |mux2:ra1mux|                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|mux2:ra1mux                                                                         ; mux2            ; work         ;
-;          |mux2:ra2mux|                                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|mux2:ra2mux                                                                         ; mux2            ; work         ;
-;          |mux2:resmux|                                ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|mux2:resmux                                                                         ; mux2            ; work         ;
-;          |mux2:srcbmux|                               ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux                                                                        ; mux2            ; work         ;
-;          |regfile:rf|                                 ; 166 (166)           ; 192 (192)                 ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|regfile:rf                                                                          ; regfile         ; work         ;
-;    |comparator:comp_inst|                             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|comparator:comp_inst                                                                                    ; comparator      ; work         ;
-;    |dmem:dmem|                                        ; 804 (804)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|dmem:dmem                                                                                               ; dmem            ; work         ;
-;    |imem:imem|                                        ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|imem:imem                                                                                               ; imem            ; work         ;
-;    |timer:myTimer|                                    ; 38 (38)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|timer:myTimer                                                                                           ; timer           ; work         ;
-;    |uartController:uart_controller|                   ; 89 (12)             ; 69 (7)                    ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|uartController:uart_controller                                                                          ; uartController  ; work         ;
-;       |uart_rx:uart_rx_inst|                          ; 46 (46)             ; 39 (39)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst                                                     ; uart_rx         ; work         ;
-;       |uart_tx:uart_tx_inst|                          ; 31 (31)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst                                                     ; uart_tx         ; work         ;
-;    |vga:vga_inst|                                     ; 320 (0)             ; 20 (0)                    ; 0                 ; 10         ; 0    ; 0            ; |top_FPGA|vga:vga_inst                                                                                            ; vga             ; work         ;
-;       |pll:vgapll|                                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|pll:vgapll                                                                                 ; pll             ; pll          ;
-;          |pll_0002:pll_inst|                          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|pll:vgapll|pll_0002:pll_inst                                                               ; pll_0002        ; pll          ;
-;             |altera_pll:altera_pll_i|                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i                                       ; altera_pll      ; work         ;
-;       |vgaController:vgaCont|                         ; 29 (29)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|vgaController:vgaCont                                                                      ; vgaController   ; work         ;
-;       |videoGen:videoGen|                             ; 291 (10)            ; 0 (0)                     ; 0                 ; 10         ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen                                                                          ; videoGen        ; work         ;
-;          |circlegen:circ1|                            ; 39 (39)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ1                                                          ; circlegen       ; work         ;
-;          |circlegen:circ2|                            ; 47 (47)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ2                                                          ; circlegen       ; work         ;
-;          |circlegen:circ3|                            ; 77 (77)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ3                                                          ; circlegen       ; work         ;
-;          |circlegen:circ4|                            ; 38 (38)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ4                                                          ; circlegen       ; work         ;
-;          |circlegen:circ5|                            ; 80 (80)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ5                                                          ; circlegen       ; work         ;
-;    |write_mem:writeMem|                               ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|write_mem:writeMem                                                                                      ; write_mem       ; work         ;
-+-------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                         ; Entity Name    ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------+----------------+--------------+
+; |top_FPGA                             ; 1768 (19)           ; 2399 (2)                  ; 0                 ; 10         ; 38   ; 0            ; |top_FPGA                                                                   ; top_FPGA       ; work         ;
+;    |arm:arm|                          ; 459 (0)             ; 225 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm                                                           ; arm            ; work         ;
+;       |controller:c|                  ; 18 (0)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c                                              ; controller     ; work         ;
+;          |condlogic:cl|               ; 9 (6)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c|condlogic:cl                                 ; condlogic      ; work         ;
+;             |flopenr:flagreg1|        ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1                ; flopenr        ; work         ;
+;          |decoder:dec|                ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|controller:c|decoder:dec                                  ; decoder        ; work         ;
+;       |datapath:dp|                   ; 441 (0)             ; 224 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp                                               ; datapath       ; work         ;
+;          |adder:pcadd1|               ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|adder:pcadd1                                  ; adder          ; work         ;
+;          |adder:pcadd2|               ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|adder:pcadd2                                  ; adder          ; work         ;
+;          |alu:alu|                    ; 97 (97)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|alu:alu                                       ; alu            ; work         ;
+;          |extend:ext|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|extend:ext                                    ; extend         ; work         ;
+;          |flopr:pcreg|                ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|flopr:pcreg                                   ; flopr          ; work         ;
+;          |mux2:ra1mux|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|mux2:ra1mux                                   ; mux2           ; work         ;
+;          |mux2:ra2mux|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|mux2:ra2mux                                   ; mux2           ; work         ;
+;          |mux2:resmux|                ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|mux2:resmux                                   ; mux2           ; work         ;
+;          |mux2:srcbmux|               ; 50 (50)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux                                  ; mux2           ; work         ;
+;          |regfile:rf|                 ; 191 (191)           ; 192 (192)                 ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|arm:arm|datapath:dp|regfile:rf                                    ; regfile        ; work         ;
+;    |comparator:comp_inst|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|comparator:comp_inst                                              ; comparator     ; work         ;
+;    |dmem:dmem|                        ; 806 (806)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|dmem:dmem                                                         ; dmem           ; work         ;
+;    |imem:imem|                        ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|imem:imem                                                         ; imem           ; work         ;
+;    |timer:myTimer|                    ; 38 (38)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|timer:myTimer                                                     ; timer          ; work         ;
+;    |uartController:uart_controller|   ; 89 (12)             ; 69 (7)                    ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|uartController:uart_controller                                    ; uartController ; work         ;
+;       |uart_rx:uart_rx_inst|          ; 46 (46)             ; 39 (39)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst               ; uart_rx        ; work         ;
+;       |uart_tx:uart_tx_inst|          ; 31 (31)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst               ; uart_tx        ; work         ;
+;    |vga:vga_inst|                     ; 324 (0)             ; 20 (0)                    ; 0                 ; 10         ; 0    ; 0            ; |top_FPGA|vga:vga_inst                                                      ; vga            ; work         ;
+;       |pll:vgapll|                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|pll:vgapll                                           ; pll            ; pll          ;
+;          |pll_0002:pll_inst|          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|pll:vgapll|pll_0002:pll_inst                         ; pll_0002       ; pll          ;
+;             |altera_pll:altera_pll_i| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|pll:vgapll|pll_0002:pll_inst|altera_pll:altera_pll_i ; altera_pll     ; work         ;
+;       |vgaController:vgaCont|         ; 29 (29)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|vgaController:vgaCont                                ; vgaController  ; work         ;
+;       |videoGen:videoGen|             ; 295 (20)            ; 0 (0)                     ; 0                 ; 10         ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen                                    ; videoGen       ; work         ;
+;          |circlegen:circ1|            ; 44 (44)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ1                    ; circlegen      ; work         ;
+;          |circlegen:circ2|            ; 36 (36)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ2                    ; circlegen      ; work         ;
+;          |circlegen:circ3|            ; 74 (74)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ3                    ; circlegen      ; work         ;
+;          |circlegen:circ4|            ; 38 (38)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ4                    ; circlegen      ; work         ;
+;          |circlegen:circ5|            ; 83 (83)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |top_FPGA|vga:vga_inst|videoGen:videoGen|circlegen:circ5                    ; circlegen      ; work         ;
+;    |write_mem:writeMem|               ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |top_FPGA|write_mem:writeMem                                                ; write_mem      ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -752,38 +670,38 @@ Encoding Type:  One-Hot
 ; arm:arm|datapath:dp|regfile:rf|rf~319                            ; Stuck at GND due to stuck port data_in      ;
 ; arm:arm|datapath:dp|regfile:rf|rf~351                            ; Stuck at GND due to stuck port data_in      ;
 ; arm:arm|datapath:dp|regfile:rf|rf~383                            ; Stuck at GND due to stuck port data_in      ;
-; arm:arm|datapath:dp|regfile:rf|rf~421                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~420                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~419                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~418                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~417                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~416                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~419                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~420                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~421                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~422                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~423                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~440                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~447                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~446                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~445                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~435                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~440                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~441                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~444                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~443                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~430                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~425                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~424                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~426                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~427                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~428                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~429                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~431                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~432                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~433                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~434                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~424                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~416                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~417                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~442                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~436                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~437                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~438                            ; Stuck at GND due to stuck port clock_enable ;
 ; arm:arm|datapath:dp|regfile:rf|rf~439                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~441                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~442                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~443                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~444                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~445                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~446                            ; Stuck at GND due to stuck port clock_enable ;
-; arm:arm|datapath:dp|regfile:rf|rf~447                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~428                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~429                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~432                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~426                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~425                            ; Stuck at GND due to stuck port clock_enable ;
+; arm:arm|datapath:dp|regfile:rf|rf~427                            ; Stuck at GND due to stuck port clock_enable ;
 ; Total Number of Removed Registers = 340                          ;                                             ;
 +------------------------------------------------------------------+---------------------------------------------+
 
@@ -793,30 +711,27 @@ Encoding Type:  One-Hot
 +---------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 ; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                        ;
 +---------------------------------------+---------------------------+-------------------------------------------------------------------------------+
-; arm:arm|datapath:dp|regfile:rf|rf~134 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~422, arm:arm|datapath:dp|regfile:rf|rf~423, ;
-;                                       ; due to stuck port data_in ; arm:arm|datapath:dp|regfile:rf|rf~440, arm:arm|datapath:dp|regfile:rf|rf~430, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~425, arm:arm|datapath:dp|regfile:rf|rf~424, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~426, arm:arm|datapath:dp|regfile:rf|rf~427, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~428, arm:arm|datapath:dp|regfile:rf|rf~429, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~431, arm:arm|datapath:dp|regfile:rf|rf~432, ;
+; arm:arm|datapath:dp|regfile:rf|rf~132 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~420, arm:arm|datapath:dp|regfile:rf|rf~421, ;
+;                                       ; due to stuck port data_in ; arm:arm|datapath:dp|regfile:rf|rf~422, arm:arm|datapath:dp|regfile:rf|rf~423, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~447, arm:arm|datapath:dp|regfile:rf|rf~446, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~445, arm:arm|datapath:dp|regfile:rf|rf~435, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~440, arm:arm|datapath:dp|regfile:rf|rf~441, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~444, arm:arm|datapath:dp|regfile:rf|rf~443, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~430, arm:arm|datapath:dp|regfile:rf|rf~431, ;
 ;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~433, arm:arm|datapath:dp|regfile:rf|rf~434, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~424, arm:arm|datapath:dp|regfile:rf|rf~442, ;
 ;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~436, arm:arm|datapath:dp|regfile:rf|rf~437, ;
 ;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~438, arm:arm|datapath:dp|regfile:rf|rf~439, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~441, arm:arm|datapath:dp|regfile:rf|rf~442, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~443, arm:arm|datapath:dp|regfile:rf|rf~444, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~445, arm:arm|datapath:dp|regfile:rf|rf~446, ;
-;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~447                                         ;
-; arm:arm|datapath:dp|regfile:rf|rf~129 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~418, arm:arm|datapath:dp|regfile:rf|rf~417  ;
-;                                       ; due to stuck port data_in ;                                                                               ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~428, arm:arm|datapath:dp|regfile:rf|rf~429, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~432, arm:arm|datapath:dp|regfile:rf|rf~426, ;
+;                                       ;                           ; arm:arm|datapath:dp|regfile:rf|rf~425, arm:arm|datapath:dp|regfile:rf|rf~427  ;
 ; arm:arm|datapath:dp|regfile:rf|rf~128 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~416                                         ;
 ;                                       ; due to stuck port data_in ;                                                                               ;
+; arm:arm|datapath:dp|regfile:rf|rf~129 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~417                                         ;
+;                                       ; due to stuck port data_in ;                                                                               ;
+; arm:arm|datapath:dp|regfile:rf|rf~130 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~418                                         ;
+;                                       ; due to stuck port data_in ;                                                                               ;
 ; arm:arm|datapath:dp|regfile:rf|rf~131 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~419                                         ;
-;                                       ; due to stuck port data_in ;                                                                               ;
-; arm:arm|datapath:dp|regfile:rf|rf~132 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~420                                         ;
-;                                       ; due to stuck port data_in ;                                                                               ;
-; arm:arm|datapath:dp|regfile:rf|rf~133 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~421                                         ;
-;                                       ; due to stuck port data_in ;                                                                               ;
-; arm:arm|datapath:dp|regfile:rf|rf~146 ; Stuck at GND              ; arm:arm|datapath:dp|regfile:rf|rf~435                                         ;
 ;                                       ; due to stuck port data_in ;                                                                               ;
 +---------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 
@@ -851,96 +766,96 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_FPGA|timer:myTimer|current_seconds[0]                                  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[63][14]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[62][7]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[61][4]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[60][2]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[59][7]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[58][9]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[57][8]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[56][2]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[55][27]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[54][26]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[53][11]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[52][7]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[51][15]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[50][2]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[49][3]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[48][12]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[47][12]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[46][12]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[45][30]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[44][1]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[43][1]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[42][24]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[41][24]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[40][22]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[39][2]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[38][31]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[37][4]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[36][22]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[35][15]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[34][31]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[33][17]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[32][22]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[31][31]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[30][8]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[29][18]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[28][6]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[27][27]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[26][27]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[24][24]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[23][11]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[22][22]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[21][23]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[20][18]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[19][3]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[18][17]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[17][3]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[16][3]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[15][3]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[14][25]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[13][15]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[12][26]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[11][30]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[10][23]                                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[9][23]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[8][6]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[7][25]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[6][24]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[5][4]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[4][10]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[3][10]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[2][10]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[1][10]                                              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[0][10]                                              ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top_FPGA|timer:myTimer|cycle_counter[15]                                   ;
-; 4:1                ; 29 bits   ; 58 LEs        ; 0 LEs                ; 58 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[25][20]                                             ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_FPGA|dmem:dmem|RAM[25][1]                                              ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|bit_index[1]  ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|bit_index[1]  ;
-; 5:1                ; 13 bits   ; 39 LEs        ; 0 LEs                ; 39 LEs                 ; Yes        ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|clk_count[12] ;
-; 7:1                ; 13 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|clk_count[11] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_FPGA|timer:myTimer|current_seconds[3]                                  ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[22]                            ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[1]                             ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[4]                             ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|Mux2                  ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[9]                             ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|vga:vga_inst|videoGen:videoGen|r[1]                               ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|vga:vga_inst|videoGen:videoGen|r[0]                               ;
-; 64:1               ; 32 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |top_FPGA|dmem:dmem|Mux27                                                   ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|Selector2     ;
-; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |top_FPGA|uartController:uart_controller|Selector10                         ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|Selector6     ;
-; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|Selector4     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_FPGA|timer:myTimer|current_seconds[2]                                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[63][13]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[62][31]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[61][30]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[60][5]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[59][5]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[58][26]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[57][25]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[56][16]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[55][27]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[54][20]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[53][24]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[52][26]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[51][23]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[50][31]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[49][26]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[48][27]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[47][8]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[46][11]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[45][22]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[44][14]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[43][24]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[42][2]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[41][9]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[40][25]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[39][0]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[38][23]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[37][4]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[36][16]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[35][2]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[34][24]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[33][15]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[32][31]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[31][14]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[30][22]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[29][6]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[28][24]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[27][12]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[26][30]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[24][30]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[23][2]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[22][25]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[21][15]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[20][23]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[19][12]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[18][14]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[17][14]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[16][14]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[15][14]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[14][14]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[13][14]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[12][22]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[11][16]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[10][6]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[9][10]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[8][14]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[7][30]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[6][22]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[5][6]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[4][3]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[3][15]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[2][9]                                              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[1][16]                                             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[0][25]                                             ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top_FPGA|timer:myTimer|cycle_counter[1]                                   ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 0 LEs                ; 58 LEs                 ; Yes        ; |top_FPGA|dmem:dmem|RAM[25][15]                                            ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top_FPGA|dmem:dmem|RAM[25][1]                                             ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|bit_index[1] ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|bit_index[0] ;
+; 5:1                ; 13 bits   ; 39 LEs        ; 0 LEs                ; 39 LEs                 ; Yes        ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|clk_count[9] ;
+; 7:1                ; 13 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|clk_count[7] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_FPGA|timer:myTimer|current_seconds[1]                                 ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[14]                           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[0]                            ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[2]                            ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|alu:alu|Mux19                                ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_FPGA|arm:arm|datapath:dp|mux2:srcbmux|y[9]                            ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |top_FPGA|vga:vga_inst|videoGen:videoGen|b[5]                              ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top_FPGA|vga:vga_inst|videoGen:videoGen|g[1]                              ;
+; 64:1               ; 32 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |top_FPGA|dmem:dmem|Mux27                                                  ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|Selector5    ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |top_FPGA|uartController:uart_controller|Selector12                        ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |top_FPGA|uartController:uart_controller|uart_tx:uart_tx_inst|Selector6    ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |top_FPGA|uartController:uart_controller|uart_rx:uart_rx_inst|Selector4    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -1050,106 +965,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------+
 ; N              ; 32    ; Signed Integer                                  ;
 +----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                     ;
-+----------------+-------+--------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                    ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                          ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|sumador_N_bits:resta ;
-+----------------+-------+-------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                            ;
-+----------------+-------+-------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|operador_and:op_and ;
-+----------------+-------+---------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                ;
-+----------------+-------+---------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                      ;
-+----------------+-------+---------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|operador_or:op_or ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_zero:flag_Z ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V|divisor_N_bits:div ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                    ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                          ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1471,27 +1286,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; COLOR1_R       ; 11111111 ; Unsigned Binary                                 ;
 ; COLOR1_G       ; 00000000 ; Unsigned Binary                                 ;
 ; COLOR1_B       ; 00000000 ; Unsigned Binary                                 ;
-; COLOR2_R       ; 00000000 ; Unsigned Binary                                 ;
+; COLOR2_R       ; 11111111 ; Unsigned Binary                                 ;
 ; COLOR2_G       ; 11111111 ; Unsigned Binary                                 ;
 ; COLOR2_B       ; 00000000 ; Unsigned Binary                                 ;
-; COLOR3_R       ; 00000000 ; Unsigned Binary                                 ;
-; COLOR3_G       ; 00000000 ; Unsigned Binary                                 ;
-; COLOR3_B       ; 11111111 ; Unsigned Binary                                 ;
+; COLOR3_R       ; 11111111 ; Unsigned Binary                                 ;
+; COLOR3_G       ; 11111111 ; Unsigned Binary                                 ;
+; COLOR3_B       ; 00000000 ; Unsigned Binary                                 ;
 ; COLOR4_R       ; 11111111 ; Unsigned Binary                                 ;
-; COLOR4_G       ; 11111111 ; Unsigned Binary                                 ;
-; COLOR4_B       ; 00000000 ; Unsigned Binary                                 ;
+; COLOR4_G       ; 00000000 ; Unsigned Binary                                 ;
+; COLOR4_B       ; 11111111 ; Unsigned Binary                                 ;
 ; COLOR5_R       ; 11111111 ; Unsigned Binary                                 ;
 ; COLOR5_G       ; 00000000 ; Unsigned Binary                                 ;
 ; COLOR5_B       ; 11111111 ; Unsigned Binary                                 ;
 ; ALT3_R         ; 01010101 ; Unsigned Binary                                 ;
 ; ALT3_G         ; 01010101 ; Unsigned Binary                                 ;
 ; ALT3_B         ; 01010101 ; Unsigned Binary                                 ;
-; ALT4_R         ; 00000000 ; Unsigned Binary                                 ;
-; ALT4_G         ; 00000000 ; Unsigned Binary                                 ;
-; ALT4_B         ; 00000000 ; Unsigned Binary                                 ;
-; ALT5_R         ; 00000000 ; Unsigned Binary                                 ;
-; ALT5_G         ; 00000000 ; Unsigned Binary                                 ;
-; ALT5_B         ; 00000000 ; Unsigned Binary                                 ;
+; ALT4_R         ; 00010010 ; Unsigned Binary                                 ;
+; ALT4_G         ; 00110111 ; Unsigned Binary                                 ;
+; ALT4_B         ; 01100100 ; Unsigned Binary                                 ;
+; ALT5_R         ; 10000101 ; Unsigned Binary                                 ;
+; ALT5_G         ; 01100110 ; Unsigned Binary                                 ;
+; ALT5_B         ; 10011001 ; Unsigned Binary                                 ;
 +----------------+----------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1572,8 +1387,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ2" ;
++----------+-------+----------+----------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                      ;
++----------+-------+----------+----------------------------------------------+
+; xc[5..0] ; Input ; Info     ; Stuck at GND                                 ;
+; xc[9]    ; Input ; Info     ; Stuck at GND                                 ;
+; xc[8]    ; Input ; Info     ; Stuck at VCC                                 ;
+; xc[7]    ; Input ; Info     ; Stuck at GND                                 ;
+; xc[6]    ; Input ; Info     ; Stuck at VCC                                 ;
+; yc[7..4] ; Input ; Info     ; Stuck at VCC                                 ;
+; yc[9..8] ; Input ; Info     ; Stuck at GND                                 ;
+; yc[3..0] ; Input ; Info     ; Stuck at GND                                 ;
+; r[9..6]  ; Input ; Info     ; Stuck at GND                                 ;
+; r[2..0]  ; Input ; Info     ; Stuck at GND                                 ;
+; r[5]     ; Input ; Info     ; Stuck at VCC                                 ;
+; r[4]     ; Input ; Info     ; Stuck at GND                                 ;
+; r[3]     ; Input ; Info     ; Stuck at VCC                                 ;
++----------+-------+----------+----------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ2"                                                                                                                                        ;
+; Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ1"                                                                                                                                        ;
 +----------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port     ; Type  ; Severity ; Details                                                                                                                                                                             ;
 +----------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1592,27 +1428,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; r[4]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; r[3]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 +----------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------+
-; Port Connectivity Checks: "vga:vga_inst|videoGen:videoGen|circlegen:circ1" ;
-+----------+-------+----------+----------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                      ;
-+----------+-------+----------+----------------------------------------------+
-; xc[5..0] ; Input ; Info     ; Stuck at GND                                 ;
-; xc[9]    ; Input ; Info     ; Stuck at GND                                 ;
-; xc[8]    ; Input ; Info     ; Stuck at VCC                                 ;
-; xc[7]    ; Input ; Info     ; Stuck at GND                                 ;
-; xc[6]    ; Input ; Info     ; Stuck at VCC                                 ;
-; yc[7..4] ; Input ; Info     ; Stuck at VCC                                 ;
-; yc[9..8] ; Input ; Info     ; Stuck at GND                                 ;
-; yc[3..0] ; Input ; Info     ; Stuck at GND                                 ;
-; r[9..6]  ; Input ; Info     ; Stuck at GND                                 ;
-; r[2..0]  ; Input ; Info     ; Stuck at GND                                 ;
-; r[5]     ; Input ; Info     ; Stuck at VCC                                 ;
-; r[4]     ; Input ; Info     ; Stuck at GND                                 ;
-; r[3]     ; Input ; Info     ; Stuck at VCC                                 ;
-+----------+-------+----------+----------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -1728,20 +1543,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 65                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 19                          ;
-; arriav_lcell_comb     ; 1787                        ;
-;     arith             ; 238                         ;
-;         0 data inputs ; 10                          ;
+; arriav_lcell_comb     ; 1772                        ;
+;     arith             ; 303                         ;
+;         0 data inputs ; 11                          ;
 ;         1 data inputs ; 227                         ;
 ;         2 data inputs ; 1                           ;
-;     extend            ; 8                           ;
-;         7 data inputs ; 8                           ;
-;     normal            ; 1530                        ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 140                         ;
-;         3 data inputs ; 96                          ;
-;         4 data inputs ; 127                         ;
-;         5 data inputs ; 127                         ;
-;         6 data inputs ; 1037                        ;
+;         5 data inputs ; 64                          ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 1454                        ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 112                         ;
+;         3 data inputs ; 89                          ;
+;         4 data inputs ; 131                         ;
+;         5 data inputs ; 116                         ;
+;         6 data inputs ; 1001                        ;
 ;     shared            ; 11                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 9                           ;
@@ -1749,8 +1565,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 38                          ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 7.75                        ;
+; Max LUT depth         ; 12.70                       ;
+; Average LUT depth     ; 6.86                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1759,7 +1575,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -1769,7 +1585,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 18 00:40:12 2025
+    Info: Processing started: Tue Jun 24 04:48:39 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FinalProject -c FinalProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1892,19 +1708,6 @@ Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:
 Info (12128): Elaborating entity "regfile" for hierarchy "arm:arm|datapath:dp|regfile:rf" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 28
 Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 30
 Info (12128): Elaborating entity "alu" for hierarchy "arm:arm|datapath:dp|alu:alu" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/datapath.sv Line: 34
-Info (12128): Elaborating entity "sumador_N_bits" for hierarchy "arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 12
-Info (12128): Elaborating entity "sumador_1_bit" for hierarchy "arm:arm|datapath:dp|alu:alu|sumador_N_bits:sum|sumador_1_bit:sum1b2" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/sumador_N_bits.sv Line: 19
-Info (12128): Elaborating entity "restador_N_bits" for hierarchy "arm:arm|datapath:dp|alu:alu|restador_N_bits:rest" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 13
-Info (12128): Elaborating entity "negador_N_bits" for hierarchy "arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/restador_N_bits.sv Line: 9
-Info (12128): Elaborating entity "negador_1_bit" for hierarchy "arm:arm|datapath:dp|alu:alu|restador_N_bits:rest|negador_N_bits:neg|negador_1_bit:gen_loop[0].uut" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/negador_N_bits.sv Line: 10
-Info (12128): Elaborating entity "operador_and" for hierarchy "arm:arm|datapath:dp|alu:alu|operador_and:op_and" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 15
-Info (12128): Elaborating entity "operador_or" for hierarchy "arm:arm|datapath:dp|alu:alu|operador_or:op_or" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 16
-Info (12128): Elaborating entity "mux_alu" for hierarchy "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 18
-Info (12128): Elaborating entity "flag_negativo" for hierarchy "arm:arm|datapath:dp|alu:alu|flag_negativo:flag_N" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 20
-Info (12128): Elaborating entity "flag_carry" for hierarchy "arm:arm|datapath:dp|alu:alu|flag_carry:flag_C" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 21
-Info (12128): Elaborating entity "flag_zero" for hierarchy "arm:arm|datapath:dp|alu:alu|flag_zero:flag_Z" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 22
-Info (12128): Elaborating entity "flag_overflow" for hierarchy "arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/alu.sv Line: 23
-Info (12128): Elaborating entity "divisor_N_bits" for hierarchy "arm:arm|datapath:dp|alu:alu|flag_overflow:flag_V|divisor_N_bits:div" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/flag_overflow.sv Line: 6
 Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 30
 Warning (10850): Verilog HDL warning at imem.sv(6): number of words (15) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv Line: 6
 Warning (10030): Net "RAM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/imem.sv Line: 4
@@ -2013,39 +1816,6 @@ Info (12128): Elaborating entity "circlegen" for hierarchy "vga:vga_inst|videoGe
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "arm:arm|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/regfile.sv Line: 7
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/db/FinalProject.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[0]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[1]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[2]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[3]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[4]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[5]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[6]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[7]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[8]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[9]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[10]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[11]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[12]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[13]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[14]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[15]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[16]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[17]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[18]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[19]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[20]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[21]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[22]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[23]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[24]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[25]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[26]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[27]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[28]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[29]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[30]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
-    Warning (13049): Converted tri-state buffer "arm:arm|datapath:dp|alu:alu|mux_alu:Mux_Alu|result[31]" feeding internal logic into a wire File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/mux_alu.sv Line: 3
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 9 registers lost all their fanouts during netlist optimizations.
@@ -2056,17 +1826,17 @@ Warning: RST port on the PLL is not properly connected on instance vga:vga_inst|
     Info: Must be connected
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "btn[2]" File: C:/Users/caman/Documents/Github/arodriguez_isomarribas_osoto_digital_design_lab_2025/FinalProject/top_FPGA.sv Line: 2
-Info (21057): Implemented 4136 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4119 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 4087 logic cells
+    Info (21061): Implemented 4070 logic cells
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 10 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 64 warnings
-    Info: Peak virtual memory: 4857 megabytes
-    Info: Processing ended: Wed Jun 18 00:40:34 2025
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:30
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4863 megabytes
+    Info: Processing ended: Tue Jun 24 04:48:55 2025
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:25
 
 
 +------------------------------------------+
