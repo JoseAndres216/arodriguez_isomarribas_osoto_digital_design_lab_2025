@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Wed May 07 05:22:22 2025
+Tue Jun 17 23:06:24 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 07 05:22:21 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 17 23:06:24 2025       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; lab3                                        ;
 ; Top-level Entity Name           ; connect4_Top                                ;
@@ -1176,7 +1176,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:13     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -1186,7 +1186,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed May 07 05:21:59 2025
+    Info: Processing started: Tue Jun 17 23:06:06 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1469,9 +1469,9 @@ Info (21057): Implemented 1709 device resources after synthesis - the final reso
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 4 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 63 warnings
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Wed May 07 05:22:22 2025
-    Info: Elapsed time: 00:00:23
+    Info: Peak virtual memory: 4854 megabytes
+    Info: Processing ended: Tue Jun 17 23:06:24 2025
+    Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:26
 
 

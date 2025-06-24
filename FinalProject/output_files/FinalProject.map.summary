@@ -1,17 +1,17 @@
-Analysis & Synthesis Status : Successful - Tue Jun 17 21:22:00 2025
+Analysis & Synthesis Status : Successful - Tue Jun 24 04:48:55 2025
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : FinalProject
 Top-level Entity Name : top_FPGA
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 2379
-Total pins : 9
+Total registers : 2399
+Total pins : 38
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 0
+Total DSP Blocks : 10
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
 Total HSSI PMA TX Serializers : 0
-Total PLLs : 0
+Total PLLs : 1
 Total DLLs : 0
